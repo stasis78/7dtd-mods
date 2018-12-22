@@ -2,10 +2,6 @@ This is a collection of very basic mods that I used to always apply by hand. Tha
 
 ## Mod Info
 
-### ShutUpAuger
-
-This just replaces the loud parts of the auger with a quiet sound. The idle sound is still there which isn't annoying. Probably breaks a lot of the sound based heat map stuff...
-
 ### AugerMod
 
 Makes the auger one shot stone after you get some strength and/or miner69 perks. Increases wood damage so you can 1-2 shot trees. Also increases the gas tank to a reasonable size.
@@ -13,6 +9,10 @@ Makes the auger one shot stone after you get some strength and/or miner69 perks.
 ### AugerNoKickMod
 
 Removes kickback from auger.
+
+### ShutUpAugerMod
+
+This just replaces the loud parts of the auger with a quiet sound. The idle sound is still there which isn't annoying. Probably breaks a lot of the sound based heat map stuff...
 
 ### TripleThreatPointMod
 
