@@ -1,0 +1,10 @@
+<configs>
+	<set xpath="/items/item/property[@name='Stacknumber'][@value='6000']/@value">10000</set>
+	<set xpath="/items/item/property[@name='Stacknumber'][@value='1000']/@value">10000</set>
+	<set xpath="/items/item[@name='resourceIronFragment']/property[@name='Stacknumber']/@value">10000</set>
+</configs>
+
+<!--
+<item name="ammoArrowStone">
+	<property name="Stacknumber" value="250"/>
+-->
