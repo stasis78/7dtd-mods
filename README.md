@@ -6,6 +6,10 @@ This is a collection of very basic mods that I used to always apply by hand. Tha
 
 Makes the auger one shot stone after you get some strength and/or miner69 perks. Increases wood damage so you can 1-2 shot trees. Also increases the gas tank to a reasonable size.
 
+### AugerPlusNoKickMod
+
+Same as `AugerMod` just that kick is removed.
+
 ### TripleThreatPointMod
 
 3 points for perks per level.
