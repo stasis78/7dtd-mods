@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="AugerPlusNoKickMod" />
-		<Description value="Stasis' AugerPlusNoKickMod - One shotter lovin and no kicks" />
+		<Name value="AugerNoKickMod" />
+		<Description value="Stasis' AugerPlusNoKickMod - no kicks" />
 		<Author value="stasis" />
 		<Version value="1.0" />
 	</ModInfo>

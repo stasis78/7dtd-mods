@@ -1,11 +1,4 @@
 <configs>
-    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">2000</set>
-    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">200</set>
-
-    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax']/@value">9999</set>
-    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse']/@value">1</set>
-
-    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DamageModifier'][@tags='wood']/@value">1.5</set>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='KickDegreesVertical']/@value">0.0</set>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='KickDegreesHorizontal']/@value">0.0</set>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/display_value[@name='dRecoil']/@value">0</set>
