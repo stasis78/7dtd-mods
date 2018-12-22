@@ -2,8 +2,6 @@ This is a collection of very basic mods that I used to always apply by hand. Tha
 
 ## Mod Info
 
-Don't use 2 of the same mods such as `AugerMod` and `AugerPlusNoKickMod`. Using similiar mods won't do what you think it will do......
-
 ### ShutUpAuger
 
 This just replaces the loud parts of the auger with a quiet sound. The idle sound is still there which isn't annoying. Probably breaks a lot of the sound based heat map stuff...
