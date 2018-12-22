@@ -1,6 +1,10 @@
 <configs>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">2000</set>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">200</set>
+
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax']/@value">9999</set>
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse']/@value">1</set>
+
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DamageModifier'][@tags='wood']/@value">1.5</set>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='KickDegreesVertical']/@value">0.0</set>
     <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='KickDegreesHorizontal']/@value">0.0</set>
@@ -11,4 +15,8 @@
 <passive_effect name="KickDegreesVertical" operation="base_set" value="-0.35,0.35" />
 <passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.35,0.35" />
 <display_value name="dRecoil" value="1" />
+
+<passive_effect name="DegradationMax" operation="base_set" value="3000,6000" tier="1,6" />
+<passive_effect name="DegradationPerUse" operation="base_set" value="3" />
+
 -->
