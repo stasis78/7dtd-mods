@@ -10,9 +10,9 @@ This just replaces the loud parts of the auger with a quiet sound. The idle soun
 
 Makes the auger one shot stone after you get some strength and/or miner69 perks. Increases wood damage so you can 1-2 shot trees. Also increases the gas tank to a reasonable size.
 
-### AugerPlusNoKickMod
+### AugerNoKickMod
 
-Same as `AugerMod` just that kick is removed.
+Removes kickback from auger.
 
 ### TripleThreatPointMod
 
