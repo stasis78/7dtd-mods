@@ -37,3 +37,7 @@ Its just a stone axe that attacks really fast and far away...
 ### FlatWorldMod 
 
 Not really a completely flat world. It just makes things "a bit more flat".
+
+### StoneResourcesMod
+
+Gives brass, lead, oil shale, potassium, and coal from stone blocks.
