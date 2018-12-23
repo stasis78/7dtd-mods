@@ -29,3 +29,7 @@ Stack size changes/remaps the following:
 ### MoreStrippersMod
 
 Add more strippers to some of the game. You will see them more often. :lulz:
+
+### WeedwhackerMod
+
+It just a stone axe that attacks really fast and far away...
