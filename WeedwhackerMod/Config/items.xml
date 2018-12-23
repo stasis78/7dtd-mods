@@ -1,7 +1,7 @@
 <configs>
 
     <append xpath="/items">
-      <item name="shears">
+      <item name="weedwhacker">
         <property name="Tags" value="knife,melee,light,tool,perkMotherLode,perkDeepCuts,perkTheHuntsman" />
       	<property name="DisplayType" value="meleeRepairTool" />
       	<property name="HoldType" value="32" />
@@ -58,10 +58,3 @@
     </append>
 
 </configs>
-
-<!--
-<entitygroups>
-	<entitygroup name="ZombiesAll">
-		<entity name="zombieStripper" prob="0.3" />
-
--->
