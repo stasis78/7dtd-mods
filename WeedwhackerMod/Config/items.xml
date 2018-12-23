@@ -1,0 +1,67 @@
+<configs>
+
+    <append xpath="/items">
+      <item name="shears">
+        <property name="Tags" value="knife,melee,light,tool,perkMotherLode,perkDeepCuts,perkTheHuntsman" />
+      	<property name="DisplayType" value="meleeRepairTool" />
+      	<property name="HoldType" value="32" />
+      	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
+      	<property name="Material" value="Mstone" />
+      	<property name="RepairTools" value="resourceRockSmall" />
+      	<property name="EconomicValue" value="5" />
+      	<property name="EconomicBundleSize" value="1" />
+      	<property name="SellableToTrader" value="false" />
+      	<property name="DegradationBreaksAfter" value="false" />
+      	<property name="SoundJammed" value="ItemNeedsRepair" />
+      	<property name="SoundDestroy" value="wooddestroy1" />
+      	<property name="FuelValue" value="50" />
+        <property name="CustomIcon" value="meleeToolStoneAxe" />
+        <property name="CustomIconTint" value="ffffff" />
+        <property class="Action0">
+            <!-- AttackAction -->
+            <property name="Class" value="DynamicMelee" />
+            <property name="Delay" value="0.02" />
+            <property name="Range" value="100" />
+            <property name="Sphere" value="0.2" />
+            <property name="Block_range" value="30" />
+            <property name="DamageEntity" value="5" />
+            <property name="DamageBlock" value="0" />
+            <property name="Sound_start" value="swoosh" />
+            <property name="Stamina_usage" value="1" />
+          </property>
+          <effect_group name="Base Effects">
+            <passive_effect name="MaxRange" operation="base_set" value="25" />
+            <passive_effect name="BlockRange" operation="base_set" value="25" />
+
+            <passive_effect name="EntityDamage" operation="base_set" value="5" /> <!-- meleeToolStoneAxe -->
+            <passive_effect name="BlockDamage" operation="base_set" value="1" />
+            <passive_effect name="AttacksPerMinute" operation="base_set" value="700" /> <!-- A16 .8 -->
+            <passive_effect name="DamageModifier" operation="perc_add" value="20" tags="wood" />
+            <passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth" />
+            <passive_effect name="DamageModifier" operation="perc_add" value="0.0" tags="stone" />
+            <passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal" />
+            <passive_effect name="StaminaLoss" operation="base_set" value="1.0" tags="primary" />
+            <passive_effect name="DegradationMax" operation="base_set" value="9999,9999" tier="1,6" />
+            <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6" />
+            <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage" />
+            <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue" />
+        </effect_group>
+
+        <property name="Group" value="Tools/Traps" />
+    		<property name="ActionSkillGroup" value="Mining Tools"/>
+    		<property name="CraftingSkillGroup" value="Tool Smithing"/>
+        <property name="Group" value="Tools/Traps,Basics" />
+        <property name="ActionSkillGroup" value="Construction Tools" />
+        <property name="CraftingSkillGroup" value="craftSkillTools" />
+        <property name="RepairExpMultiplier" value="5.5" />
+      </item>
+    </append>
+
+</configs>
+
+<!--
+<entitygroups>
+	<entitygroup name="ZombiesAll">
+		<entity name="zombieStripper" prob="0.3" />
+
+-->
