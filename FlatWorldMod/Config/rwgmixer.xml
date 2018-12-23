@@ -1,0 +1,13 @@
+<configs>
+
+  <set xpath="/rwgmixer/terrain_generators/terrain_generator/module[@name='lnd_Fn']/property[@name='frequency']/@value">0.0000625</set>
+  <set xpath="/rwgmixer/terrain_generators/terrain_generator/module[@name='lnd_Fn']/property[@name='persistence']/@value">1.0</set>
+
+  <set xpath="/rwgmixer/terrain_generators/terrain_generator/module[@name='lnd_Fn1']/property[@name='frequency']/@value">0.0000625</set>
+  <set xpath="/rwgmixer/terrain_generators/terrain_generator/module[@name='lnd_Fn1']/property[@name='persistence']/@value">1.0</set>
+
+</configs>
+
+<!--
+rwgmixer
+-->
