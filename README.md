@@ -25,3 +25,7 @@ Stack size changes/remaps the following:
 - 1000 -> 10,000 (i.e. gas cans)
 - 6000 -> 10,000 (i.e. wood stacks)
 - iron frags -> 10,000
+
+### MoreStrippersMod
+
+Add more strippers to some of the game. You will see them more often. :lulz:
