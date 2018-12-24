@@ -1,0 +1,11 @@
+<configs>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">meleeToolAuger,meleeToolChainsaw,drinkJarRedTea,foodMeatStew,medicalFirstAidKit,armorMiningHelmet,meleeToolMachete</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">meleeToolAuger,meleeToolChainsaw,drinkJarRedTea,foodMeatStew,medicalFirstAidKit,armorMiningHelmet,meleeToolMachete</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">meleeToolAuger,meleeToolChainsaw,drinkJarRedTea,foodMeatStew,medicalFirstAidKit,armorMiningHelmet,meleeToolMachete</set>
+</configs>
+
+<!--
+<property name="ItemsOnEnterGame.GameModeSurvival" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock" />
+<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock" />
+<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock" />
+-->
