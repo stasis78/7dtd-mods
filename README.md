@@ -41,3 +41,7 @@ Not really a completely flat world. It just makes things "a bit more flat".
 ### StoneResourcesMod
 
 Gives brass, lead, oil shale, potassium, and coal from stone blocks.
+
+### StrongerSteelMod
+
+Make steel lighter and stronger. Still can't overcome the 15 block SI limit..
