@@ -46,6 +46,10 @@ Gives brass, lead, oil shale, potassium, and coal from stone blocks.
 
 Make steel lighter and stronger. Still can't overcome the 15 block SI limit..
 
+### FasterMovementMod
+
+You'll move really really fast now.
+
 ### MostExcellentStartMod
 
 Start with: auger, chainsaw, machete! and some other stuff.
