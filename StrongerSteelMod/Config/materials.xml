@@ -1,9 +1,9 @@
 <configs>
-  <set xpath="/materials/material[@id='Msteel']/property[@name='stability_glue']/@value">10000</set>
-  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='stability_glue']/@value">10000</set>
+  <set xpath="/materials/material[@id='Msteel']/property[@name='stability_glue']/@value">1000</set>
+  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='stability_glue']/@value">1000</set>
 
-  <set xpath="/materials/material[@id='Msteel']/property[@name='MaxDamage']/@value">100000</set>
-  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='MaxDamage']/@value">100000</set>
+  <set xpath="/materials/material[@id='Msteel']/property[@name='MaxDamage']/@value">35000</set>
+  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='MaxDamage']/@value">35000</set>
 
   <set xpath="/materials/material[@id='Msteel']/property[@name='Mass']/@value">10</set>
   <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='Mass']/@value">10</set>
