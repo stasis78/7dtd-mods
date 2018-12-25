@@ -53,3 +53,7 @@ You'll move really really fast now.
 ### MostExcellentStartMod
 
 Start with: auger, chainsaw, machete! and some other stuff.
+
+### WhatTheHayMod
+
+Infinite fall height onto hay bale with no damage.
