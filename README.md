@@ -57,3 +57,7 @@ Start with: auger, chainsaw, machete! and some other stuff.
 ### WhatTheHayMod
 
 Infinite fall height onto hay bale with no damage.
+
+### ThreadMasterMod
+
+Adds recipes for existing items to the game. Contains examples of how to require a crafting tool or crafting area for these recipes.
