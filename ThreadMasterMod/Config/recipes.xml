@@ -70,14 +70,11 @@ manipulate all recipes from this mod. Such as adding craft_area="workbench"
   </append>
 
   <!-- Require a craft_area
-    <set xpath="/recipes/recipe[@modTag='TMM']/@craft_area">
-      workbench
-    </set>
-     -->
+  <setattribute xpath="/recipes/recipe[@modTag='TMM']" name="craft_area">workbench</setattribute>
+  -->
 
   <!-- Require a craft_tool
-    <set xpath="/recipes/recipe[@modTag='TMM']/@craft_tool">
-      toolAnvil
-    </set> -->
+  <setattribute xpath="/recipes/recipe[@modTag='TMM']" name="craft_tool">toolAnvil</setattribute>
+  -->
 
 </configs>
