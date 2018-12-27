@@ -1,0 +1,70 @@
+<configs>
+    <append xpath="/entity_classes">
+      <entity_class name="blerker" extends="animalTemplateHostile">
+
+        <property name="Tags" value="animal"/>
+      	<property name="Class" value="EntityEnemyAnimal"/>
+      	<property name="Prefab" value="#@modfolder:Resources/blerker.unity3d?quin_standard.prefab"/>
+      	<property name="Mesh" value=""/>
+      	<property name="Parent" value="Animals"/>
+      	<property name="Faction" value="animals"/>
+      	<property name="PhysicsBody" value="wolf"/>
+      	<property name="Mass" value="12"/>
+      	<property name="Weight" value="10"/>
+      	<property name="SoundHurt" value="Animals/rabbitpain"/>
+      	<property name="SoundDeath" value="Animals/rabbitdeath"/>
+        <property name="AvatarController" value="#@modfolder:Resources/blerker.unity3d?quin_ctrl"/>
+
+      	<property name="SwimOffset" value="2"/>
+      	<property name="HasRagdoll" value="false"/>
+        <property name="RootMotion" value="false"/>
+
+      	<!-- Gameplay -->
+      	<property name="MoveSpeedPanic" value="1.5"/>
+
+      	<property name="ExperienceGain" value="800"/>
+      	<property name="DeadBodyHitPoints" value="175"/>
+      	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+      	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalRabbit -->
+      	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
+
+      	<effect_group name="Base Effects">
+      		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+      		<passive_effect name="HealthMax" operation="perc_add" value="1"/> <!-- Animal HP scale -->
+      	</effect_group>
+
+        <property class="MechanimAttackTriggers">
+      		<property name="state0" value="AttackTrigger"/>
+      	</property>
+      	<property class="MechanimAttackStates">
+      		<property name="state0" value="Base Layer.Attack"/>
+      	</property>
+      	<property class="MechanimPainTriggers">
+      		<property name="state0" value="PainTrigger"/>
+      	</property>
+      	<property class="MechanimPainStates">
+      		<property name="state0" value="Base Layer.Pain"/>
+      	</property>
+      	<property class="MechanimDeathTriggers">
+      		<property name="state0" value="DeathTrigger"/>
+      	</property>
+      	<property class="MechanimDeathStates">
+      		<property name="state0" value="Base Layer.Death"/>
+      	</property>
+
+      	<property name="AITask-1" value="Swim"/>
+      	<property name="AITask-2" value="BreakBlock"/>
+      	<property name="AITask-3" value="DestroyArea"/>
+      	<property name="AITask-4" value="Territorial"/>
+      	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag,40,EntityPlayer,25,EntityZombie,30"/>
+      	<property name="AITask-6" value="ApproachSpot"/>
+      	<property name="AITask-7" value="Look"/>
+      	<property name="AITask-8" value="Wander"/>
+      	<property name="AITask-9" value=""/>
+      	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      	<property name="AITarget-2" value="BlockingTargetTask"/>
+      	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer,8,EntityAnimalStag,0,EntityZombie,0"/>
+      	<property name="AITarget-4" value=""/>
+      </entity_class>
+    </append>
+</configs>
