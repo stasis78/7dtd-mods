@@ -69,3 +69,7 @@ Add rabbits that are hostile and will attack you. Custom attack sound (lulz)
 ### ZoomyCarsMod
 
 Increases all vehicle movement to lots faster.
+
+### FasterCrossbowMod
+
+Increases the Crossbow reload speed.
