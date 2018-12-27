@@ -61,3 +61,7 @@ Infinite fall height onto hay bale with no damage.
 ### ThreadMasterMod
 
 Adds recipes for existing items to the game. Contains examples of how to require a crafting tool or crafting area for these recipes.
+
+### KillerRabbits
+
+Add rabbits that are hostile and will attack you. Custom attack sound (lulz)
