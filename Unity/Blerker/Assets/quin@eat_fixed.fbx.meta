@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: dcaeaf097e6b67248a1767f8875af117
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ass_knee_rotat
+    100002: ass_top
+    100004: central
+    100006: chest
+    100008: head_ctrl
+    100010: head_ik
+    100012: head_top
+    100014: ikHandle1
+    100016: ikHandle2
+    100018: ikHandle3
+    100020: joint11
+    100022: joint15
+    100024: joint16
+    100026: joint17
+    100028: joint19
+    100030: joint19 1
+    100032: joint19 2
+    100034: joint20
+    100036: joint20 1
+    100038: joint20 2
+    100040: joint24
+    100042: joint25
+    100044: joint27
+    100046: joint28
+    100048: joint3
+    100050: joint30
+    100052: joint31
+    100054: joint33
+    100056: joint34
+    100058: joint35
+    100060: joint37
+    100062: joint39
+    100064: joint40
+    100066: joint41
+    100068: joint9
+    100070: L_arm
+    100072: L_arm_ctrl
+    100074: L_arm_ctrl 1
+    100076: L_mouse
+    100078: L_mouse_ctrl
+    100080: LB
+    100082: LB_ctrl
+    100084: LB_ik
+    100086: LB_knee_rotat
+    100088: LF
+    100090: LF_ctrl
+    100092: LF_ctrl1
+    100094: LF_knee_rotat
+    100096: LM
+    100098: LM_ctrl
+    100100: LM_ctrl1
+    100102: LM_knee_rotat
+    100104: neck
+    100106: quin
+    100108: //RootNode
+    100110: Quin_rem__1
+    100112: R_arm
+    100114: R_arm_ctrl
+    100116: R_arm_ctrl 1
+    100118: R_mouse
+    100120: R_mouse_ctrl
+    100122: RB
+    100124: RB_ctrl
+    100126: RB_ctrl1
+    100128: RB_ik
+    100130: RB_knee_rotat
+    100132: RF
+    100134: RF_ctrl
+    100136: RF_ctrl1
+    100138: RF_knee_rotat
+    100140: RM
+    100142: RM_ctrl
+    100144: RM_ctrl1
+    100146: RM_knee_rotat
+    100148: root
+    100150: root_ctrl
+    100152: tail_ctrl
+    100154: upper_neck
+    400000: ass_knee_rotat
+    400002: ass_top
+    400004: central
+    400006: chest
+    400008: head_ctrl
+    400010: head_ik
+    400012: head_top
+    400014: ikHandle1
+    400016: ikHandle2
+    400018: ikHandle3
+    400020: joint11
+    400022: joint15
+    400024: joint16
+    400026: joint17
+    400028: joint19
+    400030: joint19 1
+    400032: joint19 2
+    400034: joint20
+    400036: joint20 1
+    400038: joint20 2
+    400040: joint24
+    400042: joint25
+    400044: joint27
+    400046: joint28
+    400048: joint3
+    400050: joint30
+    400052: joint31
+    400054: joint33
+    400056: joint34
+    400058: joint35
+    400060: joint37
+    400062: joint39
+    400064: joint40
+    400066: joint41
+    400068: joint9
+    400070: L_arm
+    400072: L_arm_ctrl
+    400074: L_arm_ctrl 1
+    400076: L_mouse
+    400078: L_mouse_ctrl
+    400080: LB
+    400082: LB_ctrl
+    400084: LB_ik
+    400086: LB_knee_rotat
+    400088: LF
+    400090: LF_ctrl
+    400092: LF_ctrl1
+    400094: LF_knee_rotat
+    400096: LM
+    400098: LM_ctrl
+    400100: LM_ctrl1
+    400102: LM_knee_rotat
+    400104: neck
+    400106: quin
+    400108: //RootNode
+    400110: Quin_rem__1
+    400112: R_arm
+    400114: R_arm_ctrl
+    400116: R_arm_ctrl 1
+    400118: R_mouse
+    400120: R_mouse_ctrl
+    400122: RB
+    400124: RB_ctrl
+    400126: RB_ctrl1
+    400128: RB_ik
+    400130: RB_knee_rotat
+    400132: RF
+    400134: RF_ctrl
+    400136: RF_ctrl1
+    400138: RF_knee_rotat
+    400140: RM
+    400142: RM_ctrl
+    400144: RM_ctrl1
+    400146: RM_knee_rotat
+    400148: root
+    400150: root_ctrl
+    400152: tail_ctrl
+    400154: upper_neck
+    2100000: Quin_rem__1
+    4300000: Quin_rem__1
+    7400000: quin@eat_fixed
+    9500000: //RootNode
+    13700000: Quin_rem__1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: quin@eat_fixed
+      takeName: Take 001
+      firstFrame: 1719
+      lastFrame: 1871
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
