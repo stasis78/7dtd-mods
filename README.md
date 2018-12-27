@@ -65,3 +65,7 @@ Adds recipes for existing items to the game. Contains examples of how to require
 ### KillerRabbits
 
 Add rabbits that are hostile and will attack you. Custom attack sound (lulz)
+
+### ZoomyCarsMod
+
+Increases all vehicle movement to lots faster.
