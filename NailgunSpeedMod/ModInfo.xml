@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="NailgunSpeedMod" />
+		<Description value="Stasis' NailgunSpeedMod - Faster building, more time for beer" />
+		<Author value="stasis" />
+		<Version value="1.0" />
+	</ModInfo>
+</xml>
