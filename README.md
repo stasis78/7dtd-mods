@@ -73,3 +73,7 @@ Increases all vehicle movement to lots faster.
 ### FasterCrossbowMod
 
 Increases the Crossbow reload speed.
+
+### NailgunSpeedMod
+
+This mod increases the nailgun build speed, alot.
