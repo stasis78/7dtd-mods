@@ -77,3 +77,7 @@ Increases the Crossbow reload speed.
 ### NailgunSpeedMod
 
 This mod increases the nailgun build speed, alot.
+
+### MaxStamMod
+
+Triples max stam and water values :D
