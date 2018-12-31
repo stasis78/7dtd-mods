@@ -1,0 +1,12 @@
+<configs>
+    <set xpath="/progression/attributes/attribute[@name='attIntellect']/effect_group/passive_effect[@name='CraftingTime']/@value">.99</set>
+</configs>
+
+<!--
+<attribute name="attIntellect" name_key="attIntellectName" desc_key="attIntellectDesc" icon="ui_game_symbol_intellect">
+  <effect_group>
+
+    <passive_effect name="CraftingTime" operation="perc_subtract" level="2,6" value=".05,.45"/>
+    <passive_effect name="CraftingTime" operation="perc_subtract" level="7,10" value=".5,.65"/>
+    <passive_effect name="CraftingTime" operation="perc_subtract" level="11,20" value=".65"/>
+-->
