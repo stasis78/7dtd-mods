@@ -81,3 +81,7 @@ This mod increases the nailgun build speed, alot.
 ### MaxStamMod
 
 Triples max stam and water values :D
+
+### FasterCraftingMod
+
+Reduces player craft times once Int has been taken.
