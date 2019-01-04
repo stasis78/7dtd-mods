@@ -85,3 +85,8 @@ Triples max stam and water values :D
 ### FasterCraftingMod
 
 Reduces player craft times once Int has been taken.
+
+# OTHER MODS I USE
+
+https://github.com/Sixxgunz/7d2d_Modlets/tree/master/LadderMovementSpeedMod
+
