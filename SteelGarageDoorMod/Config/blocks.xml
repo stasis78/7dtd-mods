@@ -1,0 +1,109 @@
+<configs>
+
+    <append xpath="/blocks/block[@name='garageDoorMetal_v3']">
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="garageDoorSteel_v1"/>
+        <property name="Item" value="resourceForgedSteel"/>
+        <property name="ItemCount" value="40"/>
+        <property name="UpgradeHitCount" value="6"/>
+      </property>
+    </append>
+
+    <append xpath="/blocks">
+      <block name="garageDoorSteel_v1">
+      	<property name="Class" value="DoorSecure"/>
+      	<property name="Material" value="Msteel"/>
+      	<property name="PassThroughDamage" value="true"/>
+      	<property name="LightOpacity" value="1"/>
+      	<property name="Shape" value="ModelEntity"/>
+      	<property name="Tag" value="Door"/>
+      	<property name="Model" value="Entities/Doors/garage_metal_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+      	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+      	<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+      	<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+      	<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+      	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+      	<property name="DisplayType" value="blockMulti" />
+      	<property name="MultiBlockDim" value="3,2,2"/>
+      	<property name="ImposterExchange" value="imposterBlock" param1="57"/>
+      	<property name="OnlySimpleRotations" value="true"/>
+      	<property name="OpenSound" value="open_garage_door"/>
+      	<property name="CloseSound" value="close_garage_door"/>
+      	<property class="RepairItems"> <property name="resourceForgedSteel" value="5"/> </property>
+      	<property class="UpgradeBlock">
+      		<property name="ToBlock" value="garageDoorSteel_v2"/>
+      		<property name="Item" value="resourceForgedSteel"/>
+      		<property name="ItemCount" value="20"/>
+      		<property name="UpgradeHitCount" value="5"/>
+      	</property>
+        <property name="DowngradeBlock" value="garageDoorMetal_v3"/>
+      	<property name="CustomUpgradeSound" value="place_block_metal"/>
+      	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+      	<drop event="Harvest" name="resourceScrapIron" count="90" tag="allHarvest"/>
+      	<drop event="Destroy" count="0"/>
+      	<drop event="Destroy" name="resourceSpring" count="1,2" prob="1" tag="salvageHarvest"/>
+      	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" prob="1" tag="salvageHarvest"/>
+      	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      	<property name="Group" value="Building"/>
+      	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
+      	<property name="Place" value="TowardsPlacer"/>
+      	<property name="PlaceEverywhere" value="true"/>
+      	<property name="FilterTags" value="fdecor,fdoors"/>
+      	<property name="SortOrder1" value="7060"/>
+      	<property name="SortOrder2" value="0411"/> <!-- SortDoors -->
+      </block>
+
+      <block name="garageDoorSteel_v2">
+      	<property name="Extends" value="garageDoorSteel_v1" param1="Harvest,Destroy"/>
+      	<property name="Model" value="Entities/Doors/garage_metal_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+      	<property name="OnlySimpleRotations" value="true"/>
+      	<property class="UpgradeBlock">
+      		<property name="ToBlock" value="garageDoorSteel_v3"/>
+      		<property name="Item" value="resourceForgedSteel"/>
+      		<property name="ItemCount" value="20"/>
+      		<property name="UpgradeHitCount" value="6"/>
+      	</property>
+      	<property name="DowngradeBlock" value="garageDoorSteel_v1"/>
+      	<drop event="Harvest" name="resourceScrapIron" count="20,90" tag="allHarvest"/>
+      	<drop event="Destroy" count="0"/>
+      	<property name="SortOrder2" value="0412"/> <!-- SortDoors -->
+      </block>
+
+      <block name="garageDoorSteel_v3">
+      	<property name="Class" value="DoorSecure"/>
+      	<property name="DisplayType" value="blockHardenedMulti" />
+      	<property name="Material" value="Msteel"/>
+      	<property name="PassThroughDamage" value="true"/>
+      	<property name="LightOpacity" value="1"/>
+      	<property name="Shape" value="ModelEntity"/>
+      	<property name="Tag" value="Door"/>
+      	<property name="Model" value="Entities/Doors/garage_metal_v3Prefab"/><property name="ModelOffset" value="0,0,0"/>
+      	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+      	<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+      	<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+      	<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+      	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+      	<property name="DisplayType" value="blockMulti" />
+      	<property name="MultiBlockDim" value="3,2,2"/>
+      	<property name="ImposterExchange" value="imposterBlock" param1="57"/>
+      	<property name="OpenSound" value="open_garage_door"/>
+      	<property name="CloseSound" value="close_garage_door"/>
+      	<property name="Place" value="TowardsPlacer"/>
+      	<property name="PlaceEverywhere" value="true"/>
+      	<property name="OnlySimpleRotations" value="true"/>
+      	<property class="RepairItems"> <property name="resourceForgedSteel" value="5"/> </property>
+      	<property name="DowngradeBlock" value="garageDoorSteel_v2"/>
+      	<drop event="Harvest" name="resourceScrapIron" count="100,240" tag="allHarvest"/>
+      	<drop event="Destroy" count="0"/>
+      	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      	<property name="Group" value="Building"/>
+      	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
+      	<property name="IndexName" value="TraderOnOff"/>  <!-- flag this block to change to locked/unlocked if in a trader station -->
+      	<property name="FilterTags" value="fdecor,fdoors"/>
+      	<property name="SortOrder1" value="7060"/>
+      	<property name="SortOrder2" value="0413"/> <!-- SortDoors -->
+      </block>
+
+    </append>
+</configs>
