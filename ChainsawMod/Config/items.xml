@@ -1,0 +1,16 @@
+<configs>
+    <set xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">2000</set>
+
+    <set xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage']/@value">33</set>
+
+    <set xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax']/@value">9999</set>
+    <set xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse']/@value">1</set>
+
+    <append xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='Base Effects']">
+      <passive_effect name="DamageModifier" operation="perc_add" value="10.0" tags="wood"/>
+      <passive_effect name="HarvestCount" operation="perc_add" value="2.0" tags="oreWoodHarvest"/>
+    </append>
+</configs>
+
+<!--
+-->
