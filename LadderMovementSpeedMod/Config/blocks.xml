@@ -1,0 +1,15 @@
+<configs>
+<!-- Movement speed adjustments for Ladders -->
+<!--Wood Ladder -->
+	<append xpath="/blocks/block[@name='ladderWood']">
+		<property name="MovementFactor" value="2.6"/>
+	</append>
+<!--Iron Ladder -->
+	<append xpath="/blocks/block[@name='ladderMetal']">
+		<property name="MovementFactor" value="2.6"/>
+	</append>
+<!--Steel Ladder -->
+	<append xpath="/blocks/block[@name='ladderSteel']">
+		<property name="MovementFactor" value="2.6"/>
+	</append>
+</configs>
