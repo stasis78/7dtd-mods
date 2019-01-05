@@ -86,6 +86,10 @@ Triples max stam and water values :D
 
 Reduces player craft times once Int has been taken.
 
+### ChainsawMod
+
+Increase damage to wood. Double wood harvest amount. Massive increase to entity damage. Saw up those zeds.
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
