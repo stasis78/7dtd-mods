@@ -88,5 +88,7 @@ Reduces player craft times once Int has been taken.
 
 # OTHER MODS I USE
 
-https://github.com/Sixxgunz/7d2d_Modlets/tree/master/LadderMovementSpeedMod
+### LadderMovementSpeedMod
 
+https://github.com/Sixxgunz/7d2d_Modlets/tree/master/LadderMovementSpeedMod
+https://github.com/stasis78/7dtd-mods/tree/master/LadderMovementSpeedMod (rehosted)
