@@ -98,6 +98,16 @@ Adds a new steel tier to garage door with 3 levels, just like the iron version. 
 
 Lets you pick up seeds, instead of punching them on accident. 
 
+### BetterHoeMod 
+
+Made to compliment PickupSeedsMod. The hoe now has a much smaller attack range, but attacks much faster. With this change you can simply walk along with left mouse button down, and harvest crops without damaging the soil.
+
+When used with PickupSeedsMod, you never have to worry about seeds being removed :)
+
+### FastGrowFarmingMod
+
+For debugging farming, accelerates plant growth timers.
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
