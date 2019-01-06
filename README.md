@@ -94,6 +94,10 @@ Increase damage to wood. Double wood harvest amount. Massive increase to entity 
 
 Adds a new steel tier to garage door with 3 levels, just like the iron version. Simply build a regular metal garage door and upgrade it. Inherits the Msteel material so it is very strong like the vault doors and stuff.
 
+### PickupSeedsMod
+
+Lets you pick up seeds, instead of punching them on accident. 
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
