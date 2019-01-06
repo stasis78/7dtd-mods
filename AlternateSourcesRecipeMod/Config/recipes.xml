@@ -15,7 +15,7 @@
     	<ingredient name="foodRawMeat" count="2"/>
     </recipe>
 
-    <recipe name="ammoArrowIron" count="1">
+    <recipe name="ammoArrowIron" count="1" craft_area="workbench">
     	<ingredient name="resourceScrapIron" count="20"/>
     	<ingredient name="resourceWood" count="1"/>
     	<ingredient name="resourceFeather" count="1"/>
@@ -25,7 +25,7 @@
       <ingredient name="resourceCloth" count="100"/>
     </recipe>
 
-    <recipe name="forge" count="1">
+    <recipe name="forge" count="1" craft_area="workbench">
     	<ingredient name="resourceRockSmall" count="1000"/>
     	<ingredient name="resourceClayLump" count="1000"/>
     	<ingredient name="toolBellows" count="1"/>
