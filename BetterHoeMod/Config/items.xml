@@ -1,0 +1,22 @@
+<configs>
+    <set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@tags='earth']/@value">-20.0</set>
+
+    <set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">1</set>
+
+    <set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@name='AttacksPerMinute']/@value">120</set>
+
+    <set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@name='StaminaLoss']/@value">0.1</set>
+
+    <set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@name='MaxRange']/@value">1.7</set>
+
+    <set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@name='BlockRange']/@value">1.7</set>
+
+</configs>
+
+<!--
+<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+
+<passive_effect name="StaminaLoss" operation="base_set" value="20.1" tags="primary" />
+
+<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+-->

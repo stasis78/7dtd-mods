@@ -1,0 +1,9 @@
+<configs>
+
+    <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">2</set>
+
+</configs>
+
+<!--
+
+-->
