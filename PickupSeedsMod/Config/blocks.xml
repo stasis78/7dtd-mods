@@ -1,0 +1,30 @@
+<configs>
+
+    <remove xpath="/blocks/block[property/@value='cropsGrowingMaster']/property[@name='Collide']" />
+
+    <append xpath="/blocks/block[@name='cropsGrowingMaster']">
+      <property name="CanPickup" value="true"/>
+    </append>
+
+    <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='Collide']/@value">tool</set> <!-- this just disables the collisions with melee, currently can't figure out how to add new collision tags, maybe hardcoded? -->
+
+    <!-- <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">2</set> for debugging or as an example of how to adjust grow rates -->
+
+</configs>
+
+<!--
+<property name="Collide" value="tool"/>
+
+starts-with(@id,'reportcombo')
+
+<property name="PlantGrowing.GrowthRate" value="63.0"/>
+
+<set xpath="/entitygroups/entitygroup/entity[@name='zombieStripper']/@prob">5</set>
+
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+
+<entitygroups>
+	<entitygroup name="ZombiesAll">
+		<entity name="zombieStripper" prob="0.3" />
+
+-->
