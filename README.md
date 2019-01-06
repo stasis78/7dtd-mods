@@ -108,6 +108,16 @@ When used with PickupSeedsMod, you never have to worry about seeds being removed
 
 For debugging farming, accelerates plant growth timers.
 
+### AlternateSourcesRecipeMod
+
+Adds some extra recipes for alternate sources.
+- Glue (paper water) *chemistry station required*
+- Torch (coal cloth wood) *workbench required*
+- Questionable Meat (meatx2) 25% chance of sickness but gain more health and stam
+- Iron Arrow (scrap iron, wood, feather) *workbench required*
+- Military Fiber (cloth) *workbench required*
+- Early forge (a lot more stone and clay) *workbench required*
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
