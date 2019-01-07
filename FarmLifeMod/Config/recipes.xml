@@ -1,0 +1,51 @@
+<!-- TODO add gates
+tags="learnable">
+-->
+<configs>
+  <append xpath="/recipes">
+
+    <!--  Wheat -->
+    <recipe name="Wheat Seed" count="1" craft_time="1">
+    	<ingredient name="Wheat" count="4" />
+    </recipe>
+
+    <recipe name="Wheat Bread" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Wheat Flour" count="4" />
+      <ingredient name="foodEgg" count="2" />
+    	<ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Wheat Flour" count="1">
+    	<ingredient name="Wheat" count="1" />
+    </recipe>
+    <!--  Wheat -->
+
+    <!--  Milk -->
+    <recipe name="Powdered Milk" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="foodCropYuccaFruit" count="4" />
+    </recipe>
+
+    <recipe name="Milk" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Powdered Milk" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+    <!--  Milk -->
+
+    <!--  Penne -->
+    <recipe name="Penne" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Wheat Flour" count="4" />
+      <ingredient name="Milk" count="1" />
+      <ingredient name="foodEgg" count="2" />
+    </recipe>
+    <recipe name="Bechamel" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Wheat Flour" count="1" />
+      <ingredient name="Milk" count="2" />
+    </recipe>
+    <recipe name="Pasta Meal" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Bechamel" count="2" />
+      <ingredient name="Penne" count="2" />
+    </recipe>
+    <!--  Penne -->
+
+  </append>
+</configs>

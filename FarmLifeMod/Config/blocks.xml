@@ -1,0 +1,58 @@
+<configs>
+  <append xpath="/blocks">
+
+    <!--  Wheat -->
+    <block name="Wheat Seed"> <!-- growing, stage 1, seed -->
+      <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey" />
+      <property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="888888" />
+    	<property name="CreativeMode" value="Player" />
+    	<property name="Material" value="Mcorn" />
+    	<property name="Shape" value="New" />
+    	<property name="Model" value="corn_sprout_shape" />
+    	<property name="Mesh" value="cutoutmoveable" />
+    	<property name="MultiBlockDim" value="1,3,1" />
+    	<property name="Texture" value="529" />
+    	<property name="Place" value="Door" />
+    	<property name="PlantGrowing.Next" value="Wheat Growing" />
+    	<property name="Group" value="Food/Cooking" />
+    	<drop event="Destroy" name="Wheat Seed" count="1" />
+    </block>
+
+    <block name="Wheat Growing"> <!-- growing, stage 2 -->
+    	<property name="Extends" value="Wheat Seed" />
+    	<property name="CreativeMode" value="None" />
+    	<property name="Shape" value="New" />
+    	<property name="Model" value="corn_growth_shape" />
+    	<property name="Mesh" value="cutoutmoveable" />
+    	<property name="MultiBlockDim" value="1,3,1" />
+    	<property name="Texture" value="529" />
+    	<property name="PlantGrowing.Next" value="Grown Wheat Plant" />
+    	<drop event="Destroy" name="Wheat Seed" count="1" />
+    </block>
+
+    <block name="plantedWheat3Harvest"> <!-- stage 3, harvestable / player-farmed and prefab corn -->
+    	<property name="Extends" value="cropsHarvestableMaster" />
+    	<property name="Material" value="Mcorn" />
+    	<property name="Shape" value="New" />
+    	<property name="Model" value="corn_harvest_shape" />
+    	<property name="Mesh" value="cutoutmoveable" />
+    	<property name="MultiBlockDim" value="1,3,1" />
+    	<property name="Texture" value="529" />
+    	<drop event="Harvest" name="Wheat" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Grown Wheat Plant">
+    	<property name="Extends" value="plantedWheat3Harvest" />
+    	<property name="CustomIcon" value="plantedCorn1" />
+      <property name="DisplayInfo" value="Name" />
+      <property name="CustomIconTint" value="757E46" />
+    	<property name="CreativeMode" value="None" />
+    	<drop event="Harvest" name="Wheat" count="1" tag="cropHarvest" />
+    	<property name="DowngradeBlock" value="Wheat Seed" />
+    </block>
+    <!--  Wheat -->
+
+  </append>
+
+</configs>

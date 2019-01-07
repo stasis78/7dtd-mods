@@ -1,0 +1,19 @@
+<configs>
+
+  <append xpath="/lootcontainers/lootgroup[@name='seeds']">
+    <item name="Wheat Seed" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+    <item name="Wheat" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
+    <item name="Wheat" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+    <item name="Wheat Flour" />
+  </append>
+
+</configs>
