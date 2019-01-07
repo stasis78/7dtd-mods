@@ -118,6 +118,10 @@ Adds some extra recipes for alternate sources.
 - Military Fiber (cloth) *workbench required*
 - Early forge (a lot more stone and clay) *workbench required*
 
+### FarmLifeMod
+
+Adds groable plants and new recipes to craft.
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
