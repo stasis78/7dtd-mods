@@ -120,7 +120,7 @@ Adds some extra recipes for alternate sources.
 
 ### FarmLifeMod
 
-Adds groable plants and new recipes to craft.
+Adds growable plants and new recipes to craft.
 
 # OTHER MODS I USE
 
