@@ -1,8 +1,12 @@
 <configs>
   <append xpath="/recipes">
 
+    <recipe name="Tar" count="1" craft_area="chemistryStation">
+    	<ingredient name="Pine Resin" count="5"/>
+    </recipe>
+
     <recipe name="resourceDuctTape" count="1">
-    	<ingredient name="Pine Tar" count="10"/>
+    	<ingredient name="Tar" count="1"/>
     	<ingredient name="resourceCloth" count="1"/>
     </recipe>
 
