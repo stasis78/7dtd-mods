@@ -1,8 +1,13 @@
 <configs>
   <append xpath="/recipes">
-    <recipe name="resourceGlue" count="1" craft_area="chemistryStation">
-    	<ingredient name="resourcePaper" count="5"/>
-    	<ingredient name="drinkJarRiverWater" count="1"/>
+
+    <recipe name="Tar" count="1" craft_area="chemistryStation">
+    	<ingredient name="Pine Resin" count="5"/>
+    </recipe>
+
+    <recipe name="resourceDuctTape" count="1">
+    	<ingredient name="Tar" count="1"/>
+    	<ingredient name="resourceCloth" count="1"/>
     </recipe>
 
     <recipe name="meleeToolTorch" count="1" craft_area="workbench">
