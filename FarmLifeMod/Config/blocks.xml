@@ -84,6 +84,7 @@
     </block>
 
     <block name="Tomato Plant">
+      <property name="DisplayInfo" value="Name" />
     	<property name="Extends" value="plantedTomato3Harvest"/>
     	<property name="CustomIcon" value="plantedPotato1"/>
     	<property name="CreativeMode" value="None"/>
