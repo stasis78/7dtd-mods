@@ -1,6 +1,90 @@
 <configs>
   <append xpath="/items">
 
+    <!--  Tomato -->
+    <item name="Tomato">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="FF4D00" />
+    	<property name="HoldType" value="31" />
+    	<property name="DisplayType" value="food" />
+    	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    	<property name="Material" value="MresourceCrop" />
+    	<property name="Stacknumber" value="500" /> <!-- STK resource -->
+    	<property name="EconomicValue" value="4" />
+    	<property name="EconomicBundleSize" value="5" />
+    	<property name="CraftingIngredientTime" value="5" />
+    	<property class="Action0">
+    		<property name="Class" value="Eat" />
+    		<property name="Delay" value="1.0" />
+    		<property name="Sound_start" value="player_eating" />
+    	</property>
+    	<property name="Group" value="Food/Cooking" />
+
+    	<effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1" />
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
+    			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
+    		</triggered_effect>
+    		<display_value name="FoodPoisoningRisk" value=".1" />
+    	</effect_group>
+    </item>
+
+    <item name="Crushed Tomato">
+      <property name="CustomIcon" value="drinkCanEmpty"/>
+      <property name="CustomIconTint" value="FF4D00" />
+    	<property name="HoldType" value="31"/>
+    	<property name="DisplayType" value="food"/>
+    	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+    	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    	<property name="Material" value="Mmetal"/>
+    	<property name="Weight" value="5"/>
+    	<property name="EconomicValue" value="60"/>
+    	<property name="Stacknumber" value="50"/> <!-- STK food -->
+    	<property class="Action0">
+    		<property name="Class" value="Eat"/>
+    		<property name="Delay" value="1.0"/>
+    		<property name="Use_time" value="..."/>
+    		<property name="Sound_start" value="player_eating"/>
+    		<property name="Create_item" value="drinkCanEmpty"/>
+    	</property>
+    	<property name="Group" value="Food/Cooking"/>
+
+    	<effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="5"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="15"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+    	</effect_group>
+    </item>
+
+    <item name="Marinara">
+      <property name="CustomIcon" value="drinkJarRiverWater" />
+      <property name="CustomIconTint" value="FF4D00" />
+      <property name="HoldType" value="31" />
+      <property name="DisplayType" value="food" />
+      <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+      <property name="Material" value="Morganic" />
+      <property name="Stacknumber" value="50" /> <!-- STK food -->
+      <property name="EconomicValue" value="16" />
+      <property class="Action0">
+        <property name="Class" value="Eat" />
+        <property name="Delay" value="1.0" />
+        <property name="Use_time" value="..." />
+        <property name="Sound_start" value="player_eating" />
+      </property>
+      <property name="Group" value="Food/Cooking" />
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5" />
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5" />
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
+      </effect_group>
+    </item>
+    <!--  Tomato -->
+
     <!--  Wheat -->
     <item name="Wheat">
       <property name="CustomIcon" value="foodCropCorn" />
@@ -23,7 +107,6 @@
 
     	<effect_group tiered="false">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
-    		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1" />
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
@@ -55,10 +138,8 @@
 
     	<effect_group tiered="false">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
-    		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1" />
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="subtract" value="10" />
-    		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterPerkDisplay" operation="add" value="@waterHydrationPSec"/> -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
     			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
@@ -241,6 +322,7 @@
     	</effect_group>
     </item>
     <!-- Penne -->
+
 
   </append>
 </configs>

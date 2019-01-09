@@ -27,7 +27,7 @@
     	<property name="Mesh" value="cutoutmoveable" />
     	<property name="MultiBlockDim" value="1,3,1" />
     	<property name="Texture" value="529" />
-    	<property name="PlantGrowing.Next" value="Grown Wheat Plant" />
+    	<property name="PlantGrowing.Next" value="Wheat Plant" />
     	<drop event="Destroy" name="Wheat Seed" count="1" />
     </block>
 
@@ -42,7 +42,7 @@
     	<drop event="Harvest" name="Wheat" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Grown Wheat Plant">
+    <block name="Wheat Plant">
     	<property name="Extends" value="plantedWheat3Harvest" />
     	<property name="CustomIcon" value="plantedCorn1" />
       <property name="DisplayInfo" value="Name" />
@@ -53,6 +53,44 @@
     </block>
     <!--  Wheat -->
 
-  </append>
+    <!--  Tomato -->
+    <block name="Tomato Seed">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="FF4D00" />
+    	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+    	<property name="PlantGrowing.Next" value="Tomato Growing"/>
+    	<property name="Group" value="Food/Cooking"/>
+    	<drop event="Destroy" name="Tomato Seed" count="1"/>
+    </block>
 
+    <block name="Tomato Growing">
+    	<property name="Extends" value="cropsGrowingMaster"/>
+    	<property name="CreativeMode" value="None"/>
+    	<property name="CustomIcon" value="plantedPotato1"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+    	<property name="PlantGrowing.Next" value="Tomato Plant"/>
+    	<drop event="Destroy" name="Tomato Seed" count="1"/>
+    </block>
+
+    <block name="plantedTomato3Harvest">
+    	<property name="Extends" value="cropsHarvestableMaster"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+    	<drop event="Harvest" name="Tomato" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Tomato Plant">
+    	<property name="Extends" value="plantedTomato3Harvest"/>
+    	<property name="CustomIcon" value="plantedPotato1"/>
+    	<property name="CreativeMode" value="None"/>
+    	<drop event="Harvest" name="Tomato" count="1" tag="cropHarvest"/>
+    	<property name="DowngradeBlock" value="Tomato Seed"/>
+    </block>
+    <!--  Tomato -->
+
+  </append>
 </configs>

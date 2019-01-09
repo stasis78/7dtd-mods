@@ -2,18 +2,22 @@
 
   <append xpath="/lootcontainers/lootgroup[@name='seeds']">
     <item name="Wheat Seed" />
+    <item name="Tomato Seed" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
     <item name="Wheat" />
+    <item name="Tomato" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
     <item name="Wheat" />
+    <item name="Tomato" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
     <item name="Wheat Flour" />
+    <item name="Crushed Tomato" />
   </append>
 
 </configs>
