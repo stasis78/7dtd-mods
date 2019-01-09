@@ -1,0 +1,5 @@
+<configs>
+  <append xpath="/blocks/block[starts-with(@name, 'treeMountainPine')]">
+    <drop event="Harvest" name="Pine Tar" count="1" prob="0.1" tag="oreWoodHarvest"/>
+  </append>
+</configs>

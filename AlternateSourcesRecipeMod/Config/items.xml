@@ -1,5 +1,18 @@
 <configs>
     <append xpath="/items">
+
+      <item name="Pine Tar">
+        <property name="CustomIcon" value="resourceGlue"/> <property name="CustomIconTint" value="000000"/>
+      	<property name="HoldType" value="45"/>
+      	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      	<property name="Material" value="Morganic"/>
+      	<property name="Weight" value="10"/>
+      	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+      	<property name="EconomicValue" value="38"/>
+      	<property name="Group" value="Resources,Chemicals"/>
+      </item>
+
       <item name="Questionable Meat">
         <property name="CustomIcon" value="foodRawMeat"/> <property name="CustomIconTint" value="FF7D9E"/>
         <property name="Name" value="Name"/>
