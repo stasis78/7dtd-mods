@@ -1,0 +1,8 @@
+<configs>
+
+  <remove xpath="/entity_classes/entity_class[contains(@name,'Stripper')]/property[@name='ExperienceGain']" />
+  <append xpath="/entity_classes/entity_class[contains(@name,'Stripper')]">
+    <property name="ExperienceGain" value="15000"/>
+  </append>
+
+</configs>
