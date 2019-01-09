@@ -122,6 +122,10 @@ Adds some extra recipes for alternate sources.
 
 Adds growable plants and new recipes to craft.
 
+### WayneBradyMod
+
+Strippers now give wayyyyy to much experience points. But its worth it when they haven't brought home that dough.
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
