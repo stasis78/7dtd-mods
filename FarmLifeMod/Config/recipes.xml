@@ -4,6 +4,22 @@ tags="learnable">
 <configs>
   <append xpath="/recipes">
 
+    <!--  Tomato -->
+    <recipe name="Tomato Seed" count="1" craft_time="1">
+      <ingredient name="Tomato" count="4" />
+    </recipe>
+
+    <recipe name="Crushed Tomato" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Tomato" count="4" />
+      <ingredient name="drinkCanEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Marinara" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Crushed Tomato" count="2" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+    <!--  Tomato -->
+
     <!--  Wheat -->
     <recipe name="Wheat Seed" count="1" craft_time="1">
     	<ingredient name="Wheat" count="4" />
@@ -43,6 +59,10 @@ tags="learnable">
     </recipe>
     <recipe name="Pasta Meal" count="1" craft_area="campfire" craft_tool="toolCookingPot">
       <ingredient name="Bechamel" count="2" />
+      <ingredient name="Penne" count="2" />
+    </recipe>
+    <recipe name="Pasta Meal" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Marinara" count="2" />
       <ingredient name="Penne" count="2" />
     </recipe>
     <!--  Penne -->
