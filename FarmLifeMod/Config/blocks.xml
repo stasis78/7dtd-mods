@@ -1,97 +1,229 @@
+<!--
+Blocks use modTag attributes to help with boiler plate child nodes.
+Was in corn seed?
+<property name="Place" value="Door" /> waiting for response from forums....
+-->
 <configs>
-  <append xpath="/blocks">
 
+  <append xpath="/blocks">
     <!--  Wheat -->
-    <block name="Wheat Seed"> <!-- growing, stage 1, seed -->
-      <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey" />
+    <block name="Wheat Seed" modTag="seed,shapeNew">
       <property name="CustomIcon" value="plantedCorn1" />
       <property name="CustomIconTint" value="888888" />
-    	<property name="CreativeMode" value="Player" />
     	<property name="Material" value="Mcorn" />
-    	<property name="Shape" value="New" />
     	<property name="Model" value="corn_sprout_shape" />
     	<property name="Mesh" value="cutoutmoveable" />
-    	<property name="MultiBlockDim" value="1,3,1" />
-    	<property name="Texture" value="529" />
-    	<property name="Place" value="Door" />
     	<property name="PlantGrowing.Next" value="Wheat Growing" />
-    	<property name="Group" value="Food/Cooking" />
     	<drop event="Destroy" name="Wheat Seed" count="1" />
     </block>
 
-    <block name="Wheat Growing"> <!-- growing, stage 2 -->
+    <block name="Wheat Growing" modTag="growing,shapeNew">
     	<property name="Extends" value="Wheat Seed" />
-    	<property name="CreativeMode" value="None" />
-    	<property name="Shape" value="New" />
     	<property name="Model" value="corn_growth_shape" />
     	<property name="Mesh" value="cutoutmoveable" />
-    	<property name="MultiBlockDim" value="1,3,1" />
-    	<property name="Texture" value="529" />
     	<property name="PlantGrowing.Next" value="Wheat Plant" />
     	<drop event="Destroy" name="Wheat Seed" count="1" />
     </block>
 
-    <block name="plantedWheat3Harvest"> <!-- stage 3, harvestable / player-farmed and prefab corn -->
-    	<property name="Extends" value="cropsHarvestableMaster" />
+    <block name="plantedWheat3Harvest" modTag="harvest,shapeNew">
     	<property name="Material" value="Mcorn" />
-    	<property name="Shape" value="New" />
     	<property name="Model" value="corn_harvest_shape" />
     	<property name="Mesh" value="cutoutmoveable" />
-    	<property name="MultiBlockDim" value="1,3,1" />
-    	<property name="Texture" value="529" />
     	<drop event="Harvest" name="Wheat" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Wheat Plant">
+    <block name="Wheat Plant" modTag="plant">
     	<property name="Extends" value="plantedWheat3Harvest" />
     	<property name="CustomIcon" value="plantedCorn1" />
-      <property name="DisplayInfo" value="Name" />
       <property name="CustomIconTint" value="757E46" />
-    	<property name="CreativeMode" value="None" />
     	<drop event="Harvest" name="Wheat" count="1" tag="cropHarvest" />
     	<property name="DowngradeBlock" value="Wheat Seed" />
     </block>
     <!--  Wheat -->
 
     <!--  Tomato -->
-    <block name="Tomato Seed">
+    <block name="Tomato Seed" modTag="seed,shapeModel">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="FF4D00" />
-    	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
-    	<property name="CreativeMode" value="Player"/>
-    	<property name="Shape" value="ModelEntity"/>
     	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
     	<property name="PlantGrowing.Next" value="Tomato Growing"/>
-    	<property name="Group" value="Food/Cooking"/>
     	<drop event="Destroy" name="Tomato Seed" count="1"/>
     </block>
 
-    <block name="Tomato Growing">
-    	<property name="Extends" value="cropsGrowingMaster"/>
-    	<property name="CreativeMode" value="None"/>
+    <block name="Tomato Growing" modTag="growing,shapeModel">
     	<property name="CustomIcon" value="plantedPotato1"/>
-    	<property name="Shape" value="ModelEntity"/>
     	<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
     	<property name="PlantGrowing.Next" value="Tomato Plant"/>
     	<drop event="Destroy" name="Tomato Seed" count="1"/>
     </block>
 
-    <block name="plantedTomato3Harvest">
-    	<property name="Extends" value="cropsHarvestableMaster"/>
-    	<property name="Shape" value="ModelEntity"/>
+    <block name="plantedTomato3Harvest" modTag="harvest,shapeModel">
     	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
     	<drop event="Harvest" name="Tomato" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Tomato Plant">
-      <property name="DisplayInfo" value="Name" />
+    <block name="Tomato Plant" modTag="plant">
     	<property name="Extends" value="plantedTomato3Harvest"/>
     	<property name="CustomIcon" value="plantedPotato1"/>
-    	<property name="CreativeMode" value="None"/>
     	<drop event="Harvest" name="Tomato" count="1" tag="cropHarvest"/>
     	<property name="DowngradeBlock" value="Tomato Seed"/>
     </block>
     <!--  Tomato -->
 
+    <!--  Carrot -->
+    <block name="Carrot Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="FF6C00" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Carrot Growing"/>
+      <drop event="Destroy" name="Carrot Seed" count="1"/>
+    </block>
+
+    <block name="Carrot Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Carrot Plant"/>
+      <drop event="Destroy" name="Carrot Seed" count="1"/>
+    </block>
+
+    <block name="plantedCarrot3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Carrot" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Carrot Plant" modTag="plant">
+      <property name="Extends" value="plantedCarrot3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Carrot" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Carrot Seed"/>
+    </block>
+    <!--  Carrot -->
+
+    <!--  Romaine -->
+    <block name="Romaine Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="00FF3E" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Romaine Growing"/>
+      <drop event="Destroy" name="Romaine Seed" count="1"/>
+    </block>
+
+    <block name="Romaine Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Romaine Plant"/>
+      <drop event="Destroy" name="Romaine Seed" count="1"/>
+    </block>
+
+    <block name="plantedRomaine3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Romaine" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Romaine Plant" modTag="plant">
+      <property name="Extends" value="plantedRomaine3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Romaine" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Romaine Seed"/>
+    </block>
+    <!--  Romaine -->
+
+    <!--  Squash -->
+    <block name="Squash Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="BDFF00" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Squash Growing"/>
+      <drop event="Destroy" name="Squash Seed" count="1"/>
+    </block>
+
+    <block name="Squash Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Squash Plant"/>
+      <drop event="Destroy" name="Squash Seed" count="1"/>
+    </block>
+
+    <block name="plantedSquash3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Squash" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Squash Plant" modTag="plant">
+      <property name="Extends" value="plantedSquash3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Squash" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Squash Seed"/>
+    </block>
+    <!--  Squash -->
+
+    <!--  Broccoli -->
+    <block name="Broccoli Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="22AA00" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Broccoli Growing"/>
+      <drop event="Destroy" name="Broccoli Seed" count="1"/>
+    </block>
+
+    <block name="Broccoli Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Broccoli Plant"/>
+      <drop event="Destroy" name="Broccoli Seed" count="1"/>
+    </block>
+
+    <block name="plantedBroccoli3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Broccoli" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Broccoli Plant" modTag="plant">
+      <property name="Extends" value="plantedBroccoli3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Broccoli" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Broccoli Seed"/>
+    </block>
+    <!--  Broccoli -->
+
   </append>
+
+  <!-- name changes -->
+  <append xpath="/blocks/block[contains(@name,'Wheat')]">
+    <property name="MultiBlockDim" value="1,3,1" />
+    <property name="Texture" value="529" />
+  </append>
+
+  <!-- modTag changes -->
+  <append xpath="/blocks/block[contains(@modTag,'seed')]">
+    <property name="CreativeMode" value="Player" />
+    <property name="Group" value="Food/Cooking"/>
+    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'growing')]">
+    <property name="CreativeMode" value="None" />
+    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'harvest')]">
+    <property name="Extends" value="cropsHarvestableMaster" />
+    <property name="CreativeMode" value="None" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'plant')]">
+    <property name="CreativeMode" value="None"/>
+    <property name="DisplayInfo" value="Name" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'shapeNew')]">
+    <property name="Shape" value="New" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'shapeModel')]">
+    <property name="Shape" value="ModelEntity"/>
+  </append>
+
 </configs>
+
+<!-- <remove xpath="/entity_classes/entity_class[contains(@name,'Stripper')]/property[@name='ExperienceGain']" /> -->

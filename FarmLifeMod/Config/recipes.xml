@@ -4,6 +4,44 @@ tags="learnable">
 <configs>
   <append xpath="/recipes">
 
+    <recipe name="Liquid Veg" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Carrot" count="2" />
+      <ingredient name="Romaine" count="2" />
+      <ingredient name="resourceCropChrysanthemumPlant" count="2" />
+      <ingredient name="resourceCropAloeLeaf" count="2" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Mixed Greens" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="Romaine" count="1" />
+      <ingredient name="resourceCropChrysanthemumPlant" count="1" />
+    </recipe>
+
+    <recipe name="Veggie Mash" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="Squash" count="1" />
+    </recipe>
+
+    <recipe name="Steamed Broccoli" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Grilled Squash" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+    	<ingredient name="Squash" count="1" />
+      <ingredient name="resourceCropGoldenrodPlant" count="1" />
+    </recipe>
+
+    <recipe name="Romaine Salad" count="1">
+    	<ingredient name="Romaine" count="2" />
+    </recipe>
+
+    <recipe name="Roasted Carrot" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="resourceCropGoldenrodPlant" count="1" />
+    </recipe>
+
     <!--  Tomato -->
     <recipe name="Tomato Seed" count="1" craft_time="1">
       <ingredient name="Tomato" count="4" />
