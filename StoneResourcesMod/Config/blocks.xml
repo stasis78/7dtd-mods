@@ -6,9 +6,14 @@
       <drop event="Harvest" name="resourcePotassiumNitratePowder" count="2" tag="oreWoodHarvest" />
       <drop event="Harvest" name="resourceOilShale" count="2" tag="oreWoodHarvest" />
     </append>
+    <set xpath="/blocks/block[@name='terrStone']/drop[@name='resourceIronFragment' and @event='Harvest']/@count">
+      12
+    </set>
 </configs>
 
 <!--
+<set xpath="/items/item[@name='meleeToolHoeIron']/effect_group[@name='Base Effects']/passive_effect[@name='BlockRange']/@value">1.7</set>
+
 <block name="terrStone">
 	<drop event="Harvest" name="resourceIronFragment" count="2" tag="oreWoodHarvest" />
 -->
