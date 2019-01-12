@@ -24,7 +24,7 @@ tags="learnable">
     </recipe>
 
     <recipe name="Steamed Broccoli" count="1" craft_area="campfire" craft_tool="toolCookingPot">
-    	<ingredient name="Carrot" count="1" />
+    	<ingredient name="Broccoli" count="1" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
