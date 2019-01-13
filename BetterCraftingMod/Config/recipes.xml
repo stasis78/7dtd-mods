@@ -1,0 +1,29 @@
+<configs>
+  <append xpath="/recipes">
+
+    <recipe name="resourceCement" count="100" craft_area="forge" material_based="true">
+    	<ingredient name="unit_stone" count="500" />
+    </recipe>
+
+    <recipe name="resourceCobblestones" count="100">
+    	<ingredient name="resourceClayLump" count="100" />
+    	<ingredient name="resourceRockSmall" count="100" />
+    </recipe>
+
+    <recipe name="resourceConcreteMix" count="100" craft_area="cementMixer">
+    	<ingredient name="resourceCrushedSand" count="100" />
+    	<ingredient name="resourceRockSmall" count="200" />
+    	<ingredient name="resourceCement" count="100" />
+    </recipe>
+
+    <recipe name="resourceCrushedSand" count="100" craft_area="cementMixer">
+    	<ingredient name="resourceRockSmall" count="100" />
+    </recipe>
+
+    <recipe name="resourceGunPowder" count="100" craft_area="chemistryStation">
+    	<ingredient name="resourceCoal" count="100" />
+    	<ingredient name="resourcePotassiumNitratePowder" count="100" />
+    </recipe>
+
+  </append>
+</configs>
