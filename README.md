@@ -136,7 +136,7 @@ Gives you 5x forged iron/steel when crafting at the forge.
 
 ### BetterCraftingMod
 
-This is not a cheat mod! Add recipes for cement, cobblestone, concrete mix, crushed sand, gun powder. They are balanced identically to vanilla recipes. They take 100 times the materials and create 100 times the output. End server lag!
+This is not a cheat mod! Adds recipes for cement, cobblestone, concrete mix, crushed sand, gun powder. They are balanced identically to vanilla recipes. They take 100 times the materials and create 100 times the output. End server lag!
 
 # OTHER MODS I USE
 
