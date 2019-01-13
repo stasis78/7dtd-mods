@@ -1,9 +1,61 @@
 <!-- TODO add gates
 tags="learnable">
+
+<recipe name="drinkJarBeer" count="1" craft_area="chemistryStation" tags="learnable">
+	<ingredient name="resourceCropHopsFlower" count="4" />
+	<ingredient name="drinkJarRiverWater" count="1" />
+</recipe>
+
 -->
 <configs>
+
+  <remove xpath="/recipes/recipe[@name='drinkJarBeer']" />
+
   <append xpath="/recipes">
 
+    <!--   Beer -->
+    <recipe name="Beer Cheap" count="15" craft_area="chemistryStation">
+      <ingredient name="Light Malt" count="40" />
+      <ingredient name="resourceCropHopsFlower" count="10" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer IPA" count="15" craft_area="chemistryStation">
+      <ingredient name="Golden Malt" count="15" />
+      <ingredient name="Bitter Hops" count="15" />
+      <ingredient name="resourceCropHopsFlower" count="5" />
+      <ingredient name="Floral Hops" count="15" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Lager" count="15" craft_area="chemistryStation">
+      <ingredient name="Light Malt" count="30" />
+      <ingredient name="resourceCropHopsFlower" count="15" />
+      <ingredient name="Floral Hops" count="5" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Stout" count="15" craft_area="chemistryStation">
+      <ingredient name="Dark Malt" count="30" />
+      <ingredient name="resourceCropHopsFlower" count="10" />
+      <ingredient name="Floral Hops" count="10" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+    <!--  Beer -->
+
+    <!--   Malt -->
+    <recipe name="Light Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Sorghum" count="2" />
+    </recipe>
+    <recipe name="Golden Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Sorghum" count="2" />
+    </recipe>
+    <recipe name="Dark Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Sorghum" count="2" />
+    </recipe>
+    <!--  Malt -->
+
+    <!--  Veggies -->
     <recipe name="Liquid Veg" count="1" craft_area="campfire" craft_tool="toolCookingPot">
     	<ingredient name="Carrot" count="2" />
       <ingredient name="Romaine" count="2" />
@@ -41,12 +93,9 @@ tags="learnable">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
+    <!--  Veggies -->
 
     <!--  Tomato -->
-    <recipe name="Tomato Seed" count="1" craft_time="1">
-      <ingredient name="Tomato" count="4" />
-    </recipe>
-
     <recipe name="Crushed Tomato" count="1" craft_area="campfire" craft_tool="toolCookingPot">
     	<ingredient name="Tomato" count="4" />
       <ingredient name="drinkCanEmpty" count="1" />
@@ -59,10 +108,6 @@ tags="learnable">
     <!--  Tomato -->
 
     <!--  Wheat -->
-    <recipe name="Wheat Seed" count="1" craft_time="1">
-    	<ingredient name="Wheat" count="4" />
-    </recipe>
-
     <recipe name="Wheat Bread" count="1" craft_area="campfire" craft_tool="toolCookingPot">
     	<ingredient name="Wheat Flour" count="4" />
       <ingredient name="foodEgg" count="2" />
@@ -105,5 +150,45 @@ tags="learnable">
     </recipe>
     <!--  Penne -->
 
+    <!--  Seeds -->
+    <recipe name="Tomato Seed" modTag="seed">
+      <ingredient name="Tomato" />
+    </recipe>
+    <recipe name="Wheat Seed" modTag="seed">
+      <ingredient name="Wheat" />
+    </recipe>
+    <recipe name="Carrot Seed" modTag="seed">
+    	<ingredient name="Carrot" />
+    </recipe>
+    <recipe name="Romaine Seed" modTag="seed">
+    	<ingredient name="Romaine" />
+    </recipe>
+    <recipe name="Squash Seed" modTag="seed">
+    	<ingredient name="Squash" />
+    </recipe>
+    <recipe name="Broccoli Seed" modTag="seed">
+    	<ingredient name="Broccoli" />
+    </recipe>
+    <recipe name="Sorghum Seed" modTag="seed">
+    	<ingredient name="Sorghum" />
+    </recipe>
+    <recipe name="Bitter Hop Seed" modTag="seed">
+    	<ingredient name="Bitter Hops" />
+    </recipe>
+    <recipe name="Floral Hop Seed" modTag="seed">
+    	<ingredient name="Floral Hops" />
+    </recipe>
   </append>
+
+  <!-- Update Seeds -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]" name="count">
+    1
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]" name="craft_time">
+    1
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]/ingredient" name="count">
+    4
+  </setattribute>
+
 </configs>
