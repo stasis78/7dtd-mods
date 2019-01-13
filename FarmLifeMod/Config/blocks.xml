@@ -6,6 +6,7 @@ Was in corn seed?
 <configs>
 
   <append xpath="/blocks">
+
     <!--  Wheat -->
     <block name="Wheat Seed" modTag="seed,shapeNew">
       <property name="CustomIcon" value="plantedCorn1" />
@@ -186,10 +187,112 @@ Was in corn seed?
     </block>
     <!--  Broccoli -->
 
+    <!--  Sorghum -->
+    <block name="Sorghum Seed" modTag="seed,shapeNew">
+      <property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="727A04" />
+      <property name="Material" value="Mcorn" />
+      <property name="Model" value="corn_sprout_shape" />
+      <property name="Mesh" value="cutoutmoveable" />
+      <property name="PlantGrowing.Next" value="Sorghum Growing" />
+      <drop event="Destroy" name="Sorghum Seed" count="1" />
+    </block>
+
+    <block name="Sorghum Growing" modTag="growing,shapeNew">
+      <property name="Extends" value="Sorghum Seed" />
+      <property name="Model" value="corn_growth_shape" />
+      <property name="Mesh" value="cutoutmoveable" />
+      <property name="PlantGrowing.Next" value="Sorghum Plant" />
+      <drop event="Destroy" name="Sorghum Seed" count="1" />
+    </block>
+
+    <block name="plantedSorghum3Harvest" modTag="harvest,shapeNew">
+      <property name="Material" value="Mcorn" />
+      <property name="Model" value="corn_harvest_shape" />
+      <property name="Mesh" value="cutoutmoveable" />
+      <drop event="Harvest" name="Sorghum" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Sorghum Plant" modTag="plant">
+      <property name="Extends" value="plantedSorghum3Harvest" />
+      <property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="757E46" />
+      <drop event="Harvest" name="Sorghum" count="1" tag="cropHarvest" />
+      <property name="DowngradeBlock" value="Sorghum Seed" />
+    </block>
+    <!--  Sorghum -->
+
+    <!--  Bitter Hop -->
+    <block name="Bitter Hop Seed" modTag="seed">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Texture" value="447" />
+    	<property name="PlantGrowing.Next" value="Bitter Hop Growing" />
+    	<drop event="Destroy" name="Bitter Hop Seed" count="1" />
+    </block>
+
+    <block name="Bitter Hop Growing" modTag="growing">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Texture" value="448" />
+    	<property name="PlantGrowing.Next" value="Bitter Hop Plant" />
+    	<drop event="Destroy" name="Bitter Hop Seed" count="1" />
+    </block>
+
+    <block name="plantedBitterHop3Harvest" modTag="harvest">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Texture" value="449" />
+    	<drop event="Harvest" name="Bitter Hops" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Bitter Hop Plant" modTag="plant">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Extends" value="plantedBitterHop3Harvest" />
+    	<property name="CustomIcon" value="plantedHop1" />
+    	<drop event="Harvest" name="Bitter Hops" count="1" tag="cropHarvest" />
+    	<property name="DowngradeBlock" value="Bitter Hop Seed" />
+    </block>
+    <!--  Bitter Hop -->
+
+    <!--  Floral Hop -->
+    <block name="Floral Hop Seed" modTag="seed">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Texture" value="447" />
+    	<property name="PlantGrowing.Next" value="Floral Hop Growing" />
+    	<drop event="Destroy" name="Floral Hop Seed" count="1" />
+    </block>
+
+    <block name="Floral Hop Growing" modTag="growing">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Texture" value="448" />
+    	<property name="PlantGrowing.Next" value="Floral Hop Plant" />
+    	<drop event="Destroy" name="Floral Hop Seed" count="1" />
+    </block>
+
+    <block name="plantedFloralHop3Harvest" modTag="harvest">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Texture" value="449" />
+    	<drop event="Harvest" name="Floral Hops" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Floral Hop Plant" modTag="plant">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Extends" value="plantedFloralHop3Harvest" />
+    	<drop event="Harvest" name="Floral Hops" count="1" tag="cropHarvest" />
+    	<property name="DowngradeBlock" value="Floral Hop Seed" />
+    </block>
+    <!--  Floral Hop -->
+
   </append>
 
   <!-- name changes -->
-  <append xpath="/blocks/block[contains(@name,'Wheat')]">
+  <append xpath="/blocks/block[contains(@name,'Wheat') or contains(@name,'Sorghum')]">
     <property name="MultiBlockDim" value="1,3,1" />
     <property name="Texture" value="529" />
   </append>
