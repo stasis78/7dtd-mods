@@ -130,6 +130,10 @@ Adds growable plants and new recipes to craft.
 
 Strippers now give wayyyyy to much experience points. But its worth it when they haven't brought home that dough.
 
+### CheaperIronMod
+
+Gives you 5x forged iron/steel when crafting at the forge. 
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
