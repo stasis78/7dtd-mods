@@ -10,6 +10,13 @@
     <item name="Sorghum Seed" />
     <item name="Floral Hop Seed" />
     <item name="Bitter Hop Seed" />
+    <item name="Grape Seed" />
+    <item name="Apple Seed" />
+    <item name="Orange Seed" />
+    <item name="Meyer Lemon Seed" />
+    <item name="Lime Seed" />
+    <item name="Cherry Seed" />
+    <item name="Black Pepper Seed" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
@@ -20,8 +27,12 @@
     <item name="Squash" />
     <item name="Broccoli" />
     <item name="Sorghum" />
-    <item name="Floral Hop Seed" />
-    <item name="Bitter Hop Seed" />
+    <item name="Grape" />
+    <item name="Apple" />
+    <item name="Orange" />
+    <item name="Meyer Lemon" />
+    <item name="Lime" />
+    <item name="Cherry" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
@@ -32,13 +43,21 @@
     <item name="Squash" />
     <item name="Broccoli" />
     <item name="Sorghum" />
-    <item name="Floral Hop Seed" />
-    <item name="Bitter Hop Seed" />
+    <item name="Floral Hops" />
+    <item name="Bitter Hops" />
+    <item name="Grape" />
+    <item name="Apple" />
+    <item name="Orange" />
+    <item name="Meyer Lemon" />
+    <item name="Lime" />
+    <item name="Cherry" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
     <item name="Wheat Flour" />
     <item name="Crushed Tomato" />
+    <item name="Salt" />
+    <item name="Black Pepper" />
   </append>
 
 </configs>

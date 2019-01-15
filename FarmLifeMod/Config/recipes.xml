@@ -8,19 +8,90 @@ tags="learnable">
 
 -->
 <configs>
-
   <remove xpath="/recipes/recipe[@name='drinkJarBeer']" />
 
   <append xpath="/recipes">
 
+    <!--   Fruit -->
+    <recipe name="Apple Pie" count="1" modTag="campfire,toolCookingGrill">
+      <ingredient name="Apple" count="4" />
+      <ingredient name="Wheat Flour" count="2" />
+      <ingredient name="foodEgg" count="1" />
+      <ingredient name="resourceAnimalFat" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Cherry Pie" count="1" modTag="campfire,toolCookingGrill">
+      <ingredient name="Cherry" count="4" />
+      <ingredient name="Wheat Flour" count="2" />
+      <ingredient name="foodEgg" count="1" />
+      <ingredient name="resourceAnimalFat" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Orange Juice" count="1" modTag="">
+      <ingredient name="Orange" count="4" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Lemon Lime Coolaid" count="1" modTag="">
+      <ingredient name="Lime" count="2" />
+      <ingredient name="Meyer Lemon" count="2" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Mojito" count="1" modTag="">
+      <ingredient name="Lime" count="4" />
+      <ingredient name="drinkJarGrainAlcohol" count="1" />
+    </recipe>
+
+    <!--   Wine -->
+    <recipe name="Port Wine" count="15" modTag="chemistryStation">
+      <ingredient name="Merlot" count="5" />
+      <ingredient name="White Zin" count="5" />
+      <ingredient name="Pink Rose" count="5" />
+      <ingredient name="drinkJarGrainAlcohol" count="5" />
+    </recipe>
+
+    <recipe name="Merlot" count="15" modTag="chemistryStation">
+      <ingredient name="drinkJarBoiledWater" count="15" />
+      <ingredient name="Grape Pulp" count="15" />
+      <ingredient name="Grape Extract" count="5" />
+    </recipe>
+
+    <recipe name="White Zin" count="15" modTag="chemistryStation">
+      <ingredient name="drinkJarBoiledWater" count="15" />
+      <ingredient name="Grape Extract" count="20" />
+    </recipe>
+
+    <recipe name="Pink Rose" count="15" modTag="chemistryStation">
+      <ingredient name="drinkJarBoiledWater" count="15" />
+      <ingredient name="Grape Pulp" count="5" />
+      <ingredient name="Grape Extract" count="15" />
+    </recipe>
+
+    <!--   Ingredients -->
+    <recipe name="Salt" count="2" modTag="chemistryStation">
+      <ingredient name="Halite" count="1" />
+    </recipe>
+    <recipe name="Black Pepper" count="1" modTag="chemistryStation">
+      <ingredient name="Black Pepper Corn" count="1" />
+    </recipe>
+    <recipe name="Grape Pulp" count="1" modTag="chemistryStation">
+      <ingredient name="Grape" count="2" />
+    </recipe>
+    <recipe name="Grape Extract" count="1" modTag="chemistryStation">
+      <ingredient name="Grape" count="2" />
+    </recipe>
+
     <!--   Beer -->
-    <recipe name="Beer Cheap" count="15" craft_area="chemistryStation">
+    <recipe name="Beer Cheap" count="15" modTag="chemistryStation">
       <ingredient name="Light Malt" count="40" />
       <ingredient name="resourceCropHopsFlower" count="10" />
       <ingredient name="drinkJarBoiledWater" count="15" />
     </recipe>
 
-    <recipe name="Beer IPA" count="15" craft_area="chemistryStation">
+    <recipe name="Beer IPA" count="15" modTag="chemistryStation">
       <ingredient name="Golden Malt" count="15" />
       <ingredient name="Bitter Hops" count="15" />
       <ingredient name="resourceCropHopsFlower" count="5" />
@@ -28,14 +99,14 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="15" />
     </recipe>
 
-    <recipe name="Beer Lager" count="15" craft_area="chemistryStation">
+    <recipe name="Beer Lager" count="15" modTag="chemistryStation">
       <ingredient name="Light Malt" count="30" />
       <ingredient name="resourceCropHopsFlower" count="15" />
       <ingredient name="Floral Hops" count="5" />
       <ingredient name="drinkJarBoiledWater" count="15" />
     </recipe>
 
-    <recipe name="Beer Stout" count="15" craft_area="chemistryStation">
+    <recipe name="Beer Stout" count="15" modTag="chemistryStation">
       <ingredient name="Dark Malt" count="30" />
       <ingredient name="resourceCropHopsFlower" count="10" />
       <ingredient name="Floral Hops" count="10" />
@@ -44,7 +115,7 @@ tags="learnable">
     <!--  Beer -->
 
     <!--   Malt -->
-    <recipe name="Light Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Light Malt" count="1" modTag="campfire,toolCookingPot">
       <ingredient name="Sorghum" count="2" />
     </recipe>
     <recipe name="Golden Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
@@ -56,7 +127,7 @@ tags="learnable">
     <!--  Malt -->
 
     <!--  Veggies -->
-    <recipe name="Liquid Veg" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Liquid Veg" count="1" modTag="campfire,toolCookingPot">
     	<ingredient name="Carrot" count="2" />
       <ingredient name="Romaine" count="2" />
       <ingredient name="resourceCropChrysanthemumPlant" count="2" />
@@ -64,23 +135,23 @@ tags="learnable">
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 
-    <recipe name="Mixed Greens" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Mixed Greens" count="1" modTag="campfire,toolCookingPot,blackPepper">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="Romaine" count="1" />
       <ingredient name="resourceCropChrysanthemumPlant" count="1" />
     </recipe>
 
-    <recipe name="Veggie Mash" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Veggie Mash" count="1" modTag="campfire,toolCookingPot,salt,blackPepper">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="Squash" count="1" />
     </recipe>
 
-    <recipe name="Steamed Broccoli" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Steamed Broccoli" count="1" modTag="campfire,toolCookingPot">
     	<ingredient name="Broccoli" count="1" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Grilled Squash" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+    <recipe name="Grilled Squash" count="1" modTag="campfire,toolCookingGrill,salt,blackPepper">
     	<ingredient name="Squash" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
@@ -89,26 +160,26 @@ tags="learnable">
     	<ingredient name="Romaine" count="2" />
     </recipe>
 
-    <recipe name="Roasted Carrot" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+    <recipe name="Roasted Carrot" count="1" modTag="campfire,toolCookingGrill">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
     <!--  Veggies -->
 
     <!--  Tomato -->
-    <recipe name="Crushed Tomato" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Crushed Tomato" count="1" modTag="campfire,toolCookingPot">
     	<ingredient name="Tomato" count="4" />
       <ingredient name="drinkCanEmpty" count="1" />
     </recipe>
 
-    <recipe name="Marinara" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Marinara" count="1" modTag="campfire,toolCookingPot,salt,blackPepper">
     	<ingredient name="Crushed Tomato" count="2" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
     <!--  Tomato -->
 
     <!--  Wheat -->
-    <recipe name="Wheat Bread" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Wheat Bread" count="1" modTag="campfire,toolCookingPot,salt">
     	<ingredient name="Wheat Flour" count="4" />
       <ingredient name="foodEgg" count="2" />
     	<ingredient name="drinkJarBoiledWater" count="1" />
@@ -120,31 +191,31 @@ tags="learnable">
     <!--  Wheat -->
 
     <!--  Milk -->
-    <recipe name="Powdered Milk" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Powdered Milk" count="1" modTag="campfire,toolCookingPot">
     	<ingredient name="foodCropYuccaFruit" count="4" />
     </recipe>
 
-    <recipe name="Milk" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Milk" count="1" modTag="campfire,toolCookingPot">
       <ingredient name="Powdered Milk" count="1" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
     <!--  Milk -->
 
     <!--  Penne -->
-    <recipe name="Penne" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Penne" count="1" modTag="campfire,toolCookingPot,salt">
       <ingredient name="Wheat Flour" count="4" />
       <ingredient name="Milk" count="1" />
       <ingredient name="foodEgg" count="2" />
     </recipe>
-    <recipe name="Bechamel" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Bechamel" count="1" modTag="campfire,toolCookingPot,salt">
       <ingredient name="Wheat Flour" count="1" />
       <ingredient name="Milk" count="2" />
     </recipe>
-    <recipe name="Pasta Meal" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Pasta Meal" count="1" modTag="campfire,toolCookingPot,blackPepper">
       <ingredient name="Bechamel" count="2" />
       <ingredient name="Penne" count="2" />
     </recipe>
-    <recipe name="Pasta Meal" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Pasta Meal" count="1" modTag="campfire,toolCookingPot,blackPepper">
       <ingredient name="Marinara" count="2" />
       <ingredient name="Penne" count="2" />
     </recipe>
@@ -178,6 +249,28 @@ tags="learnable">
     <recipe name="Floral Hop Seed" modTag="seed">
     	<ingredient name="Floral Hops" />
     </recipe>
+    <recipe name="Grape Seed" modTag="seed">
+    	<ingredient name="Grape" />
+    </recipe>
+    <recipe name="Apple Seed" modTag="seed">
+    	<ingredient name="Apple" />
+    </recipe>
+    <recipe name="Orange Seed" modTag="seed">
+    	<ingredient name="Orange" />
+    </recipe>
+    <recipe name="Meyer Lemon Seed" modTag="seed">
+      <ingredient name="Meyer Lemon" />
+    </recipe>
+    <recipe name="Lime Seed" modTag="seed">
+    	<ingredient name="Lime" />
+    </recipe>
+    <recipe name="Cherry Seed" modTag="seed">
+    	<ingredient name="Cherry" />
+    </recipe>
+    <recipe name="Black Pepper Seed" modTag="seed">
+    	<ingredient name="Black Pepper Corn" />
+    </recipe>
+
   </append>
 
   <!-- Update Seeds -->
@@ -190,5 +283,27 @@ tags="learnable">
   <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]/ingredient" name="count">
     4
   </setattribute>
+
+  <!--  Update Items -->
+  <append xpath="/recipes/recipe[contains(@modTag,'salt')]">
+    <ingredient name="Salt" count="1" />
+  </append>
+  <append xpath="/recipes/recipe[contains(@modTag,'blackPepper')]">
+    <ingredient name="Black Pepper" count="1" />
+  </append>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'chemistryStation')]" name="craft_area">
+    chemistryStation
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'campfire')]" name="craft_area">
+    campfire
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_tool">
+    toolCookingPot
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingGrill')]" name="craft_tool">
+    toolCookingGrill
+  </setattribute>
+
 
 </configs>

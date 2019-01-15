@@ -10,7 +10,16 @@
     <item name="Sorghum Seed" />
     <item name="Floral Hop Seed" />
     <item name="Bitter Hop Seed" />
+    <item name="Grape Seed" />
+    <item name="Apple Seed" />
+    <item name="Orange Seed" />
+    <item name="Meyer Lemon Seed" />
+    <item name="Lime Seed" />
+    <item name="Cherry Seed" />
+    <item name="Black Pepper Seed" />
     <item name="Powdered Milk" />
+    <item name="Salt" />
+    <item name="Black Pepper" />
   </append>
 
 </configs>
