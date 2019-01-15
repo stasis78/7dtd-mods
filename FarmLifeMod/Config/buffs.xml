@@ -1,0 +1,116 @@
+<!--
+attFortitude,
+attStrength,
+attPerception
+attIntellect
+attAgility
+
+onSelfBuffStart = 0
+onSelfBuffUpdate,  Frame-based, not 1/s
+onSelfBuffFinish,  Runs when the duration of a buff has run out.
+onSelfBuffRemove,  When the buff is being removed by any source. Can not be used for a buff to restart itself.
+onSelfBuffStack    When the buff is refreshed/extended/stacked... anything but "ignore"
+
+Stat / cvar comparison operators:
+    None,
+    Equals,
+    NotEquals,
+    Less, LessThan, LT,
+    Greater, GreaterThan, GT,
+    LessOrEqual, LessThanOrEqualTo, LTE,
+    GreaterOrEqual, GreaterThanOrEqualTo, GTE
+
+-->
+<configs>
+
+  <append xpath="/buffs">
+
+    <buff name="Beer Buff" description_key="I've been drinking some craft quality beer." icon="ui_game_symbol_beer">
+      <damage_type value="disease" />
+      <stack_type value="duration" />
+      <duration value="15" />
+
+      <effect_group>
+
+        <!-- <triggered_effect trigger="onSelfBuffFinish" action="ShowToolbeltMessage" message="beer buff finished"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="ShowToolbeltMessage" message="beer buff removed"/> -->
+
+        <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Fresh beer, yum."/>
+
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="beerBuffCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="beerBuffCount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="beerBuffCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="beerBuffCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.05" effect_name="Drunk"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk" />
+      </effect_group>
+
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="LTE" value="1"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I like this beer."/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="3">
+          <requirement name="HoldingItemHasTags" tags="fists" />
+        </passive_effect>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.35" />
+        <passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned1" />
+      </effect_group>
+
+      <!-- Screen effect  -->
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="Equals" value="2"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I like this beer...too much..."/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0.1" effect_name="Drunk"/>
+      </effect_group>
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="Equals" value="4"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I should probably stop..."/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0.2" effect_name="Drunk"/>
+      </effect_group>
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="Equals" value="6"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Ok that was too many..."/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0.3" effect_name="Drunk"/>
+      </effect_group>
+      <!-- Screen effect  -->
+
+      <!-- Debuff  -->
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="GTE" value="2"/>
+        <passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attIntellect" />
+      </effect_group>
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="GTE" value="4"/>
+        <passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attIntellect" />
+        <passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attPerception" />
+      </effect_group>
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="GTE" value="6"/>
+        <passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attIntellect" />
+        <passive_effect name="AttributeLevel" operation="base_subtract" value="1" tags="attPerception" />
+        <passive_effect name="AttributeLevel" operation="base_subtract" value="3" tags="attFortitude" />
+        <passive_effect name="BuffResistance" operation="base_subtract" value="10.0" tags="buffInjuryStunned1" />
+        <passive_effect name="BuffResistance" operation="base_subtract" value="10.0" tags="buffInjuryStunned2" />
+      </effect_group>
+      <!-- Debuff  -->
+
+      <!-- Idiot  -->
+      <effect_group>
+        <requirement name="CVarCompare" cvar="beerBuffCount" operation="GTE" value="7"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I'm totally wasted!"/>
+        <triggered_effect trigger="onSelfBuffStack" action="Ragdoll" target="self" duration="10.0" />
+      </effect_group>
+    </buff>
+
+    <buff name="Energy Buff" name_key="buffMegaCrushName" description_key="buffMegaCrushDesc" tooltip_key="buffMegaCrushTooltip" icon="ui_game_symbol_pills" tags="drug">
+      <stack_type value="replace" />
+      <duration value="30" />
+      <effect_group>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".5" />
+        <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.2" /> <!-- regening stamina costs you water -->
+        <passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.2" /> <!-- regening stamina costs food, blacks out the stamina bar -->
+      </effect_group>
+    </buff>
+
+  </append>
+
+</configs>
