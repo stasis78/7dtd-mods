@@ -4,27 +4,140 @@ Tiered Food
 2 - Processed, no poison no health
 3 - Refined, more food/water and gives health
 4 - Prepared, Refined+10
+
+plant
+processedPlant
+refinedPlant
+preparedPlant
 -->
 <configs>
   <append xpath="/items">
 
+    <!--   Fruit -->
+    <item name="Grape" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+
+    <item name="Apple" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="FF0000" />
+    </item>
+
+    <item name="Orange" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="FFAE00" />
+    </item>
+
+    <item name="Meyer Lemon" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="FFD800" />
+    </item>
+
+    <item name="Lime" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="3AFF00" />
+    </item>
+
+    <item name="Cherry" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="FF4200" />
+    </item>
+
+    <item name="Apple Pie" modTag="refinedPlant">
+      <property name="CustomIcon" value="foodBlueberryPie"/>
+      <property name="CustomIconTint" value="FF0000" />
+    </item>
+
+    <item name="Cherry Pie" modTag="refinedPlant">
+      <property name="CustomIcon" value="foodBlueberryPie"/>
+      <property name="CustomIconTint" value="FF4200" />
+    </item>
+
+    <item name="Orange Juice" modTag="drink,jar">
+      <property name="CustomIcon" value="drinkJarBoiledWater"/>
+      <property name="CustomIconTint" value="FFAE00" />
+    </item>
+
+    <item name="Lemon Lime Coolaid" modTag="drink,jar">
+      <property name="CustomIcon" value="drinkJarBoiledWater"/>
+      <property name="CustomIconTint" value="3AFF00" />
+    </item>
+
+    <item name="Mojito" modTag="mixedDrink">
+      <property name="CustomIcon" value="drinkJarBoiledWater"/>
+      <property name="CustomIconTint" value="3AFF00" />
+    </item>
+
+    <!--   Wine -->
+    <item name="Port Wine" modTag="wine,jar">
+      <property name="CustomIcon" value="drinkJarBoiledWater" />
+      <property name="CustomIconTint" value="490059" />
+    </item>
+
+    <item name="Merlot" modTag="wine,jar">
+      <property name="CustomIcon" value="drinkJarBoiledWater" />
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+
+    <item name="White Zin" modTag="wine,jar">
+      <property name="CustomIcon" value="drinkJarBoiledWater" />
+      <property name="CustomIconTint" value="D5BADB" />
+    </item>
+
+    <item name="Pink Rose" modTag="wine,jar">
+      <property name="CustomIcon" value="drinkJarBoiledWater" />
+      <property name="CustomIconTint" value="C469D8" />
+    </item>
+
+    <!--   Ingredients -->
+    <item name="Black Pepper" modTag="ingredient">
+      <property name="CustomIcon" value="resourceGunPowder" />
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Black Pepper Corn" modTag="ingredient">
+      <property name="CustomIcon" value="resourceBuckshot" />
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Salt" modTag="ingredient">
+      <property name="CustomIcon" value="resourcePotassiumNitratePowder" />
+      <property name="CustomIconTint" value="FFFFFF" />
+    </item>
+
+    <item name="Halite" modTag="ingredient">
+    	<property name="CustomIcon" value="terrSnow"/>
+      <property name="CustomIconTint" value="F3FF00" />
+    </item>
+
+    <item name="Grape Pulp" modTag="ingredient">
+      <property name="CustomIcon" value="medicalAloeCream"/>
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+
+    <item name="Grape Extract" modTag="ingredient">
+      <property name="CustomIcon" value="drinkJarBeer"/>
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+
     <!--  Beer -->
-    <item name="Beer IPA" modTag="beer">
+    <item name="Beer IPA" modTag="beer,jar">
       <property name="CustomIcon" value="drinkJarBeer" />
       <property name="CustomIconTint" value="957D1A" />
     </item>
 
-    <item name="Beer Stout" modTag="beer">
+    <item name="Beer Stout" modTag="beer,jar">
       <property name="CustomIcon" value="drinkJarBeer" />
       <property name="CustomIconTint" value="4B3C00" />
     </item>
 
-    <item name="Beer Lager" modTag="beer">
+    <item name="Beer Lager" modTag="beer,jar">
       <property name="CustomIcon" value="drinkJarBeer" />
       <property name="CustomIconTint" value="DEC663" />
     </item>
 
-    <item name="Beer Cheap" modTag="beer">
+    <item name="Beer Cheap" modTag="beer,jar">
       <property name="CustomIcon" value="drinkJarBeer" />
       <property name="CustomIconTint" value="DEC663" />
     </item>
@@ -63,7 +176,7 @@ Tiered Food
     </item>
 
     <!--  Liquid Veg -->
-    <item name="Liquid Veg" modTag="preparedPlant">
+    <item name="Liquid Veg" modTag="preparedPlant,jar">
       <property name="CustomIcon" value="drinkJarRiverWater" />
       <property name="CustomIconTint" value="A8F96F" />
     </item>
@@ -193,7 +306,34 @@ Tiered Food
 
   </append>
 
-  <!-- Tier 1 : Plants -->
+  <!-- Tier 1 : Fruit and Plants -->
+  <append xpath="/items/item[contains(@modTag,'fruit')]">
+    <property name="DisplayType" value="food" />
+    <property name="HoldType" value="31" />
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="MresourceCrop" />
+    <property name="Stacknumber" value="500" /> <!-- STK resource -->
+    <property name="EconomicValue" value="4" />
+    <property name="EconomicBundleSize" value="5" />
+    <property name="CraftingIngredientTime" value="5" />
+    <property class="Action0">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Sound_start" value="player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <effect_group tiered="false">
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="2"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
+      </triggered_effect>
+      <display_value name="FoodPoisoningRisk" value=".1" />
+    </effect_group>
+  </append>
+
   <append xpath="/items/item[contains(@modTag,'plant')]">
     <property name="DisplayType" value="food" />
     <property name="HoldType" value="31" />
@@ -212,7 +352,7 @@ Tiered Food
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="2"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
         <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
@@ -239,8 +379,7 @@ Tiered Food
     </property>
     <property name="Group" value="Food/Cooking"/>
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="10"/>
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="10"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
     </effect_group>
   </append>
@@ -262,9 +401,8 @@ Tiered Food
     </property>
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="15" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="12" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
     </effect_group>
   </append>
@@ -287,9 +425,36 @@ Tiered Food
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="25" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
+    </effect_group>
+  </append>
+
+  <!-- Drink -->
+  <append xpath="/items/item[contains(@modTag,'drink')]">
+    <property name="HoldType" value="3" />
+    <property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="Mglass" />
+    <property name="Weight" value="10" />
+    <property name="Stacknumber" value="15" /> <!-- STK drink -->
+    <property name="EconomicValue" value="100" />
+    <property class="Action0">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2" />
+      <property name="Use_time" value="..." />
+      <property name="Sound_start" value="player_drinking" />
+      <property name="Create_item" value="drinkJarEmpty" />
+    </property>
+    <effect_group tiered="false">
+      <requirement name="NotHasBuff" buff="buffIsOnFire" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="20"/>
+      <display_value name="staminaAmount" value=".15" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+    </effect_group>
+    <effect_group tiered="false">
+      <requirement name="HasBuff" buff="buffIsOnFire" />
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
     </effect_group>
   </append>
 
@@ -317,6 +482,71 @@ Tiered Food
   		<requirement name="HasBuff" buff="buffIsOnFire" />
   			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
   	</effect_group>
+  </append>
+
+  <!-- wine -->
+  <append xpath="/items/item[contains(@modTag,'wine')]">
+  	<property name="HoldType" value="3" />
+  	<property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
+  	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+  	<property name="Material" value="Mglass" />
+  	<property name="Weight" value="10" />
+  	<property name="Stacknumber" value="15" /> <!-- STK drink -->
+  	<property name="EconomicValue" value="100" />
+  	<property class="Action0">
+  		<property name="Class" value="Eat" />
+  		<property name="Delay" value="2" />
+  		<property name="Use_time" value="..." />
+  		<property name="Sound_start" value="player_drinking" />
+  		<property name="Create_item" value="drinkJarEmpty" />
+  	</property>
+  	<effect_group tiered="false">
+  		<requirement name="NotHasBuff" buff="buffIsOnFire" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBeer" />
+  	</effect_group>
+  	<effect_group tiered="false">
+  		<requirement name="HasBuff" buff="buffIsOnFire" />
+  			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
+  	</effect_group>
+  </append>
+
+  <!-- mixedDrink -->
+  <append xpath="/items/item[contains(@modTag,'mixedDrink')]">
+  	<property name="HoldType" value="3" />
+  	<property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
+  	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+  	<property name="Material" value="Mglass" />
+  	<property name="Weight" value="10" />
+  	<property name="Stacknumber" value="15" /> <!-- STK drink -->
+  	<property name="EconomicValue" value="100" />
+  	<property class="Action0">
+  		<property name="Class" value="Eat" />
+  		<property name="Delay" value="2" />
+  		<property name="Use_time" value="..." />
+  		<property name="Sound_start" value="player_drinking" />
+  		<property name="Create_item" value="drinkJarEmpty" />
+  	</property>
+  	<effect_group tiered="false">
+  		<requirement name="NotHasBuff" buff="buffIsOnFire" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBeer" />
+  	</effect_group>
+  	<effect_group tiered="false">
+  		<requirement name="HasBuff" buff="buffIsOnFire" />
+  			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
+  	</effect_group>
+  </append>
+
+  <!-- Non edible ingredient -->
+  <append xpath="/items/item[contains(@modTag,'ingredient')]">
+    <property name="DisplayType" value="food" />
+    <property name="HoldType" value="31" />
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="MresourceCrop" />
+    <property name="Stacknumber" value="500" /> <!-- STK resource -->
+    <property name="EconomicValue" value="4" />
+    <property name="EconomicBundleSize" value="5" />
+    <property name="CraftingIngredientTime" value="5" />
   </append>
 
   <set xpath="/items/item[contains(@modTag,'water')]/property[@name='DisplayType']/@value">
