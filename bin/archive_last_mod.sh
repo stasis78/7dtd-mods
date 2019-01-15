@@ -12,12 +12,8 @@ then
   export MOD_DIR=${LASTFILE:2:10000}
   echo $MOD_DIR
   zip -r "$MOD_DIR.zip" $MOD_DIR
-  # echo "\nAll mods zipped 👍\n"
+  echo "\$MOD_DIR zipped 👍\n"
   exit 0
 fi
 
 echo "No mod changes detect..."
-
-
-
-# for i in *Mod/; do zip -r "${i%/}.zip" "$i"; done
