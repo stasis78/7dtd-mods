@@ -2,16 +2,22 @@
 
 echo "Checking last committed mod..."
 
-FILES=`git diff --name-only HEAD^!`
+FILES=`git status --porcelain`
+echo $FILES
 
-if [[ $string == *"Mod/"* ]]; then
+if grep -q Mod/ <<<"$FILES";
+then
   LASTFILE=`echo $FILES | cut -d'/' -f1`
   echo $LASTFILE
-  exit 0
+  export MOD_DIR=${LASTFILE:2:10000}
+  echo $MOD_DIR
+  zip -r "$MOD_DIR.zip" $MOD_DIR
   # echo "\nAll mods zipped 👍\n"
+  exit 0
 fi
 
 echo "No mod changes detect..."
+
 
 
 # for i in *Mod/; do zip -r "${i%/}.zip" "$i"; done
