@@ -476,7 +476,7 @@ preparedPlant
   	</property>
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
-  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBeer" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Beer Lover" />
   	</effect_group>
   	<effect_group tiered="false">
   		<requirement name="HasBuff" buff="buffIsOnFire" />
@@ -502,7 +502,7 @@ preparedPlant
   	</property>
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
-  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBeer" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Wine Connoisseur" />
   	</effect_group>
   	<effect_group tiered="false">
   		<requirement name="HasBuff" buff="buffIsOnFire" />
@@ -528,7 +528,7 @@ preparedPlant
   	</property>
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
-  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBeer" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Mixed Drink" />
   	</effect_group>
   	<effect_group tiered="false">
   		<requirement name="HasBuff" buff="buffIsOnFire" />
