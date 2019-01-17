@@ -134,12 +134,12 @@ preparedPlant
 
     <item name="Beer Lager" modTag="beer,jar">
       <property name="CustomIcon" value="drinkJarBeer" />
-      <property name="CustomIconTint" value="DEC663" />
+      <property name="CustomIconTint" value="83E135" />
     </item>
 
     <item name="Beer Cheap" modTag="beer,jar">
       <property name="CustomIcon" value="drinkJarBeer" />
-      <property name="CustomIconTint" value="DEC663" />
+      <property name="CustomIconTint" value="F7FF00" />
     </item>
 
     <!--  Hops -->
@@ -483,6 +483,9 @@ preparedPlant
   			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
   	</effect_group>
   </append>
+  <setattribute xpath="/items/item[@name='Beer Cheap']/effect_group/triggered_effect[@buff='Beer Lover']" name="buff">
+    Redneck
+  </setattribute>
 
   <!-- wine -->
   <append xpath="/items/item[contains(@modTag,'wine')]">
