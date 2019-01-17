@@ -266,7 +266,7 @@ Stat / cvar comparison operators:
 
     <buff name="Falling Down Drunk" description_key="I'm totally pissed." icon="ui_game_symbol_skull">
       <duration value="2" />
-      <stack_type value="duration" />
+      <stack_type value="ignore" />
       <effect_group>
         <!-- <triggered_effect trigger="onSelfBuffUpdate" action="Ragdoll" target="self" duration="1" /> -->
         <triggered_effect trigger="onSelfBuffRemove" action="Ragdoll" target="self" duration="1" />
