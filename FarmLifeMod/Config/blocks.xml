@@ -545,6 +545,11 @@ Was in corn seed?
     <property name="Shape" value="ModelEntity"/>
   </append>
 
+  <!-- Snowberry fix to get seed to stay -->
+  <setattribute xpath="/blocks/block[@name='plantedSnowberry2']/property[@name='PlantGrowing.Next']" name="value">
+    plantedSnowberry3HarvestPlayer
+  </setattribute>
+
 </configs>
 
 <!-- <remove xpath="/entity_classes/entity_class[contains(@name,'Stripper')]/property[@name='ExperienceGain']" /> -->

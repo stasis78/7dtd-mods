@@ -270,6 +270,9 @@ tags="learnable">
     <recipe name="Black Pepper Seed" modTag="seed">
     	<ingredient name="Black Pepper Corn" />
     </recipe>
+    <recipe name="plantedSnowberry1" modTag="seed">
+    	<ingredient name="resourceCropSnowberryPlant" />
+    </recipe>
 
   </append>
 
