@@ -138,6 +138,10 @@ Gives you 5x forged iron/steel when crafting at the forge.
 
 This is not a cheat mod! Adds recipes for cement, cobblestone, concrete mix, crushed sand, gun powder. They are balanced identically to vanilla recipes. They take 100 times the materials and create 100 times the output. End server lag!
 
+### PolishedSteelMod
+
+Adds a bunch of stainless steel upgrades to steel blocks. Not my fault if pimps remove stainless steel blocks in a feature release and this break s***.
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
