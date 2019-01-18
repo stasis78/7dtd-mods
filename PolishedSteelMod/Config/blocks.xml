@@ -1,0 +1,207 @@
+<configs>
+    <append xpath="/blocks/block[starts-with(@name,'steel') and not(contains(@name, 'steelLogSpike6'))]">
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="replace_me"/>
+        <property name="Item" value="resourceForgedSteel"/>
+        <property name="ItemCount" value="10"/>
+        <property name="UpgradeHitCount" value="4"/>
+      </property>
+    </append>
+
+    <setattribute xpath="/blocks/block[@name='steelMaster']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelMaster
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelBlock']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelBlock
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCNRRound']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCNRRound
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCNRRoundTop']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCNRRoundTop
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeIncline']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeIncline
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeTipCNRFullTop']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeTipCNRFullTop
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeTipCNRFullBottom']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeTipCNRFullBottom
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeCNRInsideBottom']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeCNRInsideBottom
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeCNRInsideTop']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeCNRInsideTop
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelStairsFilledRailingLeft']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelStairsFilledRailingLeft
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelStairsFilledRailingRight']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelStairsFilledRailingRight
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelArrowSlitHalf']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelArrowSlitHalf
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCNRRampFiller']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCNRRampFiller
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelGableInvertedSteep']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelGableInvertedSteep
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelStairs25CornerCNR']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelStairs25CornerCNR
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelQuarterCNR']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelQuarterCNR
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelArch']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelArch
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeStairs']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeStairs
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeCNRInsideSteepTop']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeCNRInsideSteepTop
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeTipStairs']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeTipStairs
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelStairs25']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelStairs25
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelRamp']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelRamp
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeCNRSteepTop']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeCNRSteepTop
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelQuarterTeeSCtr']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelQuarterTeeSCtr
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCNRInside']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCNRInside
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCTRPlate']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCTRPlate
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPole']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPole
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeCNRSteepBase']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeCNRSteepBase
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelQuarterSCtr']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelQuarterSCtr
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPillar100Cap']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPillar100Cap
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelQuarterCNR3Way']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelQuarterCNR3Way
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeCNRInsideSteepBase']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeCNRInsideSteepBase
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCTRpole']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCTRpole
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelGableQuarter']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelGableQuarter
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelGableInvertedQuarter']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelGableInvertedQuarter
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelGableInvertedHalf']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelGableInvertedHalf
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPlateOffset']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPlateOffset
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedge']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedge
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCNRRamp']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCNRRamp
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPlate']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPlate
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelEighth']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelEighth
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelSupport']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelSupport
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelHalf']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelHalf
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPyramid']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPyramid
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPillar100']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPillar100
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelQuarter']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelQuarter
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelWedgeTip']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelWedgeTip
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelCNRFull']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelCNRFull
+    </setattribute>
+
+    <setattribute xpath="/blocks/block[@name='steelPillar50']/property[@class='UpgradeBlock']/property[@value='replace_me']" name="value">
+      stainlessSteelPillar50
+    </setattribute>
+
+</configs>
