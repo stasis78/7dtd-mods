@@ -140,7 +140,7 @@ This is not a cheat mod! Adds recipes for cement, cobblestone, concrete mix, cru
 
 ### PolishedSteelMod
 
-Adds a bunch of stainless steel upgrades to steel blocks. Not my fault if pimps remove stainless steel blocks in a feature release and this break s***.
+Adds a bunch of stainless steel upgrades to steel blocks. Not my fault if pimps remove stainless steel blocks in a future release and this break s***.
 
 # OTHER MODS I USE
 
