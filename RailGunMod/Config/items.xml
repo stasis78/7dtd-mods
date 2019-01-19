@@ -1,0 +1,131 @@
+<configs>
+  <append xpath="/items">
+    <item name="Rail Gun">
+      <property name="CustomIcon" value="gunAK47"/>
+      <property name="CustomIconTint" value="000000" />
+    	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,railGunBattery,superconductor,perkAutomaticWeapons" />
+    	<property name="DisplayType" value="rangedGun" />
+    	<property name="HoldType" value="48" />
+    	<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
+    	<property name="Material" value="MmechanicalParts" /> <property name="Weight" value="54" />
+
+    	<property name="CrosshairOnAim" value="true" /> <!-- aimTest -->
+    	<property name="CrosshairUpAfterShot" value="true" /> <!-- aimTest -->
+
+    	<property name="RepairTools" value="Rapid Recharger" />
+    	<property name="DegradationBreaksAfter" value="false" />
+
+    	<property name="SoundJammed" value="weapon_jam" />
+    	<property name="Sound_Sight_In" value="rifle_sight_in" />
+    	<property name="Sound_Sight_Out" value="rifle_sight_out" />
+
+    	<property name="RepairExpMultiplier" value="10.8" />
+    	<property name="ActionSkillGroup" value="Rifles" />
+    	<property name="CraftingSkillGroup" value="craftSkillGuns" />
+    	<property name="EconomicValue" value="900" />
+
+      <property name="CrosshairOnAim" value="true" />
+			<property name="Zoom_max_out" value="55" />
+			<property name="Zoom_max_in" value="55" />
+
+    	<property class="Action0">
+    		<property name="Class" value="Ranged" />
+    		<property name="Delay" value="0.1" /> <!-- obsolete if rounds per minute exists -->
+    		<property name="Magazine_items" value="Caseless Round" />
+    		<property name="Sound_start" value="darttrap_fire" />
+    		<property name="Sound_empty" value="weapon_empty" />
+    		<property name="Sound_reload" value="ak47_reload" />
+    		<property name="Particles_muzzle_fire" value="nailgunfire" />
+    		<!-- <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" /> -->
+    	</property>
+    	<property class="Action1">
+    		<property name="Class" value="Zoom" />
+    		<property name="Zoom_max_out" value="55" />
+    		<property name="Zoom_max_in" value="55" />
+
+        <property name="ScopeOffset" value="0,0.08,-0.2035" />
+        <property name="ScopeScale" value="0.73,0.73,0.73" />
+        <property name="ScopeCameraOffset" value="0,-.009,.45" />
+
+    	</property>
+
+      <!-- <effect_group>
+        <triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="Items/Mods/Scopes/scope_laser_reflexPrefab" parent_transform="Attachments/Scope" />
+      </effect_group> -->
+
+    	<effect_group name="Base Effects">
+        <!-- Modified -->
+    		<passive_effect name="MaxRange" operation="base_set" value="90" />
+        <!-- Modified -->
+    		<passive_effect name="DamageFalloffRange" operation="base_set" value="60" />
+        <!-- Modified -->
+    		<passive_effect name="EntityDamage" operation="base_add" value="0" />
+
+        <!-- Modified -->
+    		<passive_effect name="RoundsPerMinute" operation="base_set" value="2000" />
+        <!-- Modified -->
+    		<passive_effect name="BurstRoundCount" operation="base_set" value="1" />
+        <!-- Modified -->
+    		<passive_effect name="MagazineSize" operation="base_set" value="500" />
+        <!-- Modified -->
+    		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="0.4" />
+
+    		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8" />
+    		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8" />
+    		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15" />
+    		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" />
+    		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" />
+    		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" />
+
+        <!-- Modified -->
+    		<passive_effect name="KickDegreesVertical" operation="base_set" value="-0.2,0.2" />
+        <!-- Modified -->
+    		<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.2,0.2" />
+    		<display_value name="dRecoil" value="5" />
+    		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.55" />
+    		<passive_effect name="WeaponHandling" operation="base_set" value="0.8" /> <!-- ak47 -->
+
+        <!-- Modified -->
+    		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6" />
+    		<passive_effect name="DegradationPerUse" operation="base_set" value="2" />
+
+    		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6" />
+    		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage" />
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue" />
+
+    	</effect_group>
+
+    	<property name="Group" value="Ammo/Weapons" />
+    </item>
+
+    <item name="Rapid Recharger">
+      <property name="CustomIcon" value="carBattery"/>
+      <property name="CustomIconTint" value="D12727" />
+    	<property name="HoldType" value="45" />
+    	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+    	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    	<property name="Material" value="MresourceScrapLeadLarge" />
+    	<property name="Stacknumber" value="50" /> <!-- STK repairKit -->
+    	<property name="EconomicValue" value="186" />
+    	<property name="RepairTime" value="20" />
+    	<property name="RepairAmount" value="1000" />
+    	<property name="Group" value="Resources,Ammo/Weapons" />
+    	<property name="CraftingSkillGroup" value="craftSkillGuns" />
+    </item>
+
+    <item name="Caseless Round">
+      <property name="CustomIcon" value="resourceBulletTip"/>
+      <property name="CustomIconTint" value="FFFFFF" />
+    	<property name="Extends" value="ammo9mmBullet" />
+      <property name="Stacknumber" value="1000" />
+    	<property name="EconomicValue" value="1" />
+    	<effect_group name="Base Effects" tiered="false">
+    		<passive_effect name="EntityDamage" operation="base_set" value="15" />
+    		<passive_effect name="BlockDamage" operation="base_set" value="1" />
+    		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth" />
+    		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood" />
+    	</effect_group>
+    </item>
+
+  </append>
+</configs>
