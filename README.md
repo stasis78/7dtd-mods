@@ -142,6 +142,16 @@ This is not a cheat mod! Adds recipes for cement, cobblestone, concrete mix, cru
 
 Adds a bunch of stainless steel upgrades to steel blocks and downgrade stainless steel to steel. Not my fault if pimps remove stainless steel blocks in a future release and this break s***.
 
+### RailGunMod
+
+Add the following new items:
+
+- Railgun (uses AK texture for now)
+- Superconductor (turns Railgun into a fully automatic weapon)
+- Railgun Battery Pack (required to craft railgun, increase weapon durability, can stack more than one)
+- Rapid Recharger (required to repair the railgun)
+- Caseless Round (ammo for the railgun)
+
 # OTHER MODS I USE
 
 ### LadderMovementSpeedMod
