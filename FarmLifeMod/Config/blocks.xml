@@ -34,12 +34,12 @@ Was in corn seed?
       	<property name="SortOrder2" value="0142"/>
       	<property name="ActivationDistance" value="4"/>
         <property name="DisplayInfo" value="Name" />
-        <property name="PlantGrowing.GrowthRate" value="2" />
+        <property name="PlantGrowing.GrowthRate" value="63" />  <!-- matches-ish Vanilla a7.1 -->
       </block>
       <block name="fruitTreeMaster">
       	<property name="Extends" value="treeMaster"/>
         <property name="Material" value="Mplants"/>
-      	<property name="Model" value="Entities/Trees/OakSml01Prefab"/>
+      	<property name="Model" value="Entities/Trees/OakMed01Prefab"/>
       	<property name="ModelOffset" value="0,-0.3,0"/>
       	<property name="MultiBlockDim" value="1,7,1"/>
       	<property name="BigDecorationRadius" value="4"/>
@@ -85,7 +85,7 @@ Was in corn seed?
       </block>
 
       <block name="Apple Tree" modTag="treePlant">
-        <property name="Model" value="Entities/Trees/OakSml01Prefab" />
+        <property name="Model" value="Entities/Trees/OakMed01Prefab" />
         <drop event="Destroy" name="Apple Seed" count="1"/>
         <drop event="Harvest" name="Apple" count="1" tag="cropHarvest"/>
       </block>
@@ -106,7 +106,7 @@ Was in corn seed?
       </block>
 
       <block name="Orange Tree" modTag="treePlant">
-        <property name="Model" value="Entities/Trees/OakSml01Prefab" />
+        <property name="Model" value="Entities/Trees/OakMed01Prefab" />
         <drop event="Destroy" name="Orange Seed" count="1"/>
         <drop event="Harvest" name="Orange" count="1" tag="cropHarvest"/>
       </block>
@@ -127,7 +127,7 @@ Was in corn seed?
      </block>
 
      <block name="Meyer Lemon Tree" modTag="treePlant">
-       <property name="Model" value="Entities/Trees/OakSml01Prefab" />
+       <property name="Model" value="Entities/Trees/OakMed01Prefab" />
        <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
        <drop event="Harvest" name="Meyer Lemon" count="1" tag="cropHarvest"/>
      </block>
@@ -148,7 +148,7 @@ Was in corn seed?
     </block>
 
     <block name="Lime Tree" modTag="treePlant">
-      <property name="Model" value="Entities/Trees/OakSml01Prefab" />
+      <property name="Model" value="Entities/Trees/OakMed01Prefab" />
     	<drop event="Destroy" name="Lime Seed" count="1"/>
       <drop event="Harvest" name="Lime" count="1" tag="cropHarvest"/>
     </block>
@@ -169,7 +169,7 @@ Was in corn seed?
     </block>
 
     <block name="Cherry Tree" modTag="treePlant">
-      <property name="Model" value="Entities/Trees/OakSml01Prefab" />
+      <property name="Model" value="Entities/Trees/OakMed01Prefab" />
     	<drop event="Destroy" name="Cherry Seed" count="1"/>
       <drop event="Harvest" name="Cherry" count="1" tag="cropHarvest"/>
     </block>
