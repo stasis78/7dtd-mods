@@ -1,0 +1,25 @@
+<configs>
+  <append xpath="/item_modifiers">
+
+    <item_modifier name="Railgun Battery Pack" installable_tags="railGunBattery" type="attachment">
+  		<property name="Stacknumber" value="5"/>
+      <property name="CustomIcon" value="solarCell"/>
+      <property name="CustomIconTint" value="9835E1" />
+  		<effect_group tiered="false">
+        <passive_effect name="DegradationMax" operation="base_add" value="500" />
+  		</effect_group>
+  		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+  	</item_modifier>
+
+    <item_modifier name="Superconductor" installable_tags="superconductor" modifier_tags="stocks" type="attachment">
+      <property name="Stacknumber" value="1"/>
+      <property name="CustomIcon" value="resourceSpring"/>
+      <property name="CustomIconTint" value="9835E1" />
+      <effect_group tiered="false">
+        <passive_effect name="BurstRoundCount" operation="base_set" value="500" />
+      </effect_group>
+      <property name="PickupJournalEntry" value="augmentGunsTip"/>
+    </item_modifier>
+
+  </append>
+</configs>
