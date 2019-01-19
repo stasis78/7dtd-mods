@@ -62,7 +62,7 @@
     		<passive_effect name="EntityDamage" operation="base_add" value="0" />
 
         <!-- Modified -->
-    		<passive_effect name="RoundsPerMinute" operation="base_set" value="2000" />
+    		<passive_effect name="RoundsPerMinute" operation="base_set" value="120" />
         <!-- Modified -->
     		<passive_effect name="BurstRoundCount" operation="base_set" value="1" />
         <!-- Modified -->
