@@ -3,7 +3,7 @@
     <item name="Rail Gun">
       <property name="CustomIcon" value="gunAK47"/>
       <property name="CustomIconTint" value="000000" />
-    	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,railGunBattery,superconductor,perkAutomaticWeapons" />
+    	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,railGunBattery,superconductor,perkAutomaticWeapons,smallTopAttachments,mediumTopAttachments" />
     	<property name="DisplayType" value="rangedGun" />
     	<property name="HoldType" value="48" />
     	<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
@@ -62,7 +62,7 @@
     		<passive_effect name="EntityDamage" operation="base_add" value="0" />
 
         <!-- Modified -->
-    		<passive_effect name="RoundsPerMinute" operation="base_set" value="120" />
+    		<passive_effect name="RoundsPerMinute" operation="base_set" value="240" />
         <!-- Modified -->
     		<passive_effect name="BurstRoundCount" operation="base_set" value="1" />
         <!-- Modified -->
