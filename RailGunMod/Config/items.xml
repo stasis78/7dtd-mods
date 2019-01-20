@@ -12,7 +12,7 @@
     	<property name="CrosshairOnAim" value="true" /> <!-- aimTest -->
     	<property name="CrosshairUpAfterShot" value="true" /> <!-- aimTest -->
 
-    	<property name="RepairTools" value="Rapid Recharger" />
+    	<property name="RepairTools" value="Recharger" />
     	<property name="DegradationBreaksAfter" value="false" />
 
     	<property name="SoundJammed" value="weapon_jam" />
@@ -24,10 +24,6 @@
     	<property name="CraftingSkillGroup" value="craftSkillGuns" />
     	<property name="EconomicValue" value="900" />
 
-      <property name="CrosshairOnAim" value="true" />
-			<property name="Zoom_max_out" value="55" />
-			<property name="Zoom_max_in" value="55" />
-
     	<property class="Action0">
     		<property name="Class" value="Ranged" />
     		<property name="Delay" value="0.1" /> <!-- obsolete if rounds per minute exists -->
@@ -38,15 +34,11 @@
     		<property name="Particles_muzzle_fire" value="nailgunfire" />
     		<!-- <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" /> -->
     	</property>
-    	<property class="Action1">
+      <property class="Action1">
     		<property name="Class" value="Zoom" />
     		<property name="Zoom_max_out" value="55" />
     		<property name="Zoom_max_in" value="55" />
-
-        <property name="ScopeOffset" value="0,0.08,-0.2035" />
-        <property name="ScopeScale" value="0.73,0.73,0.73" />
-        <property name="ScopeCameraOffset" value="0,-.009,.45" />
-
+    		<property name="ScopeCameraOffset" value="-0.00062,0,0.055" />
     	</property>
 
       <!-- <effect_group>
@@ -92,13 +84,12 @@
     		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6" />
     		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage" />
     		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue" />
-
     	</effect_group>
 
     	<property name="Group" value="Ammo/Weapons" />
     </item>
 
-    <item name="Rapid Recharger">
+    <item name="Recharger">
       <property name="CustomIcon" value="carBattery"/>
       <property name="CustomIconTint" value="D12727" />
     	<property name="HoldType" value="45" />
@@ -109,7 +100,7 @@
     	<property name="EconomicValue" value="186" />
     	<property name="RepairTime" value="20" />
     	<property name="RepairAmount" value="1000" />
-    	<property name="Group" value="Resources,Ammo/Weapons" />
+      <property name="Group" value="Resources,Ammo/Weapons" />
     	<property name="CraftingSkillGroup" value="craftSkillGuns" />
     </item>
 
