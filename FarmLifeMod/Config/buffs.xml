@@ -26,10 +26,83 @@ Stat / cvar comparison operators:
 
   <append xpath="/buffs">
 
+    <!-- *********************** Drink Buffs *********************** -->
+
+    <buff name="Vitamin C" name_key="Vitamin C" description_key="Orange Juice protects your body from mild conditions." icon="ui_game_symbol_pills">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="120"/>
+      <update_rate value="29"/>
+
+      <effect_group name="Cure Infection 0">
+        <requirement name="HasBuff" buff="buffIllInfection0"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllInfection0"/>
+      </effect_group>
+
+      <effect_group name="Cure Dysentery 0">
+        <requirement name="HasBuff" buff="buffIllDysentery0"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllDysentery0"/>
+      </effect_group>
+
+      <effect_group name="Cure Food Poisoning 0">
+        <requirement name="HasBuff" buff="buffIllFoodPoisoning0"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllFoodPoisoning0"/>
+      </effect_group>
+
+      <effect_group name="Cure Pneumonia 0">
+        <requirement name="HasBuff" buff="buffIllPneumonia0"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllPneumonia0"/>
+      </effect_group>
+    </buff>
+
+    <buff name="Vitamin B" name_key="Vitamin B" description_key="Liquid Veg gives increased Stamina regeneration." icon="ui_game_symbol_cardio">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="120"/>
+      <effect_group>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.35" />
+      </effect_group>
+    </buff>
+
+    <buff name="Sugar Rush" name_key="Sugar Rush" description_key="Coolaid gives you a boost to your carry capacity." icon="ui_game_symbol_muscle">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="120"/>
+      <effect_group>
+  			<passive_effect name="CarryCapacity" operation="base_add" value="4" />
+      </effect_group>
+    </buff>
+
+    <buff name="Strong Bones" name_key="Strong Bones" description_key="Milk can help heal your bones. If broken they will become splinted. If sprained you are healed." icon="ui_game_symbol_splint">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="120"/>
+      <effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLegSplinted">
+    			<requirement name="HasBuff" target="self" buff="buffLegBroken" />
+    		</triggered_effect>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffArmSplinted">
+    			<requirement name="HasBuff" target="self" buff="buffArmBroken" />
+    		</triggered_effect>
+    	</effect_group>
+      <effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffLegSprained">
+    		</triggered_effect>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffLegSprained">
+    		</triggered_effect>
+    	</effect_group>
+    </buff>
+
+    <!-- *********************** Drink Buffs *********************** -->
+
     <!-- *********************** Drunk Buffs *********************** -->
 
     <!-- Beer -->
-    <buff modTag="isDrunkBuff" name="Beer Lover" description_key="I've been drinking some craft quality beer." icon="ui_game_symbol_beer">
+    <buff modTag="isDrunkBuff" name="Beer Lover" description_key="I've been drinking some craft quality beer. Bonus fist damage. Stam regen. Stun resist." icon="ui_game_symbol_beer">
       <!-- Screen effect and messages  -->
       <effect_group modTag="drunkEffect0">
         <requirement name="NotHasBuff" buff="Redneck" />
@@ -90,7 +163,7 @@ Stat / cvar comparison operators:
     </buff>
 
     <!-- Cheap Beer -->
-    <buff modTag="isDrunkBuff" name="Redneck" description_key="I been drinkin sum beer." icon="ui_game_symbol_beer">
+    <buff modTag="isDrunkBuff" name="Redneck" description_key="I been drinkin sum beer. Lots of fist damage. Stam regen. Stun resist." icon="ui_game_symbol_beer">
       <!-- Screen effect and messages  -->
       <effect_group modTag="drunkEffect0">
         <requirement name="NotHasBuff" buff="Beer Lover" />
@@ -151,7 +224,7 @@ Stat / cvar comparison operators:
     </buff>
 
     <!-- Wine -->
-    <buff modTag="isDrunkBuff" name="Wine Connoisseur" description_key="A nice big wine with excellent heft." icon="ui_game_symbol_beer">
+    <buff modTag="isDrunkBuff" name="Wine Connoisseur" description_key="A nice big wine with excellent heft. I'm more suave than ever. Bonus to traders and being around my friends." icon="ui_game_symbol_beer">
       <!-- Screen effect and messages  -->
       <effect_group modTag="drunkEffect0">
         <requirement name="NotHasBuff" buff="Beer Lover" />
@@ -193,7 +266,7 @@ Stat / cvar comparison operators:
       <!-- Buffs -->
       <effect_group modTag="drunkBuff">
         <requirement name="CVarCompare" cvar="wineBuffCount" />
-        <passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength,attPerception" />
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkBetterBarter,perkCharismaticNature" />
       </effect_group>
       <!-- Debuff  -->
       <effect_group modTag="drunkDebuff1">
@@ -208,7 +281,7 @@ Stat / cvar comparison operators:
     </buff>
 
     <!-- Mixed Drink -->
-    <buff modTag="isDrunkBuff" name="Mixed Drink" description_key="I've been exploring some mixology." icon="ui_game_symbol_beer">
+    <buff modTag="isDrunkBuff" name="Mixed Drink" description_key="I've been exploring some mixology. Bonus Strength and Perception." icon="ui_game_symbol_beer">
       <!-- Screen effect and messages  -->
       <effect_group modTag="drunkEffect0">
         <requirement name="NotHasBuff" buff="Beer Lover" />
