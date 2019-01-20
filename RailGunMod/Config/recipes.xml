@@ -7,7 +7,7 @@
     	<ingredient name="unit_clay" count="1" />
     </recipe>
 
-    <recipe name="Rapid Recharger" count="1" craft_area="workbench">
+    <recipe name="Recharger" count="1" craft_area="workbench">
     	<ingredient name="resourceScrapLead" count="100" />
     	<ingredient name="resourceElectricParts" count="10" />
     	<ingredient name="resourceScrapPolymers" count="5" />
