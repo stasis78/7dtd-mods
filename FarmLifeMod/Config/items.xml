@@ -176,7 +176,7 @@ preparedPlant
     </item>
 
     <!--  Liquid Veg -->
-    <item name="Liquid Veg" modTag="preparedPlant,jar">
+    <item name="Liquid Veg" modTag="drink,jar">
       <property name="CustomIcon" value="drinkJarRiverWater" />
       <property name="CustomIconTint" value="A8F96F" />
     </item>
@@ -281,7 +281,7 @@ preparedPlant
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Milk" modTag="processedPlant,water,jar">
+    <item name="Milk" modTag="drink,jar">
       <property name="CustomIcon" value="drinkJarRiverWater" />
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
@@ -446,7 +446,7 @@ preparedPlant
       <property name="Sound_start" value="player_drinking" />
       <property name="Create_item" value="drinkJarEmpty" />
     </property>
-    <effect_group tiered="false">
+    <effect_group tiered="false" modTag="drink">
       <requirement name="NotHasBuff" buff="buffIsOnFire" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="20"/>
       <display_value name="staminaAmount" value=".15" />
@@ -457,7 +457,22 @@ preparedPlant
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
     </effect_group>
   </append>
+  <set xpath="/items/item[@name='Liquid Veg']/effect_group[contains(@modTag,'drink')]">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="" />
+  </set>
 
+  <set xpath="/items/item[@name='Orange Juice']/effect_group[contains(@modTag,'drink')]">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="" />
+  </set>
+
+  <set xpath="/items/item[@name='Lemon Lime Coolaid']/effect_group[contains(@modTag,'drink')]">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="" />
+  </set>
+
+  <set xpath="/items/item[@name='Milk']/effect_group[contains(@modTag,'drink')]">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="" />
+  </set>
+  
   <!-- Beer -->
   <append xpath="/items/item[contains(@modTag,'beer')]">
   	<property name="HoldType" value="3" />
@@ -552,7 +567,7 @@ preparedPlant
     <property name="CraftingIngredientTime" value="5" />
   </append>
 
-  <set xpath="/items/item[contains(@modTag,'water')]/property[@name='DisplayType']/@value">
+  <set xpath="/items/item[contains(@modTag,'drink')]/property[@name='DisplayType']/@value">
     water
   </set>
 
