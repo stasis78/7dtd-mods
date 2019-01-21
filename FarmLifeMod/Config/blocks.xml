@@ -13,6 +13,94 @@ Was in corn seed?
 
   <append xpath="/blocks">
 
+      <!-- Meat Blocks -->
+
+      <!-- Master Meat Blocks -->
+      <block name="emptyAnimalPenMaster">
+        <property name="CreativeMode" value="None"/>
+        <property name="Group" value="Food/Cooking" />
+      	<property name="DescriptionKey" value="Test Description" />
+        <property name="DisplayInfo" value="Name" />
+        <property name="DisplayType" value="blockMulti" />
+      	<property name="MultiBlockDim" value="3,1,3" />
+        <property name="Material" value="Miron_scrap"/>
+      	<property name="MaxDamage" value="2000"/>
+        <property name="Shape" value="ModelEntity"/>
+      	<property name="Path" value="solid"/>
+      	<property name="Model" value="Entities/Industrial/pallet_stackPrefab"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+        <property name="FilterTags" value="fdecor,fother,ffurniture" />
+        <drop event="Destroy" count="0"/>
+      </block>
+
+      <block name="growingAnimalPenMaster">
+        <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
+        <property name="Shape" value="ModelEntity"/>
+      	<property name="Path" value="solid"/>
+      	<property name="Model" value="Entities/Industrial/pallet_tarp_tilePrefab"/>
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="fullAnimalPenMaster" />
+        <property name="UpgradeRated.Rate" value="2" />
+      </block>
+
+      <block name="fullAnimalPenMaster">
+        <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Path" value="solid"/>
+        <property name="Model" value="Entities/Industrial/pallet_boxes_basePrefab"/>
+        <property name="Material" value="Morganic"/>
+        <property name="MaxDamage" value="200"/>
+      </block>
+      <!-- Master Meat Blocks -->
+
+      <!-- Dairy Blocks -->
+      <block name="Empty Holstein Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="FFFFFF" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Holstein Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Holstein Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Holstein Pen" />
+      </block>
+      <block name="Full Holstein Pen" modTag="fullPen">
+        <drop event="Harvest" name="Raw Milk" count="2" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Holstein Pen"/>
+      </block>
+      <!-- Dairy Blocks -->
+
+      <!-- Meat Blocks -->
+      <block name="Empty Angus Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="222222" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Angus Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Angus Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Angus Pen" />
+      </block>
+      <block name="Full Angus Pen"  modTag="fullPen">
+        <drop event="Harvest" name="foodRawMeat" count="10" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Delmontico" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Rump Roast" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Porterhouse" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Angus Pen"/>
+      </block>
+      <!-- Meat Blocks -->
+
+      <!-- Fruit Trees -->
       <block name="fruitTreeGrowingMaster">
         <property name="CreativeMode" value="Player"/>
         <property name="Extends" value="treeMasterGrowing" param1="CustomIcon,DescriptionKey"/>
@@ -39,7 +127,7 @@ Was in corn seed?
       <block name="fruitTreeMaster">
       	<property name="Extends" value="treeMaster"/>
         <property name="Material" value="Mplants"/>
-      	<property name="Model" value="Entities/Trees/OakMed01Prefab"/>
+      	<property name="Model" value="Entities/Trees/Maple20Prefab"/>
       	<property name="ModelOffset" value="0,-0.3,0"/>
       	<property name="MultiBlockDim" value="1,7,1"/>
       	<property name="BigDecorationRadius" value="4"/>
@@ -85,7 +173,7 @@ Was in corn seed?
       </block>
 
       <block name="Apple Tree" modTag="treePlant">
-        <property name="Model" value="Entities/Trees/OakMed01Prefab" />
+        <property name="Model" value="Entities/Trees/Maple20Prefab" />
         <drop event="Destroy" name="Apple Seed" count="1"/>
         <drop event="Harvest" name="Apple" count="1" tag="cropHarvest"/>
       </block>
@@ -106,7 +194,7 @@ Was in corn seed?
       </block>
 
       <block name="Orange Tree" modTag="treePlant">
-        <property name="Model" value="Entities/Trees/OakMed01Prefab" />
+        <property name="Model" value="Entities/Trees/Maple20Prefab" />
         <drop event="Destroy" name="Orange Seed" count="1"/>
         <drop event="Harvest" name="Orange" count="1" tag="cropHarvest"/>
       </block>
@@ -127,7 +215,7 @@ Was in corn seed?
      </block>
 
      <block name="Meyer Lemon Tree" modTag="treePlant">
-       <property name="Model" value="Entities/Trees/OakMed01Prefab" />
+       <property name="Model" value="Entities/Trees/Maple20Prefab" />
        <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
        <drop event="Harvest" name="Meyer Lemon" count="1" tag="cropHarvest"/>
      </block>
@@ -148,7 +236,7 @@ Was in corn seed?
     </block>
 
     <block name="Lime Tree" modTag="treePlant">
-      <property name="Model" value="Entities/Trees/OakMed01Prefab" />
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
     	<drop event="Destroy" name="Lime Seed" count="1"/>
       <drop event="Harvest" name="Lime" count="1" tag="cropHarvest"/>
     </block>
@@ -169,7 +257,7 @@ Was in corn seed?
     </block>
 
     <block name="Cherry Tree" modTag="treePlant">
-      <property name="Model" value="Entities/Trees/OakMed01Prefab" />
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
     	<drop event="Destroy" name="Cherry Seed" count="1"/>
       <drop event="Harvest" name="Cherry" count="1" tag="cropHarvest"/>
     </block>
@@ -549,6 +637,29 @@ Was in corn seed?
   <setattribute xpath="/blocks/block[@name='plantedSnowberry2']/property[@name='PlantGrowing.Next']" name="value">
     plantedSnowberry3HarvestPlayer
   </setattribute>
+
+  <!-- Meat Updates -->
+  <append xpath="/blocks/block[contains(@modTag,'emptyPen') or contains(@modTag,'growingPen')]">
+    <property class="RepairItems">
+      <property name="resourceForgedIron" value="10"/>
+    </property>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'emptyPen')]">
+    <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
+    <property name="CreativeMode" value="Player"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'growingPen')]">
+    <property name="Extends" value="growingAnimalPenMaster" param1=""/>
+    <property name="CreativeMode" value="None"/>
+    <property name="UpgradeRated.Rate" value="60" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'fullPen')]">
+    <property name="Extends" value="fullAnimalPenMaster" param1=""/>
+    <property name="CreativeMode" value="None"/>
+  </append>
 
 </configs>
 

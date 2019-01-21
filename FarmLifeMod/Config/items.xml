@@ -11,7 +11,81 @@ refinedPlant
 preparedPlant
 -->
 <configs>
+
   <append xpath="/items">
+
+    <!-- Meat -->
+    <item name="Delmontico" modTag="meat"> <!-- Rib -->
+      <property name="CustomIcon" value="foodRawMeat"/>
+      <property name="CustomIconTint" value="C50000" />
+    </item>
+
+    <item name="Rump Roast" modTag="meat"> <!-- Round -->
+      <property name="CustomIcon" value="foodRawMeat"/>
+      <property name="CustomIconTint" value="900000" />
+    </item>
+
+    <item name="Porterhouse" modTag="meat"> <!-- Short Loin -->
+      <property name="CustomIcon" value="foodRawMeat"/>
+      <property name="CustomIconTint" value="5E0000" />
+    </item>
+
+    <item name="Raw Milk">
+      <property name="CustomIcon" value="bucketRiverWater"/>
+      <property name="CustomIconTint" value="AAAAAA" />
+      <property name="HoldType" value="31" />
+      <property name="DisplayType" value="food" />
+      <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+      <property name="Material" value="MfoodRawMeat" />
+      <property name="Stacknumber" value="250" /> <!-- STK food -->
+      <property name="EconomicValue" value="2" />
+      <property name="CraftingIngredientTime" value="3" />
+    </item>
+
+    <!-- Legacy, may come back... -->
+    <item name="Powdered Milk" modTag="plant,dry">
+      <property name="CustomIcon" value="foodCornMeal" />
+      <property name="CustomIconTint" value="FFFFFF" />
+    </item>
+
+    <item name="Milk" modTag="drink,jar">
+      <property name="CustomIcon" value="drinkJarRiverWater" />
+      <property name="CustomIconTint" value="FFFFFF" />
+    </item>
+
+    <item name="Butter" modTag="ingredient">
+      <property name="CustomIcon" value="drinkJarRiverWater" />
+      <property name="CustomIconTint" value="AAAAAA" />
+    </item>
+
+    <item name="Buttery Delmontico" modTag="preparedPlant">
+      <property name="CustomIcon" value="foodGrilledMeat" />
+      <property name="CustomIconTint" value="CFB300" />
+    </item>
+
+    <item name="Rump Roast Stew" modTag="preparedPlant">
+      <property name="CustomIcon" value="foodSteakAndPotato" />
+      <property name="CustomIconTint" value="FFFFFF" />
+    </item>
+
+    <item name="Red Wine and Peppercorn Porterhouse" modTag="preparedPlant">
+      <property name="CustomIcon" value="foodGrilledMeat" />
+      <property name="CustomIconTint" value="CF6B00" />
+    </item>
+    <!-- Meat -->
+
+    <!-- Animals Items -->
+    <item name="Cattle Feed" modTag="ingredient">
+      <property name="CustomIcon" value="bucketRiverWater"/>
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Feeding Trough" modTag="ingredient">
+      <property name="CustomIcon" value="bucketEmpty"/>
+      <property name="CustomIconTint" value="888888" />
+    </item>
+    <!-- Animals Items -->
 
     <!--   Fruit -->
     <item name="Grape" modTag="fruit">
@@ -275,18 +349,6 @@ preparedPlant
     </item>
     <!--  Wheat -->
 
-    <!-- Milk -->
-    <item name="Powdered Milk" modTag="plant,dry">
-      <property name="CustomIcon" value="foodCornMeal" />
-      <property name="CustomIconTint" value="FFFFFF" />
-    </item>
-
-    <item name="Milk" modTag="drink,jar">
-      <property name="CustomIcon" value="drinkJarRiverWater" />
-      <property name="CustomIconTint" value="FFFFFF" />
-    </item>
-    <!-- Milk -->
-
     <!-- Penne -->
     <item name="Penne" modTag="refinedPlant,dry">
       <property name="CustomIcon" value="drinkJarRiverWater" />
@@ -303,6 +365,58 @@ preparedPlant
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
     <!-- Penne -->
+
+    <item name="Pitch Fork">
+      <property name="CustomIcon" value="meleeToolHoeIron" />
+      <property name="CustomIconTint" value="888888" />
+    	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkLivingOffTheLandCrops" />
+    	<property name="DisplayType" value="melee" />
+    	<property name="HoldType" value="50" />
+    	<property name="Meshfile" value="Items/Tools/hoe_ironPrefab" />
+    	<property name="Material" value="Mmetal" />
+    	<property name="RepairTools" value="resourceForgedIron" />
+    	<property name="DegradationBreaksAfter" value="false" />
+    	<property name="SoundJammed" value="ItemNeedsRepair" />
+    	<property name="SoundDestroy" value="wooddestroy1" />
+    	<property name="FuelValue" value="250" />
+    	<property name="EconomicValue" value="200" />
+    	<property class="Action0">
+    		<property name="Class" value="DynamicMelee" />
+    		<property name="Sphere" value="0.15" />
+    		<property name="Sound_start" value="swoosh" />
+    		<property name="ToolCategory.cropHarvest" value="1" param1="1" />
+    	</property>
+    	<property class="Action1"> <!-- UseAction -->
+    		<property name="Class" value="Repair" />
+    		<property name="Repair_amount" value="30" />
+    		<property name="Upgrade_hit_offset" value="-4" />
+    		<property name="Sound_start" value="repair_block" />
+    		<property name="Delay" value="1.3" /> <!-- Repair actions still need the delay amount -->
+    		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth" />
+    		<property name="Allowed_upgrade_items" value="Cattle Feed" />
+    	</property>
+    	<effect_group name="Base Effects">
+    		<passive_effect name="MaxRange" operation="base_set" value="2.9" />
+    		<passive_effect name="BlockRange" operation="base_set" value="10" />
+    		<passive_effect name="EntityDamage" operation="base_set" value="10" /> <!-- meleeToolHoeIron -->
+    		<passive_effect name="BlockDamage" operation="base_set" value="10" />
+    		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood" />
+    		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth" />
+    		<passive_effect name="DamageModifier" operation="perc_set" value="-.9" tags="stone" />
+    		<passive_effect name="DamageModifier" operation="perc_set" value="-.9" tags="metal" />
+    		<passive_effect name="AttacksPerMinute" operation="base_set" value="49" />
+    		<passive_effect name="StaminaLoss" operation="base_set" value="16.1" tags="primary" />
+    		<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6" />
+    		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6" />
+    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage" />
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue" />
+    	</effect_group>
+    	<property name="Group" value="Tools/Traps" />
+    	<property name="PickupJournalEntry" value="farmingTip" />
+    	<property name="ActionSkillGroup" value="Mining Tools" />
+    	<property name="CraftingSkillGroup" value="craftSkillTools" />
+    	<property name="RepairExpMultiplier" value="5.5" />
+    </item>
 
   </append>
 
@@ -324,8 +438,8 @@ preparedPlant
     </property>
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="2"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="2"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
         <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
@@ -351,8 +465,8 @@ preparedPlant
     </property>
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="2" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="2"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="2"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
         <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
@@ -379,7 +493,7 @@ preparedPlant
     </property>
     <property name="Group" value="Food/Cooking"/>
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
     </effect_group>
   </append>
@@ -401,7 +515,7 @@ preparedPlant
     </property>
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="12" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="12" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
     </effect_group>
@@ -424,7 +538,7 @@ preparedPlant
     </property>
     <property name="Group" value="Food/Cooking" />
     <effect_group tiered="false">
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="25" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
     </effect_group>
@@ -449,7 +563,7 @@ preparedPlant
     </property>
     <effect_group tiered="false" modTag="drink">
       <requirement name="NotHasBuff" buff="buffIsOnFire" />
-      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="add" value="20"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
       <display_value name="staminaAmount" value=".15" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
     </effect_group>
@@ -458,6 +572,7 @@ preparedPlant
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire" />
     </effect_group>
   </append>
+
   <set xpath="/items/item[@name='Liquid Veg']/effect_group[contains(@modTag,'drink')]">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Vitamin B" />
   </set>
@@ -555,6 +670,36 @@ preparedPlant
   	</effect_group>
   </append>
 
+  <!-- Meat -->
+  <append xpath="/items/item[contains(@modTag,'meat')]">
+  	<property name="HoldType" value="31" />
+  	<property name="DisplayType" value="food" />
+  	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+  	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+  	<property name="Material" value="MfoodRawMeat" />
+  	<property name="Stacknumber" value="250" /> <!-- STK food -->
+  	<property name="EconomicValue" value="2" />
+  	<property name="CraftingIngredientTime" value="3" />
+  	<property class="Action0">
+  		<property name="Class" value="Eat" />
+  		<property name="Delay" value="1.0" />
+  		<property name="Use_time" value="..." />
+  		<property name="Sound_start" value="player_eating" />
+  	</property>
+  	<property name="Smell" value="ExLargeSmell" />
+  	<property name="Group" value="Food/Cooking" />
+
+  	<effect_group tiered="false">
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables" />
+  		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
+  			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30" />
+  		</triggered_effect>
+  		<display_value name="FoodPoisoningRisk" value=".5" />
+  	</effect_group>
+  </append>
+
   <!-- Non edible ingredient -->
   <append xpath="/items/item[contains(@modTag,'ingredient')]">
     <property name="DisplayType" value="food" />
@@ -577,7 +722,7 @@ preparedPlant
   </append>
 
   <append xpath="/items/item[contains(@modTag,'dry')]/effect_group">
-    <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterAmount" operation="subtract" value="10" />
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="subtract" value="10" />
   </append>
 
 </configs>

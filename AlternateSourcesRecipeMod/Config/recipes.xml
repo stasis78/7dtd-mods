@@ -37,5 +37,10 @@
     	<ingredient name="resourceMetalPipe" count="1"/>
     </recipe>
 
+    <recipe name="toolBeaker" count="1" craft_area="forge" material_based="true">
+    	<ingredient name="unit_glass" count="1000" />
+    	<ingredient name="unit_clay" count="100" />
+    </recipe>
+
   </append>
 </configs>

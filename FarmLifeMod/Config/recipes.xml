@@ -12,6 +12,28 @@ tags="learnable">
 
   <append xpath="/recipes">
 
+    <!--   MEAT YUMMY -->=
+    <recipe name="Buttery Delmontico" count="1" modTag="campfire,toolCookingGrill">
+      <ingredient name="Delmontico" count="1" />
+      <ingredient name="Butter" count="1" />
+      <ingredient name="Salt" count="1" />
+      <ingredient name="Black Pepper" count="1" />
+    </recipe>
+    <recipe name="Rump Roast Stew" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Rump Roast" count="1" />
+      <ingredient name="foodCropPotato" count="2" />
+      <ingredient name="Carrot" count="2" />
+      <ingredient name="Salt" count="1" />
+      <ingredient name="Black Pepper" count="1" />
+    </recipe>
+    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="campfire,toolCookingGrill">
+      <ingredient name="Porterhouse" count="1" />
+      <ingredient name="Merlot" count="2" />
+      <ingredient name="Salt" count="1" />
+      <ingredient name="Black Pepper Corn" count="4" />
+    </recipe>
+    <!--   MEAT YUMMY -->
+
     <!--   Fruit -->
     <recipe name="Apple Pie" count="1" modTag="campfire,toolCookingGrill">
       <ingredient name="Apple" count="4" />
@@ -191,13 +213,12 @@ tags="learnable">
     <!--  Wheat -->
 
     <!--  Milk -->
-    <recipe name="Powdered Milk" count="1" modTag="campfire,toolCookingPot">
-    	<ingredient name="foodCropYuccaFruit" count="4" />
+    <recipe name="Milk" count="5" modTag="campfire,toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
     </recipe>
-
-    <recipe name="Milk" count="1" modTag="campfire,toolCookingPot">
-      <ingredient name="Powdered Milk" count="1" />
-      <ingredient name="drinkJarBoiledWater" count="1" />
+    <recipe name="Butter" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
+      <ingredient name="Salt" count="1" />
     </recipe>
     <!--  Milk -->
 
@@ -274,6 +295,30 @@ tags="learnable">
     	<ingredient name="resourceCropSnowberryPlant" />
     </recipe>
 
+    <!-- Animal Feed -->
+    <recipe name="Cattle Feed" count="1">
+    	<ingredient name="Sorghum" count="2" />
+    	<ingredient name="Wheat" count="2" />
+      <ingredient name="hayBaleBlock" count="2" />
+      <ingredient name="bucketRiverWater" count="2" />
+    </recipe>
+
+    <!-- Tools -->
+    <recipe name="Pitch Fork" count="1">
+    	<ingredient name="resourceForgedIron" count="16" />
+    	<ingredient name="resourceWood" count="10" />
+    </recipe>
+
+    <!-- Pens -->
+    <recipe name="Empty Holstein Pen" modTag="emptyPen">
+    </recipe>
+    <recipe name="Empty Angus Pen" modTag="emptyPen">
+    </recipe>
+
+    <!-- Crafting Items -->
+    <recipe name="Feeding Trough" count="1">
+    	<ingredient name="resourceForgedIron" count="14" />
+    </recipe>
   </append>
 
   <!-- Update Seeds -->
@@ -307,6 +352,17 @@ tags="learnable">
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingGrill')]" name="craft_tool">
     toolCookingGrill
   </setattribute>
+
+  <!-- Update Pens -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">
+    1
+  </setattribute>
+  <append xpath="/recipes/recipe[contains(@modTag,'emptyPen')]">
+    <ingredient name="resourceForgedIron" count="120" />
+    <ingredient name="hayBaleBlock" count="4" />
+    <ingredient name="Feeding Trough" count="1" />
+    <ingredient name="bucketEmpty" count="1" />
+  </append>
 
 
 </configs>
