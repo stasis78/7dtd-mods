@@ -39,6 +39,8 @@
     <item name="Onion" />
     <item name="Olive" />
     <item name="Celery" />
+    <item name="Salt Shaker" />
+    <item name="Black Pepper Tin" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
@@ -63,8 +65,15 @@
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
-    <item name="Salt" />
-    <item name="Black Pepper" />
+    <item name="Salt Shaker" />
+    <item name="Black Pepper Tin" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+    <item name="Salt" prob="0.05" />
+    <item name="Black Pepper" prob="0.05" />
+    <item name="Salt Shaker" prob="0.05" />
+    <item name="Black Pepper Tin" prob="0.05" />
   </append>
 
 </configs>

@@ -30,6 +30,16 @@
       <ingredient name="resourceCloth" count="100"/>
     </recipe>
 
+    <recipe name="bucketRiverWater" count="1" craft_area="">
+      <ingredient name="bucketEmpty" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="15"/>
+    </recipe>
+
+    <recipe name="bucketRiverWater" count="1" craft_area="">
+      <ingredient name="bucketEmpty" count="1"/>
+      <ingredient name="drinkJarRiverWater" count="15"/>
+    </recipe>
+
     <recipe name="forge" count="1" craft_area="workbench">
     	<ingredient name="resourceRockSmall" count="1000"/>
     	<ingredient name="resourceClayLump" count="1000"/>

@@ -789,7 +789,7 @@ Was in corn seed?
     <property name="CreativeMode" value="None"/>
     <property name="DisplayInfo" value="Name" />
     <property name="Extends" value="fullAnimalPenMaster" param1=""/>
-    <drop event="Harvest" name="bucketEmpty" count="1" prob="1" tag="allHarvest"/>
+    <drop event="Harvest" name="bucketEmpty" count="2" prob="1" tag="allHarvest"/>
   </append>
 
 </configs>

@@ -127,11 +127,6 @@ preparedPlant
       <property name="CustomIcon" value="bucketRiverWater"/>
       <property name="CustomIconTint" value="888888" />
     </item>
-
-    <item name="Feeding Trough" modTag="ingredient">
-      <property name="CustomIcon" value="bucketEmpty"/>
-      <property name="CustomIconTint" value="888888" />
-    </item>
     <!-- Animals Items -->
 
     <!--   Fruit -->
@@ -467,6 +462,23 @@ preparedPlant
     </item>
     <!-- Penne -->
 
+    <!-- Items and Tools -->
+
+    <item name="Feeding Trough" modTag="ingredient">
+      <property name="CustomIcon" value="bucketEmpty"/>
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Salt Shaker" modTag="ingredient">
+      <property name="CustomIcon" value="candle"/>
+      <property name="CustomIconTint" value="FFFFFF" />
+    </item>
+    
+    <item name="Black Pepper Tin" modTag="ingredient">
+      <property name="CustomIcon" value="resourceCandyTin"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
     <item name="Pitch Fork">
       <property name="CustomIcon" value="meleeToolHoeIron" />
       <property name="CustomIconTint" value="888888" />
@@ -518,7 +530,6 @@ preparedPlant
     	<property name="CraftingSkillGroup" value="craftSkillTools" />
     	<property name="RepairExpMultiplier" value="5.5" />
     </item>
-
   </append>
 
   <!-- Tier 1 : Fruit and Plants -->
@@ -674,21 +685,21 @@ preparedPlant
     </effect_group>
   </append>
 
-  <set xpath="/items/item[@name='Liquid Veg']/effect_group[contains(@modTag,'drink')]">
+  <append xpath="/items/item[@name='Liquid Veg']/effect_group[contains(@modTag,'drink')]">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Vitamin B" />
-  </set>
+  </append>
 
-  <set xpath="/items/item[@name='Orange Juice']/effect_group[contains(@modTag,'drink')]">
+  <append xpath="/items/item[@name='Orange Juice']/effect_group[contains(@modTag,'drink')]">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Vitamin C" />
-  </set>
+  </append>
 
-  <set xpath="/items/item[@name='Lemon Lime Coolaid']/effect_group[contains(@modTag,'drink')]">
+  <append xpath="/items/item[@name='Lemon Lime Coolaid']/effect_group[contains(@modTag,'drink')]">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Sugar Rush" />
-  </set>
+  </append>
 
-  <set xpath="/items/item[@name='Milk']/effect_group[contains(@modTag,'drink')]">
+  <append xpath="/items/item[@name='Milk']/effect_group[contains(@modTag,'drink')]">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Strong Bones" />
-  </set>
+  </append>
 
   <!-- Beer -->
   <append xpath="/items/item[contains(@modTag,'beer')]">
@@ -825,5 +836,10 @@ preparedPlant
   <append xpath="/items/item[contains(@modTag,'dry')]/effect_group">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="subtract" value="10" />
   </append>
+
+  <!-- Items and Tools -->
+  <set xpath="/items/item[@name='bucketEmpty']/property[@name='Stacknumber']/@value">
+    50
+  </set>
 
 </configs>

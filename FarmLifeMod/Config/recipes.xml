@@ -379,10 +379,19 @@ tags="learnable">
       <ingredient name="bucketRiverWater" count="2" />
     </recipe>
 
-    <!-- Tools -->
+    <!-- Tools and Items -->
+    <recipe name="Feeding Trough" count="1">
+    	<ingredient name="resourceForgedIron" count="14" />
+    </recipe>
     <recipe name="Pitch Fork" count="1">
     	<ingredient name="resourceForgedIron" count="16" />
     	<ingredient name="resourceWood" count="10" />
+    </recipe>
+    <recipe name="Salt" count="10">
+    	<ingredient name="Salt Shaker" count="1" />
+    </recipe>
+    <recipe name="Black Pepper" count="10">
+      <ingredient name="Black Pepper Tin" count="1" />
     </recipe>
 
     <!-- Pens -->
@@ -395,10 +404,6 @@ tags="learnable">
     <recipe name="Empty Elk Pen" modTag="emptyPen">
     </recipe>
 
-    <!-- Crafting Items -->
-    <recipe name="Feeding Trough" count="1">
-    	<ingredient name="resourceForgedIron" count="14" />
-    </recipe>
   </append>
 
   <!-- Update Seeds -->
