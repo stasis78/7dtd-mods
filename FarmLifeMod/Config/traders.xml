@@ -17,9 +17,11 @@
     <item name="Lime Seed" />
     <item name="Cherry Seed" />
     <item name="Black Pepper Seed" />
-    <item name="Powdered Milk" />
     <item name="Salt" />
     <item name="Black Pepper" />
+    <item name="Onion Seed" />
+    <item name="Olive Seed" />
+    <item name="Celery Seed" />
   </append>
 
 </configs>

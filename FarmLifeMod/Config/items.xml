@@ -30,6 +30,16 @@ preparedPlant
       <property name="CustomIconTint" value="5E0000" />
     </item>
 
+    <item name="Veal" modTag="meat">
+      <property name="CustomIcon" value="foodRawMeat"/>
+      <property name="CustomIconTint" value="F1948A" />
+    </item>
+
+    <item name="Elk Scraps" modTag="meat">
+      <property name="CustomIcon" value="foodRottingFlesh"/>
+      <property name="CustomIconTint" value="500000" />
+    </item>
+
     <item name="Raw Milk">
       <property name="CustomIcon" value="bucketRiverWater"/>
       <property name="CustomIconTint" value="AAAAAA" />
@@ -55,8 +65,13 @@ preparedPlant
     </item>
 
     <item name="Butter" modTag="ingredient">
-      <property name="CustomIcon" value="drinkJarRiverWater" />
-      <property name="CustomIconTint" value="AAAAAA" />
+      <property name="CustomIcon" value="resourceTallow" />
+      <property name="CustomIconTint" value="F0FF00" />
+    </item>
+
+    <item name="Parmesan" modTag="ingredient">
+      <property name="CustomIcon" value="terrSnow" />
+      <property name="CustomIconTint" value="F0FF00" />
     </item>
 
     <item name="Buttery Delmontico" modTag="preparedPlant">
@@ -73,6 +88,38 @@ preparedPlant
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CF6B00" />
     </item>
+
+    <item name="Bolognese Step 1" modTag="ingredient,jar">
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="CustomIconTint" value="FF4D00" />
+    </item>
+
+    <item name="Bolognese Step 2" modTag="ingredient,jar">
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="CustomIconTint" value="FF4D00" />
+    </item>
+
+    <item name="Bolognese Step 3" modTag="ingredient,jar">
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="CustomIconTint" value="FF4D00" />
+    </item>
+
+    <item name="Bolognese Sauce" modTag="ingredient,jar">
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="CustomIconTint" value="FF4D00" />
+    </item>
+
+    <item name="Bolognese Dish" modTag="preparedPlant,jar">
+      <property name="CustomIcon" value="foodMeatStew" />
+      <property name="CustomIconTint" value="FF4D00" />
+    </item>
+
+    <item name="Elk Jerky" modTag="preparedPlant">
+      <property name="CustomIcon" value="foodBoiledMeat" />
+      <property name="CustomIconTint" value="500000" />
+    </item>
+
+    <!--  -->
     <!-- Meat -->
 
     <!-- Animals Items -->
@@ -116,6 +163,11 @@ preparedPlant
     <item name="Cherry" modTag="fruit">
       <property name="CustomIcon" value="foodCropBlueberries"/>
       <property name="CustomIconTint" value="FF4200" />
+    </item>
+
+    <item name="Olive" modTag="fruit">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="1E8449" />
     </item>
 
     <item name="Apple Pie" modTag="refinedPlant">
@@ -185,6 +237,11 @@ preparedPlant
       <property name="CustomIconTint" value="F3FF00" />
     </item>
 
+    <item name="Salt and Pepper" modTag="ingredient">
+      <property name="CustomIcon" value="resourcePotassiumNitratePowder" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
     <item name="Grape Pulp" modTag="ingredient">
       <property name="CustomIcon" value="medicalAloeCream"/>
       <property name="CustomIconTint" value="76098E" />
@@ -193,6 +250,11 @@ preparedPlant
     <item name="Grape Extract" modTag="ingredient">
       <property name="CustomIcon" value="drinkJarBeer"/>
       <property name="CustomIconTint" value="76098E" />
+    </item>
+
+    <item name="Briney Water" modTag="ingredient">
+      <property name="CustomIcon" value="bucketRiverWater"/>
+      <property name="CustomIconTint" value="0008FF" />
     </item>
 
     <!--  Beer -->
@@ -266,6 +328,45 @@ preparedPlant
       <property name="CustomIcon" value="foodVegetableStew" />
       <property name="CustomIconTint" value="00AA76" />
     </item>
+
+    <!--  Onion -->
+    <item name="Onion" modTag="plant">
+      <property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
+      <property name="CustomIconTint" value="9B3400" />
+    </item>
+
+    <item name="Sauteed Onions" modTag="processedPlant">
+      <property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
+      <property name="CustomIconTint" value="9B3400" />
+    </item>
+    <!--  Onion -->
+
+    <!--  Celery -->
+    <item name="Celery" modTag="plant">
+      <property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
+      <property name="CustomIconTint" value="7DCEA0" />
+    </item>
+
+    <item name="Crunchy Celery" modTag="processedPlant">
+      <property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
+      <property name="CustomIconTint" value="7DCEA0" />
+    </item>
+    <!--  Celery -->
+
+    <!--  Olive -->
+    <item name="Olive Oil" modTag="ingredient">
+      <property name="CustomIcon" value="drinkJarRiverWater"/>
+      <property name="CustomIconTint" value="1E8449" />
+    </item>
+    <item name="Olive Paste" modTag="ingredient">
+      <property name="CustomIcon" value="medicalAloeCream"/>
+      <property name="CustomIconTint" value="1E8449" />
+    </item>
+    <item name="Canned Olives" modTag="refinedPlant,can">
+      <property name="CustomIcon" value="drinkCanEmpty"/>
+      <property name="CustomIconTint" value="1E8449" />
+    </item>
+    <!--  Olive -->
 
     <!--  Broccoli -->
     <item name="Broccoli" modTag="plant">

@@ -17,6 +17,9 @@
     <item name="Lime Seed" />
     <item name="Cherry Seed" />
     <item name="Black Pepper Seed" />
+    <item name="Onion Seed" />
+    <item name="Olive Seed" />
+    <item name="Celery Seed" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
@@ -33,6 +36,9 @@
     <item name="Meyer Lemon" />
     <item name="Lime" />
     <item name="Cherry" />
+    <item name="Onion" />
+    <item name="Olive" />
+    <item name="Celery" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
@@ -51,11 +57,12 @@
     <item name="Meyer Lemon" />
     <item name="Lime" />
     <item name="Cherry" />
+    <item name="Onion" />
+    <item name="Olive" />
+    <item name="Celery" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
-    <item name="Wheat Flour" />
-    <item name="Crushed Tomato" />
     <item name="Salt" />
     <item name="Black Pepper" />
   </append>

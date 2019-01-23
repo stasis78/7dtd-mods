@@ -13,26 +13,55 @@ tags="learnable">
   <append xpath="/recipes">
 
     <!--   MEAT YUMMY -->=
-    <recipe name="Buttery Delmontico" count="1" modTag="campfire,toolCookingGrill">
+    <recipe name="Buttery Delmontico" count="1" modTag="campfire,toolCookingGrill,saltPepper">
       <ingredient name="Delmontico" count="1" />
       <ingredient name="Butter" count="1" />
-      <ingredient name="Salt" count="1" />
-      <ingredient name="Black Pepper" count="1" />
     </recipe>
-    <recipe name="Rump Roast Stew" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Rump Roast Stew" count="1" modTag="campfire,toolCookingPot,saltPepper">
       <ingredient name="Rump Roast" count="1" />
       <ingredient name="foodCropPotato" count="2" />
       <ingredient name="Carrot" count="2" />
-      <ingredient name="Salt" count="1" />
-      <ingredient name="Black Pepper" count="1" />
     </recipe>
-    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="campfire,toolCookingGrill">
+    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="campfire,toolCookingGrill,salt">
       <ingredient name="Porterhouse" count="1" />
       <ingredient name="Merlot" count="2" />
-      <ingredient name="Salt" count="1" />
       <ingredient name="Black Pepper Corn" count="4" />
     </recipe>
+    <recipe name="Elk Jerky" count="5" modTag="campfire,toolCookingGrill,saltPepper">
+      <ingredient name="Elk Scraps" count="20" />
+    </recipe>
     <!--   MEAT YUMMY -->
+
+    <!--
+    From https://cooking.nytimes.com/recipes/1015181-marcella-hazans-bolognese-sauce
+    One of my fav recipes :D
+    -->
+    <recipe name="Bolognese Step 1" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Olive Oil" count="1" />
+      <ingredient name="Butter" count="1" />
+      <ingredient name="Onion" count="1" />
+      <ingredient name="Celery" count="1" />
+      <ingredient name="Carrot" count="1" />
+    </recipe>
+    <recipe name="Bolognese Step 2" count="1" modTag="campfire,toolCookingPot,saltPepper">
+      <ingredient name="Bolognese Step 1" count="1" />
+      <ingredient name="Veal" count="5" />
+    </recipe>
+    <recipe name="Bolognese Step 3" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Bolognese Step 2" count="1" />
+      <ingredient name="Milk" count="1" />
+    </recipe>
+    <recipe name="Bolognese Sauce" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Bolognese Step 3" count="1" />
+      <ingredient name="White Zin" count="1" />
+      <ingredient name="Crushed Tomato" count="1" />
+    </recipe>
+    <recipe name="Bolognese Dish" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Bolognese Sauce" count="1" />
+      <ingredient name="Parmesan" count="1" />
+      <ingredient name="Butter" count="1" />
+      <ingredient name="Penne" count="1" />
+    </recipe>
 
     <!--   Fruit -->
     <recipe name="Apple Pie" count="1" modTag="campfire,toolCookingGrill">
@@ -67,6 +96,12 @@ tags="learnable">
       <ingredient name="drinkJarGrainAlcohol" count="1" />
     </recipe>
 
+    <recipe name="Canned Olives" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Olive" count="4" />
+      <ingredient name="drinkCanEmpty" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
     <!--   Wine -->
     <recipe name="Port Wine" count="15" modTag="chemistryStation">
       <ingredient name="Merlot" count="5" />
@@ -99,11 +134,26 @@ tags="learnable">
     <recipe name="Black Pepper" count="1" modTag="chemistryStation">
       <ingredient name="Black Pepper Corn" count="1" />
     </recipe>
+    <recipe name="Salt and Pepper" count="1">
+      <ingredient name="Black Pepper" count="1" />
+      <ingredient name="Salt" count="1" />
+    </recipe>
     <recipe name="Grape Pulp" count="1" modTag="chemistryStation">
       <ingredient name="Grape" count="2" />
     </recipe>
     <recipe name="Grape Extract" count="1" modTag="chemistryStation">
       <ingredient name="Grape" count="2" />
+    </recipe>
+    <recipe name="Olive Paste" count="1" modTag="chemistryStation">
+      <ingredient name="Olive" count="4" />
+    </recipe>
+    <recipe name="Olive Oil" count="1" modTag="chemistryStation">
+      <ingredient name="Olive Paste" count="2" />
+    </recipe>
+    <recipe name="Briney Water" count="1" modTag="chemistryStation">
+      <!-- Need to determine a better ratio of salt to water should be 1 part salt 4 parts water -->
+      <ingredient name="Salt" count="5" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
     </recipe>
 
     <!--   Beer -->
@@ -186,6 +236,17 @@ tags="learnable">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
+
+    <recipe name="Sauteed Onions" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Onion" count="1" />
+      <ingredient name="Butter" count="1" />
+    </recipe>
+
+    <recipe name="Crunchy Celery" count="1" modTag="">
+      <ingredient name="Celery" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
     <!--  Veggies -->
 
     <!--  Tomato -->
@@ -219,6 +280,12 @@ tags="learnable">
     <recipe name="Butter" count="1" modTag="campfire,toolCookingPot">
       <ingredient name="Raw Milk" count="1" />
       <ingredient name="Salt" count="1" />
+    </recipe>
+    <!-- Cheese needs more work. Should create curds with whey first, then mix with brine -->
+    <recipe name="Parmesan" count="10" modTag="campfire,toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
+      <ingredient name="Milk" count="5" />
+      <ingredient name="Briney Water" count="1" />
     </recipe>
     <!--  Milk -->
 
@@ -294,6 +361,15 @@ tags="learnable">
     <recipe name="plantedSnowberry1" modTag="seed">
     	<ingredient name="resourceCropSnowberryPlant" />
     </recipe>
+    <recipe name="Onion Seed" modTag="seed">
+    	<ingredient name="Onion" />
+    </recipe>
+    <recipe name="Celery Seed" modTag="seed">
+    	<ingredient name="Celery" />
+    </recipe>
+    <recipe name="Olive Seed" modTag="seed">
+    	<ingredient name="Olive" />
+    </recipe>
 
     <!-- Animal Feed -->
     <recipe name="Cattle Feed" count="1">
@@ -313,6 +389,10 @@ tags="learnable">
     <recipe name="Empty Holstein Pen" modTag="emptyPen">
     </recipe>
     <recipe name="Empty Angus Pen" modTag="emptyPen">
+    </recipe>
+    <recipe name="Empty Veal Pen" modTag="emptyPen">
+    </recipe>
+    <recipe name="Empty Elk Pen" modTag="emptyPen">
     </recipe>
 
     <!-- Crafting Items -->
@@ -338,6 +418,9 @@ tags="learnable">
   </append>
   <append xpath="/recipes/recipe[contains(@modTag,'blackPepper')]">
     <ingredient name="Black Pepper" count="1" />
+  </append>
+  <append xpath="/recipes/recipe[contains(@modTag,'saltPepper')]">
+    <ingredient name="Salt and Pepper" count="1" />
   </append>
 
   <setattribute xpath="/recipes/recipe[contains(@modTag,'chemistryStation')]" name="craft_area">
