@@ -1,0 +1,63 @@
+<!--
+attFortitude,
+attStrength,
+attPerception
+attIntellect
+attAgility
+
+onSelfBuffStart = 0
+onSelfBuffUpdate,  Frame-based, not 1/s
+onSelfBuffFinish,  Runs when the duration of a buff has run out.
+onSelfBuffRemove,  When the buff is being removed by any source. Can not be used for a buff to restart itself.
+onSelfBuffStack    When the buff is refreshed/extended/stacked... anything but "ignore"
+
+Stat / cvar comparison operators:
+    None,
+    Equals,
+    NotEquals,
+    Less, LessThan, LT,
+    Greater, GreaterThan, GT,
+    LessOrEqual, LessThanOrEqualTo, LTE,
+    GreaterOrEqual, GreaterThanOrEqualTo, GTE
+-->
+<configs>
+
+  <append xpath="/buffs">
+    <buff name="Go Hungry" name_key="Go Hungry" description_key="I'm going hungry...." icon="ui_game_symbol_hunger" icon_color="132,0,155" hidden="false" remove_on_death="false">
+  		<stack_type value="ignore" />
+      <update_rate value="10" />
+
+  		<effect_group>
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="20" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+  		</effect_group>
+      <effect_group>
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="50" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+  		</effect_group>
+      <effect_group>
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="100" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+  		</effect_group>
+      <effect_group>
+        <requirement name="PlayerLevel" target="self" operation="GTE" value="150" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="40" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+  		</effect_group>
+  	</buff>
+  </append>
+
+  <append xpath="/buffs/buff[@name='buffStatusCheck']/effect_group">
+    <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="Go Hungry">
+      <requirement name="PlayerLevel" target="self" operation="GTE" value="20" />
+    </triggered_effect>
+  </append>
+
+</configs>
