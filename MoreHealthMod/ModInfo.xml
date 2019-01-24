@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MoreHealthMod" />
+		<Description value="Stasis' MoreHealthMod - go hungry and thirsty but become a tank" />
+		<Author value="stasis" />
+		<Version value="1.0" />
+	</ModInfo>
+</xml>

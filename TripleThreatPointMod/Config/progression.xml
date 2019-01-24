@@ -1,0 +1,8 @@
+<configs>
+	<set xpath="/progression/level/@skill_points_per_level">3</set>
+</configs>
+
+<!--
+<progression>
+<level max_level="300" exp_to_level="9545" experience_multiplier="1.0149" skill_points_per_level="1">
+-->

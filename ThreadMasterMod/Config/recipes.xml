@@ -1,0 +1,80 @@
+<!--
+
+ingredientTag
+
+This tag enables groups of recipes to have the same set of ingredients. This
+should make editing recipe groups easier if you want to change the balance.
+
+modTag="TMM" (ThreadMasterMod)
+
+This tag should be on all custom recipes. It enables other mods to easily
+manipulate all recipes from this mod. Such as adding craft_area="workbench"
+
+<recipe name="plantFiberGloves" count="1">
+	<ingredient name="resourceYuccaFibers" count="5"/>
+</recipe>
+
+<recipe name="ballCap" modTag="TMM" ingredientTag="fiberClothPoly">
+<set xpath="/items/item[@name='meleeToolAuger']/property[@class='Action0']/property[@name='Sound_start']/@value">stepmetal</set>
+
+-->
+
+<configs>
+  <append xpath="/recipes">
+    <recipe name="ballCap" modTag="TMM" ingredientTag="fiberClothPoly" />
+    <recipe name="skullCap" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="denimPants" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="armyPants" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="tankTop" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="shirt" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="armyShirt" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="sweatshirt" modTag="TMM" ingredientTag="fiberClothDuct" />
+    <recipe name="tshirt" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="skirt" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="jacketWhite" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="jacketLetter" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="denimShortsPants" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="hoodedSweatshirt" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="tshirtZUWhite" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="pressboyCap" modTag="TMM" ingredientTag="fiberClothPoly" />
+    <recipe name="overalls" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="flannelShirt" modTag="TMM" ingredientTag="fiberCloth" />
+    <recipe name="suitPants" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+    <recipe name="suitJacket" modTag="TMM" ingredientTag="fiberClothPolyDuct" />
+  </append>
+
+  <setattribute xpath="/recipes/recipe[@modTag='TMM']" name="count">1</setattribute>
+
+  <append xpath="/recipes/recipe[@ingredientTag='fiberCloth']">
+    <ingredient name="resourceYuccaFibers" count="5"/>
+    <ingredient name="resourceCloth" count="5"/>
+  </append>
+
+  <append xpath="/recipes/recipe[@ingredientTag='fiberClothDuct']">
+    <ingredient name="resourceYuccaFibers" count="5"/>
+    <ingredient name="resourceCloth" count="5"/>
+	  <ingredient name="resourceDuctTape" count="1"/>
+  </append>
+
+  <append xpath="/recipes/recipe[@ingredientTag='fiberClothPoly']">
+    <ingredient name="resourceYuccaFibers" count="5"/>
+    <ingredient name="resourceCloth" count="5"/>
+    <ingredient name="resourceScrapPolymers" count="5"/>
+  </append>
+
+  <append xpath="/recipes/recipe[@ingredientTag='fiberClothPolyDuct']">
+    <ingredient name="resourceYuccaFibers" count="5"/>
+    <ingredient name="resourceCloth" count="5"/>
+    <ingredient name="resourceScrapPolymers" count="5"/>
+    <ingredient name="resourceDuctTape" count="1"/>
+  </append>
+
+  <!-- Require a craft_area
+  <setattribute xpath="/recipes/recipe[@modTag='TMM']" name="craft_area">workbench</setattribute>
+  -->
+
+  <!-- Require a craft_tool
+  <setattribute xpath="/recipes/recipe[@modTag='TMM']" name="craft_tool">toolAnvil</setattribute>
+  -->
+
+</configs>

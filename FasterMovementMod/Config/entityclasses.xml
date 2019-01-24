@@ -1,0 +1,13 @@
+<configs>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WalkSpeed']/@value">2.0</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='RunSpeed']/@value">1.8</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CrouchSpeed']/@value">2.0</set>
+</configs>
+
+<!--
+<passive_effect name="WalkSpeed" operation="base_set" value="1.53" />
+<passive_effect name="RunSpeed" operation="base_set" value="1.10" />
+<passive_effect name="CrouchSpeed" operation="base_set" value="1.04" />
+<passive_effect name="WalkSpeed" operation="base_set" value="1.02" tags="swimming" />
+<passive_effect name="RunSpeed" operation="base_set" value="0.85" tags="swimming" />
+-->

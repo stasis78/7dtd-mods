@@ -1,0 +1,797 @@
+<!--
+Blocks use modTag attributes to help with boiler plate child nodes.
+Was in corn seed?
+<property name="Place" value="Door" /> waiting for response from forums....
+ <block name="treeAzalea">
+-->
+<configs>
+
+  <!-- Update Vanilla blocks -->
+  <append xpath="/blocks/block[@name='terrStone']">
+    <drop event="Harvest" name="Halite" count="1" prob=".1" tag="oreWoodHarvest" />
+  </append>
+
+  <append xpath="/blocks">
+
+      <!-- Meat Blocks -->
+
+      <!-- Master Meat Blocks -->
+      <block name="emptyAnimalPenMaster">
+        <property name="CreativeMode" value="None"/>
+        <property name="DisplayType" value="blockMulti" />
+      	<property name="MultiBlockDim" value="3,1,3" />
+        <property name="Material" value="Miron_scrap"/>
+      	<property name="MaxDamage" value="2000"/>
+        <property name="Shape" value="ModelEntity"/>
+      	<property name="Path" value="solid"/>
+      	<property name="Model" value="Entities/Industrial/pallet_stackPrefab"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+        <property name="FilterTags" value="fdecor,fother,ffurniture" />
+        <drop event="Destroy" count="0"/>
+      </block>
+
+      <block name="growingAnimalPenMaster">
+        <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
+        <property name="Shape" value="ModelEntity"/>
+      	<property name="Path" value="solid"/>
+      	<property name="Model" value="Entities/Industrial/pallet_tarp_tilePrefab"/>
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="fullAnimalPenMaster" />
+        <property name="UpgradeRated.Rate" value="2" />
+      </block>
+
+      <block name="fullAnimalPenMaster">
+        <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Path" value="solid"/>
+        <property name="Model" value="Entities/Industrial/pallet_boxes_basePrefab"/>
+        <property name="Material" value="Morganic"/>
+        <property name="MaxDamage" value="200"/>
+      </block>
+      <!-- Master Meat Blocks -->
+
+      <!-- Dairy Blocks -->
+      <block name="Empty Holstein Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="FFFFFF" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Holstein Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Holstein Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Holstein Pen" />
+      </block>
+      <block name="Full Holstein Pen" modTag="fullPen">
+        <drop event="Harvest" name="Raw Milk" count="2" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Holstein Pen"/>
+      </block>
+      <!-- Dairy Blocks -->
+
+      <!-- Angus Blocks -->
+      <block name="Empty Angus Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="222222" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Angus Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Angus Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Angus Pen" />
+      </block>
+      <block name="Full Angus Pen"  modTag="fullPen">
+        <drop event="Harvest" name="foodRawMeat" count="10" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Delmontico" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Rump Roast" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Porterhouse" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Angus Pen"/>
+      </block>
+      <!-- Angus Blocks -->
+
+      <!-- Veal Blocks -->
+      <block name="Empty Veal Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="F1948A" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Veal Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Veal Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Veal Pen" />
+      </block>
+      <block name="Full Veal Pen"  modTag="fullPen">
+        <drop event="Harvest" name="foodRawMeat" count="5" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Veal" count="2,4" prob="0.67" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Veal Pen"/>
+      </block>
+      <!-- Veal Blocks -->
+
+      <!-- Elk Blocks -->
+      <block name="Empty Elk Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="500000" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Elk Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Elk Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Elk Pen" />
+      </block>
+      <block name="Full Elk Pen"  modTag="fullPen">
+        <drop event="Harvest" name="foodRawMeat" count="5" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2" />
+        <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Elk Scraps" count="10,20" prob="0.75" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Elk Pen"/>
+      </block>
+      <!-- Elk Blocks -->
+
+      <!-- Fruit Trees -->
+      <block name="fruitTreeGrowingMaster">
+        <property name="CreativeMode" value="None"/>
+        <property name="Extends" value="treeMasterGrowing" param1="CustomIcon,DescriptionKey"/>
+        <property name="MaxDamage" value="10"/>
+      	<property name="Material" value="Mplants"/>
+      	<property name="StabilitySupport" value="false"/>
+      	<property name="Model" value="Entities/Trees/OakSeed01Prefab"/>
+      	<property name="ModelOffset" value="0,-0.2,0"/>
+      	<property name="IsDistantDecoration" value="false"/>
+      	<property name="Collide" value="melee"/>
+      	<property name="FallOver" value="false"/>
+      	<property name="BigDecorationRadius" value="4"/>
+      	<property name="OnlySimpleRotations" value="true"/>
+        <property name="EconomicValue" value="12"/>
+      	<property name="EconomicBundleSize" value="5"/>
+      	<property name="SellableToTrader" value="false"/>
+      	<property name="Group" value="Resources"/>
+      	<property name="ParticleOnDeath" value="treeGib_sapling"/>
+      	<property name="SortOrder2" value="0142"/>
+      	<property name="ActivationDistance" value="4"/>
+        <property name="PlantGrowing.GrowthRate" value="63" />  <!-- matches-ish Vanilla a7.1 -->
+      </block>
+      <block name="fruitTreeMaster">
+      	<property name="Extends" value="treeMaster"/>
+        <property name="Material" value="Mplants"/>
+      	<property name="Model" value="Entities/Trees/Maple20Prefab"/>
+      	<property name="ModelOffset" value="0,-0.3,0"/>
+      	<property name="MultiBlockDim" value="1,7,1"/>
+      	<property name="BigDecorationRadius" value="4"/>
+      	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+      	<property name="SortOrder2" value="0140"/>
+        <property name="MaxDamage" value="500" />
+      </block>
+
+      <!-- Grape Tree -->
+      <block name="Grape Seed" modTag="treeSeed">
+        <property name="CustomIcon" value="treePlantedOak1m" />
+        <property name="CustomIconTint" value="76098E" />
+        <property name="Collide" value="melee"/>
+        <property name="PlantGrowing.Next" value="Grape Tree Growing"/>
+        <drop event="Destroy" name="Grape Seed" count="1"/>
+      </block>
+
+      <block name="Grape Tree Growing" modTag="treeGrowing">
+        <property name="PlantGrowing.Next" value="Grape Tree"/>
+        <drop event="Destroy" name="Grape Seed" count="1"/>
+      </block>
+
+      <block name="Grape Tree" modTag="treePlant">
+        <property name="Model" value="Entities/Trees/Haunted_Shrub_WastelandPrefab" />
+        <drop event="Destroy" name="Grape Seed" count="1"/>
+        <drop event="Harvest" name="Grape" count="1" tag="cropHarvest"/>
+      </block>
+      <!-- Grape Tree -->
+
+      <!-- Apple Tree -->
+      <block name="Apple Seed" modTag="treeSeed">
+        <property name="CustomIcon" value="treePlantedOak1m" />
+        <property name="CustomIconTint" value="FF0000" />
+        <property name="Collide" value="melee"/>
+        <property name="PlantGrowing.Next" value="Apple Tree Growing"/>
+        <drop event="Destroy" name="Apple Seed" count="1"/>
+      </block>
+
+      <block name="Apple Tree Growing" modTag="treeGrowing">
+        <property name="PlantGrowing.Next" value="Apple Tree"/>
+        <drop event="Destroy" name="Apple Seed" count="1"/>
+      </block>
+
+      <block name="Apple Tree" modTag="treePlant">
+        <property name="Model" value="Entities/Trees/Maple20Prefab" />
+        <drop event="Destroy" name="Apple Seed" count="1"/>
+        <drop event="Harvest" name="Apple" count="1" tag="cropHarvest"/>
+      </block>
+      <!-- Apple Tree -->
+
+      <!-- Orange Tree -->
+      <block name="Orange Seed" modTag="treeSeed">
+        <property name="CustomIcon" value="treePlantedOak1m" />
+        <property name="CustomIconTint" value="FFAE00" />
+        <property name="Collide" value="melee"/>
+        <property name="PlantGrowing.Next" value="Orange Tree Growing"/>
+        <drop event="Destroy" name="Orange Seed" count="1"/>
+      </block>
+
+      <block name="Orange Tree Growing" modTag="treeGrowing">
+        <property name="PlantGrowing.Next" value="Orange Tree"/>
+        <drop event="Destroy" name="Orange Seed" count="1"/>
+      </block>
+
+      <block name="Orange Tree" modTag="treePlant">
+        <property name="Model" value="Entities/Trees/Maple20Prefab" />
+        <drop event="Destroy" name="Orange Seed" count="1"/>
+        <drop event="Harvest" name="Orange" count="1" tag="cropHarvest"/>
+      </block>
+      <!-- Orange Tree -->
+
+     <!-- Meyer Lemon Tree -->
+     <block name="Meyer Lemon Seed" modTag="treeSeed">
+       <property name="CustomIcon" value="treePlantedOak1m" />
+       <property name="CustomIconTint" value="FFD800" />
+       <property name="Collide" value="melee"/>
+       <property name="PlantGrowing.Next" value="Meyer Lemon Tree Growing"/>
+       <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
+     </block>
+
+     <block name="Meyer Lemon Tree Growing" modTag="treeGrowing">
+       <property name="PlantGrowing.Next" value="Meyer Lemon Tree"/>
+       <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
+     </block>
+
+     <block name="Meyer Lemon Tree" modTag="treePlant">
+       <property name="Model" value="Entities/Trees/Maple20Prefab" />
+       <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
+       <drop event="Harvest" name="Meyer Lemon" count="1" tag="cropHarvest"/>
+     </block>
+     <!-- Meyer Lemon Tree -->
+
+    <!-- Lime Tree -->
+    <block name="Lime Seed" modTag="treeSeed">
+      <property name="CustomIcon" value="treePlantedOak1m" />
+      <property name="CustomIconTint" value="3AFF00" />
+      <property name="Collide" value="melee"/>
+      <property name="PlantGrowing.Next" value="Lime Tree Growing"/>
+    	<drop event="Destroy" name="Lime Seed" count="1"/>
+    </block>
+
+    <block name="Lime Tree Growing" modTag="treeGrowing">
+    	<property name="PlantGrowing.Next" value="Lime Tree"/>
+    	<drop event="Destroy" name="Lime Seed" count="1"/>
+    </block>
+
+    <block name="Lime Tree" modTag="treePlant">
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
+    	<drop event="Destroy" name="Lime Seed" count="1"/>
+      <drop event="Harvest" name="Lime" count="1" tag="cropHarvest"/>
+    </block>
+    <!-- Lime Tree -->
+
+    <!-- Cherry Tree -->
+    <block name="Cherry Seed" modTag="treeSeed">
+      <property name="CustomIcon" value="treePlantedOak1m" />
+      <property name="CustomIconTint" value="FF4200" />
+      <property name="Collide" value="melee"/>
+      <property name="PlantGrowing.Next" value="Cherry Tree Growing"/>
+    	<drop event="Destroy" name="Cherry Seed" count="1"/>
+    </block>
+
+    <block name="Cherry Tree Growing" modTag="treeGrowing">
+    	<property name="PlantGrowing.Next" value="Cherry Tree"/>
+    	<drop event="Destroy" name="Cherry Seed" count="1"/>
+    </block>
+
+    <block name="Cherry Tree" modTag="treePlant">
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
+    	<drop event="Destroy" name="Cherry Seed" count="1"/>
+      <drop event="Harvest" name="Cherry" count="1" tag="cropHarvest"/>
+    </block>
+    <!-- Cherry Tree -->
+
+    <!-- Olive Tree -->
+    <block name="Olive Seed" modTag="treeSeed">
+      <property name="CustomIcon" value="treePlantedOak1m" />
+      <property name="CustomIconTint" value="1E8449" />
+      <property name="Collide" value="melee"/>
+      <property name="PlantGrowing.Next" value="Olive Tree Growing"/>
+      <drop event="Destroy" name="Olive Seed" count="1"/>
+    </block>
+
+    <block name="Olive Tree Growing" modTag="treeGrowing">
+      <property name="PlantGrowing.Next" value="Olive Tree"/>
+      <drop event="Destroy" name="Olive Seed" count="1"/>
+    </block>
+
+    <block name="Olive Tree" modTag="treePlant">
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
+      <drop event="Destroy" name="Olive Seed" count="1"/>
+      <drop event="Harvest" name="Olive" count="1" tag="cropHarvest"/>
+    </block>
+    <!-- Olive Tree -->
+
+    <!-- Black Pepper -->
+    <block name="Black Pepper Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="000000" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Black Pepper Growing"/>
+      <drop event="Destroy" name="Black Pepper Seed" count="1"/>
+    </block>
+
+    <block name="Black Pepper Growing" modTag="growing,shapeModel">
+    	<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+    	<property name="PlantGrowing.Next" value="Black Pepper Plant"/>
+    	<drop event="Destroy" name="Black Pepper Seed" count="1"/>
+    </block>
+
+    <block name="plantedBlackPepper3Harvest" modTag="harvest,shapeModel">
+    	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+    	<drop event="Harvest" name="Black Pepper Corn" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Black Pepper Plant" modTag="plant">
+      <property name="Extends" value="treeGrassMaster" param1="CustomIcon" />
+      <property name="Shape" value="Grass" />
+      <property name="Mesh" value="grass" />
+      <property name="Class" value="Tallgrass" />
+      <property name="Texture" value="567" />
+      <property name="Material" value="Mtallgrass" />
+    	<drop event="Harvest" name="Black Pepper Corn" count="1" tag="cropHarvest"/>
+    	<property name="DowngradeBlock" value="Black Pepper Seed"/>
+    </block>
+    <!-- Black Pepper -->
+
+    <!--  Wheat -->
+    <block name="Wheat Seed" modTag="seed,shapeNew">
+      <property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="888888" />
+    	<property name="Material" value="Mcorn" />
+    	<property name="Model" value="corn_sprout_shape" />
+    	<property name="Mesh" value="cutoutmoveable" />
+    	<property name="PlantGrowing.Next" value="Wheat Growing" />
+    	<drop event="Destroy" name="Wheat Seed" count="1" />
+    </block>
+
+    <block name="Wheat Growing" modTag="growing,shapeNew">
+    	<property name="Extends" value="Wheat Seed" />
+    	<property name="Model" value="corn_growth_shape" />
+    	<property name="Mesh" value="cutoutmoveable" />
+    	<property name="PlantGrowing.Next" value="Wheat Plant" />
+    	<drop event="Destroy" name="Wheat Seed" count="1" />
+    </block>
+
+    <block name="plantedWheat3Harvest" modTag="harvest,shapeNew">
+    	<property name="Material" value="Mcorn" />
+    	<property name="Model" value="corn_harvest_shape" />
+    	<property name="Mesh" value="cutoutmoveable" />
+    	<drop event="Harvest" name="Wheat" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Wheat Plant" modTag="plant">
+    	<property name="Extends" value="plantedWheat3Harvest" />
+    	<property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="757E46" />
+    	<drop event="Harvest" name="Wheat" count="1" tag="cropHarvest" />
+    	<property name="DowngradeBlock" value="Wheat Seed" />
+    </block>
+    <!--  Wheat -->
+
+    <!--  Tomato -->
+    <block name="Tomato Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="FF4D00" />
+    	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+    	<property name="PlantGrowing.Next" value="Tomato Growing"/>
+    	<drop event="Destroy" name="Tomato Seed" count="1"/>
+    </block>
+
+    <block name="Tomato Growing" modTag="growing,shapeModel">
+    	<property name="CustomIcon" value="plantedPotato1"/>
+    	<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+    	<property name="PlantGrowing.Next" value="Tomato Plant"/>
+    	<drop event="Destroy" name="Tomato Seed" count="1"/>
+    </block>
+
+    <block name="plantedTomato3Harvest" modTag="harvest,shapeModel">
+    	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+    	<drop event="Harvest" name="Tomato" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Tomato Plant" modTag="plant">
+    	<property name="Extends" value="plantedTomato3Harvest"/>
+    	<property name="CustomIcon" value="plantedPotato1"/>
+    	<drop event="Harvest" name="Tomato" count="1" tag="cropHarvest"/>
+    	<property name="DowngradeBlock" value="Tomato Seed"/>
+    </block>
+    <!--  Tomato -->
+
+    <!--  Carrot -->
+    <block name="Carrot Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="FF6C00" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Carrot Growing"/>
+      <drop event="Destroy" name="Carrot Seed" count="1"/>
+    </block>
+
+    <block name="Carrot Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Carrot Plant"/>
+      <drop event="Destroy" name="Carrot Seed" count="1"/>
+    </block>
+
+    <block name="plantedCarrot3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Carrot" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Carrot Plant" modTag="plant">
+      <property name="Extends" value="plantedCarrot3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Carrot" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Carrot Seed"/>
+    </block>
+    <!--  Carrot -->
+
+    <!--  Romaine -->
+    <block name="Romaine Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="00FF3E" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Romaine Growing"/>
+      <drop event="Destroy" name="Romaine Seed" count="1"/>
+    </block>
+
+    <block name="Romaine Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Romaine Plant"/>
+      <drop event="Destroy" name="Romaine Seed" count="1"/>
+    </block>
+
+    <block name="plantedRomaine3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Romaine" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Romaine Plant" modTag="plant">
+      <property name="Extends" value="plantedRomaine3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Romaine" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Romaine Seed"/>
+    </block>
+    <!--  Romaine -->
+
+    <!--  Squash -->
+    <block name="Squash Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="BDFF00" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Squash Growing"/>
+      <drop event="Destroy" name="Squash Seed" count="1"/>
+    </block>
+
+    <block name="Squash Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Squash Plant"/>
+      <drop event="Destroy" name="Squash Seed" count="1"/>
+    </block>
+
+    <block name="plantedSquash3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Squash" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Squash Plant" modTag="plant">
+      <property name="Extends" value="plantedSquash3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Squash" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Squash Seed"/>
+    </block>
+    <!--  Squash -->
+
+    <!--  Broccoli -->
+    <block name="Broccoli Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="22AA00" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Broccoli Growing"/>
+      <drop event="Destroy" name="Broccoli Seed" count="1"/>
+    </block>
+
+    <block name="Broccoli Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Broccoli Plant"/>
+      <drop event="Destroy" name="Broccoli Seed" count="1"/>
+    </block>
+
+    <block name="plantedBroccoli3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Broccoli" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Broccoli Plant" modTag="plant">
+      <property name="Extends" value="plantedBroccoli3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Broccoli" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Broccoli Seed"/>
+    </block>
+    <!--  Broccoli -->
+
+    <!--  Sorghum -->
+    <block name="Sorghum Seed" modTag="seed,shapeNew">
+      <property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="727A04" />
+      <property name="Material" value="Mcorn" />
+      <property name="Model" value="corn_sprout_shape" />
+      <property name="Mesh" value="cutoutmoveable" />
+      <property name="PlantGrowing.Next" value="Sorghum Growing" />
+      <drop event="Destroy" name="Sorghum Seed" count="1" />
+    </block>
+
+    <block name="Sorghum Growing" modTag="growing,shapeNew">
+      <property name="Extends" value="Sorghum Seed" />
+      <property name="Model" value="corn_growth_shape" />
+      <property name="Mesh" value="cutoutmoveable" />
+      <property name="PlantGrowing.Next" value="Sorghum Plant" />
+      <drop event="Destroy" name="Sorghum Seed" count="1" />
+    </block>
+
+    <block name="plantedSorghum3Harvest" modTag="harvest,shapeNew">
+      <property name="Material" value="Mcorn" />
+      <property name="Model" value="corn_harvest_shape" />
+      <property name="Mesh" value="cutoutmoveable" />
+      <drop event="Harvest" name="Sorghum" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Sorghum Plant" modTag="plant">
+      <property name="Extends" value="plantedSorghum3Harvest" />
+      <property name="CustomIcon" value="plantedCorn1" />
+      <property name="CustomIconTint" value="757E46" />
+      <drop event="Harvest" name="Sorghum" count="1" tag="cropHarvest" />
+      <property name="DowngradeBlock" value="Sorghum Seed" />
+    </block>
+    <!--  Sorghum -->
+
+    <!--  Bitter Hop -->
+    <block name="Bitter Hop Seed" modTag="seed">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Texture" value="447" />
+    	<property name="PlantGrowing.Next" value="Bitter Hop Growing" />
+    	<drop event="Destroy" name="Bitter Hop Seed" count="1" />
+    </block>
+
+    <block name="Bitter Hop Growing" modTag="growing">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Texture" value="448" />
+    	<property name="PlantGrowing.Next" value="Bitter Hop Plant" />
+    	<drop event="Destroy" name="Bitter Hop Seed" count="1" />
+    </block>
+
+    <block name="plantedBitterHop3Harvest" modTag="harvest">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Texture" value="449" />
+    	<drop event="Harvest" name="Bitter Hops" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Bitter Hop Plant" modTag="plant">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="6D3C11" />
+    	<property name="Extends" value="plantedBitterHop3Harvest" />
+    	<property name="CustomIcon" value="plantedHop1" />
+    	<drop event="Harvest" name="Bitter Hops" count="1" tag="cropHarvest" />
+    	<property name="DowngradeBlock" value="Bitter Hop Seed" />
+    </block>
+    <!--  Bitter Hop -->
+
+    <!--  Floral Hop -->
+    <block name="Floral Hop Seed" modTag="seed">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Texture" value="447" />
+    	<property name="PlantGrowing.Next" value="Floral Hop Growing" />
+    	<drop event="Destroy" name="Floral Hop Seed" count="1" />
+    </block>
+
+    <block name="Floral Hop Growing" modTag="growing">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Texture" value="448" />
+    	<property name="PlantGrowing.Next" value="Floral Hop Plant" />
+    	<drop event="Destroy" name="Floral Hop Seed" count="1" />
+    </block>
+
+    <block name="plantedFloralHop3Harvest" modTag="harvest">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Texture" value="449" />
+    	<drop event="Harvest" name="Floral Hops" count="1" tag="wildCropsHarvest" />
+    </block>
+
+    <block name="Floral Hop Plant" modTag="plant">
+      <property name="CustomIcon" value="plantedHop1" />
+      <property name="CustomIconTint" value="D26C11" />
+    	<property name="Extends" value="plantedFloralHop3Harvest" />
+    	<drop event="Harvest" name="Floral Hops" count="1" tag="cropHarvest" />
+    	<property name="DowngradeBlock" value="Floral Hop Seed" />
+    </block>
+    <!--  Floral Hop -->
+
+    <!--  Onion -->
+    <block name="Onion Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="9B3400" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Onion Growing"/>
+      <drop event="Destroy" name="Onion Seed" count="1"/>
+    </block>
+
+    <block name="Onion Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Onion Plant"/>
+      <drop event="Destroy" name="Onion Seed" count="1"/>
+    </block>
+
+    <block name="plantedOnion3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Onion" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Onion Plant" modTag="plant">
+      <property name="Extends" value="plantedOnion3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Onion" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Onion Seed"/>
+    </block>
+    <!--  Onion -->
+
+    <!--  Celery -->
+    <block name="Celery Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="7DCEA0" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Celery Growing"/>
+      <drop event="Destroy" name="Celery Seed" count="1"/>
+    </block>
+
+    <block name="Celery Growing" modTag="growing,shapeModel">
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Celery Plant"/>
+      <drop event="Destroy" name="Celery Seed" count="1"/>
+    </block>
+
+    <block name="plantedCelery3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Celery" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Celery Plant" modTag="plant">
+      <property name="Extends" value="plantedCelery3Harvest"/>
+      <property name="CustomIcon" value="plantedPotato1"/>
+      <drop event="Harvest" name="Celery" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Celery Seed"/>
+    </block>
+    <!--  Celery -->
+
+  </append>
+
+  <!-- name changes -->
+  <append xpath="/blocks/block[contains(@name,'Wheat') or contains(@name,'Sorghum')]">
+    <property name="MultiBlockDim" value="1,3,1" />
+    <property name="Texture" value="529" />
+  </append>
+
+  <!-- modTag changes -->
+  <append xpath="/blocks/block[contains(@modTag,'seed')]">
+    <property name="CreativeMode" value="Player" />
+    <property name="DisplayInfo" value="Name" />
+    <property name="Group" value="Food/Cooking"/>
+    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'growing')]">
+    <property name="CreativeMode" value="None" />
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'harvest')]">
+    <property name="CreativeMode" value="None" />
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="cropsHarvestableMaster" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'plant')]">
+    <property name="CreativeMode" value="None"/>
+    <property name="DisplayInfo" value="Name" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'treeSeed')]">
+    <property name="CreativeMode" value="Player" />
+    <property name="DisplayInfo" value="Name" />
+    <property name="Group" value="Food/Cooking"/>
+    <property name="Extends" value="fruitTreeGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'treeGrowing')]">
+    <property name="CreativeMode" value="None" />
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="fruitTreeGrowingMaster" param1="CustomIcon,DescriptionKey" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'treePlant')]">
+    <property name="CreativeMode" value="None"/>
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="fruitTreeMaster" param1="CustomIcon" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'shapeNew')]">
+    <property name="Shape" value="New" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'shapeModel')]">
+    <property name="Shape" value="ModelEntity"/>
+  </append>
+
+  <!-- Snowberry fix to get seed to stay -->
+  <setattribute xpath="/blocks/block[@name='plantedSnowberry2']/property[@name='PlantGrowing.Next']" name="value">
+    plantedSnowberry3HarvestPlayer
+  </setattribute>
+
+  <!-- Meat Updates -->
+  <append xpath="/blocks/block[contains(@modTag,'emptyPen') or contains(@modTag,'growingPen')]">
+    <property class="RepairItems">
+      <property name="resourceForgedIron" value="10"/>
+    </property>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'emptyPen')]">
+    <property name="CreativeMode" value="Player"/>
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'growingPen')]">
+    <property name="CreativeMode" value="None"/>
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="growingAnimalPenMaster" param1=""/>
+    <property name="UpgradeRated.Rate" value="60" />
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'fullPen')]">
+    <property name="CreativeMode" value="None"/>
+    <property name="DisplayInfo" value="Name" />
+    <property name="Extends" value="fullAnimalPenMaster" param1=""/>
+    <drop event="Harvest" name="bucketEmpty" count="1" prob="1" tag="allHarvest"/>
+  </append>
+
+</configs>
+
+<!-- <remove xpath="/entity_classes/entity_class[contains(@name,'Stripper')]/property[@name='ExperienceGain']" /> -->

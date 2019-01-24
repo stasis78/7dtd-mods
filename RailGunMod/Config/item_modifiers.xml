@@ -1,0 +1,57 @@
+<configs>
+  <append xpath="/item_modifiers">
+
+    <item_modifier name="Railgun Battery Pack" installable_tags="railGunBattery" type="attachment">
+  		<property name="Stacknumber" value="2"/>
+      <property name="CustomIcon" value="solarCell"/>
+      <property name="CustomIconTint" value="9835E1" />
+  		<effect_group tiered="false">
+        <passive_effect name="DegradationMax" operation="base_add" value="1000" />
+  		</effect_group>
+  		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+  	</item_modifier>
+
+    <item_modifier name="Superconductor" installable_tags="superconductor" modifier_tags="stocks" type="attachment">
+      <property name="Stacknumber" value="1"/>
+      <property name="CustomIcon" value="resourceSpring"/>
+      <property name="CustomIconTint" value="9835E1" />
+      <effect_group tiered="false">
+        <passive_effect name="BurstRoundCount" operation="base_set" value="500" />
+      </effect_group>
+      <property name="PickupJournalEntry" value="augmentGunsTip"/>
+    </item_modifier>
+  </append>
+
+  <append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+    <item_property_overrides name="Rail Gun">
+      <property name="ScopeOffset" value="0,0.08,-0.2035" />
+      <property name="ScopeScale" value="0.63,0.63,0.63" />
+      <property name="ScopeCameraOffset" value="0,-.009,.45" />
+    </item_property_overrides>
+  </append>
+
+  <append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+    <item_property_overrides name="Rail Gun">
+			<property name="ScopeOffset" value="0,0.088,-.2" />
+			<property name="ScopeScale" value="1,1,1" />
+			<property name="ScopeCameraOffset" value="0,-0.04,0" />
+		</item_property_overrides>
+  </append>
+
+  <append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
+    <item_property_overrides name="Rail Gun">
+      <property name="ScopeOffset" value="0,0.088,-.14" />
+      <property name="ScopeScale" value="1,1,1" />
+      <property name="ScopeCameraOffset" value="0,-0.022,0.4" />
+    </item_property_overrides>
+  </append>
+
+  <append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+    <item_property_overrides name="Rail Gun">
+      <property name="ScopeOffset" value="0,-0.0523,0.1686" />
+      <property name="ScopeScale" value="1,1,1" />
+      <property name="ScopeCameraOffset" value="0,0,0" />
+    </item_property_overrides>
+  </append>  
+
+</configs>

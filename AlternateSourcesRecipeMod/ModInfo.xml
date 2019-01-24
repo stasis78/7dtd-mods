@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="AlternateSourcesRecipeMod" />
+		<Description value="Stasis' AlternateSourcesRecipeMod - because options are a good thang" />
+		<Author value="stasis" />
+		<Version value="1.4" />
+	</ModInfo>
+</xml>

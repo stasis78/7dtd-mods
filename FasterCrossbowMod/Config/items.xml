@@ -1,0 +1,6 @@
+<configs>
+    <set xpath="/items/item[@name='gunCrossbow']/effect_group[@name='Base Effects']/passive_effect[@name='ReloadSpeedMultiplier']/@value">1.2</set>
+</configs>
+
+<!--
+-->

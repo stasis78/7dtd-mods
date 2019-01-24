@@ -1,0 +1,51 @@
+<configs>
+    <set xpath="/entitygroups/entitygroup/entity[@name='zombieStripper']/@prob">5</set>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesHoard']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+    <append xpath="/entitygroups/entitygroup[@name='ZombiesCave']">
+      <entity name="zombieStripper" prob="5" />
+    </append>
+
+</configs>
+
+<!--
+<entitygroups>
+	<entitygroup name="ZombiesAll">
+		<entity name="zombieStripper" prob="0.3" />
+
+-->

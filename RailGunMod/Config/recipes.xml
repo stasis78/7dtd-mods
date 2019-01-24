@@ -1,0 +1,42 @@
+<configs>
+
+  <append xpath="/recipes">
+
+    <recipe name="Caseless Round" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
+    	<ingredient name="unit_iron" count="2" />
+    	<ingredient name="unit_clay" count="1" />
+    </recipe>
+
+    <recipe name="Recharger" count="1" craft_area="workbench">
+    	<ingredient name="resourceScrapLead" count="100" />
+    	<ingredient name="resourceElectricParts" count="10" />
+    	<ingredient name="resourceScrapPolymers" count="5" />
+      <ingredient name="resourceDuctTape" count="1" />
+    </recipe>
+
+    <recipe name="Rail Gun" craft_area="workbench" count="1">
+    	<ingredient name="resourceForgedSteel" count="100" />
+    	<ingredient name="resourceMechanicalParts" count="100" />
+    	<ingredient name="resourceDuctTape" count="10" />
+    	<ingredient name="resourceScrapPolymers" count="100" />
+    	<ingredient name="resourceSpring" count="10" />
+      <ingredient name="Railgun Battery Pack" count="1" />
+    </recipe>
+
+    <recipe name="Railgun Battery Pack" craft_area="workbench" count="1">
+    	<ingredient name="resourceForgedSteel" count="100" />
+    	<ingredient name="resourceScrapLead" count="1000" />
+    	<ingredient name="resourceDuctTape" count="2" />
+    	<ingredient name="resourceScrapPolymers" count="100" />
+    </recipe>
+
+    <recipe name="Superconductor" craft_area="workbench" count="1">
+    	<ingredient name="resourceForgedSteel" count="100" />
+    	<ingredient name="resourceElectricParts" count="100" />
+    	<ingredient name="resourceDuctTape" count="2" />
+    	<ingredient name="resourceScrapPolymers" count="100" />
+    </recipe>
+
+  </append>
+
+</configs>
