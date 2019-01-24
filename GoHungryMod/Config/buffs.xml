@@ -23,33 +23,32 @@ Stat / cvar comparison operators:
 <configs>
 
   <append xpath="/buffs">
-    <buff name="Go Hungry" name_key="Go Hungry" description_key="I'm going hungry...." icon="ui_game_symbol_hunger" icon_color="132,0,155" hidden="false" remove_on_death="false">
+    <buff name="Go Hungry" name_key="Go Hungry" description_key="I'm going hungry...." icon="ui_game_symbol_hunger" icon_color="132,0,155" hidden="true" remove_on_death="false">
   		<stack_type value="ignore" />
-      <update_rate value="10" />
-
+      <update_rate value="15" />
   		<effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="20" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.1" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.1" />
   		</effect_group>
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="50" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.3" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.3" />
   		</effect_group>
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="100" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.3" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.3" />
   		</effect_group>
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="150" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="40" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$foodAmount" operation="subtract" value="0.2"/>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$waterAmount" operation="subtract" value="0.2" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.4" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.4" />
   		</effect_group>
   	</buff>
   </append>
