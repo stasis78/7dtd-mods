@@ -1,16 +1,4 @@
 <!--
-attFortitude,
-attStrength,
-attPerception
-attIntellect
-attAgility
-
-onSelfBuffStart = 0
-onSelfBuffUpdate,  Frame-based, not 1/s
-onSelfBuffFinish,  Runs when the duration of a buff has run out.
-onSelfBuffRemove,  When the buff is being removed by any source. Can not be used for a buff to restart itself.
-onSelfBuffStack    When the buff is refreshed/extended/stacked... anything but "ignore"
-
 Stat / cvar comparison operators:
     None,
     Equals,
@@ -28,27 +16,27 @@ Stat / cvar comparison operators:
       <update_rate value="15" />
   		<effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="20" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="25" />
         <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.1" />
         <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.1" />
   		</effect_group>
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="50" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.3" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.3" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="33" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.2" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.2" />
   		</effect_group>
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="100" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.3" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.3" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="67" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.4" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.4" />
   		</effect_group>
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="150" />
-        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.4" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.4" />
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="75" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.5" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.5" />
   		</effect_group>
   	</buff>
   </append>
@@ -58,5 +46,4 @@ Stat / cvar comparison operators:
       <requirement name="PlayerLevel" target="self" operation="GTE" value="20" />
     </triggered_effect>
   </append>
-
 </configs>
