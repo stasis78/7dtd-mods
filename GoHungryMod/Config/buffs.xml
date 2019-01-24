@@ -35,8 +35,8 @@ Stat / cvar comparison operators:
       <effect_group>
         <requirement name="PlayerLevel" target="self" operation="GTE" value="150" />
         <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="75" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="0.5" />
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="0.5" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="subtract" value="1.0" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="self" stat="stamina" value_type="modifiedmax" operation="subtract" value="1.0" />
   		</effect_group>
   	</buff>
   </append>
