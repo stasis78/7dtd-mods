@@ -1,0 +1,11 @@
+<configs>
+    <set xpath="/items/item[@name='gunToolNailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.1</set>
+</configs>
+
+<!--
+
+<item name="gunToolNailgun">
+<property class="Action1">
+  <property name="Class" value="Repair" />
+  <property name="Delay" value="0.73" />
+-->

@@ -1,0 +1,27 @@
+<configs>
+  <set xpath="/materials/material[@id='Msteel']/property[@name='stability_glue']/@value">1000</set>
+  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='stability_glue']/@value">1000</set>
+
+  <set xpath="/materials/material[@id='Msteel']/property[@name='MaxDamage']/@value">35000</set>
+  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='MaxDamage']/@value">35000</set>
+
+  <set xpath="/materials/material[@id='Msteel']/property[@name='Mass']/@value">10</set>
+  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='Mass']/@value">10</set>
+</configs>
+
+<!--
+<material id="Msteel">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="explosionresistance" value="1.5"/>
+	<property name="MaxDamage" value="7000"/>
+	<property name="Experience" value="3"/>
+</material>
+
+<material id="MstainlessSteel">
+-->

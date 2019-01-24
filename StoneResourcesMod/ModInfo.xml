@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="StoneResourcesMod" />
+		<Description value="Stasis' StoneResourcesMod - more resources from stone" />
+		<Author value="stasis" />
+		<Version value="1.2" />
+	</ModInfo>
+</xml>

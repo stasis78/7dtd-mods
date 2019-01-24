@@ -1,0 +1,42 @@
+<configs>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']" name="desc_key">
+		Converts food and water regeneration into more health. You won't get any less hungry or thirsty, but you'll be a tank.
+	</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/effect_description" name="desc_key">
+		Empty
+	</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/effect_description[@level='1']" name="desc_base">
+		Max Health 10%
+	</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/effect_description[@level='2']" name="desc_base">
+		Max Health 33%
+	</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/effect_description[@level='3']" name="desc_base">
+		Max Health 55%
+	</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/effect_description[@level='4']" name="desc_base">
+		Max Health 87%
+	</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/effect_description[@level='5']" name="desc_base">
+		Max Health 100%
+	</setattribute>
+	<remove xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect" />
+	<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group">
+		<passive_effect name="HealthMax" operation="perc_add" value="0.1,1.0" level="1,5" />
+	</append>
+</configs>
+<!--
+<perk name="perkSlowMetabolism" parent="skillRecovery" name_key="perkSlowMetabolism" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach">
+
+	<effect_group>
+		<passive_effect name="StaminaLossMaxMult" operation="perc_subtract" value="0.1,0.5" level="1,5" />
+		<passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" value="0.1,0.5" level="1,5" />
+		<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" value="0.1,0.5" level="1,5" />
+
+		<effect_description level="1" desc_key="perkSlowMetabolismRank1Desc" />
+		<effect_description level="2" desc_key="perkSlowMetabolismRank2Desc" />
+		<effect_description level="3" desc_key="perkSlowMetabolismRank3Desc" />
+		<effect_description level="4" desc_key="perkSlowMetabolismRank4Desc" />
+		<effect_description level="5" desc_key="perkSlowMetabolismRank5Desc" />
+	</effect_group>
+</perk> -->

@@ -1,0 +1,28 @@
+<configs>
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">2000</set>
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage']/@value">200</set>
+
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationMax']/@value">9999</set>
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DegradationPerUse']/@value">1</set>
+
+    <set xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='Base Effects']/passive_effect[@name='DamageModifier'][@tags='wood']/@value">1.5</set>
+</configs>
+
+<!--
+stepmetal
+
+<property class="Action0">
+  <property name="Class" value="Ranged"/>
+  <property name="Hitmask_override" value="Melee"/>
+  <property name="UseMeleeCrosshair" value="true"/>
+  <property name="Single_magazine_usage" value="false"/>
+  <property name="Magazine_items" value="ammoGasCan"/>
+  <property name="Bullet_material" value="metal"/>
+  <property name="Reload_time" value="4.1"/>
+  <property name="Sound_start" value="Auger_Fire_Start"/>
+  <property name="Sound_repeat" value="Weapons/Motorized/Auger/auger_fire_lp"/>
+  <property name="Sound_end" value="Weapons/Motorized/Auger/auger_fire_end"/>
+  <property name="Sound_empty" value="auger_empty"/>
+  <property name="Sound_reload" value="Auger_Reload"/>
+
+-->

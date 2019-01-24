@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Increased Ladder Movemeent Speed" />
+        <Description value="Increases Ladder movement speed for all entity types (player/zombie etc)" />
+        <Author value="SixxGunZ" />
+        <Version value="0.0.1" />
+    </ModInfo>
+</xml>

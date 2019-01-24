@@ -1,0 +1,8 @@
+<configs>
+  <set xpath="/blocks/block[@name='hayBaleBlock']/property[@name='FallDamage']/@value">0.0</set>
+</configs>
+
+<!--
+<block name="hayBaleBlock">
+	<property name="FallDamage" value=".5" />
+-->

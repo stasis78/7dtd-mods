@@ -1,0 +1,8 @@
+<configs>
+  <set xpath="/recipes/recipe[@name='resourceForgedIron']/@count">
+    5
+  </set>
+  <set xpath="/recipes/recipe[@name='resourceForgedSteel']/@count">
+    5
+  </set>
+</configs>

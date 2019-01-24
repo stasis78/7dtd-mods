@@ -1,0 +1,32 @@
+<configs>
+
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='seeds']">
+    <item name="Wheat Seed" />
+    <item name="Tomato Seed" />
+    <item name="Carrot Seed" />
+    <item name="Romaine Seed" />
+    <item name="Squash Seed" />
+    <item name="Broccoli Seed" />
+    <item name="Sorghum Seed" />
+    <item name="Floral Hop Seed" />
+    <item name="Bitter Hop Seed" />
+    <item name="Grape Seed" />
+    <item name="Apple Seed" />
+    <item name="Orange Seed" />
+    <item name="Meyer Lemon Seed" />
+    <item name="Lime Seed" />
+    <item name="Cherry Seed" />
+    <item name="Black Pepper Seed" />
+    <item name="Salt" />
+    <item name="Black Pepper" />
+    <item name="Onion Seed" />
+    <item name="Olive Seed" />
+    <item name="Celery Seed" />
+  </append>
+
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
+    <item name="Salt Shaker" count="2,4" />
+    <item name="Black Pepper Tin" count="2,4" />
+  </append>
+
+</configs>

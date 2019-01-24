@@ -1,0 +1,456 @@
+<!-- TODO add gates
+tags="learnable">
+
+<recipe name="drinkJarBeer" count="1" craft_area="chemistryStation" tags="learnable">
+	<ingredient name="resourceCropHopsFlower" count="4" />
+	<ingredient name="drinkJarRiverWater" count="1" />
+</recipe>
+
+-->
+<configs>
+  <remove xpath="/recipes/recipe[@name='drinkJarBeer']" />
+
+  <append xpath="/recipes">
+
+    <!--   MEAT YUMMY -->=
+    <recipe name="Buttery Delmontico" count="1" modTag="campfire,toolCookingGrill,saltPepper">
+      <ingredient name="Delmontico" count="1" />
+      <ingredient name="Butter" count="1" />
+    </recipe>
+    <recipe name="Rump Roast Stew" count="1" modTag="campfire,toolCookingPot,saltPepper">
+      <ingredient name="Rump Roast" count="1" />
+      <ingredient name="foodCropPotato" count="2" />
+      <ingredient name="Carrot" count="2" />
+    </recipe>
+    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="campfire,toolCookingGrill,salt">
+      <ingredient name="Porterhouse" count="1" />
+      <ingredient name="Merlot" count="2" />
+      <ingredient name="Black Pepper Corn" count="4" />
+    </recipe>
+    <recipe name="Elk Jerky" count="5" modTag="campfire,toolCookingGrill,saltPepper">
+      <ingredient name="Elk Scraps" count="20" />
+    </recipe>
+    <!--   MEAT YUMMY -->
+
+    <!--
+    From https://cooking.nytimes.com/recipes/1015181-marcella-hazans-bolognese-sauce
+    One of my fav recipes :D
+    -->
+    <recipe name="Bolognese Step 1" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Olive Oil" count="1" />
+      <ingredient name="Butter" count="1" />
+      <ingredient name="Onion" count="1" />
+      <ingredient name="Celery" count="1" />
+      <ingredient name="Carrot" count="1" />
+    </recipe>
+    <recipe name="Bolognese Step 2" count="1" modTag="campfire,toolCookingPot,saltPepper">
+      <ingredient name="Bolognese Step 1" count="1" />
+      <ingredient name="Veal" count="5" />
+    </recipe>
+    <recipe name="Bolognese Step 3" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Bolognese Step 2" count="1" />
+      <ingredient name="Milk" count="1" />
+    </recipe>
+    <recipe name="Bolognese Sauce" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Bolognese Step 3" count="1" />
+      <ingredient name="White Zin" count="1" />
+      <ingredient name="Crushed Tomato" count="1" />
+    </recipe>
+    <recipe name="Bolognese Dish" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Bolognese Sauce" count="1" />
+      <ingredient name="Parmesan" count="1" />
+      <ingredient name="Butter" count="1" />
+      <ingredient name="Penne" count="1" />
+    </recipe>
+
+    <!--   Fruit -->
+    <recipe name="Apple Pie" count="1" modTag="campfire,toolCookingGrill">
+      <ingredient name="Apple" count="4" />
+      <ingredient name="Wheat Flour" count="2" />
+      <ingredient name="foodEgg" count="1" />
+      <ingredient name="resourceAnimalFat" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Cherry Pie" count="1" modTag="campfire,toolCookingGrill">
+      <ingredient name="Cherry" count="4" />
+      <ingredient name="Wheat Flour" count="2" />
+      <ingredient name="foodEgg" count="1" />
+      <ingredient name="resourceAnimalFat" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Orange Juice" count="1" modTag="">
+      <ingredient name="Orange" count="4" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Lemon Lime Coolaid" count="1" modTag="">
+      <ingredient name="Lime" count="2" />
+      <ingredient name="Meyer Lemon" count="2" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Mojito" count="1" modTag="">
+      <ingredient name="Lime" count="4" />
+      <ingredient name="drinkJarGrainAlcohol" count="1" />
+    </recipe>
+
+    <recipe name="Canned Olives" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Olive" count="4" />
+      <ingredient name="drinkCanEmpty" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <!--   Wine -->
+    <recipe name="Port Wine" count="15" modTag="chemistryStation">
+      <ingredient name="Merlot" count="5" />
+      <ingredient name="White Zin" count="5" />
+      <ingredient name="Pink Rose" count="5" />
+      <ingredient name="drinkJarGrainAlcohol" count="5" />
+    </recipe>
+
+    <recipe name="Merlot" count="15" modTag="chemistryStation">
+      <ingredient name="drinkJarBoiledWater" count="15" />
+      <ingredient name="Grape Pulp" count="15" />
+      <ingredient name="Grape Extract" count="5" />
+    </recipe>
+
+    <recipe name="White Zin" count="15" modTag="chemistryStation">
+      <ingredient name="drinkJarBoiledWater" count="15" />
+      <ingredient name="Grape Extract" count="20" />
+    </recipe>
+
+    <recipe name="Pink Rose" count="15" modTag="chemistryStation">
+      <ingredient name="drinkJarBoiledWater" count="15" />
+      <ingredient name="Grape Pulp" count="5" />
+      <ingredient name="Grape Extract" count="15" />
+    </recipe>
+
+    <!--   Ingredients -->
+    <recipe name="Salt" count="2" modTag="chemistryStation">
+      <ingredient name="Halite" count="1" />
+    </recipe>
+    <recipe name="Black Pepper" count="1" modTag="chemistryStation">
+      <ingredient name="Black Pepper Corn" count="1" />
+    </recipe>
+    <recipe name="Salt and Pepper" count="1">
+      <ingredient name="Black Pepper" count="1" />
+      <ingredient name="Salt" count="1" />
+    </recipe>
+    <recipe name="Grape Pulp" count="1" modTag="chemistryStation">
+      <ingredient name="Grape" count="2" />
+    </recipe>
+    <recipe name="Grape Extract" count="1" modTag="chemistryStation">
+      <ingredient name="Grape" count="2" />
+    </recipe>
+    <recipe name="Olive Paste" count="1" modTag="chemistryStation">
+      <ingredient name="Olive" count="4" />
+    </recipe>
+    <recipe name="Olive Oil" count="1" modTag="chemistryStation">
+      <ingredient name="Olive Paste" count="2" />
+    </recipe>
+    <recipe name="Briney Water" count="1" modTag="chemistryStation">
+      <!-- Need to determine a better ratio of salt to water should be 1 part salt 4 parts water -->
+      <ingredient name="Salt" count="5" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <!--   Beer -->
+    <recipe name="Beer Cheap" count="15" modTag="chemistryStation">
+      <ingredient name="Light Malt" count="40" />
+      <ingredient name="resourceCropHopsFlower" count="10" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer IPA" count="15" modTag="chemistryStation">
+      <ingredient name="Golden Malt" count="15" />
+      <ingredient name="Bitter Hops" count="15" />
+      <ingredient name="resourceCropHopsFlower" count="5" />
+      <ingredient name="Floral Hops" count="15" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Lager" count="15" modTag="chemistryStation">
+      <ingredient name="Light Malt" count="30" />
+      <ingredient name="resourceCropHopsFlower" count="15" />
+      <ingredient name="Floral Hops" count="5" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Stout" count="15" modTag="chemistryStation">
+      <ingredient name="Dark Malt" count="30" />
+      <ingredient name="resourceCropHopsFlower" count="10" />
+      <ingredient name="Floral Hops" count="10" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+    <!--  Beer -->
+
+    <!--   Malt -->
+    <recipe name="Light Malt" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Sorghum" count="2" />
+    </recipe>
+    <recipe name="Golden Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Sorghum" count="2" />
+    </recipe>
+    <recipe name="Dark Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="Sorghum" count="2" />
+    </recipe>
+    <!--  Malt -->
+
+    <!--  Veggies -->
+    <recipe name="Liquid Veg" count="1" modTag="campfire,toolCookingPot">
+    	<ingredient name="Carrot" count="2" />
+      <ingredient name="Romaine" count="2" />
+      <ingredient name="resourceCropChrysanthemumPlant" count="2" />
+      <ingredient name="resourceCropAloeLeaf" count="2" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Mixed Greens" count="1" modTag="campfire,toolCookingPot,blackPepper">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="Romaine" count="1" />
+      <ingredient name="resourceCropChrysanthemumPlant" count="1" />
+    </recipe>
+
+    <recipe name="Veggie Mash" count="1" modTag="campfire,toolCookingPot,salt,blackPepper">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="Squash" count="1" />
+    </recipe>
+
+    <recipe name="Steamed Broccoli" count="1" modTag="campfire,toolCookingPot">
+    	<ingredient name="Broccoli" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Grilled Squash" count="1" modTag="campfire,toolCookingGrill,salt,blackPepper">
+    	<ingredient name="Squash" count="1" />
+      <ingredient name="resourceCropGoldenrodPlant" count="1" />
+    </recipe>
+
+    <recipe name="Romaine Salad" count="1">
+    	<ingredient name="Romaine" count="2" />
+    </recipe>
+
+    <recipe name="Roasted Carrot" count="1" modTag="campfire,toolCookingGrill">
+    	<ingredient name="Carrot" count="1" />
+      <ingredient name="resourceCropGoldenrodPlant" count="1" />
+    </recipe>
+
+    <recipe name="Sauteed Onions" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Onion" count="1" />
+      <ingredient name="Butter" count="1" />
+    </recipe>
+
+    <recipe name="Crunchy Celery" count="1" modTag="">
+      <ingredient name="Celery" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <!--  Veggies -->
+
+    <!--  Tomato -->
+    <recipe name="Crushed Tomato" count="1" modTag="campfire,toolCookingPot">
+    	<ingredient name="Tomato" count="4" />
+      <ingredient name="drinkCanEmpty" count="1" />
+    </recipe>
+
+    <recipe name="Marinara" count="1" modTag="campfire,toolCookingPot,salt,blackPepper">
+    	<ingredient name="Crushed Tomato" count="2" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+    <!--  Tomato -->
+
+    <!--  Wheat -->
+    <recipe name="Wheat Bread" count="1" modTag="campfire,toolCookingPot,salt">
+    	<ingredient name="Wheat Flour" count="4" />
+      <ingredient name="foodEgg" count="2" />
+    	<ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+
+    <recipe name="Wheat Flour" count="1">
+    	<ingredient name="Wheat" count="1" />
+    </recipe>
+    <!--  Wheat -->
+
+    <!--  Milk -->
+    <recipe name="Milk" count="5" modTag="campfire,toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
+    </recipe>
+    <recipe name="Butter" count="1" modTag="campfire,toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
+      <ingredient name="Salt" count="1" />
+    </recipe>
+    <!-- Cheese needs more work. Should create curds with whey first, then mix with brine -->
+    <recipe name="Parmesan" count="10" modTag="campfire,toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
+      <ingredient name="Milk" count="5" />
+      <ingredient name="Briney Water" count="1" />
+    </recipe>
+    <!--  Milk -->
+
+    <!--  Penne -->
+    <recipe name="Penne" count="1" modTag="campfire,toolCookingPot,salt">
+      <ingredient name="Wheat Flour" count="4" />
+      <ingredient name="Milk" count="1" />
+      <ingredient name="foodEgg" count="2" />
+    </recipe>
+    <recipe name="Bechamel" count="1" modTag="campfire,toolCookingPot,salt">
+      <ingredient name="Wheat Flour" count="1" />
+      <ingredient name="Milk" count="2" />
+    </recipe>
+    <recipe name="Pasta Meal" count="1" modTag="campfire,toolCookingPot,blackPepper">
+      <ingredient name="Bechamel" count="2" />
+      <ingredient name="Penne" count="2" />
+    </recipe>
+    <recipe name="Pasta Meal" count="1" modTag="campfire,toolCookingPot,blackPepper">
+      <ingredient name="Marinara" count="2" />
+      <ingredient name="Penne" count="2" />
+    </recipe>
+    <!--  Penne -->
+
+    <!--  Seeds -->
+    <recipe name="Tomato Seed" modTag="seed">
+      <ingredient name="Tomato" />
+    </recipe>
+    <recipe name="Wheat Seed" modTag="seed">
+      <ingredient name="Wheat" />
+    </recipe>
+    <recipe name="Carrot Seed" modTag="seed">
+    	<ingredient name="Carrot" />
+    </recipe>
+    <recipe name="Romaine Seed" modTag="seed">
+    	<ingredient name="Romaine" />
+    </recipe>
+    <recipe name="Squash Seed" modTag="seed">
+    	<ingredient name="Squash" />
+    </recipe>
+    <recipe name="Broccoli Seed" modTag="seed">
+    	<ingredient name="Broccoli" />
+    </recipe>
+    <recipe name="Sorghum Seed" modTag="seed">
+    	<ingredient name="Sorghum" />
+    </recipe>
+    <recipe name="Bitter Hop Seed" modTag="seed">
+    	<ingredient name="Bitter Hops" />
+    </recipe>
+    <recipe name="Floral Hop Seed" modTag="seed">
+    	<ingredient name="Floral Hops" />
+    </recipe>
+    <recipe name="Grape Seed" modTag="seed">
+    	<ingredient name="Grape" />
+    </recipe>
+    <recipe name="Apple Seed" modTag="seed">
+    	<ingredient name="Apple" />
+    </recipe>
+    <recipe name="Orange Seed" modTag="seed">
+    	<ingredient name="Orange" />
+    </recipe>
+    <recipe name="Meyer Lemon Seed" modTag="seed">
+      <ingredient name="Meyer Lemon" />
+    </recipe>
+    <recipe name="Lime Seed" modTag="seed">
+    	<ingredient name="Lime" />
+    </recipe>
+    <recipe name="Cherry Seed" modTag="seed">
+    	<ingredient name="Cherry" />
+    </recipe>
+    <recipe name="Black Pepper Seed" modTag="seed">
+    	<ingredient name="Black Pepper Corn" />
+    </recipe>
+    <recipe name="plantedSnowberry1" modTag="seed">
+    	<ingredient name="resourceCropSnowberryPlant" />
+    </recipe>
+    <recipe name="Onion Seed" modTag="seed">
+    	<ingredient name="Onion" />
+    </recipe>
+    <recipe name="Celery Seed" modTag="seed">
+    	<ingredient name="Celery" />
+    </recipe>
+    <recipe name="Olive Seed" modTag="seed">
+    	<ingredient name="Olive" />
+    </recipe>
+
+    <!-- Animal Feed -->
+    <recipe name="Cattle Feed" count="1">
+    	<ingredient name="Sorghum" count="2" />
+    	<ingredient name="Wheat" count="2" />
+      <ingredient name="hayBaleBlock" count="2" />
+      <ingredient name="bucketRiverWater" count="2" />
+    </recipe>
+
+    <!-- Tools and Items -->
+    <recipe name="Feeding Trough" count="1">
+    	<ingredient name="resourceForgedIron" count="14" />
+    </recipe>
+    <recipe name="Pitch Fork" count="1">
+    	<ingredient name="resourceForgedIron" count="16" />
+    	<ingredient name="resourceWood" count="10" />
+    </recipe>
+    <recipe name="Salt" count="10">
+    	<ingredient name="Salt Shaker" count="1" />
+    </recipe>
+    <recipe name="Black Pepper" count="10">
+      <ingredient name="Black Pepper Tin" count="1" />
+    </recipe>
+
+    <!-- Pens -->
+    <recipe name="Empty Holstein Pen" modTag="emptyPen">
+    </recipe>
+    <recipe name="Empty Angus Pen" modTag="emptyPen">
+    </recipe>
+    <recipe name="Empty Veal Pen" modTag="emptyPen">
+    </recipe>
+    <recipe name="Empty Elk Pen" modTag="emptyPen">
+    </recipe>
+
+  </append>
+
+  <!-- Update Seeds -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]" name="count">
+    1
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]" name="craft_time">
+    1
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'seed')]/ingredient" name="count">
+    4
+  </setattribute>
+
+  <!--  Update Items -->
+  <append xpath="/recipes/recipe[contains(@modTag,'salt')]">
+    <ingredient name="Salt" count="1" />
+  </append>
+  <append xpath="/recipes/recipe[contains(@modTag,'blackPepper')]">
+    <ingredient name="Black Pepper" count="1" />
+  </append>
+  <append xpath="/recipes/recipe[contains(@modTag,'saltPepper')]">
+    <ingredient name="Salt and Pepper" count="1" />
+  </append>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'chemistryStation')]" name="craft_area">
+    chemistryStation
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'campfire')]" name="craft_area">
+    campfire
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_tool">
+    toolCookingPot
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingGrill')]" name="craft_tool">
+    toolCookingGrill
+  </setattribute>
+
+  <!-- Update Pens -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">
+    1
+  </setattribute>
+  <append xpath="/recipes/recipe[contains(@modTag,'emptyPen')]">
+    <ingredient name="resourceForgedIron" count="120" />
+    <ingredient name="hayBaleBlock" count="4" />
+    <ingredient name="Feeding Trough" count="1" />
+    <ingredient name="bucketEmpty" count="1" />
+  </append>
+
+
+</configs>

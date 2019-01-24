@@ -1,0 +1,79 @@
+<configs>
+
+  <append xpath="/lootcontainers/lootgroup[@name='seeds']">
+    <item name="Wheat Seed" />
+    <item name="Tomato Seed" />
+    <item name="Carrot Seed" />
+    <item name="Romaine Seed" />
+    <item name="Squash Seed" />
+    <item name="Broccoli Seed" />
+    <item name="Sorghum Seed" />
+    <item name="Floral Hop Seed" />
+    <item name="Bitter Hop Seed" />
+    <item name="Grape Seed" />
+    <item name="Apple Seed" />
+    <item name="Orange Seed" />
+    <item name="Meyer Lemon Seed" />
+    <item name="Lime Seed" />
+    <item name="Cherry Seed" />
+    <item name="Black Pepper Seed" />
+    <item name="Onion Seed" />
+    <item name="Olive Seed" />
+    <item name="Celery Seed" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+    <item name="Wheat" />
+    <item name="Tomato" />
+    <item name="Carrot" />
+    <item name="Romaine" />
+    <item name="Squash" />
+    <item name="Broccoli" />
+    <item name="Sorghum" />
+    <item name="Grape" />
+    <item name="Apple" />
+    <item name="Orange" />
+    <item name="Meyer Lemon" />
+    <item name="Lime" />
+    <item name="Cherry" />
+    <item name="Onion" />
+    <item name="Olive" />
+    <item name="Celery" />
+    <item name="Salt Shaker" />
+    <item name="Black Pepper Tin" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
+    <item name="Wheat" />
+    <item name="Tomato" />
+    <item name="Carrot" />
+    <item name="Romaine" />
+    <item name="Squash" />
+    <item name="Broccoli" />
+    <item name="Sorghum" />
+    <item name="Floral Hops" />
+    <item name="Bitter Hops" />
+    <item name="Grape" />
+    <item name="Apple" />
+    <item name="Orange" />
+    <item name="Meyer Lemon" />
+    <item name="Lime" />
+    <item name="Cherry" />
+    <item name="Onion" />
+    <item name="Olive" />
+    <item name="Celery" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+    <item name="Salt Shaker" />
+    <item name="Black Pepper Tin" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+    <item name="Salt" prob="0.05" />
+    <item name="Black Pepper" prob="0.05" />
+    <item name="Salt Shaker" prob="0.05" />
+    <item name="Black Pepper Tin" prob="0.05" />
+  </append>
+
+</configs>

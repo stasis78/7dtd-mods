@@ -1,0 +1,65 @@
+<configs>
+    <append xpath="/items">
+
+      <item name="Pine Resin">
+        <property name="CustomIcon" value="resourceCoal"/> <property name="CustomIconTint" value="333333"/>
+      	<property name="HoldType" value="45"/>
+      	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      	<property name="Material" value="Morganic"/>
+      	<property name="Weight" value="10"/>
+      	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+      	<property name="EconomicValue" value="38"/>
+      	<property name="Group" value="Resources,Chemicals"/>
+      </item>
+
+      <item name="Tar">
+        <property name="CustomIcon" value="resourceGlue"/> <property name="CustomIconTint" value="000000"/>
+      	<property name="HoldType" value="45"/>
+      	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+      	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      	<property name="Material" value="Morganic"/>
+      	<property name="Weight" value="10"/>
+      	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+      	<property name="EconomicValue" value="38"/>
+      	<property name="Group" value="Resources,Chemicals"/>
+      </item>
+
+      <item name="Questionable Meat">
+        <property name="CustomIcon" value="foodRawMeat"/> <property name="CustomIconTint" value="FF7D9E"/>
+        <property name="Name" value="Name"/>
+        <property name="CustomDescription" value="CustomDescription"/>
+        <property name="CustomName" value="CustomName"/>
+        <property name="item_name" value="item_name"/>
+        <property name="item_description" value="item_description"/>
+      	<property name="HoldType" value="31"/>
+      	<property name="DisplayType" value="food"/>
+      	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+      	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+      	<property name="Material" value="MfoodRawMeat"/>
+      	<property name="Stacknumber" value="15"/> <!-- STK food -->
+      	<property name="EconomicValue" value="2"/>
+      	<property name="CraftingIngredientTime" value="3"/>
+      	<property class="Action0">
+      		<property name="Class" value="Eat"/>
+      		<property name="Delay" value="1.0"/>
+      		<property name="Use_time" value="..."/>
+      		<property name="Sound_start" value="player_eating"/>
+      	</property>
+      	<property name="Smell" value="ExLargeSmell"/>
+      	<property name="Group" value="Food/Cooking"/>
+
+      	<effect_group tiered="false">
+          <effect_description desc_base="some stuff"/>
+      		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+      		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+      		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+      		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
+      			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="15"/>
+      		</triggered_effect>
+      		<display_value name="FoodPoisoningRisk" value=".15" />
+      	</effect_group>
+      </item>
+      
+    </append>
+</configs>

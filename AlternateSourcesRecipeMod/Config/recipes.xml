@@ -1,0 +1,56 @@
+<configs>
+  <append xpath="/recipes">
+
+    <recipe name="Tar" count="1" craft_area="chemistryStation">
+    	<ingredient name="Pine Resin" count="5"/>
+    </recipe>
+
+    <recipe name="resourceDuctTape" count="1">
+    	<ingredient name="Tar" count="1"/>
+    	<ingredient name="resourceCloth" count="1"/>
+    </recipe>
+
+    <recipe name="meleeToolTorch" count="1" craft_area="workbench">
+    	<ingredient name="resourceCoal" count="20"/>
+    	<ingredient name="resourceCloth" count="2"/>
+    	<ingredient name="resourceWood" count="1"/>
+    </recipe>
+
+    <recipe name="Questionable Meat" count="1" craft_area="campfire">
+    	<ingredient name="foodRawMeat" count="2"/>
+    </recipe>
+
+    <recipe name="ammoArrowIron" count="1" craft_area="workbench">
+    	<ingredient name="resourceScrapIron" count="20"/>
+    	<ingredient name="resourceWood" count="1"/>
+    	<ingredient name="resourceFeather" count="1"/>
+    </recipe>
+
+    <recipe name="resourceMilitaryFiber" count="1" craft_area="workbench">
+      <ingredient name="resourceCloth" count="100"/>
+    </recipe>
+
+    <recipe name="bucketRiverWater" count="1" craft_area="">
+      <ingredient name="bucketEmpty" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="15"/>
+    </recipe>
+
+    <recipe name="bucketRiverWater" count="1" craft_area="">
+      <ingredient name="bucketEmpty" count="1"/>
+      <ingredient name="drinkJarRiverWater" count="15"/>
+    </recipe>
+
+    <recipe name="forge" count="1" craft_area="workbench">
+    	<ingredient name="resourceRockSmall" count="1000"/>
+    	<ingredient name="resourceClayLump" count="1000"/>
+    	<ingredient name="toolBellows" count="1"/>
+    	<ingredient name="resourceMetalPipe" count="1"/>
+    </recipe>
+
+    <recipe name="toolBeaker" count="1" craft_area="forge" material_based="true">
+    	<ingredient name="unit_glass" count="1000" />
+    	<ingredient name="unit_clay" count="100" />
+    </recipe>
+
+  </append>
+</configs>

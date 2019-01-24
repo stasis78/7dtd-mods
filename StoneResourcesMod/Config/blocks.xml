@@ -1,0 +1,13 @@
+<configs>
+    <append xpath="/blocks/block[@name='terrStone']">
+      <drop event="Harvest" name="resourceCoal" count="2" tag="oreWoodHarvest" />
+      <drop event="Harvest" name="resourceScrapBrass" count="2" tag="oreWoodHarvest" />
+      <drop event="Harvest" name="resourceScrapLead" count="2" tag="oreWoodHarvest" />
+      <drop event="Harvest" name="resourcePotassiumNitratePowder" count="2" tag="oreWoodHarvest" />
+      <drop event="Harvest" name="resourceOilShale" count="2" tag="oreWoodHarvest" />
+      <drop event="Harvest" name="resourceClayLump" count="12" tag="oreWoodHarvest" />
+    </append>
+    <set xpath="/blocks/block[@name='terrStone']/drop[@name='resourceIronFragment' and @event='Harvest']/@count">
+      12
+    </set>
+</configs>
