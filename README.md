@@ -1,6 +1,13 @@
 This is a collection of very basic mods that I used to always apply by hand. Thanks to the awesome new xpath modlet system, I no longer need to do that!
 
-## Mod Info
+## Installation
+
+To install modlets you *must* copy them into your `Mods` folder. Locations for `Mods` folders:
+
+- [Mac OS X](https://7daystodie.com/forums/showthread.php?101570-modlets-on-Mac)
+- [Windows](https://7daystodie.gamepedia.com/How_to_Install_Modlets)
+
+## Modlet Info
 
 ### FarmLifeMod
 
@@ -44,7 +51,7 @@ Add more strippers to some of the game. You will see them more often. :lulz:
 
 Its just a stone axe that attacks really fast and far away...
 
-### FlatWorldMod 
+### FlatWorldMod
 
 Not really a completely flat world. It just makes things "a bit more flat".
 
@@ -106,9 +113,9 @@ Adds a new steel tier to garage door with 3 levels, just like the iron version. 
 
 ### PickupSeedsMod
 
-Lets you pick up seeds, instead of punching them on accident. 
+Lets you pick up seeds, instead of punching them on accident.
 
-### BetterHoeMod 
+### BetterHoeMod
 
 Made to compliment PickupSeedsMod. The hoe now has a much smaller attack range, but attacks much faster. With this change you can simply walk along with left mouse button down, and harvest crops without damaging the soil.
 
@@ -138,7 +145,7 @@ Strippers now give wayyyyy to much experience points. But its worth it when they
 
 ### CheaperIronMod
 
-Gives you 5x forged iron/steel when crafting at the forge. 
+Gives you 5x forged iron/steel when crafting at the forge.
 
 ### BetterCraftingMod
 
