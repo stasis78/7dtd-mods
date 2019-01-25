@@ -34,25 +34,29 @@ Stat / cvar comparison operators:
       <stack_type value="duration" />
       <update_rate value="30"/>
 
-      <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Not a smart idea to eat that. It was really HOT!!!!"/>
-      <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Why do I keep eating these things, they are killing me!!!!"/>
-      <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="My mouth is on fire!!!!"/>
-      <triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message="I will never eat THAT again..."/>
+      <effect_group>
 
-      <passive_effect name="AttributeLevel" tags="attPerception" operation="base_subtract" value="1" />
-      <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
-      <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
+        <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Not a smart idea to eat that. It was really HOT!!!!"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Why do I keep eating these things, they are killing me!!!!"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="My mouth is on fire!!!!"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message="I will never eat THAT again..."/>
 
-      <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="3" />
-      <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.2" fade="2" effect_name="Hot" />
-      <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot" />
+        <passive_effect name="AttributeLevel" tags="attPerception" operation="base_subtract" value="1" />
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
+        <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
 
-      <triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" target="self" sound="player1sick" play_in_head="true">
-        <requirement name="IsMale" />
-      </triggered_effect>
-      <triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" target="self" sound="player2sick" play_in_head="true">
-        <requirement name="IsMale" invert="true" />
-      </triggered_effect>
+        <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="3" />
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.4" fade="2" effect_name="Hot" />
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot" />
+
+        <triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" target="self" sound="player1sick" play_in_head="true">
+          <requirement name="IsMale" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" target="self" sound="player2sick" play_in_head="true">
+          <requirement name="IsMale" invert="true" />
+        </triggered_effect>
+      </effect_group>
+
     </buff>
 
     <buff name="Vitamin C" name_key="Vitamin C" description_key="Orange Juice protects your body from mild conditions." icon="ui_game_symbol_pills">
