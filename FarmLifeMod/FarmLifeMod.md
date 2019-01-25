@@ -17,7 +17,7 @@ Q: This thing says it has "farm" in the name. Does that mean I can like, grow so
 
 A: Yes, it sure does!
 
-Fundamental to Farm Life is growing crops. The vanilla system provides us with a few good options in the post-apocalypse. Farm Life builds on these options to add more crops to grow. There are a wide variety of crops, and each has a purpose in making food. Certain crops are used for making other ingredients such as flour or black pepper. Most crops are also themselves and ingredient in recipes. 
+Fundamental to Farm Life is growing crops. The vanilla system provides us with a few good options in the post-apocalypse. Farm Life builds on these options to add more crops to grow. There are a wide variety of crops, and each has a purpose in making food. Certain crops are used for making other ingredients such as flour or black pepper. Most crops are also themselves an ingredient in recipes. 
 
 All crop growing mechanics are modeled directly off of how vanilla crops are grown.
 
