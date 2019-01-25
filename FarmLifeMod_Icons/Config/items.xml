@@ -1,0 +1,4 @@
+<configs>
+  <remove xpath="/items/item[contains(@modTag,'hasicon')]/property[@name='CustomIcon']" />
+  <remove xpath="/items/item[contains(@modTag,'hasicon')]/property[@name='CustomIconTint']" />
+</configs>

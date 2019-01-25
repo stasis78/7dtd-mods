@@ -16,7 +16,7 @@ Was in corn seed?
       <!-- Meat Blocks -->
 
       <!-- Master Meat Blocks -->
-      <block name="emptyAnimalPenMaster">
+      <block name="emptyAnimalPenMaster" modTag="noicon">
         <property name="CreativeMode" value="None"/>
         <property name="DisplayType" value="blockMulti" />
       	<property name="MultiBlockDim" value="3,1,3" />
@@ -30,7 +30,7 @@ Was in corn seed?
         <drop event="Destroy" count="0"/>
       </block>
 
-      <block name="growingAnimalPenMaster">
+      <block name="growingAnimalPenMaster" modTag="noicon">
         <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
         <property name="Shape" value="ModelEntity"/>
       	<property name="Path" value="solid"/>
@@ -40,7 +40,7 @@ Was in corn seed?
         <property name="UpgradeRated.Rate" value="2" />
       </block>
 
-      <block name="fullAnimalPenMaster">
+      <block name="fullAnimalPenMaster" modTag="noicon">
         <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
         <property name="Shape" value="ModelEntity"/>
         <property name="Path" value="solid"/>
@@ -51,7 +51,7 @@ Was in corn seed?
       <!-- Master Meat Blocks -->
 
       <!-- Dairy Blocks -->
-      <block name="Empty Holstein Pen" modTag="emptyPen">
+      <block name="Empty Holstein Pen" modTag="emptyPen,noicon">
         <property name="CustomIcon" value="woodFrameMaster" />
         <property name="CustomIconTint" value="FFFFFF" />
         <property class="UpgradeBlock">
@@ -61,18 +61,18 @@ Was in corn seed?
           <property name="UpgradeHitCount" value="4" />
         </property>
       </block>
-      <block name="Feeding Holstein Pen" modTag="growingPen">
+      <block name="Feeding Holstein Pen" modTag="growingPen,noicon">
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="Full Holstein Pen" />
       </block>
-      <block name="Full Holstein Pen" modTag="fullPen">
+      <block name="Full Holstein Pen" modTag="fullPen,noicon">
         <drop event="Harvest" name="Raw Milk" count="2" tag="butcherHarvest" />
         <property name="DowngradeBlock" value="Empty Holstein Pen"/>
       </block>
       <!-- Dairy Blocks -->
 
       <!-- Angus Blocks -->
-      <block name="Empty Angus Pen" modTag="emptyPen">
+      <block name="Empty Angus Pen" modTag="emptyPen,noicon">
         <property name="CustomIcon" value="woodFrameMaster" />
         <property name="CustomIconTint" value="222222" />
         <property class="UpgradeBlock">
@@ -82,11 +82,11 @@ Was in corn seed?
           <property name="UpgradeHitCount" value="4" />
         </property>
       </block>
-      <block name="Feeding Angus Pen" modTag="growingPen">
+      <block name="Feeding Angus Pen" modTag="growingPen,noicon">
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="Full Angus Pen" />
       </block>
-      <block name="Full Angus Pen"  modTag="fullPen">
+      <block name="Full Angus Pen"  modTag="fullPen,noicon">
         <drop event="Harvest" name="foodRawMeat" count="10" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
@@ -98,7 +98,7 @@ Was in corn seed?
       <!-- Angus Blocks -->
 
       <!-- Veal Blocks -->
-      <block name="Empty Veal Pen" modTag="emptyPen">
+      <block name="Empty Veal Pen" modTag="emptyPen,noicon">
         <property name="CustomIcon" value="woodFrameMaster" />
         <property name="CustomIconTint" value="F1948A" />
         <property class="UpgradeBlock">
@@ -108,11 +108,11 @@ Was in corn seed?
           <property name="UpgradeHitCount" value="4" />
         </property>
       </block>
-      <block name="Feeding Veal Pen" modTag="growingPen">
+      <block name="Feeding Veal Pen" modTag="growingPen,noicon">
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="Full Veal Pen" />
       </block>
-      <block name="Full Veal Pen"  modTag="fullPen">
+      <block name="Full Veal Pen"  modTag="fullPen,noicon">
         <drop event="Harvest" name="foodRawMeat" count="5" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
@@ -122,7 +122,7 @@ Was in corn seed?
       <!-- Veal Blocks -->
 
       <!-- Elk Blocks -->
-      <block name="Empty Elk Pen" modTag="emptyPen">
+      <block name="Empty Elk Pen" modTag="emptyPen,noicon">
         <property name="CustomIcon" value="woodFrameMaster" />
         <property name="CustomIconTint" value="500000" />
         <property class="UpgradeBlock">
@@ -132,11 +132,11 @@ Was in corn seed?
           <property name="UpgradeHitCount" value="4" />
         </property>
       </block>
-      <block name="Feeding Elk Pen" modTag="growingPen">
+      <block name="Feeding Elk Pen" modTag="growingPen,noicon">
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="Full Elk Pen" />
       </block>
-      <block name="Full Elk Pen"  modTag="fullPen">
+      <block name="Full Elk Pen"  modTag="fullPen,noicon">
         <drop event="Harvest" name="foodRawMeat" count="5" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2" />
         <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
@@ -146,7 +146,7 @@ Was in corn seed?
       <!-- Elk Blocks -->
 
       <!-- Pig Blocks -->
-      <block name="Empty Pig Pen" modTag="emptyPen">
+      <block name="Empty Pig Pen" modTag="emptyPen,noicon">
         <property name="CustomIcon" value="woodFrameMaster" />
         <property name="CustomIconTint" value="F1948A" />
         <property class="UpgradeBlock">
@@ -156,11 +156,11 @@ Was in corn seed?
           <property name="UpgradeHitCount" value="4" />
         </property>
       </block>
-      <block name="Feeding Pig Pen" modTag="growingPen">
+      <block name="Feeding Pig Pen" modTag="growingPen,noicon">
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="Full Pig Pen" />
       </block>
-      <block name="Full Pig Pen"  modTag="fullPen">
+      <block name="Full Pig Pen"  modTag="fullPen,noicon">
         <drop event="Harvest" name="foodRawMeat" count="5" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="1" />
         <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
@@ -172,7 +172,7 @@ Was in corn seed?
       <!-- Pig Blocks -->
 
       <!-- Chicken Blocks -->
-      <block name="Empty Chicken Coop" modTag="emptyPen">
+      <block name="Empty Chicken Coop" modTag="emptyPen,noicon">
         <property name="CustomIcon" value="woodFrameMaster" />
         <property name="CustomIconTint" value="DAF7A6" />
         <property class="UpgradeBlock">
@@ -182,11 +182,11 @@ Was in corn seed?
           <property name="UpgradeHitCount" value="4" />
         </property>
       </block>
-      <block name="Feeding Chicken Coop" modTag="growingPen">
+      <block name="Feeding Chicken Coop" modTag="growingPen,noicon">
         <property name="Class" value="UpgradeRated" />
         <property name="UpgradeRated.ToBlock" value="Full Chicken Coop" />
       </block>
-      <block name="Full Chicken Coop"  modTag="fullPen">
+      <block name="Full Chicken Coop"  modTag="fullPen,noicon">
         <drop event="Harvest" name="foodEgg" count="10" tag="butcherHarvest" />
         <drop event="Harvest" name="resourceFeather" count="4,8" prob="0.5" tag="butcherHarvest" />
         <drop event="Harvest" name="Chicken Breast" count="2,4" prob="1.0" tag="butcherHarvest" />
@@ -196,7 +196,7 @@ Was in corn seed?
       <!-- Chicken Blocks -->
 
       <!-- Fruit Trees -->
-      <block name="fruitTreeGrowingMaster">
+      <block name="fruitTreeGrowingMaster" modTag="noicon">
         <property name="CreativeMode" value="None"/>
         <property name="Extends" value="treeMasterGrowing" param1="CustomIcon,DescriptionKey"/>
         <property name="MaxDamage" value="10"/>
@@ -218,7 +218,7 @@ Was in corn seed?
       	<property name="ActivationDistance" value="4"/>
         <property name="PlantGrowing.GrowthRate" value="63" />  <!-- matches-ish Vanilla a7.1 -->
       </block>
-      <block name="fruitTreeMaster">
+      <block name="fruitTreeMaster" modTag="noicon">
       	<property name="Extends" value="treeMaster"/>
         <property name="Material" value="Mplants"/>
       	<property name="Model" value="Entities/Trees/Maple20Prefab"/>
@@ -232,7 +232,7 @@ Was in corn seed?
       </block>
 
       <!-- Grape Tree -->
-      <block name="Grape Seed" modTag="treeSeed">
+      <block name="Grape Seed" modTag="treeSeed,hasicon">
         <property name="CustomIcon" value="treePlantedOak1m" />
         <property name="CustomIconTint" value="76098E" />
         <property name="Collide" value="melee"/>
@@ -240,12 +240,12 @@ Was in corn seed?
         <drop event="Destroy" name="Grape Seed" count="1"/>
       </block>
 
-      <block name="Grape Tree Growing" modTag="treeGrowing">
+      <block name="Grape Tree Growing" modTag="treeGrowing,noicon">
         <property name="PlantGrowing.Next" value="Grape Tree"/>
         <drop event="Destroy" name="Grape Seed" count="1"/>
       </block>
 
-      <block name="Grape Tree" modTag="treePlant">
+      <block name="Grape Tree" modTag="treePlant,noicon">
         <property name="Model" value="Entities/Trees/Haunted_Shrub_WastelandPrefab" />
         <drop event="Destroy" name="Grape Seed" count="1"/>
         <drop event="Harvest" name="Grape" count="1" tag="cropHarvest"/>
@@ -253,7 +253,7 @@ Was in corn seed?
       <!-- Grape Tree -->
 
       <!-- Apple Tree -->
-      <block name="Apple Seed" modTag="treeSeed">
+      <block name="Apple Seed" modTag="treeSeed,hasicon">
         <property name="CustomIcon" value="treePlantedOak1m" />
         <property name="CustomIconTint" value="FF0000" />
         <property name="Collide" value="melee"/>
@@ -261,12 +261,12 @@ Was in corn seed?
         <drop event="Destroy" name="Apple Seed" count="1"/>
       </block>
 
-      <block name="Apple Tree Growing" modTag="treeGrowing">
+      <block name="Apple Tree Growing" modTag="treeGrowing,noicon">
         <property name="PlantGrowing.Next" value="Apple Tree"/>
         <drop event="Destroy" name="Apple Seed" count="1"/>
       </block>
 
-      <block name="Apple Tree" modTag="treePlant">
+      <block name="Apple Tree" modTag="treePlant,noicon">
         <property name="Model" value="Entities/Trees/Maple20Prefab" />
         <drop event="Destroy" name="Apple Seed" count="1"/>
         <drop event="Harvest" name="Apple" count="1" tag="cropHarvest"/>
@@ -275,7 +275,7 @@ Was in corn seed?
       <!-- Apple Tree -->
 
       <!-- Orange Tree -->
-      <block name="Orange Seed" modTag="treeSeed">
+      <block name="Orange Seed" modTag="treeSeed,hasicon">
         <property name="CustomIcon" value="treePlantedOak1m" />
         <property name="CustomIconTint" value="FFAE00" />
         <property name="Collide" value="melee"/>
@@ -283,12 +283,12 @@ Was in corn seed?
         <drop event="Destroy" name="Orange Seed" count="1"/>
       </block>
 
-      <block name="Orange Tree Growing" modTag="treeGrowing">
+      <block name="Orange Tree Growing" modTag="treeGrowing,noicon">
         <property name="PlantGrowing.Next" value="Orange Tree"/>
         <drop event="Destroy" name="Orange Seed" count="1"/>
       </block>
 
-      <block name="Orange Tree" modTag="treePlant">
+      <block name="Orange Tree" modTag="treePlant,noicon">
         <property name="Model" value="Entities/Trees/Maple20Prefab" />
         <drop event="Destroy" name="Orange Seed" count="1"/>
         <drop event="Harvest" name="Orange" count="1" tag="cropHarvest"/>
@@ -296,7 +296,7 @@ Was in corn seed?
       <!-- Orange Tree -->
 
      <!-- Meyer Lemon Tree -->
-     <block name="Meyer Lemon Seed" modTag="treeSeed">
+     <block name="Meyer Lemon Seed" modTag="treeSeed,hasicon">
        <property name="CustomIcon" value="treePlantedOak1m" />
        <property name="CustomIconTint" value="FFD800" />
        <property name="Collide" value="melee"/>
@@ -304,12 +304,12 @@ Was in corn seed?
        <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
      </block>
 
-     <block name="Meyer Lemon Tree Growing" modTag="treeGrowing">
+     <block name="Meyer Lemon Tree Growing" modTag="treeGrowing,noicon">
        <property name="PlantGrowing.Next" value="Meyer Lemon Tree"/>
        <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
      </block>
 
-     <block name="Meyer Lemon Tree" modTag="treePlant">
+     <block name="Meyer Lemon Tree" modTag="treePlant,noicon">
        <property name="Model" value="Entities/Trees/Maple20Prefab" />
        <drop event="Destroy" name="Meyer Lemon Seed" count="1"/>
        <drop event="Harvest" name="Meyer Lemon" count="1" tag="cropHarvest"/>
@@ -317,7 +317,7 @@ Was in corn seed?
      <!-- Meyer Lemon Tree -->
 
     <!-- Lime Tree -->
-    <block name="Lime Seed" modTag="treeSeed">
+    <block name="Lime Seed" modTag="treeSeed,hasicon">
       <property name="CustomIcon" value="treePlantedOak1m" />
       <property name="CustomIconTint" value="3AFF00" />
       <property name="Collide" value="melee"/>
@@ -325,12 +325,12 @@ Was in corn seed?
     	<drop event="Destroy" name="Lime Seed" count="1"/>
     </block>
 
-    <block name="Lime Tree Growing" modTag="treeGrowing">
+    <block name="Lime Tree Growing" modTag="treeGrowing,noicon">
     	<property name="PlantGrowing.Next" value="Lime Tree"/>
     	<drop event="Destroy" name="Lime Seed" count="1"/>
     </block>
 
-    <block name="Lime Tree" modTag="treePlant">
+    <block name="Lime Tree" modTag="treePlant,noicon">
       <property name="Model" value="Entities/Trees/Maple20Prefab" />
     	<drop event="Destroy" name="Lime Seed" count="1"/>
       <drop event="Harvest" name="Lime" count="1" tag="cropHarvest"/>
@@ -338,7 +338,7 @@ Was in corn seed?
     <!-- Lime Tree -->
 
     <!-- Cherry Tree -->
-    <block name="Cherry Seed" modTag="treeSeed">
+    <block name="Cherry Seed" modTag="treeSeed,hasicon">
       <property name="CustomIcon" value="treePlantedOak1m" />
       <property name="CustomIconTint" value="FF4200" />
       <property name="Collide" value="melee"/>
@@ -346,12 +346,12 @@ Was in corn seed?
     	<drop event="Destroy" name="Cherry Seed" count="1"/>
     </block>
 
-    <block name="Cherry Tree Growing" modTag="treeGrowing">
+    <block name="Cherry Tree Growing" modTag="treeGrowing,noicon">
     	<property name="PlantGrowing.Next" value="Cherry Tree"/>
     	<drop event="Destroy" name="Cherry Seed" count="1"/>
     </block>
 
-    <block name="Cherry Tree" modTag="treePlant">
+    <block name="Cherry Tree" modTag="treePlant,noicon">
       <property name="Model" value="Entities/Trees/Maple20Prefab" />
     	<drop event="Destroy" name="Cherry Seed" count="1"/>
       <drop event="Harvest" name="Cherry" count="1" tag="cropHarvest"/>
@@ -359,7 +359,7 @@ Was in corn seed?
     <!-- Cherry Tree -->
 
     <!-- Olive Tree -->
-    <block name="Olive Seed" modTag="treeSeed">
+    <block name="Olive Seed" modTag="treeSeed,noicon">
       <property name="CustomIcon" value="treePlantedOak1m" />
       <property name="CustomIconTint" value="1E8449" />
       <property name="Collide" value="melee"/>
@@ -367,12 +367,12 @@ Was in corn seed?
       <drop event="Destroy" name="Olive Seed" count="1"/>
     </block>
 
-    <block name="Olive Tree Growing" modTag="treeGrowing">
+    <block name="Olive Tree Growing" modTag="treeGrowing,noicon">
       <property name="PlantGrowing.Next" value="Olive Tree"/>
       <drop event="Destroy" name="Olive Seed" count="1"/>
     </block>
 
-    <block name="Olive Tree" modTag="treePlant">
+    <block name="Olive Tree" modTag="treePlant,noicon">
       <property name="Model" value="Entities/Trees/Maple20Prefab" />
       <drop event="Destroy" name="Olive Seed" count="1"/>
       <drop event="Harvest" name="Olive" count="4" tag="cropHarvest"/>
@@ -380,7 +380,7 @@ Was in corn seed?
     <!-- Olive Tree -->
 
     <!-- Sugar Maple Tree -->
-    <block name="Sugar Maple Seed" modTag="treeSeed">
+    <block name="Sugar Maple Seed" modTag="treeSeed,noicon">
       <property name="CustomIcon" value="treePlantedOak1m" />
       <property name="CustomIconTint" value="1E8449" />
       <property name="Collide" value="melee"/>
@@ -388,12 +388,12 @@ Was in corn seed?
       <drop event="Destroy" name="Sugar Maple Seed" count="1"/>
     </block>
 
-    <block name="Sugar Maple Growing" modTag="treeGrowing">
+    <block name="Sugar Maple Growing" modTag="treeGrowing,noicon">
       <property name="PlantGrowing.Next" value="Sugar Maple Tree"/>
       <drop event="Destroy" name="Sugar Maple Seed" count="1"/>
     </block>
 
-    <block name="Sugar Maple Tree" modTag="treePlant">
+    <block name="Sugar Maple Tree" modTag="treePlant,noicon">
       <property name="Model" value="Entities/Trees/Maple20Prefab" />
       <drop event="Destroy" name="Sugar Maple Seed" count="2"/>
       <drop event="Harvest" name="Maple Sap" count="4" tag="cropHarvest"/> <!-- 40:1 syrup -->
@@ -402,7 +402,7 @@ Was in corn seed?
     <!-- Sugar Maple Tree -->
 
     <!-- Walnut Tree -->
-    <block name="Walnut Seed" modTag="treeSeed">
+    <block name="Walnut Seed" modTag="treeSeed,noicon">
       <property name="CustomIcon" value="treePlantedOak1m" />
       <property name="CustomIconTint" value="624700" />
       <property name="Collide" value="melee"/>
@@ -410,12 +410,12 @@ Was in corn seed?
       <drop event="Destroy" name="Walnut Seed" count="1"/>
     </block>
 
-    <block name="Walnut Tree Growing" modTag="treeGrowing">
+    <block name="Walnut Tree Growing" modTag="treeGrowing,noicon">
       <property name="PlantGrowing.Next" value="Walnut Tree"/>
       <drop event="Destroy" name="Walnut Seed" count="1"/>
     </block>
 
-    <block name="Walnut Tree" modTag="treePlant">
+    <block name="Walnut Tree" modTag="treePlant,noicon">
       <property name="Model" value="Entities/Trees/Maple20Prefab" />
       <drop event="Destroy" name="Walnut Seed" count="1"/>
       <drop event="Harvest" name="Walnut" count="4" tag="cropHarvest"/>
@@ -424,7 +424,7 @@ Was in corn seed?
     <!-- Walnut Tree -->
 
     <!-- Black Pepper -->
-    <block name="Black Pepper Seed" modTag="seed,shapeModel">
+    <block name="Black Pepper Seed" modTag="seed,shapeModel,hasicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="000000" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -432,18 +432,18 @@ Was in corn seed?
       <drop event="Destroy" name="Black Pepper Seed" count="1"/>
     </block>
 
-    <block name="Black Pepper Growing" modTag="growing,shapeModel">
+    <block name="Black Pepper Growing" modTag="growing,shapeModel,noicon">
     	<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
     	<property name="PlantGrowing.Next" value="Black Pepper Plant"/>
     	<drop event="Destroy" name="Black Pepper Seed" count="1"/>
     </block>
 
-    <block name="plantedBlackPepper3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedBlackPepper3Harvest" modTag="harvest,shapeModel,noicon">
     	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
     	<drop event="Harvest" name="Black Pepper Corn" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Black Pepper Plant" modTag="plant">
+    <block name="Black Pepper Plant" modTag="plant,noicon">
       <property name="Extends" value="treeGrassMaster" param1="CustomIcon" />
       <property name="Shape" value="Grass" />
       <property name="Mesh" value="grass" />
@@ -456,7 +456,7 @@ Was in corn seed?
     <!-- Black Pepper -->
 
     <!-- Ghost Pepper -->
-    <block name="Ghost Pepper Seed" modTag="seed,shapeModel">
+    <block name="Ghost Pepper Seed" modTag="seed,shapeModel,noicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="FF0000" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -464,18 +464,18 @@ Was in corn seed?
       <drop event="Destroy" name="Ghost Pepper Seed" count="1"/>
     </block>
 
-    <block name="Ghost Pepper Growing" modTag="growing,shapeModel">
+    <block name="Ghost Pepper Growing" modTag="growing,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Ghost Pepper Plant"/>
       <drop event="Destroy" name="Ghost Pepper Seed" count="1"/>
     </block>
 
-    <block name="plantedBlackPepper3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedBlackPepper3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Ghost Pepper Corn" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Ghost Pepper Plant" modTag="plant">
+    <block name="Ghost Pepper Plant" modTag="plant,noicon">
       <property name="Extends" value="treeGrassMaster" param1="CustomIcon" />
       <property name="Shape" value="Grass" />
       <property name="Mesh" value="grass" />
@@ -488,7 +488,7 @@ Was in corn seed?
     <!-- Ghost Pepper -->
 
     <!--  Wheat -->
-    <block name="Wheat Seed" modTag="seed,shapeNew">
+    <block name="Wheat Seed" modTag="seed,shapeNew,hasicon">
       <property name="CustomIcon" value="plantedCorn1" />
       <property name="CustomIconTint" value="888888" />
     	<property name="Material" value="Mcorn" />
@@ -498,7 +498,7 @@ Was in corn seed?
     	<drop event="Destroy" name="Wheat Seed" count="1" />
     </block>
 
-    <block name="Wheat Growing" modTag="growing,shapeNew">
+    <block name="Wheat Growing" modTag="growing,shapeNew,noicon">
     	<property name="Extends" value="Wheat Seed" />
     	<property name="Model" value="corn_growth_shape" />
     	<property name="Mesh" value="cutoutmoveable" />
@@ -506,14 +506,14 @@ Was in corn seed?
     	<drop event="Destroy" name="Wheat Seed" count="1" />
     </block>
 
-    <block name="plantedWheat3Harvest" modTag="harvest,shapeNew">
+    <block name="plantedWheat3Harvest" modTag="harvest,shapeNew,noicon">
     	<property name="Material" value="Mcorn" />
     	<property name="Model" value="corn_harvest_shape" />
     	<property name="Mesh" value="cutoutmoveable" />
     	<drop event="Harvest" name="Wheat" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Wheat Plant" modTag="plant">
+    <block name="Wheat Plant" modTag="plant,noicon">
     	<property name="Extends" value="plantedWheat3Harvest" />
     	<property name="CustomIcon" value="plantedCorn1" />
       <property name="CustomIconTint" value="757E46" />
@@ -523,7 +523,7 @@ Was in corn seed?
     <!--  Wheat -->
 
     <!--  Tomato -->
-    <block name="Tomato Seed" modTag="seed,shapeModel">
+    <block name="Tomato Seed" modTag="seed,shapeModel,hasicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="FF4D00" />
     	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -531,19 +531,19 @@ Was in corn seed?
     	<drop event="Destroy" name="Tomato Seed" count="1"/>
     </block>
 
-    <block name="Tomato Growing" modTag="growing,shapeModel">
+    <block name="Tomato Growing" modTag="growing,shapeModel,noicon">
     	<property name="CustomIcon" value="plantedPotato1"/>
     	<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
     	<property name="PlantGrowing.Next" value="Tomato Plant"/>
     	<drop event="Destroy" name="Tomato Seed" count="1"/>
     </block>
 
-    <block name="plantedTomato3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedTomato3Harvest" modTag="harvest,shapeModel,noicon">
     	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
     	<drop event="Harvest" name="Tomato" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Tomato Plant" modTag="plant">
+    <block name="Tomato Plant" modTag="plant,noicon">
     	<property name="Extends" value="plantedTomato3Harvest"/>
     	<property name="CustomIcon" value="plantedPotato1"/>
     	<drop event="Harvest" name="Tomato" count="1" tag="cropHarvest"/>
@@ -552,7 +552,7 @@ Was in corn seed?
     <!--  Tomato -->
 
     <!--  Carrot -->
-    <block name="Carrot Seed" modTag="seed,shapeModel">
+    <block name="Carrot Seed" modTag="seed,shapeModel,hasicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="FF6C00" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -560,19 +560,19 @@ Was in corn seed?
       <drop event="Destroy" name="Carrot Seed" count="1"/>
     </block>
 
-    <block name="Carrot Growing" modTag="growing,shapeModel">
+    <block name="Carrot Growing" modTag="growing,shapeModel,noicon">
       <property name="CustomIcon" value="plantedPotato1"/>
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Carrot Plant"/>
       <drop event="Destroy" name="Carrot Seed" count="1"/>
     </block>
 
-    <block name="plantedCarrot3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedCarrot3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Carrot" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Carrot Plant" modTag="plant">
+    <block name="Carrot Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedCarrot3Harvest"/>
       <property name="CustomIcon" value="plantedPotato1"/>
       <drop event="Harvest" name="Carrot" count="1" tag="cropHarvest"/>
@@ -581,7 +581,7 @@ Was in corn seed?
     <!--  Carrot -->
 
     <!--  Romaine -->
-    <block name="Romaine Seed" modTag="seed,shapeModel">
+    <block name="Romaine Seed" modTag="seed,shapeModel,hasicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="00FF3E" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -589,19 +589,19 @@ Was in corn seed?
       <drop event="Destroy" name="Romaine Seed" count="1"/>
     </block>
 
-    <block name="Romaine Growing" modTag="growing,shapeModel">
+    <block name="Romaine Growing" modTag="growing,shapeModel,noicon">
       <property name="CustomIcon" value="plantedPotato1"/>
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Romaine Plant"/>
       <drop event="Destroy" name="Romaine Seed" count="1"/>
     </block>
 
-    <block name="plantedRomaine3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedRomaine3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Romaine" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Romaine Plant" modTag="plant">
+    <block name="Romaine Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedRomaine3Harvest"/>
       <property name="CustomIcon" value="plantedPotato1"/>
       <drop event="Harvest" name="Romaine" count="1" tag="cropHarvest"/>
@@ -610,7 +610,7 @@ Was in corn seed?
     <!--  Romaine -->
 
     <!--  Squash -->
-    <block name="Squash Seed" modTag="seed,shapeModel">
+    <block name="Squash Seed" modTag="seed,shapeModel,hasicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="BDFF00" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -618,19 +618,19 @@ Was in corn seed?
       <drop event="Destroy" name="Squash Seed" count="1"/>
     </block>
 
-    <block name="Squash Growing" modTag="growing,shapeModel">
+    <block name="Squash Growing" modTag="growing,shapeModel,noicon">
       <property name="CustomIcon" value="plantedPotato1"/>
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Squash Plant"/>
       <drop event="Destroy" name="Squash Seed" count="1"/>
     </block>
 
-    <block name="plantedSquash3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedSquash3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Squash" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Squash Plant" modTag="plant">
+    <block name="Squash Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedSquash3Harvest"/>
       <property name="CustomIcon" value="plantedPotato1"/>
       <drop event="Harvest" name="Squash" count="1" tag="cropHarvest"/>
@@ -639,7 +639,7 @@ Was in corn seed?
     <!--  Squash -->
 
     <!--  Broccoli -->
-    <block name="Broccoli Seed" modTag="seed,shapeModel">
+    <block name="Broccoli Seed" modTag="seed,shapeModel,hasicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="22AA00" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -647,19 +647,19 @@ Was in corn seed?
       <drop event="Destroy" name="Broccoli Seed" count="1"/>
     </block>
 
-    <block name="Broccoli Growing" modTag="growing,shapeModel">
+    <block name="Broccoli Growing" modTag="growing,shapeModel,noicon">
       <property name="CustomIcon" value="plantedPotato1"/>
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Broccoli Plant"/>
       <drop event="Destroy" name="Broccoli Seed" count="1"/>
     </block>
 
-    <block name="plantedBroccoli3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedBroccoli3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Broccoli" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Broccoli Plant" modTag="plant">
+    <block name="Broccoli Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedBroccoli3Harvest"/>
       <property name="CustomIcon" value="plantedPotato1"/>
       <drop event="Harvest" name="Broccoli" count="1" tag="cropHarvest"/>
@@ -668,7 +668,7 @@ Was in corn seed?
     <!--  Broccoli -->
 
     <!--  Sorghum -->
-    <block name="Sorghum Seed" modTag="seed,shapeNew">
+    <block name="Sorghum Seed" modTag="seed,shapeNew,hasicon">
       <property name="CustomIcon" value="plantedCorn1" />
       <property name="CustomIconTint" value="727A04" />
       <property name="Material" value="Mcorn" />
@@ -678,7 +678,7 @@ Was in corn seed?
       <drop event="Destroy" name="Sorghum Seed" count="1" />
     </block>
 
-    <block name="Sorghum Growing" modTag="growing,shapeNew">
+    <block name="Sorghum Growing" modTag="growing,shapeNew,noicon">
       <property name="Extends" value="Sorghum Seed" />
       <property name="Model" value="corn_growth_shape" />
       <property name="Mesh" value="cutoutmoveable" />
@@ -686,14 +686,14 @@ Was in corn seed?
       <drop event="Destroy" name="Sorghum Seed" count="1" />
     </block>
 
-    <block name="plantedSorghum3Harvest" modTag="harvest,shapeNew">
+    <block name="plantedSorghum3Harvest" modTag="harvest,shapeNew,noicon">
       <property name="Material" value="Mcorn" />
       <property name="Model" value="corn_harvest_shape" />
       <property name="Mesh" value="cutoutmoveable" />
       <drop event="Harvest" name="Sorghum" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Sorghum Plant" modTag="plant">
+    <block name="Sorghum Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedSorghum3Harvest" />
       <property name="CustomIcon" value="plantedCorn1" />
       <property name="CustomIconTint" value="757E46" />
@@ -703,7 +703,7 @@ Was in corn seed?
     <!--  Sorghum -->
 
     <!--  Bitter Hop -->
-    <block name="Bitter Hop Seed" modTag="seed">
+    <block name="Bitter Hop Seed" modTag="seed,hasicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
     	<property name="Texture" value="447" />
@@ -711,7 +711,7 @@ Was in corn seed?
     	<drop event="Destroy" name="Bitter Hop Seed" count="1" />
     </block>
 
-    <block name="Bitter Hop Growing" modTag="growing">
+    <block name="Bitter Hop Growing" modTag="growing,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
     	<property name="Texture" value="448" />
@@ -719,14 +719,14 @@ Was in corn seed?
     	<drop event="Destroy" name="Bitter Hop Seed" count="1" />
     </block>
 
-    <block name="plantedBitterHop3Harvest" modTag="harvest">
+    <block name="plantedBitterHop3Harvest" modTag="harvest,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
     	<property name="Texture" value="449" />
     	<drop event="Harvest" name="Bitter Hops" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Bitter Hop Plant" modTag="plant">
+    <block name="Bitter Hop Plant" modTag="plant,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
     	<property name="Extends" value="plantedBitterHop3Harvest" />
@@ -737,7 +737,7 @@ Was in corn seed?
     <!--  Bitter Hop -->
 
     <!--  Floral Hop -->
-    <block name="Floral Hop Seed" modTag="seed">
+    <block name="Floral Hop Seed" modTag="seed,hasicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
     	<property name="Texture" value="447" />
@@ -745,7 +745,7 @@ Was in corn seed?
     	<drop event="Destroy" name="Floral Hop Seed" count="1" />
     </block>
 
-    <block name="Floral Hop Growing" modTag="growing">
+    <block name="Floral Hop Growing" modTag="growing,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
     	<property name="Texture" value="448" />
@@ -753,14 +753,14 @@ Was in corn seed?
     	<drop event="Destroy" name="Floral Hop Seed" count="1" />
     </block>
 
-    <block name="plantedFloralHop3Harvest" modTag="harvest">
+    <block name="plantedFloralHop3Harvest" modTag="harvest,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
     	<property name="Texture" value="449" />
     	<drop event="Harvest" name="Floral Hops" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Floral Hop Plant" modTag="plant">
+    <block name="Floral Hop Plant" modTag="plant,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
     	<property name="Extends" value="plantedFloralHop3Harvest" />
@@ -770,7 +770,7 @@ Was in corn seed?
     <!--  Floral Hop -->
 
     <!--  Onion -->
-    <block name="Onion Seed" modTag="seed,shapeModel">
+    <block name="Onion Seed" modTag="seed,shapeModel,noicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="9B3400" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -778,19 +778,19 @@ Was in corn seed?
       <drop event="Destroy" name="Onion Seed" count="1"/>
     </block>
 
-    <block name="Onion Growing" modTag="growing,shapeModel">
+    <block name="Onion Growing" modTag="growing,shapeModel,noicon">
       <property name="CustomIcon" value="plantedPotato1"/>
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Onion Plant"/>
       <drop event="Destroy" name="Onion Seed" count="1"/>
     </block>
 
-    <block name="plantedOnion3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedOnion3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Onion" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Onion Plant" modTag="plant">
+    <block name="Onion Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedOnion3Harvest"/>
       <property name="CustomIcon" value="plantedPotato1"/>
       <drop event="Harvest" name="Onion" count="1" tag="cropHarvest"/>
@@ -799,7 +799,7 @@ Was in corn seed?
     <!--  Onion -->
 
     <!--  Celery -->
-    <block name="Celery Seed" modTag="seed,shapeModel">
+    <block name="Celery Seed" modTag="seed,shapeModel,noicon">
       <property name="CustomIcon" value="plantedAloe1" />
       <property name="CustomIconTint" value="7DCEA0" />
       <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
@@ -807,19 +807,19 @@ Was in corn seed?
       <drop event="Destroy" name="Celery Seed" count="1"/>
     </block>
 
-    <block name="Celery Growing" modTag="growing,shapeModel">
+    <block name="Celery Growing" modTag="growing,shapeModel,noicon">
       <property name="CustomIcon" value="plantedPotato1"/>
       <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
       <property name="PlantGrowing.Next" value="Celery Plant"/>
       <drop event="Destroy" name="Celery Seed" count="1"/>
     </block>
 
-    <block name="plantedCelery3Harvest" modTag="harvest,shapeModel">
+    <block name="plantedCelery3Harvest" modTag="harvest,shapeModel,noicon">
       <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
       <drop event="Harvest" name="Celery" count="1" tag="wildCropsHarvest"/>
     </block>
 
-    <block name="Celery Plant" modTag="plant">
+    <block name="Celery Plant" modTag="plant,noicon">
       <property name="Extends" value="plantedCelery3Harvest"/>
       <property name="CustomIcon" value="plantedPotato1"/>
       <drop event="Harvest" name="Celery" count="1" tag="cropHarvest"/>
