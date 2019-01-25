@@ -2,6 +2,16 @@ This is a collection of very basic mods that I used to always apply by hand. Tha
 
 ## Mod Info
 
+### FarmLifeMod
+
+Adds growable plants and new recipes to craft.
+
+### FarmLifeMod_Icons
+
+Full credit goes to `syn7572` for their amazing work on adding in icons for everyone!
+
+You must have both FarmLifeMod **and** FarmLifeMod_Icons installed.
+
 ### AugerMod
 
 Makes the auger one shot stone after you get some strength and/or miner69 perks. Increases wood damage so you can 1-2 shot trees. Also increases the gas tank to a reasonable size.
@@ -121,10 +131,6 @@ Adds some extra recipes for alternate sources.
 - Early forge (a lot more stone and clay) *workbench required*
 
 Get Pine Resin from any "Pine" tree in the game.
-
-### FarmLifeMod
-
-Adds growable plants and new recipes to craft.
 
 ### WayneBradyMod
 
