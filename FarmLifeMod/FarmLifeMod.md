@@ -75,7 +75,7 @@ A: Well of course there are a million things to cook now!
 
 This system, like the rest of the mod, is a work in progress and evolving over time.
 
-Food is broken down into tiers. The results of food depend on the complexity and ingredients required to prepare it. Simple foods like a roasted carrot will give a little food but not heal. All you did was stick a carrot on a grill and let it sit for a little bit. Mostly that just made sure it killed any germs, and you won't get sick. You don't get a reward for that ;p When you take time to prepare a proper pasta dish, you will reap the rewards regarding health and food levels, as well as buffs.
+Food is broken down into tiers. The results of food depend on the complexity and ingredients required to prepare it. Simple foods like a roasted carrot will give a little food but not health. All you did was stick a carrot on a grill and let it sit for a little bit. Mostly that just made sure it killed any germs, and you won't get sick. You don't get a reward for that ;p When you take time to prepare a proper pasta dish, you will reap the rewards regarding health and food levels, as well as buffs.
 
 The tiers primarily make it easier to have a variety of dishes that give similar effects with different ingredients. This way if you hate broccoli but don't mind squash you can make that instead. Again, this mod is all about choices. It also makes it super easy for anyone that wants to expand or change Farm Life without editing all thousands of lines of XML code that goes into this mod.
 
