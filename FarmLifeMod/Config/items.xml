@@ -184,7 +184,7 @@ preparedPlant
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Joel's Breakfast" modTag="preparedPlant">
+    <item name="Joel's Breakfast" modTag="preparedPlant,madmole">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="FFC300" />
     </item>
@@ -976,6 +976,13 @@ preparedPlant
   <append xpath="/items/item[contains(@modTag,'spicy')]/effect_group">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Spicy Burn" />
   </append>
+
+  <!-- madmole -->
+  <append xpath="/items/item[contains(@modTag,'madmole')]/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="madmole" />
+  </append>
+
+
 
   <!-- Non edible ingredient -->
   <append xpath="/items/item[contains(@modTag,'ingredient')]">

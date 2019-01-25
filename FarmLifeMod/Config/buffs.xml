@@ -19,15 +19,103 @@ Stat / cvar comparison operators:
     Greater, GreaterThan, GT,
     LessOrEqual, LessThanOrEqualTo, LTE,
     GreaterOrEqual, GreaterThanOrEqualTo, GTE
-
-
 -->
 <configs>
 
   <append xpath="/buffs">
 
-    <!-- *********************** Drink Buffs *********************** -->
+    <buff name="madmole" name_key="madmole" description_key="I just had a filling breakfast, now its time to smash my mechanical keyboard as hard as I can while recording YouTube videos for casuals." icon="ui_game_symbol_muscle" icon_color="200,125,125">
+      <duration value="240"/>
+      <stack_type value="duration" />
+      <update_rate value="5"/>
+      <effect_group>
+        <passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1" />
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
+        <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
 
+        <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="I'm 4 foot 26."/>
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Food? Pfft I had 235 meat by day 14. Food is fine."/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message="Anyhow we love all you guys input..."/>
+
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Guys I appreciate the brainstorms...">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="That is counter realistic though.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="How can you add what is already there?">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="No it will be a future alpha, we're just fixing bugs, balancing and optimizing A17 at this point.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Are you playing 17.1?">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="All your armor, tools and weapons are flawless and loaded full of mods?">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Good point, I'll add that in.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Hey guys and gals...">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="We barely tweaked it. BARELY.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="And Ark. Its pretty common to die about 50 times the first few hours of that game.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="I read your big rant. The funny thing is no matter how you say it, its still fundamentally the same.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Sounds like a bug, we'll look into it.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="I don't know off hand, but we're not done with weather.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Go play fallout new vegas which is THE father of survival games...">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="You've got to be kidding. What part of 'The Survival HORDE Crafting Game'...">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="In real life and in the game, if you suck at something you suck at it.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="I haven't died on a horde yet">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Its a fictional game. Who says the virus or radiation can't make their bones stronger?">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="What nerf? I doubled...">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="This is complete bs. In alpha 8-11 zombies dug under ground, under your base, and shredded forts.">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="A destroyable world like minecraft meets a post apocalypse like fallout,... (sic)">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Into your Pimp-Boy :)">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Maybe your sister was cooking and she got killed right before you spawned">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Maybe your parents were survival nuts and you had a bunker full of canned...">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect>
+        <!-- <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="xxxx">
+          <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+        </triggered_effect> -->
+      </effect_group>
+
+    </buff>
 
     <buff name="Spicy Burn" name_key="Spicy Burn" description_key="I've eaten something very spicy and it burns really bad." icon="ui_game_symbol_talk" icon_color="255,0,0">
       <duration value="120"/>
@@ -58,6 +146,8 @@ Stat / cvar comparison operators:
       </effect_group>
 
     </buff>
+
+    <!-- *********************** Drink Buffs *********************** -->
 
     <buff name="Vitamin C" name_key="Vitamin C" description_key="Orange Juice protects your body from mild conditions." icon="ui_game_symbol_pills">
       <damage_type value="Disease"/>
