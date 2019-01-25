@@ -22,6 +22,9 @@
     <item name="Onion Seed" />
     <item name="Olive Seed" />
     <item name="Celery Seed" />
+    <item name="Walnut Seed" />
+    <item name="Ghost Pepper Seed" />
+    <item name="Sugar Maple Seed" />
   </append>
 
   <append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">

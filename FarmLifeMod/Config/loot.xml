@@ -20,6 +20,9 @@
     <item name="Onion Seed" />
     <item name="Olive Seed" />
     <item name="Celery Seed" />
+    <item name="Walnut Seed" />
+    <item name="Ghost Pepper Seed" />
+    <item name="Sugar Maple Seed" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
@@ -41,6 +44,8 @@
     <item name="Celery" />
     <item name="Salt Shaker" />
     <item name="Black Pepper Tin" />
+    <item name="Walnut" />
+    <item name="Ghost Pepper" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
@@ -62,6 +67,8 @@
     <item name="Onion" />
     <item name="Olive" />
     <item name="Celery" />
+    <item name="Walnut" />
+    <item name="Ghost Pepper" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">

@@ -28,6 +28,33 @@ Stat / cvar comparison operators:
 
     <!-- *********************** Drink Buffs *********************** -->
 
+
+    <buff name="Spicy Burn" name_key="Spicy Burn" description_key="I've eaten something very spicy and it burns really bad." icon="ui_game_symbol_talk" icon_color="255,0,0">
+      <duration value="120"/>
+      <stack_type value="duration" />
+      <update_rate value="30"/>
+
+      <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Not a smart idea to eat that. It was really HOT!!!!"/>
+      <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Why do I keep eating these things, they are killing me!!!!"/>
+      <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="My mouth is on fire!!!!"/>
+      <triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message="I will never eat THAT again..."/>
+
+      <passive_effect name="AttributeLevel" tags="attPerception" operation="base_subtract" value="1" />
+      <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
+      <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
+
+      <passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="3" />
+      <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.2" fade="2" effect_name="Hot" />
+      <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot" />
+
+      <triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" target="self" sound="player1sick" play_in_head="true">
+        <requirement name="IsMale" />
+      </triggered_effect>
+      <triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" target="self" sound="player2sick" play_in_head="true">
+        <requirement name="IsMale" invert="true" />
+      </triggered_effect>
+    </buff>
+
     <buff name="Vitamin C" name_key="Vitamin C" description_key="Orange Juice protects your body from mild conditions." icon="ui_game_symbol_pills">
       <damage_type value="Disease"/>
       <stack_type value="replace"/>

@@ -145,6 +145,56 @@ Was in corn seed?
       </block>
       <!-- Elk Blocks -->
 
+      <!-- Pig Blocks -->
+      <block name="Empty Pig Pen" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="F1948A" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Pig Pen" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Pig Pen" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Pig Pen" />
+      </block>
+      <block name="Full Pig Pen"  modTag="fullPen">
+        <drop event="Harvest" name="foodRawMeat" count="5" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="1" />
+        <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Pork Belly" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Ham" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <drop event="Harvest" name="Pork Ribs" count="1,2" prob="0.2" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Pig Pen"/>
+      </block>
+      <!-- Pig Blocks -->
+
+      <!-- Chicken Blocks -->
+      <block name="Empty Chicken Coop" modTag="emptyPen">
+        <property name="CustomIcon" value="woodFrameMaster" />
+        <property name="CustomIconTint" value="DAF7A6" />
+        <property class="UpgradeBlock">
+          <property name="ToBlock" value="Feeding Chicken Coop" />
+          <property name="Item" value="Cattle Feed" />
+          <property name="ItemCount" value="1" />
+          <property name="UpgradeHitCount" value="4" />
+        </property>
+      </block>
+      <block name="Feeding Chicken Coop" modTag="growingPen">
+        <property name="Class" value="UpgradeRated" />
+        <property name="UpgradeRated.ToBlock" value="Full Chicken Coop" />
+      </block>
+      <block name="Full Chicken Coop"  modTag="fullPen">
+        <drop event="Harvest" name="foodEgg" count="10" tag="butcherHarvest" />
+        <drop event="Harvest" name="resourceFeather" count="4,8" prob="0.5" tag="butcherHarvest" />
+        <drop event="Harvest" name="Chicken Breast" count="2,4" prob="1.0" tag="butcherHarvest" />
+        <drop event="Harvest" name="Chicken Wing" count="2,6" prob="1.0" tag="butcherHarvest" />
+        <property name="DowngradeBlock" value="Empty Chicken Coop"/>
+      </block>
+      <!-- Chicken Blocks -->
+
       <!-- Fruit Trees -->
       <block name="fruitTreeGrowingMaster">
         <property name="CreativeMode" value="None"/>
@@ -220,6 +270,7 @@ Was in corn seed?
         <property name="Model" value="Entities/Trees/Maple20Prefab" />
         <drop event="Destroy" name="Apple Seed" count="1"/>
         <drop event="Harvest" name="Apple" count="1" tag="cropHarvest"/>
+        <drop event="Harvest" name="Apple Woodchips" count="4,8" prob="0.5" tag="oreWoodHarvest"/>
       </block>
       <!-- Apple Tree -->
 
@@ -324,9 +375,53 @@ Was in corn seed?
     <block name="Olive Tree" modTag="treePlant">
       <property name="Model" value="Entities/Trees/Maple20Prefab" />
       <drop event="Destroy" name="Olive Seed" count="1"/>
-      <drop event="Harvest" name="Olive" count="1" tag="cropHarvest"/>
+      <drop event="Harvest" name="Olive" count="4" tag="cropHarvest"/>
     </block>
     <!-- Olive Tree -->
+
+    <!-- Sugar Maple Tree -->
+    <block name="Sugar Maple Seed" modTag="treeSeed">
+      <property name="CustomIcon" value="treePlantedOak1m" />
+      <property name="CustomIconTint" value="1E8449" />
+      <property name="Collide" value="melee"/>
+      <property name="PlantGrowing.Next" value="Sugar Maple Growing"/>
+      <drop event="Destroy" name="Sugar Maple Seed" count="1"/>
+    </block>
+
+    <block name="Sugar Maple Growing" modTag="treeGrowing">
+      <property name="PlantGrowing.Next" value="Sugar Maple Tree"/>
+      <drop event="Destroy" name="Sugar Maple Seed" count="1"/>
+    </block>
+
+    <block name="Sugar Maple Tree" modTag="treePlant">
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
+      <drop event="Destroy" name="Sugar Maple Seed" count="2"/>
+      <drop event="Harvest" name="Maple Sap" count="4" tag="cropHarvest"/> <!-- 40:1 syrup -->
+      <drop event="Harvest" name="Maple Woodchips" count="4,8" prob="0.5" tag="oreWoodHarvest"/>
+    </block>
+    <!-- Sugar Maple Tree -->
+
+    <!-- Walnut Tree -->
+    <block name="Walnut Seed" modTag="treeSeed">
+      <property name="CustomIcon" value="treePlantedOak1m" />
+      <property name="CustomIconTint" value="624700" />
+      <property name="Collide" value="melee"/>
+      <property name="PlantGrowing.Next" value="Walnut Tree Growing"/>
+      <drop event="Destroy" name="Walnut Seed" count="1"/>
+    </block>
+
+    <block name="Walnut Tree Growing" modTag="treeGrowing">
+      <property name="PlantGrowing.Next" value="Walnut Tree"/>
+      <drop event="Destroy" name="Walnut Seed" count="1"/>
+    </block>
+
+    <block name="Walnut Tree" modTag="treePlant">
+      <property name="Model" value="Entities/Trees/Maple20Prefab" />
+      <drop event="Destroy" name="Walnut Seed" count="1"/>
+      <drop event="Harvest" name="Walnut" count="4" tag="cropHarvest"/>
+      <drop event="Harvest" name="Walnut Woodchips" count="4,8" prob="0.5" tag="oreWoodHarvest"/>
+    </block>
+    <!-- Walnut Tree -->
 
     <!-- Black Pepper -->
     <block name="Black Pepper Seed" modTag="seed,shapeModel">
@@ -359,6 +454,38 @@ Was in corn seed?
     	<property name="DowngradeBlock" value="Black Pepper Seed"/>
     </block>
     <!-- Black Pepper -->
+
+    <!-- Ghost Pepper -->
+    <block name="Ghost Pepper Seed" modTag="seed,shapeModel">
+      <property name="CustomIcon" value="plantedAloe1" />
+      <property name="CustomIconTint" value="FF0000" />
+      <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+      <property name="PlantGrowing.Next" value="Ghost Pepper Growing"/>
+      <drop event="Destroy" name="Ghost Pepper Seed" count="1"/>
+    </block>
+
+    <block name="Ghost Pepper Growing" modTag="growing,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+      <property name="PlantGrowing.Next" value="Ghost Pepper Plant"/>
+      <drop event="Destroy" name="Ghost Pepper Seed" count="1"/>
+    </block>
+
+    <block name="plantedBlackPepper3Harvest" modTag="harvest,shapeModel">
+      <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+      <drop event="Harvest" name="Ghost Pepper Corn" count="1" tag="wildCropsHarvest"/>
+    </block>
+
+    <block name="Ghost Pepper Plant" modTag="plant">
+      <property name="Extends" value="treeGrassMaster" param1="CustomIcon" />
+      <property name="Shape" value="Grass" />
+      <property name="Mesh" value="grass" />
+      <property name="Class" value="Tallgrass" />
+      <property name="Texture" value="567" />
+      <property name="Material" value="Mtallgrass" />
+      <drop event="Harvest" name="Ghost Pepper" count="1" tag="cropHarvest"/>
+      <property name="DowngradeBlock" value="Ghost Pepper Seed"/>
+    </block>
+    <!-- Ghost Pepper -->
 
     <!--  Wheat -->
     <block name="Wheat Seed" modTag="seed,shapeNew">
@@ -789,7 +916,12 @@ Was in corn seed?
     <property name="CreativeMode" value="None"/>
     <property name="DisplayInfo" value="Name" />
     <property name="Extends" value="fullAnimalPenMaster" param1=""/>
-    <drop event="Harvest" name="bucketEmpty" count="1" prob="1" tag="allHarvest"/>
+    <drop event="Harvest" name="bucketEmpty" count="2" prob="1" tag="allHarvest"/>
+  </append>
+
+  <!-- Vanilla block additions -->
+  <append xpath="/blocks/block[@name='treeDesertShrub']">
+    <drop event="Destroy" name="Mesquite Woodchips" count="4,8" />
   </append>
 
 </configs>
