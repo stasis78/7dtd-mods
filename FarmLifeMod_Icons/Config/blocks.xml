@@ -1,0 +1,4 @@
+<configs>
+  <remove xpath="/blocks/block[contains(@modTag,'hasicon')]/property[@name='CustomIcon']" />
+  <remove xpath="/blocks/block[contains(@modTag,'hasicon')]/property[@name='CustomIconTint']" />
+</configs>
