@@ -15,7 +15,7 @@ and
 
 ### Dedicated Server Notes
 
-If `FarmLifeMod_Icons` is installed on a dedicated server then the client will need to install this mod locally in order to get the assets. This is a limitation of the current way mods are handled by the game.
+If `FarmLifeMod_Icons` is installed on a dedicated server then the client will need to install this mod locally, in order to get the assets. This is a limitation of the current way mods are handled by the game.
 
 ## About
 
