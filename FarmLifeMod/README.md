@@ -7,8 +7,6 @@ To install FarmLifeMod you *must* copy it into your `Mods` folder. Locations for
 
 If you want custom icons for this mod then you *must* install [FarmLifeMod_Icons](https://github.com/stasis78/7dtd-mods/tree/master/FarmLifeMod_Icons).
 
-If `FarmLifeMod_Icons` is installed on a dedicated server then the client will need to install this mod locally in order to get the assets. This is a limitation of the current way mods are handled by the game.
-
 If you want both the base mod and the icons, then you should have 2 folders like this:
 
 *Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod*
@@ -17,6 +15,9 @@ and
 
 *Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod_Icons*
 
+### Dedicated Server Notes
+
+If `FarmLifeMod_Icons` is installed on a dedicated server then the client will need to install this mod locally in order to get the assets. This is a limitation of the current way mods are handled by the game.
 
 ## About
 
