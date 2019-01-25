@@ -9,6 +9,15 @@ If you want custom icons for this mod then you *must* install [FarmLifeMod_Icons
 
 If `FarmLifeMod_Icons` is installed on a dedicated server then the client will need to install this mod locally in order to get the assets. This is a limitation of the current way mods are handled by the game.
 
+If you want both the base mod and the icons, then you should have 2 folders like this:
+
+*Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod*
+
+and
+
+*Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod_Icons*
+
+
 ## About
 
 Here is a [guide](https://github.com/stasis78/7dtd-mods/blob/master/FarmLifeMod/FarmLifeMod.md) to FarmLifeMod. It explains at a high level what the mod does and hopefully gives some insight into the *why*.
