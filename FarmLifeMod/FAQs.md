@@ -10,7 +10,7 @@ Seeds for Farm Life are found just like vanilla seeds. You can loot them and buy
 
 Once you have enough of the fruit or vegetable, you can craft them. For trees you MUST loot them or buy them though.
 
-## How dot pens work? I'm really confused!
+## How do pens work? I'm really confused!
 
 I'm sorry for the confusion. Let me try to make it very simple.
 
