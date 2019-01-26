@@ -30,6 +30,16 @@ preparedPlant
       <property name="CustomIconTint" value="5E0000" />
     </item>
 
+    <item name="Ground Beef" modTag="meat,noicon">
+      <property name="CustomIcon" value="foodRawMeat"/>
+      <property name="CustomIconTint" value="777777" />
+    </item>
+
+    <item name="Hamburger Patty" modTag="meat,noicon">
+      <property name="CustomIcon" value="foodRawMeat" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+
     <item name="Veal" modTag="meat,noicon">
       <property name="CustomIcon" value="foodRawMeat"/>
       <property name="CustomIconTint" value="F1948A" />
@@ -89,12 +99,27 @@ preparedPlant
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
+    <item name="Plain Ice Cream" modTag="refinedPlant,noicon">
+      <property name="CustomIcon" value="resourceTallow" />
+      <property name="CustomIconTint" value="FFFFFF" />
+    </item>
+
+    <item name="Blueberry Ice Cream" modTag="refinedPlant,noicon">
+      <property name="CustomIcon" value="resourceTallow" />
+      <property name="CustomIconTint" value="0055FF" />
+    </item>
+
     <item name="Butter" modTag="ingredient,noicon">
       <property name="CustomIcon" value="resourceTallow" />
       <property name="CustomIconTint" value="F0FF00" />
     </item>
 
     <item name="Parmesan" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="terrSnow" />
+      <property name="CustomIconTint" value="F0FF00" />
+    </item>
+
+    <item name="Cheddar" modTag="ingredient,noicon">
       <property name="CustomIcon" value="terrSnow" />
       <property name="CustomIconTint" value="F0FF00" />
     </item>
@@ -187,6 +212,21 @@ preparedPlant
     <item name="Joel's Breakfast" modTag="preparedPlant,noicon,madmole">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="FFC300" />
+    </item>
+
+    <item name="Hamburger Fixings" modTag="processedPlant,noicon">
+      <property name="CustomIcon" value="foodBoiledMeat" />
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Hamburger" modTag="refinedPlant,noicon">
+      <property name="CustomIcon" value="foodSteakAndPotato" />
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Cheeseburger" modTag="refinedPlant,noicon">
+      <property name="CustomIcon" value="foodSteakAndPotato" />
+      <property name="CustomIconTint" value="111111" />
     </item>
     <!-- Meat -->
 
@@ -579,7 +619,17 @@ preparedPlant
       <property name="CustomIconTint" value="888888" />
     </item>
 
+    <item name="Bread Dough" modTag="plant,noicon">
+      <property name="CustomIcon" value="resourceTallow" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
     <item name="Wheat Bread" modTag="preparedPlant,hasicon">
+      <property name="CustomIcon" value="foodCornBread" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Hamburger Bun" modTag="preparedPlant,noicon">
       <property name="CustomIcon" value="foodCornBread" />
       <property name="CustomIconTint" value="888888" />
     </item>
@@ -652,6 +702,36 @@ preparedPlant
     <item name="Ceramic Dutch Oven" modTag="cookingTool,noicon">
       <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Dough Hook" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="meleeCandyCaneClub"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Veggie Attachment" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="medicalSplint"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Ice Cream Bowl" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Meat Grinder" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="resourceTrophy3"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Grain Miller" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="resourceTrophy1"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Pasta Helper" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="resourceAirFilter"/>
+      <property name="CustomIconTint" value="000000" />
     </item>
 
     <item name="Pitch Fork" modTag="noicon">

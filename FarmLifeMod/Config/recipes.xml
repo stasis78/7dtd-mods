@@ -13,61 +13,87 @@ tags="learnable">
   <append xpath="/recipes">
 
     <!--   MEAT YUMMY -->=
-    <recipe name="Buttery Delmontico" count="1" modTag="toolCookingGrill,tongs,saltPepper">
+    <recipe name="Buttery Delmontico" count="1" modTag="toolTongs,saltPepper">
       <ingredient name="Delmontico" count="1" />
       <ingredient name="Butter" count="1" />
       <ingredient name="Apple Woodchips" count="1" />
     </recipe>
-    <recipe name="Rump Roast Stew" count="1" modTag="campfire,toolCookingPot,saltPepper">
+    <recipe name="Rump Roast Stew" count="1" modTag="toolDutchOven,saltPepper">
       <ingredient name="Rump Roast" count="1" />
       <ingredient name="foodCropPotato" count="2" />
       <ingredient name="Carrot" count="2" />
     </recipe>
-    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="toolCookingGrill,tongs,NaCl">
+    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="toolTongs,NaCl">
       <ingredient name="Porterhouse" count="1" />
       <ingredient name="Merlot" count="2" />
       <ingredient name="Black Pepper Corn" count="4" />
       <ingredient name="Apple Woodchips" count="1" />
     </recipe>
-    <recipe name="Elk Jerky" count="1" modTag="toolCookingGrill,tongs,saltPepper">
+    <recipe name="Elk Jerky" count="1" modTag="toolTongs,saltPepper">
       <ingredient name="Elk Scraps" count="10" />
     </recipe>
-    <recipe name="Smoked Bacon" count="10" modTag="toolCookingGrill,tongs">
+    <recipe name="Smoked Bacon" count="10" modTag="toolTongs">
       <ingredient name="Pork Belly" count="1" />
       <ingredient name="Apple Woodchips" count="4" />
       <ingredient name="Walnut Woodchips" count="1" />
     </recipe>
-    <recipe name="Cured Ham" count="1" modTag="campfire,toolCookingPot,saltPepper">
+    <recipe name="Cured Ham" count="1" modTag="toolDutchOven,saltPepper">
       <ingredient name="Ham" count="1" />
       <ingredient name="Salt" count="10" />
     </recipe>
     <recipe name="Ham Steak" count="10" modTag="">
       <ingredient name="Cured Ham" count="1" />
     </recipe>
-    <recipe name="BBQ Pork Ribs" count="10" modTag="toolCookingGrill,tongs">
+    <recipe name="BBQ Pork Ribs" count="10" modTag="toolTongs">
       <ingredient name="Pork Ribs" count="1" />
       <ingredient name="Spicy BBQ Sauce" count="10" />
       <ingredient name="Apple Woodchips" count="2" />
       <ingredient name="Walnut Woodchips" count="2" />
       <ingredient name="Mesquite Woodchips" count="1" />
     </recipe>
-    <recipe name="Spicy Chicken Wings" count="10" modTag="toolCookingGrill,tongs">
+    <recipe name="Spicy Chicken Wings" count="10" modTag="toolTongs">
       <ingredient name="Chicken Wing" count="10" />
       <ingredient name="Spicy BBQ Sauce" count="10" />
       <ingredient name="Ground Hot Pepper" count="2" />
       <ingredient name="Maple Woodchips" count="5" />
     </recipe>
-    <recipe name="Parmesan Crusted Chicken" count="2" modTag="campfire,toolCookingPot,saltPepper">
+    <recipe name="Parmesan Crusted Chicken" count="2" modTag="toolDutchOven,saltPepper">
       <ingredient name="Chicken Breast" count="2" />
       <ingredient name="Parmesan" count="2" />
       <ingredient name="foodEgg" count="1" />
       <ingredient name="Olive Oil" count="2" />
     </recipe>
-    <recipe name="Joel's Breakfast" count="1" modTag="campfire,toolCookingPot,saltPepper">
+    <recipe name="Joel's Breakfast" count="1" modTag="toolDutchOven,saltPepper">
       <ingredient name="Ham Steak" count="1" />
       <ingredient name="Smoked Bacon" count="2" />
       <ingredient name="foodEgg" count="3" />
       <ingredient name="Hashbrowns" count="1" />
+    </recipe>
+    <recipe name="Ground Beef" count="10" modTag="toolMeatGrinder">
+      <ingredient name="Delmontico" count="1" />
+    </recipe>
+    <recipe name="Ground Beef" count="10" modTag="toolMeatGrinder">
+      <ingredient name="Rump Roast" count="1" />
+    </recipe>
+    <recipe name="Ground Beef" count="10" modTag="toolMeatGrinder">
+      <ingredient name="Porterhouse" count="1" />
+    </recipe>
+    <recipe name="Hamburger Patty" count="1" modTag="saltPepper">
+      <ingredient name="Ground Beef" count="1" />
+    </recipe>
+    <recipe name="Hamburger Fixings" count="10" modTag="">
+      <ingredient name="Hamburger Bun" count="10" />
+      <ingredient name="Romaine" count="1" />
+      <ingredient name="Onion" count="1" />
+    </recipe>
+    <recipe name="Hamburger" count="1" modTag="toolSpatula">
+      <ingredient name="Hamburger Patty" count="1" />
+      <ingredient name="Hamburger Fixings" count="1" />
+    </recipe>
+    <recipe name="Cheeseburger" count="1" modTag="toolSpatula">
+      <ingredient name="Hamburger Patty" count="1" />
+      <ingredient name="Hamburger Fixings" count="1" />
+      <ingredient name="Cheddar" count="1" />
     </recipe>
     <!--   MEAT YUMMY -->
 
@@ -75,27 +101,27 @@ tags="learnable">
     From https://cooking.nytimes.com/recipes/1015181-marcella-hazans-bolognese-sauce
     One of my fav recipes :D
     -->
-    <recipe name="Bolognese Step 1" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Bolognese Step 1" count="1" modTag="toolCookingPot">
       <ingredient name="Olive Oil" count="1" />
       <ingredient name="Butter" count="1" />
       <ingredient name="Onion" count="1" />
       <ingredient name="Celery" count="1" />
       <ingredient name="Carrot" count="1" />
     </recipe>
-    <recipe name="Bolognese Step 2" count="1" modTag="campfire,toolCookingPot,saltPepper">
+    <recipe name="Bolognese Step 2" count="1" modTag="toolCookingPot,saltPepper">
       <ingredient name="Bolognese Step 1" count="1" />
       <ingredient name="Veal" count="5" />
     </recipe>
-    <recipe name="Bolognese Step 3" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Bolognese Step 3" count="1" modTag="toolCookingPot">
       <ingredient name="Bolognese Step 2" count="1" />
       <ingredient name="Milk" count="1" />
     </recipe>
-    <recipe name="Bolognese Sauce" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Bolognese Sauce" count="1" modTag="toolCookingPot">
       <ingredient name="Bolognese Step 3" count="1" />
       <ingredient name="White Zin" count="1" />
       <ingredient name="Crushed Tomato" count="1" />
     </recipe>
-    <recipe name="Bolognese Dish" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Bolognese Dish" count="1" modTag="toolCookingPot">
       <ingredient name="Bolognese Sauce" count="1" />
       <ingredient name="Parmesan" count="1" />
       <ingredient name="Butter" count="1" />
@@ -114,7 +140,7 @@ tags="learnable">
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 
-    <recipe name="Apple Pie" count="1" modTag="toolCookingGrill">
+    <recipe name="Apple Pie" count="1" modTag="stationWoodGrill">
       <ingredient name="Apple" count="4" />
       <ingredient name="Wheat Flour" count="2" />
       <ingredient name="foodEgg" count="1" />
@@ -122,7 +148,7 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Cherry Pie" count="1" modTag="toolCookingGrill">
+    <recipe name="Cherry Pie" count="1" modTag="stationWoodGrill">
       <ingredient name="Cherry" count="4" />
       <ingredient name="Wheat Flour" count="2" />
       <ingredient name="foodEgg" count="1" />
@@ -130,12 +156,12 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Orange Juice" count="1" modTag="">
+    <recipe name="Orange Juice" count="1" modTag="toolVeggie">
       <ingredient name="Orange" count="5" />
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 
-    <recipe name="Lemon Lime Coolaid" count="1" modTag="">
+    <recipe name="Lemon Lime Coolaid" count="1" modTag="toolVeggie">
       <ingredient name="Lime" count="2" />
       <ingredient name="Meyer Lemon" count="2" />
       <ingredient name="drinkJarEmpty" count="1" />
@@ -146,7 +172,7 @@ tags="learnable">
       <ingredient name="drinkJarGrainAlcohol" count="1" />
     </recipe>
 
-    <recipe name="Canned Olives" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Canned Olives" count="1" modTag="toolCookingPot">
       <ingredient name="Olive" count="10" />
       <ingredient name="drinkCanEmpty" count="1" />
       <ingredient name="drinkJarBoiledWater" count="1" />
@@ -178,35 +204,35 @@ tags="learnable">
     </recipe>
 
     <!--   Ingredients -->
-    <recipe name="Light Malt" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Light Malt" count="1" modTag="toolCookingPot">
       <ingredient name="Sorghum" count="2" />
     </recipe>
-    <recipe name="Golden Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Golden Malt" count="1" modTag="toolCookingPot">
       <ingredient name="Sorghum" count="2" />
     </recipe>
-    <recipe name="Dark Malt" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+    <recipe name="Dark Malt" count="1" modTag="toolCookingPot">
       <ingredient name="Sorghum" count="2" />
     </recipe>
-    <recipe name="Salt" count="2" modTag="chemistryStation">
+    <recipe name="Salt" count="2" modTag="toolGrainMiller">
       <ingredient name="Halite" count="1" />
     </recipe>
-    <recipe name="Black Pepper" count="1" modTag="chemistryStation">
+    <recipe name="Black Pepper" count="1" modTag="toolGrainMiller">
       <ingredient name="Black Pepper Corn" count="1" />
     </recipe>
     <recipe name="Salt and Pepper" count="1">
       <ingredient name="Black Pepper" count="1" />
       <ingredient name="Salt" count="1" />
     </recipe>
-    <recipe name="Grape Pulp" count="1" modTag="chemistryStation">
+    <recipe name="Grape Pulp" count="1" modTag="toolVeggie">
       <ingredient name="Grape" count="2" />
     </recipe>
-    <recipe name="Grape Extract" count="1" modTag="chemistryStation">
+    <recipe name="Grape Extract" count="1" modTag="toolVeggie">
       <ingredient name="Grape" count="2" />
     </recipe>
-    <recipe name="Olive Paste" count="1" modTag="chemistryStation">
+    <recipe name="Olive Paste" count="1" modTag="toolVeggie">
       <ingredient name="Olive" count="5" />
     </recipe>
-    <recipe name="Olive Oil" count="10" modTag="chemistryStation">
+    <recipe name="Olive Oil" count="10" modTag="toolVeggie">
       <ingredient name="Olive Paste" count="10" />
     </recipe>
     <recipe name="Briney Water" count="1" modTag="chemistryStation">
@@ -214,7 +240,7 @@ tags="learnable">
       <ingredient name="Salt" count="5" />
       <ingredient name="drinkJarBoiledWater" count="15" />
     </recipe>
-    <recipe name="Ground Hot Pepper" count="10" modTag="chemistryStation">
+    <recipe name="Ground Hot Pepper" count="10" modTag="toolVeggie">
       <ingredient name="Ghost Pepper" count="2" />
     </recipe>
     <recipe name="Cooking Vinegar" count="10" modTag="chemistryStation">
@@ -255,12 +281,12 @@ tags="learnable">
     <!--  Beer -->
 
     <!--  Veggies -->
-    <recipe name="Hashbrowns" count="1" modTag="campfire,toolCookingPot,NaCl">
+    <recipe name="Hashbrowns" count="1" modTag="toolCookingPot,NaCl">
     	<ingredient name="foodCropPotato" count="2" />
       <ingredient name="Butter" count="1" />
     </recipe>
 
-    <recipe name="Liquid Veg" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Liquid Veg" count="1" modTag="toolVeggie">
     	<ingredient name="Carrot" count="2" />
       <ingredient name="Romaine" count="2" />
       <ingredient name="resourceCropChrysanthemumPlant" count="2" />
@@ -268,37 +294,37 @@ tags="learnable">
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 
-    <recipe name="Mixed Greens" count="1" modTag="campfire,toolCookingPot,blackPepper">
+    <recipe name="Mixed Greens" count="1" modTag="toolVeggie,blackPepper">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="Romaine" count="1" />
       <ingredient name="resourceCropChrysanthemumPlant" count="1" />
     </recipe>
 
-    <recipe name="Veggie Mash" count="1" modTag="campfire,toolCookingPot,NaCl,blackPepper">
+    <recipe name="Veggie Mash" count="1" modTag="toolCookingPot,NaCl,blackPepper">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="Squash" count="1" />
     </recipe>
 
-    <recipe name="Steamed Broccoli" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Steamed Broccoli" count="1" modTag="toolCookingPot">
     	<ingredient name="Broccoli" count="1" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Grilled Squash" count="1" modTag="toolCookingGrill,NaCl,blackPepper">
+    <recipe name="Grilled Squash" count="1" modTag="toolTongs,NaCl,blackPepper">
     	<ingredient name="Squash" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
 
-    <recipe name="Romaine Salad" count="1">
+    <recipe name="Romaine Salad" count="1" modTag="toolVeggie">
     	<ingredient name="Romaine" count="2" />
     </recipe>
 
-    <recipe name="Roasted Carrot" count="1" modTag="toolCookingGrill">
+    <recipe name="Roasted Carrot" count="1" modTag="toolTongs">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
 
-    <recipe name="Sauteed Onions" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Sauteed Onions" count="1" modTag="toolCookingPot">
       <ingredient name="Onion" count="1" />
       <ingredient name="Butter" count="1" />
     </recipe>
@@ -311,58 +337,78 @@ tags="learnable">
     <!--  Veggies -->
 
     <!--  Tomato -->
-    <recipe name="Crushed Tomato" count="1" modTag="campfire,toolCookingPot">
+    <recipe name="Crushed Tomato" count="1" modTag="toolVeggie">
     	<ingredient name="Tomato" count="4" />
       <ingredient name="drinkCanEmpty" count="1" />
     </recipe>
 
-    <recipe name="Ketchup Step 1" count="1" modTag="campfire,toolCookingPot,NaCl">
+    <recipe name="Ketchup Step 1" count="1" modTag="toolCookingPot,NaCl">
       <ingredient name="Sauteed Onions" count="2" />
       <ingredient name="Olive Oil" count="1" />
       <ingredient name="Ground Hot Pepper" count="1" />
     </recipe>
 
-    <recipe name="Ketchup" count="10" modTag="campfire,toolCookingPot">
+    <recipe name="Ketchup" count="10" modTag="toolCookingPot">
       <ingredient name="Ketchup Step 1" count="1" />
       <ingredient name="Crushed Tomato" count="2" />
       <ingredient name="Cooking Vinegar" count="1" />
     </recipe>
 
-    <recipe name="Spicy BBQ Sauce" count="10" modTag="campfire,toolCookingPot">
+    <recipe name="Spicy BBQ Sauce" count="10" modTag="toolCookingPot">
       <ingredient name="Ketchup" count="10" />
       <ingredient name="Ground Hot Pepper" count="4" />
       <ingredient name="Cooking Vinegar" count="1" />
       <ingredient name="Meyer Lemon" count="1" />
     </recipe>
 
-    <recipe name="Marinara" count="1" modTag="campfire,toolCookingPot,NaCl,blackPepper">
+    <recipe name="Marinara" count="1" modTag="toolCookingPot,NaCl,blackPepper">
     	<ingredient name="Crushed Tomato" count="2" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
     <!--  Tomato -->
 
     <!--  Wheat -->
-    <recipe name="Wheat Bread" count="1" modTag="campfire,toolCookingPot,NaCl">
-    	<ingredient name="Wheat Flour" count="4" />
+    <recipe name="Bread Dough" count="1" modTag="toolDoughHook,NaCl">
+      <ingredient name="Wheat Flour" count="4" />
       <ingredient name="foodEgg" count="2" />
-    	<ingredient name="drinkJarBoiledWater" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+    <recipe name="Wheat Bread" count="1" modTag="toolCookingPot">
+    	<ingredient name="Bread Dough" count="1" />
     </recipe>
 
-    <recipe name="Wheat Flour" count="1">
+    <recipe name="Hamburger Bun" count="10" modTag="toolCookingPot">
+      <ingredient name="Bread Dough" count="1" />
+    </recipe>
+
+    <recipe name="Wheat Flour" count="1" modTag="toolGrainMiller">
     	<ingredient name="Wheat" count="1" />
     </recipe>
     <!--  Wheat -->
 
     <!--  Milk -->
-    <recipe name="Milk" count="5" modTag="campfire,toolCookingPot">
+    <recipe name="Milk" count="5" modTag="toolCookingPot">
       <ingredient name="Raw Milk" count="1" />
     </recipe>
-    <recipe name="Butter" count="1" modTag="campfire,toolCookingPot">
-      <ingredient name="Raw Milk" count="1" />
+    <recipe name="Plain Ice Cream" count="10" modTag="toolIcecream,NaCl">
+      <ingredient name="Milk" count="10" />
       <ingredient name="Salt" count="1" />
     </recipe>
+    <recipe name="Blueberry Ice Cream" count="10" modTag="toolIcecream,NaCl">
+      <ingredient name="Milk" count="10" />
+      <ingredient name="foodCropBlueberries" count="10" />
+      <ingredient name="Salt" count="1" />
+    </recipe>
+    <recipe name="Butter" count="10" modTag="toolDoughHook,NaCl">
+      <ingredient name="Raw Milk" count="1" />
+    </recipe>
     <!-- Cheese needs more work. Should create curds with whey first, then mix with brine -->
-    <recipe name="Parmesan" count="10" modTag="campfire,toolCookingPot">
+    <recipe name="Parmesan" count="10" modTag="toolCookingPot">
+      <ingredient name="Raw Milk" count="1" />
+      <ingredient name="Milk" count="5" />
+      <ingredient name="Briney Water" count="1" />
+    </recipe>
+    <recipe name="Cheddar" count="10" modTag="toolCookingPot">
       <ingredient name="Raw Milk" count="1" />
       <ingredient name="Milk" count="5" />
       <ingredient name="Briney Water" count="1" />
@@ -370,20 +416,20 @@ tags="learnable">
     <!--  Milk -->
 
     <!--  Penne -->
-    <recipe name="Penne" count="1" modTag="campfire,toolCookingPot,NaCl">
+    <recipe name="Penne" count="1" modTag="toolPastaHelper,NaCl">
       <ingredient name="Wheat Flour" count="4" />
       <ingredient name="Milk" count="1" />
       <ingredient name="foodEgg" count="2" />
     </recipe>
-    <recipe name="Bechamel" count="1" modTag="campfire,toolCookingPot,NaCl">
+    <recipe name="Bechamel" count="1" modTag="toolCookingPot,NaCl">
       <ingredient name="Wheat Flour" count="1" />
       <ingredient name="Milk" count="2" />
     </recipe>
-    <recipe name="Pasta Meal" count="1" modTag="campfire,toolCookingPot,blackPepper">
+    <recipe name="Pasta Meal" count="1" modTag="toolCookingPot,blackPepper">
       <ingredient name="Bechamel" count="2" />
       <ingredient name="Penne" count="2" />
     </recipe>
-    <recipe name="Pasta Meal" count="1" modTag="campfire,toolCookingPot,blackPepper">
+    <recipe name="Pasta Meal" count="1" modTag="toolCookingPot,blackPepper">
       <ingredient name="Marinara" count="2" />
       <ingredient name="Penne" count="2" />
     </recipe>
@@ -490,17 +536,50 @@ tags="learnable">
     	<ingredient name="resourceForgedIron" count="10" />
     	<ingredient name="toolCookingGrill" count="1" />
     </recipe>
-    <recipe name="Tongs" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+    <recipe name="KitchNaid" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+    <recipe name="Tongs" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
     </recipe>
-    <recipe name="Spatula" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+    <recipe name="Spatula" count="1" modTag="toolForgeCrucible">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
     </recipe>
-    <recipe name="Ceramic Dutch Oven" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
+    <recipe name="Ceramic Dutch Oven" count="1" modTag="toolAndDieSet">
     	<ingredient name="unit_glass" count="1000" />
     	<ingredient name="unit_clay" count="100" />
+    </recipe>
+    <recipe name="Dough Hook" count="1" modTag="toolAnvil">
+    	<ingredient name="unit_iron" count="25" />
+    	<ingredient name="unit_clay" count="5" />
+    </recipe>
+    <recipe name="Veggie Attachment" count="1">
+    	<ingredient name="resourceForgedIron" count="4" />
+    	<ingredient name="resourceMechanicalParts" count="4" />
+      <ingredient name="resourceScrapPolymers" count="4" />
+    </recipe>
+    <recipe name="Ice Cream Bowl" count="1" modTag="toolForgeCrucible">
+    	<ingredient name="unit_iron" count="100" />
+    	<ingredient name="unit_clay" count="10" />
+    </recipe>
+    <recipe name="Meat Grinder" count="1">
+    	<ingredient name="resourceForgedIron" count="4" />
+    	<ingredient name="resourceMechanicalParts" count="4" />
+      <ingredient name="resourceScrapPolymers" count="4" />
+    </recipe>
+    <recipe name="Grain Miller" count="1">
+    	<ingredient name="resourceForgedIron" count="4" />
+    	<ingredient name="resourceMechanicalParts" count="4" />
+      <ingredient name="resourceScrapPolymers" count="4" />
+    </recipe>
+    <recipe name="Pasta Helper" count="1">
+    	<ingredient name="resourceForgedIron" count="4" />
+    	<ingredient name="resourceMechanicalParts" count="4" />
+      <ingredient name="resourceScrapPolymers" count="4" />
     </recipe>
 
     <!-- Pens -->
@@ -541,28 +620,71 @@ tags="learnable">
     <ingredient name="Salt and Pepper" count="1" />
   </append>
 
+  <!-- Vanilla craft_area -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'chemistryStation')]" name="craft_area">
     chemistryStation
   </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'campfire')]" name="craft_area">
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'stationForge') or contains(@modTag,'toolAnvil') or contains(@modTag,'toolForgeCrucible') or contains(@modTag,'toolAndDieSet')]" name="craft_area">
+    forge
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'stationForge') or contains(@modTag,'toolAnvil') or contains(@modTag,'toolForgeCrucible') or contains(@modTag,'toolAndDieSet')]" name="material_based">
+    true
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_area">
     campfire
+  </setattribute>
+
+  <!-- New craft_area -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'stationWoodGrill') or contains(@modTag,'toolTongs') or contains(@modTag,'toolSpatula') or contains(@modTag,'toolDutchOven')]" name="craft_area">
+    Wood Grill
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'stationKitchenAid') or contains(@modTag,'toolDoughHook') or contains(@modTag,'toolVeggie') or contains(@modTag,'toolIcecream') or contains(@modTag,'toolMeatGrinder') or contains(@modTag,'toolGrainMiller') or contains(@modTag,'toolPastaHelper')]" name="craft_area">
+    KitchNaid
+  </setattribute>
+
+  <!-- Vanilla craft_tool -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolAnvil')]" name="craft_tool">
+    toolAnvil
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolForgeCrucible')]" name="craft_tool">
+    toolForgeCrucible
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolAndDieSet')]" name="craft_tool">
+    toolAndDieSet
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_tool">
     toolCookingPot
   </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingGrill')]" name="craft_area">
-    Wood Grill
-  </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'tongs')]" name="craft_tool">
+
+  <!-- New craft_tool -->
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolTongs')]" name="craft_tool">
     Tongs
   </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'spatula')]" name="craft_tool">
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolSpatula')]" name="craft_tool">
     Spatula
   </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'dutchOven')]" name="craft_tool">
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolDutchOven')]" name="craft_tool">
     Ceramic Dutch Oven
   </setattribute>
 
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolDoughHook')]" name="craft_tool">
+    Dough Hook
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolVeggie')]" name="craft_tool">
+    Veggie Attachment
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolIcecream')]" name="craft_tool">
+    Ice Cream Bowl
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMeatGrinder')]" name="craft_tool">
+    Meat Grinder
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolGrainMiller')]" name="craft_tool">
+    Grain Miller
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolPastaHelper')]" name="craft_tool">
+    Pasta Helper
+  </setattribute>
 
   <!-- Update Pens -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">
