@@ -1,0 +1,15 @@
+<configs>
+
+  <append xpath="/xui/ruleset">
+    <window_group name="workstation_Wood Grill" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsWoodGrill" />
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
+  </append>
+</configs>
