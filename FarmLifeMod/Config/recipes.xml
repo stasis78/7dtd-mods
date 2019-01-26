@@ -13,7 +13,7 @@ tags="learnable">
   <append xpath="/recipes">
 
     <!--   MEAT YUMMY -->=
-    <recipe name="Buttery Delmontico" count="1" modTag="campfire,toolCookingGrill,saltPepper">
+    <recipe name="Buttery Delmontico" count="1" modTag="toolCookingGrill,tongs,saltPepper">
       <ingredient name="Delmontico" count="1" />
       <ingredient name="Butter" count="1" />
       <ingredient name="Apple Woodchips" count="1" />
@@ -23,16 +23,16 @@ tags="learnable">
       <ingredient name="foodCropPotato" count="2" />
       <ingredient name="Carrot" count="2" />
     </recipe>
-    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="campfire,toolCookingGrill,NaCl">
+    <recipe name="Red Wine and Peppercorn Porterhouse" count="1" modTag="toolCookingGrill,tongs,NaCl">
       <ingredient name="Porterhouse" count="1" />
       <ingredient name="Merlot" count="2" />
       <ingredient name="Black Pepper Corn" count="4" />
       <ingredient name="Apple Woodchips" count="1" />
     </recipe>
-    <recipe name="Elk Jerky" count="1" modTag="campfire,toolCookingGrill,saltPepper">
+    <recipe name="Elk Jerky" count="1" modTag="toolCookingGrill,tongs,saltPepper">
       <ingredient name="Elk Scraps" count="10" />
     </recipe>
-    <recipe name="Smoked Bacon" count="10" modTag="campfire,toolCookingGrill">
+    <recipe name="Smoked Bacon" count="10" modTag="toolCookingGrill,tongs">
       <ingredient name="Pork Belly" count="1" />
       <ingredient name="Apple Woodchips" count="4" />
       <ingredient name="Walnut Woodchips" count="1" />
@@ -44,14 +44,14 @@ tags="learnable">
     <recipe name="Ham Steak" count="10" modTag="">
       <ingredient name="Cured Ham" count="1" />
     </recipe>
-    <recipe name="BBQ Pork Ribs" count="10" modTag="campfire,toolCookingGrill">
+    <recipe name="BBQ Pork Ribs" count="10" modTag="toolCookingGrill,tongs">
       <ingredient name="Pork Ribs" count="1" />
       <ingredient name="Spicy BBQ Sauce" count="10" />
       <ingredient name="Apple Woodchips" count="2" />
       <ingredient name="Walnut Woodchips" count="2" />
       <ingredient name="Mesquite Woodchips" count="1" />
     </recipe>
-    <recipe name="Spicy Chicken Wings" count="10" modTag="campfire,toolCookingGrill">
+    <recipe name="Spicy Chicken Wings" count="10" modTag="toolCookingGrill,tongs">
       <ingredient name="Chicken Wing" count="10" />
       <ingredient name="Spicy BBQ Sauce" count="10" />
       <ingredient name="Ground Hot Pepper" count="2" />
@@ -114,7 +114,7 @@ tags="learnable">
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 
-    <recipe name="Apple Pie" count="1" modTag="campfire,toolCookingGrill">
+    <recipe name="Apple Pie" count="1" modTag="toolCookingGrill">
       <ingredient name="Apple" count="4" />
       <ingredient name="Wheat Flour" count="2" />
       <ingredient name="foodEgg" count="1" />
@@ -122,7 +122,7 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Cherry Pie" count="1" modTag="campfire,toolCookingGrill">
+    <recipe name="Cherry Pie" count="1" modTag="toolCookingGrill">
       <ingredient name="Cherry" count="4" />
       <ingredient name="Wheat Flour" count="2" />
       <ingredient name="foodEgg" count="1" />
@@ -284,7 +284,7 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Grilled Squash" count="1" modTag="campfire,toolCookingGrill,NaCl,blackPepper">
+    <recipe name="Grilled Squash" count="1" modTag="toolCookingGrill,NaCl,blackPepper">
     	<ingredient name="Squash" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
@@ -293,7 +293,7 @@ tags="learnable">
     	<ingredient name="Romaine" count="2" />
     </recipe>
 
-    <recipe name="Roasted Carrot" count="1" modTag="campfire,toolCookingGrill">
+    <recipe name="Roasted Carrot" count="1" modTag="toolCookingGrill">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
@@ -486,6 +486,22 @@ tags="learnable">
     <recipe name="Black Pepper" count="10">
       <ingredient name="Black Pepper Tin" count="1" />
     </recipe>
+    <recipe name="Wood Grill" count="1">
+    	<ingredient name="resourceForgedIron" count="10" />
+    	<ingredient name="toolCookingGrill" count="1" />
+    </recipe>
+    <recipe name="Tongs" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+    	<ingredient name="unit_iron" count="25" />
+    	<ingredient name="unit_clay" count="5" />
+    </recipe>
+    <recipe name="Spatula" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+    	<ingredient name="unit_iron" count="25" />
+    	<ingredient name="unit_clay" count="5" />
+    </recipe>
+    <recipe name="Ceramic Dutch Oven" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
+    	<ingredient name="unit_glass" count="1000" />
+    	<ingredient name="unit_clay" count="100" />
+    </recipe>
 
     <!-- Pens -->
     <recipe name="Empty Holstein Pen" modTag="emptyPen">
@@ -534,9 +550,19 @@ tags="learnable">
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_tool">
     toolCookingPot
   </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingGrill')]" name="craft_tool">
-    toolCookingGrill
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingGrill')]" name="craft_area">
+    Wood Grill
   </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'tongs')]" name="craft_tool">
+    Tongs
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'spatula')]" name="craft_tool">
+    Spatula
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'dutchOven')]" name="craft_tool">
+    Ceramic Dutch Oven
+  </setattribute>
+
 
   <!-- Update Pens -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">
@@ -548,6 +574,5 @@ tags="learnable">
     <ingredient name="Feeding Trough" count="1" />
     <ingredient name="bucketEmpty" count="1" />
   </append>
-
 
 </configs>

@@ -639,6 +639,21 @@ preparedPlant
       <property name="CustomIconTint" value="FF4200" />
     </item>
 
+    <item name="Tongs" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="meleeToolShovelIron"/>
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Spatula" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="meleeToolShovelIron"/>
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Ceramic Dutch Oven" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
     <item name="Pitch Fork" modTag="noicon">
       <property name="CustomIcon" value="meleeToolHoeIron" />
       <property name="CustomIconTint" value="888888" />
@@ -990,6 +1005,17 @@ preparedPlant
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
     <property name="Material" value="MresourceCrop" />
     <property name="Stacknumber" value="500" /> <!-- STK resource -->
+    <property name="EconomicValue" value="4" />
+    <property name="EconomicBundleSize" value="5" />
+    <property name="CraftingIngredientTime" value="5" />
+  </append>
+
+  <append xpath="/items/item[contains(@modTag,'cookingTool')]">
+    <property name="HoldType" value="31" />
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="Mmetal" />
+    <property name="Stacknumber" value="1" /> <!-- STK resource -->
     <property name="EconomicValue" value="4" />
     <property name="EconomicBundleSize" value="5" />
     <property name="CraftingIngredientTime" value="5" />
