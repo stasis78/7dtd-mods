@@ -30,7 +30,7 @@ Hope that clears this up!
 
 I'm sorry you feel that way. Let me try to explain it.
 
-Right now adding models to the game requires client side downloads. I always strive to keep this so folks can run on dedicated servers without needing clients to download anythings. There will be models eventually, but they require the client to manually install them as of now.
+Right now adding models to the game requires client side downloads. I always strive to keep this so folks can run on dedicated servers without needing clients to download any "things". There will be models eventually, but they require the client to manually install them as of now.
 
 To work around this issue, pens use the following logic for their block models.
 
