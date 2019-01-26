@@ -11,5 +11,14 @@
       <window name="windowNonPagingHeader" />
     </window_group>
 
+    <window_group name="workstation_KitchNaid" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsKitchenAid" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
   </append>
 </configs>

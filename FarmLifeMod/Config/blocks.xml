@@ -15,6 +15,54 @@ Was in corn seed?
 
     <!-- Craft stations  -->
 
+    <block name="KitchNaid">
+      <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
+      <property name="CustomIconTint" value="888888" />
+
+      <property name="Class" value="Workstation" />
+    	<property name="Material" value="Miron_scrap" />
+    	<property name="MaxDamage" value="800" />
+    	<property name="StabilitySupport" value="true" />
+      <property name="Shape" value="Ext3dModel" /> <property name="Texture" value="293" />
+    	<property name="Mesh" value="models" />
+      <property name="Model" value="Appliances/microwave_oven_ver1" param1="main_mesh" />
+    	<property name="Place" value="TowardsPlacer" />
+    	<property name="OnlySimpleRotations" value="true" />
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+    	<property name="ImposterDontBlock" value="true" />
+    	<property name="IsTerrainDecoration" value="true" />
+      <property name="ParticleName" value="campfire" />
+      <property name="ParticleOffset" value="0.5,0.75,0.5" />
+    	<property name="Stacknumber" value="1" />
+      <property name="HeatMapStrength" value="1.5" />
+    	<property name="HeatMapTime" value="1200" />
+    	<property name="HeatMapFrequency" value="25" />
+
+    	<property class="Workstation">
+        <property name="Modules" value="tools,output,fuel,input" />
+    		<property name="Collide" value="melee,bullet,arrow,rocket" />
+    	</property>
+
+      <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
+    	<property name="CraftActionName" value="PREP" />
+    	<property name="CraftIcon" value="ui_game_symbol_spatula" />
+    	<property name="OpenSound" value="campfire_open" />
+    	<property name="CloseSound" value="campfire_close" />
+    	<property name="CraftSound" value="campfire_cook_click" />
+    	<property name="CraftCompleteSound" value="campfire_complete_item" />
+    	<property name="WorkstationJournalTip" value="campfireTip" />
+
+    	<property class="RepairItems">
+    		<property name="resourceForgedIron" value="25" />
+    	</property>
+    	<!-- <property name="TakeDelay" value="15" /> -->
+    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
+    	<property name="EconomicValue" value="1544" />
+    	<property name="Group" value="Building,Food/Cooking" />
+    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
+    	<property name="SortOrder1" value="70i0" />
+    </block>
+
     <block name="Wood Grill">
       <property name="CustomIcon" value="cntCharcoalGrillClosed" />
       <property name="CustomIconTint" value="888888" />
