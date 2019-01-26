@@ -6,7 +6,7 @@ These are frequently asked questions.
 
 Thats a wonderful question and appreciate that you asked.
 
-Seeds for Farm Life are found just life vanilla seeds. You can loot them and buy them from traders. Trash piles, cupboards, and sinks are great places to look for them.
+Seeds for Farm Life are found just like vanilla seeds. You can loot them and buy them from traders. Trash piles, cupboards, and sinks are great places to look for them.
 
 Once you have enough of the fruit or vegetable, you can craft them. For trees you MUST loot them or buy them though.
 
