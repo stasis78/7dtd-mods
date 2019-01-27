@@ -214,9 +214,10 @@ preparedPlant
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Hamburger" modTag="refinedPlant,noicon">
+    <item name="Hamburger" modTag="refinedPlant,alticon">
       <property name="CustomIcon" value="foodSteakAndPotato" />
-      <property name="CustomIconTint" value="000000" />
+      <property name="AltCustomIcon" value="Cheeseburger" />
+      <property name="CustomIconTint" value="888888" />
     </item>
 
     <item name="Cheeseburger" modTag="refinedPlant,hasicon">
@@ -230,8 +231,9 @@ preparedPlant
       <property name="CustomIcon" value="bucketRiverWater"/>
       <property name="CustomIconTint" value="888888" />
     </item>
-    <item name="Chicken Feed" modTag="ingredient,noicon">
-      <property name="CustomIcon" value="Cattle Feed"/>
+    <item name="Chicken Feed" modTag="ingredient,alticon">
+      <property name="CustomIcon" value="bucketRiverWater"/>
+      <property name="AltCustomIcon" value="Cattle Feed"/>
       <property name="CustomIconTint" value="888888" />
     </item>
     <!-- Animals Items -->

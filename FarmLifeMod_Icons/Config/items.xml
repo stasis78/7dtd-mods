@@ -1,4 +1,16 @@
 <configs>
   <remove xpath="/items/item[contains(@modTag,'hasicon')]/property[@name='CustomIcon']" />
   <remove xpath="/items/item[contains(@modTag,'hasicon')]/property[@name='CustomIconTint']" />
+
+  <remove xpath="/items/item[contains(@modTag,'alticon')]/property[@name='CustomIcon']" />
+
+  <setattribute xpath="/items/item[contains(@modTag,'alticon')]/property[@name='AltCustomIcon']" name="name">
+    CustomIcon
+  </setattribute>
+
 </configs>
+
+<!--
+<property name="CustomIcon" value="foodSteakAndPotato" />
+<property name="AltCustomIcon" value="Cheeseburger" />
+ -->
