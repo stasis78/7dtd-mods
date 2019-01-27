@@ -30,5 +30,33 @@
       </rect>
     </window>
 
+    <window name="windowToolsGasCooktop" width="228" height="121" panel="Right" cursor_area="true" >
+      <panel style="header.panel">
+        <sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+        <label style="header.name" text="COOKTOP" text_key="COOKTOP" />
+      </panel>
+
+      <rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+
+        <grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="toolCookingPot,Frying Pan,Wok" required_tools_only="true">
+          <required_item_stack name="0"/>
+        </grid>
+      </rect>
+    </window>
+
+    <window name="windowToolsGasOven" width="228" height="121" panel="Right" cursor_area="true" >
+      <panel style="header.panel">
+        <sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+        <label style="header.name" text="OVEN" text_key="OVEN" />
+      </panel>
+
+      <rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+
+        <grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="Baking Sheet,Pizza Stone,PyreX Bakeware" required_tools_only="true">
+          <required_item_stack name="0"/>
+        </grid>
+      </rect>
+    </window>
+
   </append>
 </configs>

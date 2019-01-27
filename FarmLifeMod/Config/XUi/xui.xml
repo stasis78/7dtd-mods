@@ -1,6 +1,7 @@
 <configs>
 
   <append xpath="/xui/ruleset">
+
     <window_group name="workstation_Wood Grill" controller="XUiC_WorkstationWindowGroup">
       <window name="windowCraftingList" />
       <window name="craftingInfoPanel" />
@@ -16,6 +17,26 @@
       <window name="craftingInfoPanel" />
       <window name="windowCraftingQueue" />
       <window name="windowToolsKitchenAid" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
+    <window_group name="workstation_Gas Cooktop" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsGasCooktop" />
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
+    <window_group name="workstation_Gas Oven" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsGasOven" />
+      <window name="windowFuel" />
       <window name="windowOutput" />
       <window name="windowNonPagingHeader" />
     </window_group>

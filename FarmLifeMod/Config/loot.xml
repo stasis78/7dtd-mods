@@ -23,6 +23,7 @@
     <item name="Walnut Seed" />
     <item name="Ghost Pepper Seed" />
     <item name="Sugar Maple Seed" />
+    <item name="Cinnamon Seed" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
@@ -46,6 +47,7 @@
     <item name="Black Pepper Tin" />
     <item name="Walnut" />
     <item name="Ghost Pepper" />
+    <item name="Cinnamon Bark" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='farmCrops']">
@@ -69,6 +71,7 @@
     <item name="Celery" />
     <item name="Walnut" />
     <item name="Ghost Pepper" />
+    <item name="Cinnamon Bark" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">

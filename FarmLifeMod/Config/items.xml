@@ -209,11 +209,6 @@ preparedPlant
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Joel's Breakfast" modTag="preparedPlant,noicon,madmole">
-      <property name="CustomIcon" value="foodSteakAndPotato" />
-      <property name="CustomIconTint" value="FFC300" />
-    </item>
-
     <item name="Hamburger Fixings" modTag="processedPlant,noicon">
       <property name="CustomIcon" value="foodBoiledMeat" />
       <property name="CustomIconTint" value="000000" />
@@ -431,12 +426,6 @@ preparedPlant
       <property name="CustomIconTint" value="F7FF00" />
     </item>
 
-    <!--  Potatos -->
-    <item name="Hashbrowns" modTag="processedPlant,noicon">
-      <property name="CustomIcon" value="foodCropPotato" />
-      <property name="CustomIconTint" value="FFC300" />
-    </item>
-
     <!--  Peppers -->
     <item name="Ghost Pepper" modTag="plant,spicy,noicon">
       <property name="CustomIcon" value="foodCropPotato"/>
@@ -527,6 +516,17 @@ preparedPlant
       <property name="CustomIconTint" value="622100" />
     </item>
     <!--  Maple -->
+
+    <!--  Cinnamon -->
+    <item name="Cinnamon Bark" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="foodCropBlueberries"/>
+      <property name="CustomIconTint" value="1E8449" />
+    </item>
+    <item name="Ground Cinnamon" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="resourceGunPowder"/>
+      <property name="CustomIconTint" value="1E8449" />
+    </item>
+    <!--  Cinnamon -->
 
     <!--  Broccoli -->
     <item name="Broccoli" modTag="plant,hasicon">
@@ -652,6 +652,35 @@ preparedPlant
     </item>
     <!-- Penne -->
 
+    <!--  Breakfast -->
+    <item name="Hashbrowns" modTag="processedPlant,noicon">
+      <property name="CustomIcon" value="foodCropPotato" />
+      <property name="CustomIconTint" value="FFC300" />
+    </item>
+    <item name="Joel's Breakfast" modTag="preparedPlant,noicon,madmole">
+      <property name="CustomIcon" value="foodSteakAndPotato" />
+      <property name="CustomIconTint" value="FFC300" />
+    </item>
+    <item name="Roland's Breakfast" modTag="preparedPlant,noicon,forumGuy">
+      <property name="CustomIcon" value="foodSteakAndPotato" />
+      <property name="CustomIconTint" value="FFC300" />
+    </item>
+    <!--  Breakfast -->
+
+    <!-- Asian -->
+    <item name="Stir Fry Vegetables" modTag="refinedPlant,noicon">
+      <property name="CustomIcon" value="foodVegetableStew" />
+      <property name="CustomIconTint" value="00AA76" />
+    </item>
+    <!-- Asian -->
+
+    <!-- Pizza -->
+    <item name="Cheese Pizza" modTag="preparedPlant,noicon">
+      <property name="CustomIcon" value="foodCornBread" />
+      <property name="CustomIconTint" value="8EA200" />
+    </item>
+    <!-- Pizza -->
+
     <!-- Items and Tools -->
 
     <item name="Feeding Trough" modTag="ingredient,noicon">
@@ -731,6 +760,31 @@ preparedPlant
 
     <item name="Pasta Helper" modTag="cookingTool,noicon">
       <property name="CustomIcon" value="resourceAirFilter"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Frying Pan" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Wok" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Baking Sheet" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Pizza Stone" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="PyreX Bakeware" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="000000" />
     </item>
 
@@ -1075,6 +1129,11 @@ preparedPlant
   <!-- madmole -->
   <append xpath="/items/item[contains(@modTag,'madmole')]/effect_group">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="madmole" />
+  </append>
+
+  <!-- forumGuy -->
+  <append xpath="/items/item[contains(@modTag,'forumGuy')]/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Forum Guy" />
   </append>
 
   <!-- Non edible ingredient -->
