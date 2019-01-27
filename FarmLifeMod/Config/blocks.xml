@@ -600,7 +600,7 @@ Was in corn seed?
     <!-- Sugar Maple Tree -->
 
     <!-- Walnut Tree -->
-    <block name="Walnut Seed" modTag="treeSeed,noicon">
+    <block name="Walnut Seed" modTag="treeSeed,hasicon">
       <property name="CustomIcon" value="treePlantedOak1m" />
       <property name="CustomIconTint" value="624700" />
       <property name="Collide" value="melee"/>

@@ -15,17 +15,17 @@ preparedPlant
   <append xpath="/items">
 
     <!-- Meat -->
-    <item name="Delmontico" modTag="meat,noicon"> <!-- Rib -->
+    <item name="Delmontico" modTag="meat,hasicon"> <!-- Rib -->
       <property name="CustomIcon" value="foodRawMeat"/>
       <property name="CustomIconTint" value="C50000" />
     </item>
 
-    <item name="Rump Roast" modTag="meat,noicon"> <!-- Round -->
+    <item name="Rump Roast" modTag="meat,hasicon"> <!-- Round -->
       <property name="CustomIcon" value="foodRawMeat"/>
       <property name="CustomIconTint" value="900000" />
     </item>
 
-    <item name="Porterhouse" modTag="meat,noicon"> <!-- Short Loin -->
+    <item name="Porterhouse" modTag="meat,hasicon"> <!-- Short Loin -->
       <property name="CustomIcon" value="foodRawMeat"/>
       <property name="CustomIconTint" value="5E0000" />
     </item>
@@ -40,12 +40,12 @@ preparedPlant
       <property name="CustomIconTint" value="777777" />
     </item>
 
-    <item name="Veal" modTag="meat,noicon">
+    <item name="Veal" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRawMeat"/>
       <property name="CustomIconTint" value="F1948A" />
     </item>
 
-    <item name="Elk Scraps" modTag="meat,noicon">
+    <item name="Elk Scraps" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
@@ -65,12 +65,12 @@ preparedPlant
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Chicken Breast" modTag="meat,noicon">
+    <item name="Chicken Breast" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Chicken Wing" modTag="meat,noicon">
+    <item name="Chicken Wing" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
@@ -99,42 +99,42 @@ preparedPlant
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Plain Ice Cream" modTag="refinedPlant,noicon">
+    <item name="Plain Ice Cream" modTag="refinedPlant,hasicon">
       <property name="CustomIcon" value="resourceTallow" />
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Blueberry Ice Cream" modTag="refinedPlant,noicon">
+    <item name="Blueberry Ice Cream" modTag="refinedPlant,hasicon">
       <property name="CustomIcon" value="resourceTallow" />
       <property name="CustomIconTint" value="0055FF" />
     </item>
 
-    <item name="Butter" modTag="ingredient,noicon">
+    <item name="Butter" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="resourceTallow" />
       <property name="CustomIconTint" value="F0FF00" />
     </item>
 
-    <item name="Parmesan" modTag="ingredient,noicon">
+    <item name="Parmesan" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="terrSnow" />
       <property name="CustomIconTint" value="F0FF00" />
     </item>
 
-    <item name="Cheddar" modTag="ingredient,noicon">
+    <item name="Cheddar" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="terrSnow" />
       <property name="CustomIconTint" value="F0FF00" />
     </item>
 
-    <item name="Buttery Delmontico" modTag="preparedPlant,noicon">
+    <item name="Buttery Delmontico" modTag="preparedPlant,hasicon">
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CFB300" />
     </item>
 
-    <item name="Rump Roast Stew" modTag="preparedPlant,noicon">
+    <item name="Rump Roast Stew" modTag="preparedPlant,hasicon">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Red Wine and Peppercorn Porterhouse" modTag="preparedPlant,noicon">
+    <item name="Red Wine and Peppercorn Porterhouse" modTag="preparedPlant,hasicon">
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CF6B00" />
     </item>
@@ -159,12 +159,12 @@ preparedPlant
       <property name="CustomIconTint" value="FF4D00" />
     </item>
 
-    <item name="Bolognese Dish" modTag="preparedPlant,jar,noicon">
+    <item name="Bolognese Dish" modTag="preparedPlant,jar,hasicon">
       <property name="CustomIcon" value="foodMeatStew" />
       <property name="CustomIconTint" value="FF4D00" />
     </item>
 
-    <item name="Elk Jerky" modTag="preparedPlant,noicon">
+    <item name="Elk Jerky" modTag="preparedPlant,hasicon">
       <property name="CustomIcon" value="foodBoiledMeat" />
       <property name="CustomIconTint" value="500000" />
     </item>
@@ -174,27 +174,27 @@ preparedPlant
       <property name="CustomIconTint" value="500000" />
     </item> -->
 
-    <item name="Smoked Bacon" modTag="meat,noicon">
+    <item name="Smoked Bacon" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodBoiledMeat" />
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Cured Ham" modTag="meat,noicon">
+    <item name="Cured Ham" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Ham Steak" modTag="meat,noicon">
+    <item name="Ham Steak" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodBoiledMeat"/>
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <!-- <item name="Smoked Ham" modTag="meat,noicon">
+    <!-- <item name="Smoked Ham" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item> -->
 
-    <item name="BBQ Pork Ribs" modTag="refinedPlant,noicon">
+    <item name="BBQ Pork Ribs" modTag="refinedPlant,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
@@ -219,20 +219,20 @@ preparedPlant
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Cheeseburger" modTag="refinedPlant,noicon">
+    <item name="Cheeseburger" modTag="refinedPlant,hasicon">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="111111" />
     </item>
     <!-- Meat -->
 
     <!-- Animals Items -->
-    <item name="Cattle Feed" modTag="ingredient,noicon">
+    <item name="Cattle Feed" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="bucketRiverWater"/>
       <property name="CustomIconTint" value="888888" />
     </item>
     <item name="Chicken Feed" modTag="ingredient,noicon">
-      <property name="CustomIcon" value="bucketRiverWater"/>
-      <property name="CustomIconTint" value="AAAAAA" />
+      <property name="CustomIcon" value="Cattle Feed"/>
+      <property name="CustomIconTint" value="888888" />
     </item>
     <!-- Animals Items -->
 
@@ -267,12 +267,12 @@ preparedPlant
       <property name="CustomIconTint" value="FF4200" />
     </item>
 
-    <item name="Olive" modTag="fruit,noicon">
+    <item name="Olive" modTag="fruit,hasicon">
       <property name="CustomIcon" value="foodCropBlueberries"/>
       <property name="CustomIconTint" value="1E8449" />
     </item>
 
-    <item name="Walnut" modTag="fruit,noicon">
+    <item name="Walnut" modTag="fruit,hasicon">
       <property name="CustomIcon" value="foodCropBlueberries"/>
       <property name="CustomIconTint" value="624700" />
     </item>
@@ -390,7 +390,7 @@ preparedPlant
       <property name="CustomIconTint" value="0008FF" />
     </item>
 
-    <item name="Ground Hot Pepper" modTag="ingredient,noicon">
+    <item name="Ground Hot Pepper" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="resourceCandyTin"/>
       <property name="CustomIconTint" value="AA0000" />
     </item>
@@ -427,7 +427,7 @@ preparedPlant
     </item>
 
     <!--  Peppers -->
-    <item name="Ghost Pepper" modTag="plant,spicy,noicon">
+    <item name="Ghost Pepper" modTag="plant,spicy,hasicon">
       <property name="CustomIcon" value="foodCropPotato"/>
       <property name="CustomIconTint" value="FF0000" />
     </item>
@@ -468,39 +468,39 @@ preparedPlant
     </item>
 
     <!--  Onion -->
-    <item name="Onion" modTag="plant,noicon">
+    <item name="Onion" modTag="plant,hasicon">
       <property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
       <property name="CustomIconTint" value="9B3400" />
     </item>
 
-    <item name="Sauteed Onions" modTag="processedPlant,noicon">
+    <item name="Sauteed Onions" modTag="processedPlant,hasicon">
       <property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
       <property name="CustomIconTint" value="9B3400" />
     </item>
     <!--  Onion -->
 
     <!--  Celery -->
-    <item name="Celery" modTag="plant,noicon">
+    <item name="Celery" modTag="plant,hasicon">
       <property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
       <property name="CustomIconTint" value="7DCEA0" />
     </item>
 
-    <item name="Crunchy Celery" modTag="processedPlant,noicon">
+    <item name="Crunchy Celery" modTag="processedPlant,hasicon">
       <property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
       <property name="CustomIconTint" value="7DCEA0" />
     </item>
     <!--  Celery -->
 
     <!--  Olive -->
-    <item name="Olive Oil" modTag="ingredient,noicon">
+    <item name="Olive Oil" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="drinkJarRiverWater"/>
       <property name="CustomIconTint" value="1E8449" />
     </item>
-    <item name="Olive Paste" modTag="ingredient,noicon">
+    <item name="Olive Paste" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="medicalAloeCream"/>
       <property name="CustomIconTint" value="1E8449" />
     </item>
-    <item name="Canned Olives" modTag="refinedPlant,noicon,can">
+    <item name="Canned Olives" modTag="refinedPlant,hasicon,can">
       <property name="CustomIcon" value="drinkCanEmpty"/>
       <property name="CustomIconTint" value="1E8449" />
     </item>
@@ -511,7 +511,7 @@ preparedPlant
       <property name="CustomIcon" value="drinkJarRiverWater"/>
       <property name="CustomIconTint" value="622100" />
     </item>
-    <item name="Maple Syrup" modTag="ingredient,noicon">
+    <item name="Maple Syrup" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="resourceGlue"/>
       <property name="CustomIconTint" value="622100" />
     </item>
@@ -592,7 +592,7 @@ preparedPlant
       <property name="CustomIconTint" value="FF4D00" />
     </item>
 
-    <item name="Ketchup" modTag="processedPlant,noicon">
+    <item name="Ketchup" modTag="processedPlant,hasicon">
       <property name="CustomIcon" value="medicalAloeCream"/>
       <property name="CustomIconTint" value="FF4D00" />
     </item>
@@ -653,11 +653,11 @@ preparedPlant
     <!-- Penne -->
 
     <!--  Breakfast -->
-    <item name="Hashbrowns" modTag="processedPlant,noicon">
+    <item name="Hashbrowns" modTag="processedPlant,hasicon">
       <property name="CustomIcon" value="foodCropPotato" />
       <property name="CustomIconTint" value="FFC300" />
     </item>
-    <item name="Joel's Breakfast" modTag="preparedPlant,noicon,madmole">
+    <item name="Joel's Breakfast" modTag="preparedPlant,hasicon,madmole">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="FFC300" />
     </item>
@@ -688,12 +688,12 @@ preparedPlant
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Salt Shaker" modTag="ingredient,noicon">
+    <item name="Salt Shaker" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="candle"/>
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Black Pepper Tin" modTag="ingredient,noicon">
+    <item name="Black Pepper Tin" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="resourceCandyTin"/>
       <property name="CustomIconTint" value="000000" />
     </item>
@@ -743,7 +743,7 @@ preparedPlant
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Ice Cream Bowl" modTag="cookingTool,noicon">
+    <item name="Ice Cream Bowl" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="000000" />
     </item>
@@ -788,7 +788,7 @@ preparedPlant
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Pitch Fork" modTag="noicon">
+    <item name="Pitch Fork" modTag="hasicon">
       <property name="CustomIcon" value="meleeToolHoeIron" />
       <property name="CustomIconTint" value="888888" />
     	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkLivingOffTheLandCrops" />
