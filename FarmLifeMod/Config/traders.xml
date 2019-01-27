@@ -25,11 +25,13 @@
     <item name="Walnut Seed" />
     <item name="Ghost Pepper Seed" />
     <item name="Sugar Maple Seed" />
+    <item name="Cinnamon Seed" />
   </append>
 
   <append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
     <item name="Salt Shaker" count="2,4" />
     <item name="Black Pepper Tin" count="2,4" />
+    <item name="Cinnamon Bark" count="2,4" />
   </append>
 
 </configs>

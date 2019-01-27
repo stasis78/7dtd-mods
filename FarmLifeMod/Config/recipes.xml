@@ -12,7 +12,7 @@ tags="learnable">
 
   <append xpath="/recipes">
 
-    <!--   MEAT YUMMY -->=
+    <!--   MEAT YUMMY -->
     <recipe name="Buttery Delmontico" count="1" modTag="toolTongs,saltPepper">
       <ingredient name="Delmontico" count="1" />
       <ingredient name="Butter" count="1" />
@@ -62,12 +62,6 @@ tags="learnable">
       <ingredient name="Parmesan" count="2" />
       <ingredient name="foodEgg" count="1" />
       <ingredient name="Olive Oil" count="2" />
-    </recipe>
-    <recipe name="Joel's Breakfast" count="1" modTag="toolDutchOven,saltPepper">
-      <ingredient name="Ham Steak" count="1" />
-      <ingredient name="Smoked Bacon" count="2" />
-      <ingredient name="foodEgg" count="3" />
-      <ingredient name="Hashbrowns" count="1" />
     </recipe>
     <recipe name="Ground Beef" count="10" modTag="toolMeatGrinder">
       <ingredient name="Delmontico" count="1" />
@@ -140,7 +134,7 @@ tags="learnable">
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 
-    <recipe name="Apple Pie" count="1" modTag="stationWoodGrill">
+    <recipe name="Apple Pie" count="1" modTag="toolPyrex">
       <ingredient name="Apple" count="4" />
       <ingredient name="Wheat Flour" count="2" />
       <ingredient name="foodEgg" count="1" />
@@ -148,7 +142,7 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <recipe name="Cherry Pie" count="1" modTag="stationWoodGrill">
+    <recipe name="Cherry Pie" count="1" modTag="toolPyrex">
       <ingredient name="Cherry" count="4" />
       <ingredient name="Wheat Flour" count="2" />
       <ingredient name="foodEgg" count="1" />
@@ -240,7 +234,7 @@ tags="learnable">
       <ingredient name="Salt" count="5" />
       <ingredient name="drinkJarBoiledWater" count="15" />
     </recipe>
-    <recipe name="Ground Hot Pepper" count="10" modTag="toolVeggie">
+    <recipe name="Ground Hot Pepper" count="10" modTag="toolGrainMiller">
       <ingredient name="Ghost Pepper" count="2" />
     </recipe>
     <recipe name="Cooking Vinegar" count="10" modTag="chemistryStation">
@@ -248,6 +242,9 @@ tags="learnable">
     </recipe>
     <recipe name="Maple Syrup" count="10" modTag="chemistryStation">
       <ingredient name="Maple Sap" count="40" />
+    </recipe>
+    <recipe name="Ground Cinnamon" count="1" modTag="toolGrainMiller">
+      <ingredient name="Cinnamon Bark" count="1" />
     </recipe>
 
     <!--   Beer -->
@@ -281,7 +278,7 @@ tags="learnable">
     <!--  Beer -->
 
     <!--  Veggies -->
-    <recipe name="Hashbrowns" count="1" modTag="toolCookingPot,NaCl">
+    <recipe name="Hashbrowns" count="1" modTag="toolFrying,NaCl">
     	<ingredient name="foodCropPotato" count="2" />
       <ingredient name="Butter" count="1" />
     </recipe>
@@ -300,7 +297,7 @@ tags="learnable">
       <ingredient name="resourceCropChrysanthemumPlant" count="1" />
     </recipe>
 
-    <recipe name="Veggie Mash" count="1" modTag="toolCookingPot,NaCl,blackPepper">
+    <recipe name="Veggie Mash" count="1" modTag="toolFrying,saltPepper">
     	<ingredient name="Carrot" count="1" />
       <ingredient name="Squash" count="1" />
     </recipe>
@@ -324,7 +321,7 @@ tags="learnable">
       <ingredient name="resourceCropGoldenrodPlant" count="1" />
     </recipe>
 
-    <recipe name="Sauteed Onions" count="1" modTag="toolCookingPot">
+    <recipe name="Sauteed Onions" count="1" modTag="toolFrying">
       <ingredient name="Onion" count="1" />
       <ingredient name="Butter" count="1" />
     </recipe>
@@ -373,11 +370,11 @@ tags="learnable">
       <ingredient name="foodEgg" count="2" />
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
-    <recipe name="Wheat Bread" count="1" modTag="toolCookingPot">
+    <recipe name="Wheat Bread" count="1" modTag="toolBakingSheet">
     	<ingredient name="Bread Dough" count="1" />
     </recipe>
 
-    <recipe name="Hamburger Bun" count="10" modTag="toolCookingPot">
+    <recipe name="Hamburger Bun" count="10" modTag="toolBakingSheet">
       <ingredient name="Bread Dough" count="1" />
     </recipe>
 
@@ -387,7 +384,7 @@ tags="learnable">
     <!--  Wheat -->
 
     <!--  Milk -->
-    <recipe name="Milk" count="5" modTag="toolCookingPot">
+    <recipe name="Milk" count="10" modTag="toolCookingPot">
       <ingredient name="Raw Milk" count="1" />
     </recipe>
     <recipe name="Plain Ice Cream" count="10" modTag="toolIcecream,NaCl">
@@ -433,9 +430,43 @@ tags="learnable">
       <ingredient name="Marinara" count="2" />
       <ingredient name="Penne" count="2" />
     </recipe>
-    <!--  Penne -->
+    <!-- Penne -->
 
-    <!--  Seeds -->
+    <!-- Breakfast -->
+    <recipe name="Joel's Breakfast" count="1" modTag="toolDutchOven,saltPepper">
+      <ingredient name="Ham Steak" count="1" />
+      <ingredient name="Smoked Bacon" count="2" />
+      <ingredient name="foodEgg" count="3" />
+      <ingredient name="Hashbrowns" count="1" />
+    </recipe>
+
+    <recipe name="Roland's Breakfast" count="1" modTag="toolFrying">
+      <ingredient name="Wheat Bread" count="1" />
+      <ingredient name="foodEgg" count="4" />
+      <ingredient name="Milk" count="2" />
+      <ingredient name="Ground Cinnamon" count="2" />
+    </recipe>
+    <!-- Breakfast -->
+
+    <!-- Asian -->
+    <recipe name="Stir Fry Vegetables" count="1" modTag="toolWok,saltPepper">
+      <ingredient name="Carrot" count="1" />
+      <ingredient name="Broccoli" count="1" />
+      <ingredient name="Squash" count="1" />
+      <ingredient name="Olive Oil" count="1" />
+    </recipe>
+    <!-- Asian -->
+
+    <!-- Pizza -->
+    <recipe name="Cheese Pizza" count="1" modTag="toolPizza, salt">
+      <ingredient name="Bread Dough" count="1" />
+      <ingredient name="Cheddar" count="3" />
+      <ingredient name="Parmesan" count="3" />
+      <ingredient name="Olive Oil" count="1" />
+    </recipe>
+    <!-- Pizza -->
+
+    <!-- Seeds -->
     <recipe name="Tomato Seed" modTag="seed">
       <ingredient name="Tomato" />
     </recipe>
@@ -541,6 +572,16 @@ tags="learnable">
     	<ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
     </recipe>
+    <recipe name="Gas Cooktop" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+    <recipe name="Gas Oven" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
     <recipe name="Tongs" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
@@ -581,6 +622,27 @@ tags="learnable">
     	<ingredient name="resourceMechanicalParts" count="4" />
       <ingredient name="resourceScrapPolymers" count="4" />
     </recipe>
+    <recipe name="Frying Pan" count="1" modTag="toolForgeCrucible">
+    	<ingredient name="unit_iron" count="100" />
+    	<ingredient name="unit_clay" count="10" />
+    </recipe>
+    <recipe name="Wok" count="1" modTag="toolAndDieSet">
+    	<ingredient name="unit_iron" count="1000" />
+    	<ingredient name="unit_clay" count="100" />
+    </recipe>
+    <recipe name="Baking Sheet" count="1" modTag="toolAnvil">
+      <ingredient name="unit_iron" count="100" />
+      <ingredient name="unit_clay" count="10" />
+    </recipe>
+    <recipe name="Pizza Stone" count="1" modTag="toolForgeCrucible">
+      <ingredient name="unit_clay" count="500" />
+      <ingredient name="unit_glass" count="50" />
+    </recipe>
+    <recipe name="PyreX Bakeware" count="1" modTag="toolAndDieSet">
+      <ingredient name="unit_glass" count="1000" />
+      <ingredient name="unit_clay" count="100" />
+    </recipe>
+
 
     <!-- Pens -->
     <recipe name="Empty Holstein Pen" modTag="emptyPen">
@@ -630,9 +692,6 @@ tags="learnable">
   <setattribute xpath="/recipes/recipe[contains(@modTag,'stationForge') or contains(@modTag,'toolAnvil') or contains(@modTag,'toolForgeCrucible') or contains(@modTag,'toolAndDieSet')]" name="material_based">
     true
   </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_area">
-    campfire
-  </setattribute>
 
   <!-- New craft_area -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'stationWoodGrill') or contains(@modTag,'toolTongs') or contains(@modTag,'toolSpatula') or contains(@modTag,'toolDutchOven')]" name="craft_area">
@@ -640,6 +699,12 @@ tags="learnable">
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'stationKitchenAid') or contains(@modTag,'toolDoughHook') or contains(@modTag,'toolVeggie') or contains(@modTag,'toolIcecream') or contains(@modTag,'toolMeatGrinder') or contains(@modTag,'toolGrainMiller') or contains(@modTag,'toolPastaHelper')]" name="craft_area">
     KitchNaid
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot') or contains(@modTag,'toolFrying') or contains(@modTag,'toolWok')]" name="craft_area">
+    Gas Cooktop
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolBakingSheet') or contains(@modTag,'toolPizza') or contains(@modTag,'toolPyrex')]" name="craft_area">
+    Gas Oven
   </setattribute>
 
   <!-- Vanilla craft_tool -->
@@ -651,9 +716,6 @@ tags="learnable">
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolAndDieSet')]" name="craft_tool">
     toolAndDieSet
-  </setattribute>
-  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_tool">
-    toolCookingPot
   </setattribute>
 
   <!-- New craft_tool -->
@@ -685,6 +747,27 @@ tags="learnable">
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolPastaHelper')]" name="craft_tool">
     Pasta Helper
   </setattribute>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCookingPot')]" name="craft_tool">
+    toolCookingPot
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolFrying')]" name="craft_tool">
+    Frying Pan
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWok')]" name="craft_tool">
+    Wok
+  </setattribute>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolBakingSheet')]" name="craft_tool">
+    Baking Sheet
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolPizza')]" name="craft_tool">
+    Pizza Stone
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolPyrex')]" name="craft_tool">
+    PyreX Bakeware
+  </setattribute>
+
 
   <!-- Update Pens -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">
