@@ -40,7 +40,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	</property>
 
       <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
-    	<property name="CraftActionName" value="BURNER" />
+    	<property name="CraftActionName" value="SMOKE" />
     	<property name="CraftIcon" value="ui_game_symbol_spatula" />
     	<property name="OpenSound" value="campfire_open" />
     	<property name="CloseSound" value="campfire_close" />
@@ -77,7 +77,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	</property>
 
       <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
-    	<property name="CraftActionName" value="BURNER" />
+    	<property name="CraftActionName" value="OVEN" />
     	<property name="CraftIcon" value="ui_game_symbol_spatula" />
     	<property name="OpenSound" value="campfire_open" />
     	<property name="CloseSound" value="campfire_close" />
@@ -193,7 +193,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	</property>
 
       <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
-    	<property name="CraftActionName" value="lblContextActionCook" />
+    	<property name="CraftActionName" value="GRILL" />
     	<property name="CraftIcon" value="ui_game_symbol_spatula" />
     	<property name="OpenSound" value="campfire_open" />
     	<property name="CloseSound" value="campfire_close" />
