@@ -1,7 +1,6 @@
 <!--
 Blocks use modTag attributes to help with boiler plate child nodes.
-Was in corn seed?
-<property name="Place" value="Door" /> waiting for response from forums....
+
 <block name="treeAzalea">
 -->
 <configs>
@@ -28,11 +27,6 @@ Was in corn seed?
       <property name="Shape" value="ModelEntity"/>
       <property name="Path" value="solid"/>
 
-    	<property name="Place" value="TowardsPlacerInverted" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
       <property name="ParticleName" value="hotembers" />
       <property name="ParticleOffset" value="0.5,0.0,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -57,12 +51,6 @@ Was in corn seed?
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
     <block name="Gas Oven" modTag="craftingStation,noicon">
@@ -76,11 +64,6 @@ Was in corn seed?
 
       <property name="Texture" value="261,345,341,345,345,345" />
 
-    	<property name="Place" value="TowardsPlacer" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
       <property name="ParticleName" value="hotembers" />
       <property name="ParticleOffset" value="0.5,0.0,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -101,16 +84,9 @@ Was in corn seed?
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
     	<property name="WorkstationJournalTip" value="campfireTip" />
-
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
     <block name="Gas Cooktop" modTag="craftingStation,noicon">
@@ -125,14 +101,9 @@ Was in corn seed?
       <property name="Shape" value="New" />
       <property name="Model" value="Plate"/>
     	<property name="Texture" value="346,346,346,346,346,346" />
-      <!-- <property name="Texture" value="250,346,250,250,250,250"/> -->
 
-    	<property name="Place" value="Spotlight" />
-      <property name="OnlySimpleRotations" value="true" />
       <property name="HandleFace" value="South" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
+
       <property name="ParticleName" value="hotembers" />
       <property name="ParticleOffset" value="0.5,0.0,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -157,12 +128,6 @@ Was in corn seed?
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
     <block name="KitchNaid" modTag="craftingStation,noicon">
@@ -176,11 +141,7 @@ Was in corn seed?
       <property name="Shape" value="Ext3dModel" /> <property name="Texture" value="293" />
     	<property name="Mesh" value="models" />
       <property name="Model" value="Appliances/microwave_oven_ver1" param1="main_mesh" />
-    	<property name="Place" value="TowardsPlacer" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
+
       <property name="ParticleName" value="campfire" />
       <property name="ParticleOffset" value="0.5,0.75,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -205,12 +166,6 @@ Was in corn seed?
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
     <block name="Wood Grill" modTag="craftingStation,noicon">
@@ -224,11 +179,7 @@ Was in corn seed?
     	<property name="Shape" value="ModelEntity" />
     	<property name="Path" value="solid" />
       <property name="Model" value="Entities/LootContainers/Grill_Simple_ClosedPrefab" />
-    	<property name="Place" value="TowardsPlacer" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
+
       <property name="ParticleName" value="campfire" />
       <property name="ParticleOffset" value="0.5,0.75,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -253,12 +204,7 @@ Was in corn seed?
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
     	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
     <!-- Craft stations  -->
@@ -1226,6 +1172,19 @@ Was in corn seed?
     <property name="DisplayInfo" value="Name" />
     <property name="Extends" value="fullAnimalPenMaster" param1=""/>
     <drop event="Harvest" name="bucketEmpty" count="2" prob="1" tag="allHarvest"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'craftingStation')]">
+    <property name="OnlySimpleRotations" value="true" />
+    <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+    <property name="ImposterDontBlock" value="true" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="Place" value="Spotlight" />
+    <property name="Group" value="Building,Food/Cooking" />
+    <property name="FilterTags" value="fdecor,fother,ffurniture" />
+    <property name="SortOrder1" value="70i0" />
+    <property name="TakeDelay" value="15" />
+    <property name="EconomicValue" value="1544" />
   </append>
 
   <!-- Vanilla block additions -->
