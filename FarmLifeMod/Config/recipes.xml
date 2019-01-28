@@ -29,13 +29,18 @@ tags="learnable">
       <ingredient name="Black Pepper Corn" count="4" />
       <ingredient name="Apple Woodchips" count="1" />
     </recipe>
-    <recipe name="Elk Jerky" count="1" modTag="toolTongs,saltPepper">
+    <recipe name="Elk Jerky" count="1" modTag="toolMat,saltPepper">
       <ingredient name="Elk Scraps" count="10" />
     </recipe>
-    <recipe name="Smoked Bacon" count="10" modTag="toolTongs">
+    <recipe name="Smoked Bacon" count="10" modTag="toolMat">
       <ingredient name="Pork Belly" count="1" />
       <ingredient name="Apple Woodchips" count="4" />
       <ingredient name="Walnut Woodchips" count="1" />
+    </recipe>
+    <recipe name="Smoked Ham" count="1" modTag="toolHanger">
+      <ingredient name="Ham" count="1" />
+      <ingredient name="Apple Woodchips" count="2" />
+      <ingredient name="Walnut Woodchips" count="3" />
     </recipe>
     <recipe name="Cured Ham" count="1" modTag="toolDutchOven,saltPepper">
       <ingredient name="Ham" count="1" />
@@ -44,12 +49,19 @@ tags="learnable">
     <recipe name="Ham Steak" count="10" modTag="">
       <ingredient name="Cured Ham" count="1" />
     </recipe>
+    <recipe name="Ham Steak" count="10" modTag="">
+      <ingredient name="Smoked Ham" count="1" />
+    </recipe>
     <recipe name="BBQ Pork Ribs" count="10" modTag="toolTongs">
       <ingredient name="Pork Ribs" count="1" />
       <ingredient name="Spicy BBQ Sauce" count="10" />
       <ingredient name="Apple Woodchips" count="2" />
       <ingredient name="Walnut Woodchips" count="2" />
       <ingredient name="Mesquite Woodchips" count="1" />
+    </recipe>
+    <recipe name="Smoked Chicken" count="1" modTag="toolRack">
+      <ingredient name="Whole Chicken" count="1" />
+      <ingredient name="Apple Woodchips" count="5" />
     </recipe>
     <recipe name="Spicy Chicken Wings" count="10" modTag="toolTongs">
       <ingredient name="Chicken Wing" count="10" />
@@ -563,6 +575,7 @@ tags="learnable">
     <recipe name="Black Pepper" count="10">
       <ingredient name="Black Pepper Tin" count="1" />
     </recipe>
+
     <recipe name="Wood Grill" count="1">
     	<ingredient name="resourceForgedIron" count="10" />
     	<ingredient name="toolCookingGrill" count="1" />
@@ -582,6 +595,12 @@ tags="learnable">
     	<ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
     </recipe>
+    <recipe name="Smoker" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+
     <recipe name="Tongs" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
@@ -594,6 +613,7 @@ tags="learnable">
     	<ingredient name="unit_glass" count="1000" />
     	<ingredient name="unit_clay" count="100" />
     </recipe>
+
     <recipe name="Dough Hook" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
@@ -622,6 +642,7 @@ tags="learnable">
     	<ingredient name="resourceMechanicalParts" count="4" />
       <ingredient name="resourceScrapPolymers" count="4" />
     </recipe>
+
     <recipe name="Frying Pan" count="1" modTag="toolForgeCrucible">
     	<ingredient name="unit_iron" count="100" />
     	<ingredient name="unit_clay" count="10" />
@@ -630,6 +651,7 @@ tags="learnable">
     	<ingredient name="unit_iron" count="1000" />
     	<ingredient name="unit_clay" count="100" />
     </recipe>
+
     <recipe name="Baking Sheet" count="1" modTag="toolAnvil">
       <ingredient name="unit_iron" count="100" />
       <ingredient name="unit_clay" count="10" />
@@ -643,6 +665,18 @@ tags="learnable">
       <ingredient name="unit_clay" count="100" />
     </recipe>
 
+    <recipe name="Smoker Mat" count="1" modTag="toolAnvil">
+      <ingredient name="unit_iron" count="100" />
+      <ingredient name="unit_clay" count="10" />
+    </recipe>
+    <recipe name="Meat Hanger" count="1" modTag="toolForgeCrucible">
+      <ingredient name="unit_iron" count="500" />
+      <ingredient name="unit_clay" count="50" />
+    </recipe>
+    <recipe name="Turkey Rack" count="1" modTag="toolAndDieSet">
+      <ingredient name="unit_iron" count="1000" />
+      <ingredient name="unit_clay" count="100" />
+    </recipe>
 
     <!-- Pens -->
     <recipe name="Empty Holstein Pen" modTag="emptyPen">
@@ -706,6 +740,9 @@ tags="learnable">
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolBakingSheet') or contains(@modTag,'toolPizza') or contains(@modTag,'toolPyrex')]" name="craft_area">
     Gas Oven
   </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat') or contains(@modTag,'toolHanger') or contains(@modTag,'toolRack')]" name="craft_area">
+    Smoker
+  </setattribute>
 
   <!-- Vanilla craft_tool -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolAnvil')]" name="craft_tool">
@@ -768,6 +805,15 @@ tags="learnable">
     PyreX Bakeware
   </setattribute>
 
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat')]" name="craft_tool">
+    Smoker Mat
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolHanger')]" name="craft_tool">
+    Meat Hanger
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolRack')]" name="craft_tool">
+    Turkey Rack
+  </setattribute>
 
   <!-- Update Pens -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">

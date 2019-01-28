@@ -75,6 +75,11 @@ preparedPlant
       <property name="CustomIconTint" value="500000" />
     </item>
 
+    <item name="Whole Chicken" modTag="meat,noicon">
+      <property name="CustomIcon" value="foodRottingFlesh"/>
+      <property name="CustomIconTint" value="500000" />
+    </item>
+
     <item name="Raw Milk" modTag="noicon">
       <property name="CustomIcon" value="bucketRiverWater"/>
       <property name="CustomIconTint" value="AAAAAA" />
@@ -189,24 +194,30 @@ preparedPlant
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <!-- <item name="Smoked Ham" modTag="meat,hasicon">
+    <item name="Smoked Ham" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
-    </item> -->
+    </item>
 
     <item name="BBQ Pork Ribs" modTag="refinedPlant,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Spicy Chicken Wings" modTag="refinedPlant,noicon">
+    <item name="Spicy Chicken Wings" modTag="refinedPlant,hasicon">
       <property name="CustomIcon" value="foodBoiledMeat" />
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Parmesan Crusted Chicken" modTag="preparedPlant,noicon">
+    <item name="Parmesan Crusted Chicken" modTag="preparedPlant,alticon">
       <property name="CustomIcon" value="foodBoiledMeat" />
-      <property name="CustomIconTint" value="500000" />
+      <property name="AltCustomIcon" value="Chicken Breast" />
+      <property name="CustomIconTint" value="FFCC00" />
+    </item>
+
+    <item name="Smoked Chicken" modTag="preparedPlant,noicon">
+      <property name="CustomIcon" value="foodRottingFlesh" />
+      <property name="CustomIconTint" value="FFCC00" />
     </item>
 
     <item name="Hamburger Fixings" modTag="processedPlant,noicon">
@@ -787,6 +798,21 @@ preparedPlant
 
     <item name="PyreX Bakeware" modTag="cookingTool,noicon">
       <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Smoker Mat" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="chainLink"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Meat Hanger" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="metalRailing"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Turkey Rack" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="woodFrameCNRFull"/>
       <property name="CustomIconTint" value="000000" />
     </item>
 

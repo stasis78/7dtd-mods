@@ -3,8 +3,3 @@
     #@modfolder:Resources/objects.unity3d?PitchforkPrefab
   </setattribute>
 </configs>
-
-<!--
-<property name="CustomIcon" value="foodSteakAndPotato" />
-<property name="AltCustomIcon" value="Cheeseburger" />
- -->
