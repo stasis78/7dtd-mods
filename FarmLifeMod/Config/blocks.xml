@@ -1046,6 +1046,43 @@ Was in corn seed?
     </block>
     <!--  Celery -->
 
+    <!--  Other blocks -->
+    <block name="Variety Seed Crate">
+      <property name="CustomIcon" value="cntShippingCrateLabEquipment" />
+      <property name="CustomIconTint" value="888888" />
+      <property name="DisplayInfo" value="Name" />
+    	<property name="Material" value="MwoodReinforced" />
+    	<property name="Texture" value="379" />
+    	<property name="CreativeMode" value="Player" />
+
+      <drop event="Harvest" name="Wheat Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Tomato Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Carrot Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Romaine Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Squash Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Broccoli Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Sorghum Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Floral Hop Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Bitter Hop Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Grape Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Apple Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Orange Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Meyer Lemon Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Lime Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Cherry Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Black Pepper Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Onion Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Olive Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Celery Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Walnut Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Ghost Pepper Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Sugar Maple Seed" count="2" prob="0.25" tag="allHarvest" />
+      <drop event="Harvest" name="Cinnamon Seed" count="2" prob="0.25" tag="allHarvest" />
+
+    	<drop event="Destroy" count="0" />
+    </block>
+    <!--  Other blocks -->
+
   </append>
 
   <!-- name changes -->

@@ -24,6 +24,7 @@
     <item name="Ghost Pepper Seed" />
     <item name="Sugar Maple Seed" />
     <item name="Cinnamon Seed" />
+    <item name="Variety Seed Crate" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
@@ -72,6 +73,7 @@
     <item name="Walnut" />
     <item name="Ghost Pepper" />
     <item name="Cinnamon Bark" />
+    <item name="Variety Seed Crate" />
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
@@ -84,6 +86,7 @@
     <item name="Black Pepper" prob="0.05" />
     <item name="Salt Shaker" prob="0.05" />
     <item name="Black Pepper Tin" prob="0.05" />
+    <item name="Variety Seed Crate" prob="0.25" />
   </append>
 
 </configs>
