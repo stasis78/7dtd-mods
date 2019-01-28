@@ -19,7 +19,6 @@ Added a Change Log! Now you can see all the release notes, for all versions, in 
 
 ## New Stuff
 
-
 Smoker
 Whole Chicken
 Smoked Ham
@@ -107,8 +106,6 @@ Absolutely not. I want to put out a stable version that folks can use that conta
 For version 2 I will primarily be expanding on 2 things. More food and buffs. I don't feel that either of these are really necessary for the first version of this mod and I want to really sit down and refocus on how I'm designing all the recipes. It will take a me some time but I promise I'll have incremental releases just like now. At the same time, I want people to use the work that has gone into this mod so far and play on a stable map.
 
 Till next time...enjoy ;)
-
-
 
 # FarmLifeMod 1.7.1
 

@@ -15,7 +15,7 @@ Was in corn seed?
 
     <!-- Craft stations  -->
 
-    <block name="Smoker">
+    <block name="Smoker" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntGasGrillClosed" />
       <property name="CustomIconTint" value="444444" />
 
@@ -65,7 +65,7 @@ Was in corn seed?
     	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="Gas Oven">
+    <block name="Gas Oven" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntWallOven" />
       <property name="CustomIconTint" value="444444" />
 
@@ -113,7 +113,7 @@ Was in corn seed?
     	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="Gas Cooktop">
+    <block name="Gas Cooktop" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="airConditionVentFan" />
       <property name="CustomIconTint" value="444444" />
 
@@ -165,7 +165,7 @@ Was in corn seed?
     	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="KitchNaid">
+    <block name="KitchNaid" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
       <property name="CustomIconTint" value="888888" />
 
@@ -213,7 +213,7 @@ Was in corn seed?
     	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="Wood Grill">
+    <block name="Wood Grill" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntCharcoalGrillClosed" />
       <property name="CustomIconTint" value="888888" />
 
