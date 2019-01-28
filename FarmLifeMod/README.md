@@ -9,6 +9,14 @@ If you want custom icons for this mod then you *must* install [FarmLifeMod_Icons
 
 If you want custom models for this mod then you *must* install [FarmLifeMod_Models](https://github.com/stasis78/7dtd-mods/tree/master/FarmLifeMod_Models).
 
+So with all the mods installed, you should have folders like this:
+
+*Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod*
+*Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod_Icons*
+*Steam/steamapps/common/7 Days To Die/Mods/FarmLifeMod_Models*
+
+### Dedicated Server Notes
+
 If `FarmLifeMod_Icons` or `FarmLifeMod_Models` is installed on a dedicated server then the client will need to install these mods locally in order to get the assets. This is a limitation of the current way mods are handled by the game.
 
 ## About
