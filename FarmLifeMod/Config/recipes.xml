@@ -755,23 +755,23 @@ tags="learnable">
     </recipe>
 
     <!-- Recipe Quests -->
-    <recipe name="Brew Cooker Recipe" modTag="recipeQuest">
+    <recipe name="Brew Cooker Volume 1" modTag="recipeQuest">
     </recipe>
     <recipe name="Brew Station Volume 1" modTag="recipeQuest">
     </recipe>
     <recipe name="Brew Station Volume 2" modTag="recipeQuest">
     </recipe>
-    <recipe name="Smoker Recipe" modTag="recipeQuest">
+    <recipe name="Smoker Volume 1" modTag="recipeQuest">
     </recipe>
-    <recipe name="Gas Oven Recipe" modTag="recipeQuest">
+    <recipe name="Gas Oven Volume 1" modTag="recipeQuest">
     </recipe>
-    <recipe name="Gas Cooktop Recipe" modTag="recipeQuest">
+    <recipe name="Gas Cooktop Volume 1" modTag="recipeQuest">
     </recipe>
     <recipe name="KitchNaid Volume 1" modTag="recipeQuest">
     </recipe>
     <recipe name="KitchNaid Volume 2" modTag="recipeQuest">
     </recipe>
-    <recipe name="Wood Grill Recipe" modTag="recipeQuest">
+    <recipe name="Wood Grill Volume 1" modTag="recipeQuest">
     </recipe>
     <!-- Recipe Quests -->
 

@@ -15,58 +15,58 @@ preparedPlant
   <append xpath="/items">
 
     <!-- Recipes -->
-    <item name="Brew Cooker Recipe" modTag="recipeQuest">
+    <item name="Brew Cooker Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Brewing!"/>
     	<property class="Action0">
-    		<property name="QuestGiven" value="brewing_brew_cooker"/>
+    		<property name="QuestGiven" value="brewing_brew_cooker_tools_1"/>
     	</property>
     </item>
     <item name="Brew Station Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Brewing!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="brewing_brew_station"/>
+        <property name="QuestGiven" value="brewing_brew_station_tools_1"/>
       </property>
     </item>
     <item name="Brew Station Volume 2" modTag="recipeQuest">
       <property name="DescriptionKey" value="Brewing!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="brewing_brew_tools"/>
+        <property name="QuestGiven" value="brewing_brew_station_tools_2"/>
       </property>
     </item>
-    <item name="Smoker Recipe" modTag="recipeQuest">
+    <item name="Smoker Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Smoking!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="smoker_station"/>
+        <property name="QuestGiven" value="smoker_station_tools_1"/>
       </property>
     </item>
-    <item name="Gas Oven Recipe" modTag="recipeQuest">
+    <item name="Gas Oven Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Cooking!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="gas_oven_station"/>
+        <property name="QuestGiven" value="gas_oven_station_tools_1"/>
       </property>
     </item>
-    <item name="Gas Cooktop Recipe" modTag="recipeQuest">
+    <item name="Gas Cooktop Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Cooking!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="gas_cooktop_station"/>
+        <property name="QuestGiven" value="gas_cooktop_station_tools_1"/>
       </property>
     </item>
     <item name="KitchNaid Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Cooking!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="kitchenaid_station"/>
+        <property name="QuestGiven" value="kitchenaid_station_tools_1"/>
       </property>
     </item>
     <item name="KitchNaid Volume 2" modTag="recipeQuest">
       <property name="DescriptionKey" value="Cooking!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="kitchenaid_tools"/>
+        <property name="QuestGiven" value="kitchenaid_station_tools_2"/>
       </property>
     </item>
-    <item name="Wood Grill Recipe" modTag="recipeQuest">
+    <item name="Wood Grill Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Cooking!"/>
       <property class="Action0">
-        <property name="QuestGiven" value="woodgrill_station"/>
+        <property name="QuestGiven" value="woodgrill_station_tools_1"/>
       </property>
     </item>
     <!-- Recipes -->

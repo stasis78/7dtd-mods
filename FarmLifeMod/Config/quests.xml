@@ -1,57 +1,52 @@
 <configs>
   <append xpath="/quests">
 
-    <quest id="brewing_brew_cooker">
-  		<property name="name_key" value="Brew Cooker" />
-  		<property name="subtitle" value="Craft a Brew Cooker" />
-      <property name="subtitle_key" value="Craft a Brew Cooker" />
-  		<property name="description_key" value="Build a Brew Cooker." />
+    <quest id="brewing_brew_cooker_tools_1" modTag="farmlife">
+  		<property name="name" value="Brew Cooker Tools" />
+  		<property name="subtitle" value="Brew Cooker Tools" />
+      <property name="description" value="Learn what tools are required by the Brew Cooker, a necessary component for beer brewing and distilling spirits." />
   		<property name="icon" value="ui_game_symbol_beer" />
   		<property name="repeatable" value="false" />
   		<property name="category_key" value="quest" />
-  		<property name="offer_key" value="Learn how to make a Brew Cooker, a necessary component for beer brewing and distilling spirits." />
+  		<property name="offer" value="Learn what tools are required by the Brew Cooker, a necessary component for beer brewing and distilling spirits." />
   		<property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="Brew Cooker" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="Masher" value="1" phase="2" />
-      <objective type="FetchKeep" id="Boiler" value="1" phase="2" />
-      <objective type="FetchKeep" id="Still" value="1" phase="2" />
+      <objective type="FetchKeep" id="Masher" value="1" phase="1" />
+      <objective type="FetchKeep" id="Boiler" value="1" phase="1" />
+      <objective type="FetchKeep" id="Still" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
   	</quest>
 
-    <quest id="brewing_brew_station">
-      <property name="name" value="Brew Station" />
-      <property name="subtitle" value="Craft a Brew Station" />
-      <property name="description" value="Build a Brew Station." />
+    <quest id="brewing_brew_station_tools_1" modTag="farmlife">
+      <property name="name" value="Brew Station Tools" />
+      <property name="subtitle" value="Brew Station Tools" />
+      <property name="description" value="Learn what tools are required by the Brew Station, a necessary component for beer brewing, wine making, and distilling spirits." />
       <property name="icon" value="ui_game_symbol_beer" />
       <property name="repeatable" value="false" />
-      <property name="category_key" value="challenge" />
-      <property name="offer" value="Learn how to make a Brew Station, a necessary component for beer brewing, wine making, and distilling spirits." />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn what tools are required by the Brew Station, a necessary component for beer brewing, wine making, and distilling spirits." />
       <property name="difficulty" value="easy" />
       <property name="category" value="quest" />
       <property name="statement_key" value="Build a Brew Station." />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="Brew Station" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="Carboy" value="1" phase="2" />
-      <objective type="FetchKeep" id="Wine Tank" value="1" phase="2" />
-      <objective type="FetchKeep" id="Spirits Vat" value="1" phase="2" />
+      <objective type="FetchKeep" id="Carboy" value="1" phase="1" />
+      <objective type="FetchKeep" id="Wine Tank" value="1" phase="1" />
+      <objective type="FetchKeep" id="Spirits Vat" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="brewing_brew_tools">
-      <property name="name" value="Brew Tools" />
-      <property name="subtitle" value="Craft some Brew Tools" />
-      <property name="description" value="Build a Brew Tools." />
+    <quest id="brewing_brew_station_tools_2" modTag="farmlife">
+      <property name="name" value="Brew Station Tools 2" />
+      <property name="subtitle" value="Brew Station Tools 2" />
+      <property name="description" value="Learn what tools are required by the Brew Station, a necessary component for beer brewing, wine making, and distilling spirits." />
       <property name="icon" value="ui_game_symbol_beer" />
       <property name="repeatable" value="false" />
-      <property name="category_key" value="challenge" />
-      <property name="offer" value="Learn how to make a Brew Tools, a necessary component for beer brewing, wine making, and distilling spirits." />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn what tools are required by the Brew Station, a necessary component for beer brewing, wine making, and distilling spirits." />
       <property name="difficulty" value="easy" />
       <property name="category" value="quest" />
       <property name="statement_key" value="Build a Brew Station." />
@@ -68,99 +63,86 @@
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="smoker_station">
-      <property name="name_key" value="Smoker" />
-      <property name="subtitle" value="Craft a Smoker" />
-      <property name="subtitle_key" value="Craft a Smoker" />
-      <property name="description_key" value="Build a Smoker." />
+    <quest id="smoker_station_tools_1" modTag="farmlife">
+      <property name="name" value="Smoker Tools" />
+      <property name="subtitle" value="Smoker Tools" />
+      <property name="description" value="Learn what tools are required by the Smoker, a necessary component for drying and curing meats." />
       <property name="icon" value="ui_game_symbol_spatula" />
       <property name="repeatable" value="false" />
       <property name="category_key" value="quest" />
-      <property name="offer_key" value="Learn how to make a Smoker, a necessary component for drying and curing meats." />
+      <property name="offer" value="Learn what tools are required by the Smoker, a necessary component for drying and curing meats." />
       <property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="Smoker" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="Smoker Mat" value="1" phase="2" />
-      <objective type="FetchKeep" id="Meat Hanger" value="1" phase="2" />
-      <objective type="FetchKeep" id="Turkey Rack" value="1" phase="2" />
+      <objective type="FetchKeep" id="Smoker Mat" value="1" phase="1" />
+      <objective type="FetchKeep" id="Meat Hanger" value="1" phase="1" />
+      <objective type="FetchKeep" id="Turkey Rack" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="gas_oven_station">
-      <property name="name_key" value="Gas Oven" />
-      <property name="subtitle" value="Craft a Gas Oven" />
-      <property name="subtitle_key" value="Craft a Gas Oven" />
-      <property name="description_key" value="Build a Gas Oven." />
+    <quest id="gas_oven_station_tools_1" modTag="farmlife">
+      <property name="name" value="Gas Oven Tools" />
+      <property name="subtitle" value="Gas Oven Tools" />
+      <property name="description" value="Learn what tools are required by the Gas Oven, a necessary component for baking your food." />
       <property name="icon" value="ui_game_symbol_spatula" />
       <property name="repeatable" value="false" />
       <property name="category_key" value="quest" />
-      <property name="offer_key" value="Learn how to make a Gas Oven, a necessary component for baking your food." />
+      <property name="offer" value="Learn what tools are required by the Gas Oven, a necessary component for baking your food." />
       <property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="Gas Oven" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="Baking Sheet" value="1" phase="2" />
-      <objective type="FetchKeep" id="Pizza Stone" value="1" phase="2" />
-      <objective type="FetchKeep" id="PyreX Bakeware" value="1" phase="2" />
+      <objective type="FetchKeep" id="Baking Sheet" value="1" phase="1" />
+      <objective type="FetchKeep" id="Pizza Stone" value="1" phase="1" />
+      <objective type="FetchKeep" id="PyreX Bakeware" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="gas_cooktop_station">
-      <property name="name_key" value="Gas Cooktop" />
-      <property name="subtitle" value="Craft a Gas Cooktop" />
-      <property name="subtitle_key" value="Craft a Gas Cooktop" />
-      <property name="description_key" value="Build a Gas Cooktop." />
+    <quest id="gas_cooktop_station_tools_1" modTag="farmlife">
+      <property name="name" value="Gas Cooktop Tools" />
+      <property name="subtitle" value="Gas Cooktop Tools" />
+      <property name="description" value="Learn what tools are required by the Gas Cooktop, a necessary component for boiling and frying your food." />
       <property name="icon" value="ui_game_symbol_spatula" />
       <property name="repeatable" value="false" />
       <property name="category_key" value="quest" />
-      <property name="offer_key" value="Learn how to make a Gas Cooktop, a necessary component for boiling, and frying your food." />
+      <property name="offer" value="Learn what tools are required by the Gas Cooktop, a necessary component for boiling and frying your food." />
       <property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="Gas Cooktop" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="toolCookingPot" value="1" phase="2" />
-      <objective type="FetchKeep" id="Frying Pan" value="1" phase="2" />
-      <objective type="FetchKeep" id="Wok" value="1" phase="2" />
+      <objective type="FetchKeep" id="toolCookingPot" value="1" phase="1" />
+      <objective type="FetchKeep" id="Frying Pan" value="1" phase="1" />
+      <objective type="FetchKeep" id="Wok" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="kitchenaid_station">
-      <property name="name_key" value="KitchNaid" />
-      <property name="subtitle" value="Craft a KitchNaid" />
-      <property name="subtitle_key" value="Craft a KitchNaid" />
-      <property name="description_key" value="Build a KitchNaid." />
+    <quest id="kitchenaid_station_tools_1" modTag="farmlife">
+      <property name="name" value="KitchNaid Tools" />
+      <property name="subtitle" value="KitchNaid Tools" />
+      <property name="description" value="Learn what tools are required by the KitchNaid, a necessary component for preparing food." />
       <property name="icon" value="ui_game_symbol_spatula" />
       <property name="repeatable" value="false" />
       <property name="category_key" value="quest" />
-      <property name="offer_key" value="Learn how to make a KitchNaid, a necessary component for preparing food." />
+      <property name="offer" value="Learn what tools are required by the KitchNaid, a necessary component for preparing food." />
       <property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="KitchNaid" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="Dough Hook" value="1" phase="2" />
-      <objective type="FetchKeep" id="Veggie Attachment" value="1" phase="2" />
-      <objective type="FetchKeep" id="Ice Cream Bowl" value="1" phase="2" />
+      <objective type="FetchKeep" id="Dough Hook" value="1" phase="1" />
+      <objective type="FetchKeep" id="Veggie Attachment" value="1" phase="1" />
+      <objective type="FetchKeep" id="Ice Cream Bowl" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="kitchenaid_tools">
-      <property name="name_key" value="KitchNaid Tools" />
-      <property name="subtitle" value="Craft KitchNaid Tools" />
-      <property name="subtitle_key" value="Craft KitchNaid Tools" />
-      <property name="description_key" value="Build KitchNaid Tools." />
+    <quest id="kitchenaid_station_tools_2" modTag="farmlife">
+      <property name="name" value="KitchNaid Tools 2" />
+      <property name="subtitle" value="KitchNaid Tools 2" />
+      <property name="description" value="Learn what tools are required by the KitchNaid, a necessary component for preparing food." />
       <property name="icon" value="ui_game_symbol_spatula" />
       <property name="repeatable" value="false" />
       <property name="category_key" value="quest" />
-      <property name="offer_key" value="Learn how to make additional tools for your KitchNaid, a necessary component for preparing food." />
+      <property name="offer" value="Learn what tools are required by the KitchNaid, a necessary component for preparing food." />
       <property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
@@ -171,28 +153,24 @@
       <reward type="Exp" value="10" />
     </quest>
 
-    <quest id="woodgrill_station">
-      <property name="name_key" value="Wood Grill" />
-      <property name="subtitle" value="Craft Wood Grill" />
-      <property name="subtitle_key" value="Craft Wood Grill" />
-      <property name="description_key" value="Build Wood Grill." />
+    <quest id="woodgrill_station_tools_1" modTag="farmlife">
+      <property name="name" value="Wood Grill Tools" />
+      <property name="subtitle" value="Wood Grill Tools" />
+      <property name="description" value="Learn what tools are required by the Wood Grill, a necessary component for grilling meats." />
       <property name="icon" value="ui_game_symbol_spatula" />
       <property name="repeatable" value="false" />
       <property name="category_key" value="quest" />
-      <property name="offer_key" value="Learn how to make a Wood Grill, a necessary component for grilling meats." />
+      <property name="offer" value="Learn what tools are required by the Wood Grill, a necessary component for grilling meats." />
       <property name="difficulty" value="easy" />
       <property name="shareable" value="false" />
 
-      <objective type="FetchKeep" id="Wood Grill" value="1" phase="1" />
-
-      <objective type="FetchKeep" id="Tongs" value="1" phase="2" />
-      <objective type="FetchKeep" id="Spatula" value="1" phase="2" />
-      <objective type="FetchKeep" id="Ceramic Dutch Oven" value="1" phase="2" />
+      <objective type="FetchKeep" id="Tongs" value="1" phase="1" />
+      <objective type="FetchKeep" id="Spatula" value="1" phase="1" />
+      <objective type="FetchKeep" id="Ceramic Dutch Oven" value="1" phase="1" />
 
       <reward type="Exp" value="10" />
     </quest>
 
-
-
   </append>
+
 </configs>
