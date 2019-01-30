@@ -1,8 +1,8 @@
 # FarmLifeMod 1.7.4
 
-Smoked meats are on the menu.
+Smoked meats are on the menu. Brew stations are here (but don't help you, yet). You can quest your way to a better crafting station setup.
 
-Added a Change Log! Now you can see all the release notes, for all versions, in one place.
+Added a Change Log! Now you can see all the release notes, for all versions (since the last one here...), in one place.
 
 ## Changed
 
@@ -16,6 +16,11 @@ Added a Change Log! Now you can see all the release notes, for all versions, in 
 - Coops now has a chance to give Whole Chicken.
 - Smoked items and Jerky now require the Smoker
 - Ham Steak can now be carved out of Smoked Ham.
+- Fixed some CraftActionName values on stations
+- Setup a new modTag helper for craftingStation
+- Lots of xml changes to make things "better" for me and modders
+- Pitchfork has updated meshfile
+- New icons
 
 ## New Stuff
 
@@ -26,10 +31,39 @@ Smoked Chicken
 Smoker Mat
 Meat Hanger
 Turkey Rack
+Brew Station
+Carboy
+Wine Tank
+Spirits Vat
+Wine Filter
+Oak Barrel
+Aged Oak Barrel
+Floor Corker
+Bottle Capper
+Mixing Cask
+Brew Cooker
+Masher
+Boiler
+Still
+
+### Craftable quest items:
+Brew Cooker Volume 1
+Brew Station Volume 1
+Brew Station Volume
+Smoker Volume 1
+Gas Oven Volume 1
+Gas Cooktop Volume 1
+KitchNaid Volume 1
+KitchNaid Volume 2
+Wood Grill Volume 1
 
 ## Notes
 
 The Cold Smoker will be a primary station for dealing with meats, just like the Wood Grill. Its purpose will be to A) Cure meats and jerky B) Impart yummy flavor to your meat. It has 3 attachments that are used to gate each type of recipe.
+
+Brewing will get super complicated, soon. There are 2 new stations, Brew Cooker and Brew Station. Cooker is for doing things with fire. Station is for things that require time but do not need heat. These are not hooked up yet, but will be in the next release.
+
+There are now recipes to make quest items that help you figure out what tools each station needs. I may add station specific (crafting) quests but I don't think that is really necessary right now.
 
 Attachments are something that I really like. However, I am having a hard time justifying how I have the recipes for crafting them. I feel they are not interesting to craft and they are all basically the same and boring.
 
