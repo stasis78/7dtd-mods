@@ -753,7 +753,7 @@ preparedPlant
 
     <!-- Items and Tools -->
 
-    <item name="Feeding Trough" modTag="ingredient,noicon">
+    <item name="Feeding Trough" modTag="ingredient,hasicon">
       <property name="CustomIcon" value="bucketEmpty"/>
       <property name="CustomIconTint" value="888888" />
     </item>
@@ -788,7 +788,7 @@ preparedPlant
       <property name="CustomIconTint" value="FF4200" />
     </item>
 
-    <item name="Tongs" modTag="cookingTool,noicon">
+    <item name="Tongs" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="meleeToolShovelIron"/>
       <property name="CustomIconTint" value="888888" />
     </item>
