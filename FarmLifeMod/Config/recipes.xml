@@ -29,13 +29,18 @@ tags="learnable">
       <ingredient name="Black Pepper Corn" count="4" />
       <ingredient name="Apple Woodchips" count="1" />
     </recipe>
-    <recipe name="Elk Jerky" count="1" modTag="toolTongs,saltPepper">
+    <recipe name="Elk Jerky" count="1" modTag="toolMat,saltPepper">
       <ingredient name="Elk Scraps" count="10" />
     </recipe>
-    <recipe name="Smoked Bacon" count="10" modTag="toolTongs">
+    <recipe name="Smoked Bacon" count="10" modTag="toolMat">
       <ingredient name="Pork Belly" count="1" />
       <ingredient name="Apple Woodchips" count="4" />
       <ingredient name="Walnut Woodchips" count="1" />
+    </recipe>
+    <recipe name="Smoked Ham" count="1" modTag="toolHanger">
+      <ingredient name="Ham" count="1" />
+      <ingredient name="Apple Woodchips" count="2" />
+      <ingredient name="Walnut Woodchips" count="3" />
     </recipe>
     <recipe name="Cured Ham" count="1" modTag="toolDutchOven,saltPepper">
       <ingredient name="Ham" count="1" />
@@ -44,12 +49,19 @@ tags="learnable">
     <recipe name="Ham Steak" count="10" modTag="">
       <ingredient name="Cured Ham" count="1" />
     </recipe>
+    <recipe name="Ham Steak" count="10" modTag="">
+      <ingredient name="Smoked Ham" count="1" />
+    </recipe>
     <recipe name="BBQ Pork Ribs" count="10" modTag="toolTongs">
       <ingredient name="Pork Ribs" count="1" />
       <ingredient name="Spicy BBQ Sauce" count="10" />
       <ingredient name="Apple Woodchips" count="2" />
       <ingredient name="Walnut Woodchips" count="2" />
       <ingredient name="Mesquite Woodchips" count="1" />
+    </recipe>
+    <recipe name="Smoked Chicken" count="1" modTag="toolRack">
+      <ingredient name="Whole Chicken" count="1" />
+      <ingredient name="Apple Woodchips" count="5" />
     </recipe>
     <recipe name="Spicy Chicken Wings" count="10" modTag="toolTongs">
       <ingredient name="Chicken Wing" count="10" />
@@ -549,7 +561,7 @@ tags="learnable">
       <ingredient name="bucketRiverWater" count="2" />
     </recipe>
 
-    <!-- Tools and Items -->
+    <!-- Toolsss and Items -->
     <recipe name="Feeding Trough" count="1">
     	<ingredient name="resourceForgedIron" count="14" />
     </recipe>
@@ -563,6 +575,7 @@ tags="learnable">
     <recipe name="Black Pepper" count="10">
       <ingredient name="Black Pepper Tin" count="1" />
     </recipe>
+
     <recipe name="Wood Grill" count="1">
     	<ingredient name="resourceForgedIron" count="10" />
     	<ingredient name="toolCookingGrill" count="1" />
@@ -582,6 +595,22 @@ tags="learnable">
     	<ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
     </recipe>
+    <recipe name="Smoker" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+    <recipe name="Brew Cooker" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+    <recipe name="Brew Station" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+
     <recipe name="Tongs" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
@@ -594,6 +623,7 @@ tags="learnable">
     	<ingredient name="unit_glass" count="1000" />
     	<ingredient name="unit_clay" count="100" />
     </recipe>
+
     <recipe name="Dough Hook" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
     	<ingredient name="unit_clay" count="5" />
@@ -622,6 +652,7 @@ tags="learnable">
     	<ingredient name="resourceMechanicalParts" count="4" />
       <ingredient name="resourceScrapPolymers" count="4" />
     </recipe>
+
     <recipe name="Frying Pan" count="1" modTag="toolForgeCrucible">
     	<ingredient name="unit_iron" count="100" />
     	<ingredient name="unit_clay" count="10" />
@@ -630,6 +661,7 @@ tags="learnable">
     	<ingredient name="unit_iron" count="1000" />
     	<ingredient name="unit_clay" count="100" />
     </recipe>
+
     <recipe name="Baking Sheet" count="1" modTag="toolAnvil">
       <ingredient name="unit_iron" count="100" />
       <ingredient name="unit_clay" count="10" />
@@ -641,6 +673,70 @@ tags="learnable">
     <recipe name="PyreX Bakeware" count="1" modTag="toolAndDieSet">
       <ingredient name="unit_glass" count="1000" />
       <ingredient name="unit_clay" count="100" />
+    </recipe>
+
+    <recipe name="Smoker Mat" count="1" modTag="toolAnvil">
+      <ingredient name="unit_iron" count="100" />
+      <ingredient name="unit_clay" count="10" />
+    </recipe>
+    <recipe name="Meat Hanger" count="1" modTag="toolForgeCrucible">
+      <ingredient name="unit_iron" count="500" />
+      <ingredient name="unit_clay" count="50" />
+    </recipe>
+    <recipe name="Turkey Rack" count="1" modTag="toolAndDieSet">
+      <ingredient name="unit_iron" count="1000" />
+      <ingredient name="unit_clay" count="100" />
+    </recipe>
+
+    <recipe name="Masher" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Boiler" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    </recipe>
+    <recipe name="Still" count="1" modTag="toolAndDieSet">
+    	<ingredient name="unit_brass" count="500"/>
+    	<ingredient name="unit_clay" count="100"/>
+    </recipe>
+
+    <recipe name="Carboy" count="1" modTag="toolAndDieSet">
+      <ingredient name="unit_glass" count="500"/>
+      <ingredient name="unit_clay" count="100"/>
+    </recipe>
+    <recipe name="Wine Tank" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    </recipe>
+    <recipe name="Spirits Vat" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+
+    <recipe name="Wine Filter" count="1">
+      <ingredient name="resourceScrapPolymers" count="100" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Oak Barrel" count="1">
+      <ingredient name="resourceWood" count="100" />
+      <ingredient name="resourceForgedIron" count="10" />
+    </recipe>
+    <recipe name="Aged Oak Barrel" count="1">
+      <ingredient name="resourceWood" count="100" />
+      <ingredient name="resourceForgedIron" count="10" />
+      <ingredient name="drinkJarGrainAlcohol" count="10" />
+    </recipe>
+
+    <recipe name="Floor Corker" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Bottle Capper" count="1">
+    	<ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Mixing Cask" count="1">
+    	<ingredient name="resourceForgedIron" count="4" />
+    	<ingredient name="resourceWood" count="20" />
     </recipe>
 
 
@@ -657,6 +753,27 @@ tags="learnable">
     </recipe>
     <recipe name="Empty Chicken Coop" modTag="emptyPen">
     </recipe>
+
+    <!-- Recipe Quests -->
+    <recipe name="Brew Cooker Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Brew Station Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Brew Station Volume 2" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Smoker Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Gas Oven Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Gas Cooktop Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="KitchNaid Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="KitchNaid Volume 2" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Wood Grill Volume 1" modTag="recipeQuest">
+    </recipe>
+    <!-- Recipe Quests -->
 
   </append>
 
@@ -705,6 +822,9 @@ tags="learnable">
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolBakingSheet') or contains(@modTag,'toolPizza') or contains(@modTag,'toolPyrex')]" name="craft_area">
     Gas Oven
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat') or contains(@modTag,'toolHanger') or contains(@modTag,'toolRack')]" name="craft_area">
+    Smoker
   </setattribute>
 
   <!-- Vanilla craft_tool -->
@@ -768,6 +888,53 @@ tags="learnable">
     PyreX Bakeware
   </setattribute>
 
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat')]" name="craft_tool">
+    Smoker Mat
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolHanger')]" name="craft_tool">
+    Meat Hanger
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolRack')]" name="craft_tool">
+    Turkey Rack
+  </setattribute>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMasher')]" name="craft_tool">
+    Masher
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolBoiler')]" name="craft_tool">
+    Boiler
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolStill')]" name="craft_tool">
+    Still
+  </setattribute>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCarboy')]" name="craft_tool">
+    Carboy
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWineTank')]" name="craft_tool">
+    Wine Tank
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolSpiritsVat')]" name="craft_tool">
+    Spirits Vat
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWineFilter')]" name="craft_tool">
+    Wine Filter
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolOakBarrel')]" name="craft_tool">
+    Oak Barrel
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolAgedOakBarrel')]" name="craft_tool">
+    Aged Oak Barrel
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCorker')]" name="craft_tool">
+    Floor Corker
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCapper')]" name="craft_tool">
+    Bottle Capper
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMixingCask')]" name="craft_tool">
+    Mixing Cask
+  </setattribute>
 
   <!-- Update Pens -->
   <setattribute xpath="/recipes/recipe[contains(@modTag,'emptyPen')]" name="count">
@@ -778,6 +945,11 @@ tags="learnable">
     <ingredient name="hayBaleBlock" count="4" />
     <ingredient name="Feeding Trough" count="1" />
     <ingredient name="bucketEmpty" count="1" />
+  </append>
+
+  <append xpath="/recipes/recipe[contains(@modTag,'recipeQuest')]">
+    <ingredient name="resourceCoal" count="1" />
+    <ingredient name="resourcePaper" count="1" />
   </append>
 
 </configs>

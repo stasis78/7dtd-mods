@@ -1,7 +1,6 @@
 <!--
 Blocks use modTag attributes to help with boiler plate child nodes.
-Was in corn seed?
-<property name="Place" value="Door" /> waiting for response from forums....
+
 <block name="treeAzalea">
 -->
 <configs>
@@ -14,8 +13,124 @@ Was in corn seed?
   <append xpath="/blocks">
 
     <!-- Craft stations  -->
+    <block name="Brew Cooker" modTag="craftingStation,noicon">
+      <property name="CustomIcon" value="cntStoveOldVer1Closed" />
+      <property name="CustomIconTint" value="888888" />
 
-    <block name="Gas Oven">
+      <property name="Class" value="Campfire" />
+      <property name="Material" value="MmetalNoGlue" />
+      <property name="MaxDamage" value="800" />
+      <property name="StabilitySupport" value="false"/>
+
+      <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+    	<property name="Mesh" value="models"/>
+    	<property name="Path" value="solid"/>
+    	<property name="Model" value="Appliances/stove_old" param1="main_mesh"/>
+
+      <property name="ParticleName" value="campfire" />
+      <property name="ParticleOffset" value="0.5,0.5,0.5" />
+      <property name="Stacknumber" value="1" />
+      <property name="HeatMapStrength" value="1.5" />
+      <property name="HeatMapTime" value="1200" />
+      <property name="HeatMapFrequency" value="25" />
+
+      <property class="Workstation">
+        <property name="Modules" value="tools,output,fuel,input" />
+        <property name="Collide" value="melee,bullet,arrow,rocket" />
+      </property>
+
+      <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
+      <property name="CraftActionName" value="BURN" />
+      <property name="CraftIcon" value="ui_game_symbol_spatula" />
+      <property name="OpenSound" value="campfire_open" />
+      <property name="CloseSound" value="campfire_close" />
+      <property name="CraftSound" value="campfire_cook_click" />
+      <property name="CraftCompleteSound" value="campfire_complete_item" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25" />
+      </property>
+      <property name="EconomicValue" value="1544" />
+    </block>
+
+    <block name="Brew Station" modTag="craftingStation,noicon">
+      <property name="CustomIcon" value="chemistryStation" />
+      <property name="CustomIconTint" value="444444" />
+
+      <property name="Class" value="Campfire" />
+    	<property name="Material" value="Miron_scrap" />
+    	<property name="MaxDamage" value="800" />
+    	<property name="StabilitySupport" value="true" />
+
+      <property name="Shape" value="ModelEntity"/>
+      <property name="ParticleName" value="chemistryStation"/>
+      <property name="ParticleOffset" value="0,0,0"/>
+      <property name="Path" value="solid"/>
+      <property name="Model" value="Entities/Crafting/chemistry_stationPrefab"/>
+      <property name="MultiBlockDim" value="3,2,1"/>
+
+    	<property name="Stacknumber" value="1" />
+      <property name="HeatMapStrength" value="1.5" />
+    	<property name="HeatMapTime" value="1200" />
+    	<property name="HeatMapFrequency" value="25" />
+
+    	<property class="Workstation">
+        <property name="Modules" value="tools,output,fuel,input" />
+    		<property name="Collide" value="melee,bullet,arrow,rocket" />
+    	</property>
+
+      <property name="WorkstationIcon" value="ui_game_symbol_chemistry" />
+    	<property name="CraftActionName" value="lblContextActionMix" />
+    	<property name="CraftIcon" value="ui_game_symbol_chemistry" />
+    	<property name="OpenSound" value="chem_station_open" />
+    	<property name="CloseSound" value="chem_station_close" />
+    	<property name="CraftSound" value="chem_station_mix_click" />
+    	<property name="CraftCompleteSound" value="chem_station_complete_item" />
+
+    	<property class="RepairItems">
+    		<property name="resourceForgedIron" value="25" />
+    	</property>
+    </block>
+
+    <block name="Smoker" modTag="craftingStation,noicon">
+      <property name="CustomIcon" value="cntGasGrillClosed" />
+      <property name="CustomIconTint" value="444444" />
+
+      <property name="Class" value="Workstation" />
+    	<property name="Material" value="MmetalNoGlue" />
+    	<property name="MaxDamage" value="800" />
+      <property name="StabilitySupport" value="false"/>
+
+      <property name="Model" value="Entities/LootContainers/GasGrill_FullPrefab"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Path" value="solid"/>
+
+      <property name="ParticleName" value="hotembers" />
+      <property name="ParticleOffset" value="0.5,0.0,0.5" />
+    	<property name="Stacknumber" value="1" />
+      <property name="HeatMapStrength" value="1.5" />
+    	<property name="HeatMapTime" value="1200" />
+    	<property name="HeatMapFrequency" value="25" />
+
+    	<property class="Workstation">
+        <property name="Modules" value="tools,output,input" />
+    		<property name="Collide" value="melee,bullet,arrow,rocket" />
+    	</property>
+
+      <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
+    	<property name="CraftActionName" value="SMOKE" />
+    	<property name="CraftIcon" value="ui_game_symbol_spatula" />
+    	<property name="OpenSound" value="campfire_open" />
+    	<property name="CloseSound" value="campfire_close" />
+    	<property name="CraftSound" value="campfire_cook_click" />
+    	<property name="CraftCompleteSound" value="campfire_complete_item" />
+
+    	<property class="RepairItems">
+    		<property name="resourceForgedIron" value="25" />
+    	</property>
+    </block>
+
+    <block name="Gas Oven" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntWallOven" />
       <property name="CustomIconTint" value="444444" />
 
@@ -24,13 +139,8 @@ Was in corn seed?
     	<property name="MaxDamage" value="800" />
     	<property name="StabilitySupport" value="true" />
 
-      <property name="Texture" value="267,345,341,345,262,345" />
+      <property name="Texture" value="261,345,341,345,345,345" />
 
-    	<property name="Place" value="TowardsPlacerInverted" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
       <property name="ParticleName" value="hotembers" />
       <property name="ParticleOffset" value="0.5,0.0,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -44,43 +154,32 @@ Was in corn seed?
     	</property>
 
       <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
-    	<property name="CraftActionName" value="BURNER" />
+    	<property name="CraftActionName" value="OVEN" />
     	<property name="CraftIcon" value="ui_game_symbol_spatula" />
     	<property name="OpenSound" value="campfire_open" />
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
-
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="Gas Cooktop">
+    <block name="Gas Cooktop" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="airConditionVentFan" />
       <property name="CustomIconTint" value="444444" />
 
       <property name="Class" value="Campfire" />
-    	<property name="Material" value="Miron_scrap" />
+    	<property name="Material" value="MmetalNoGlue" />
     	<property name="MaxDamage" value="800" />
-    	<property name="StabilitySupport" value="true" />
+      <property name="StabilitySupport" value="false"/>
 
       <property name="Shape" value="New" />
-    	<property name="Model" value="billboard" />
-    	<property name="Texture" value="346" />
+      <property name="Model" value="Plate"/>
+    	<property name="Texture" value="346,346,346,346,346,346" />
 
-    	<property name="Place" value="Spotlight" />
       <property name="HandleFace" value="South" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
+
       <property name="ParticleName" value="hotembers" />
       <property name="ParticleOffset" value="0.5,0.0,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -100,35 +199,24 @@ Was in corn seed?
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="KitchNaid">
+    <block name="KitchNaid" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
       <property name="CustomIconTint" value="888888" />
 
       <property name="Class" value="Workstation" />
-    	<property name="Material" value="Miron_scrap" />
+    	<property name="Material" value="MmetalNoGlue" />
     	<property name="MaxDamage" value="800" />
-    	<property name="StabilitySupport" value="true" />
+      <property name="StabilitySupport" value="false"/>
       <property name="Shape" value="Ext3dModel" /> <property name="Texture" value="293" />
     	<property name="Mesh" value="models" />
       <property name="Model" value="Appliances/microwave_oven_ver1" param1="main_mesh" />
-    	<property name="Place" value="TowardsPlacer" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
+
       <property name="ParticleName" value="campfire" />
       <property name="ParticleOffset" value="0.5,0.75,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -137,7 +225,7 @@ Was in corn seed?
     	<property name="HeatMapFrequency" value="25" />
 
     	<property class="Workstation">
-        <property name="Modules" value="tools,output,fuel,input" />
+        <property name="Modules" value="tools,output,input" />
     		<property name="Collide" value="melee,bullet,arrow,rocket" />
     	</property>
 
@@ -148,35 +236,24 @@ Was in corn seed?
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
-    	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
 
-    <block name="Wood Grill">
+    <block name="Wood Grill" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntCharcoalGrillClosed" />
       <property name="CustomIconTint" value="888888" />
 
       <property name="Class" value="Campfire" />
-    	<property name="Material" value="Miron_scrap" />
+    	<property name="Material" value="MmetalNoGlue" />
     	<property name="MaxDamage" value="800" />
-    	<property name="StabilitySupport" value="true" />
+      <property name="StabilitySupport" value="false"/>
     	<property name="Shape" value="ModelEntity" />
     	<property name="Path" value="solid" />
       <property name="Model" value="Entities/LootContainers/Grill_Simple_ClosedPrefab" />
-    	<property name="Place" value="TowardsPlacer" />
-    	<property name="OnlySimpleRotations" value="true" />
-      <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-    	<property name="ImposterDontBlock" value="true" />
-    	<property name="IsTerrainDecoration" value="true" />
+
       <property name="ParticleName" value="campfire" />
       <property name="ParticleOffset" value="0.5,0.75,0.5" />
     	<property name="Stacknumber" value="1" />
@@ -190,25 +267,18 @@ Was in corn seed?
     	</property>
 
       <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
-    	<property name="CraftActionName" value="lblContextActionCook" />
+    	<property name="CraftActionName" value="GRILL" />
     	<property name="CraftIcon" value="ui_game_symbol_spatula" />
     	<property name="OpenSound" value="campfire_open" />
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
-    	<property name="TakeDelay" value="15" />
-    	<!-- <property name="DescriptionKey" value="cementMixerDesc" /> -->
     	<property name="EconomicValue" value="1544" />
-    	<property name="Group" value="Building,Food/Cooking" />
-    	<property name="FilterTags" value="fdecor,fother,ffurniture" />
-    	<property name="SortOrder1" value="70i0" />
     </block>
-
     <!-- Craft stations  -->
 
     <!-- Meat Blocks -->
@@ -375,7 +445,7 @@ Was in corn seed?
       <property name="CustomIconTint" value="DAF7A6" />
       <property class="UpgradeBlock">
         <property name="ToBlock" value="Feeding Chicken Coop" />
-        <property name="Item" value="Cattle Feed" />
+        <property name="Item" value="Chicken Feed" />
         <property name="ItemCount" value="1" />
         <property name="UpgradeHitCount" value="4" />
       </property>
@@ -386,9 +456,10 @@ Was in corn seed?
     </block>
     <block name="Full Chicken Coop"  modTag="fullPen,noicon">
       <drop event="Harvest" name="foodEgg" count="10" tag="butcherHarvest" />
-      <drop event="Harvest" name="resourceFeather" count="4,8" prob="0.5" tag="butcherHarvest" />
+      <drop event="Harvest" name="resourceFeather" count="4,8" prob="1.0" tag="butcherHarvest" />
       <drop event="Harvest" name="Chicken Breast" count="2,4" prob="1.0" tag="butcherHarvest" />
       <drop event="Harvest" name="Chicken Wing" count="2,6" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Whole Chicken" count="2,3" prob="0.5" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Chicken Coop"/>
     </block>
     <!-- Chicken Blocks -->
@@ -1173,6 +1244,19 @@ Was in corn seed?
     <property name="DisplayInfo" value="Name" />
     <property name="Extends" value="fullAnimalPenMaster" param1=""/>
     <drop event="Harvest" name="bucketEmpty" count="2" prob="1" tag="allHarvest"/>
+  </append>
+
+  <append xpath="/blocks/block[contains(@modTag,'craftingStation')]">
+    <property name="OnlySimpleRotations" value="true" />
+    <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+    <property name="ImposterDontBlock" value="true" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="Place" value="Spotlight" />
+    <property name="Group" value="Building,Food/Cooking" />
+    <property name="FilterTags" value="fdecor,fother,ffurniture" />
+    <property name="SortOrder1" value="70i0" />
+    <property name="TakeDelay" value="15" />
+    <property name="EconomicValue" value="1544" />
   </append>
 
   <!-- Vanilla block additions -->

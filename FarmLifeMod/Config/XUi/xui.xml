@@ -41,5 +41,33 @@
       <window name="windowNonPagingHeader" />
     </window_group>
 
+    <window_group name="workstation_Smoker" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsSmoker" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
+    <window_group name="workstation_Brew Station" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsBrewStation" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
+    <window_group name="workstation_Brew Cooker" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList" />
+      <window name="craftingInfoPanel" />
+      <window name="windowCraftingQueue" />
+      <window name="windowToolsBrewCooker" />
+      <window name="windowFuel" />
+      <window name="windowOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+
   </append>
 </configs>
