@@ -1,0 +1,198 @@
+<configs>
+  <append xpath="/quests">
+
+    <quest id="brewing_brew_cooker">
+  		<property name="name_key" value="Brew Cooker" />
+  		<property name="subtitle" value="Craft a Brew Cooker" />
+      <property name="subtitle_key" value="Craft a Brew Cooker" />
+  		<property name="description_key" value="Build a Brew Cooker." />
+  		<property name="icon" value="ui_game_symbol_beer" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+  		<property name="offer_key" value="Learn how to make a Brew Cooker, a necessary component for beer brewing and distilling spirits." />
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Brew Cooker" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Masher" value="1" phase="2" />
+      <objective type="FetchKeep" id="Boiler" value="1" phase="2" />
+      <objective type="FetchKeep" id="Still" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+  	</quest>
+
+    <quest id="brewing_brew_station">
+      <property name="name" value="Brew Station" />
+      <property name="subtitle" value="Craft a Brew Station" />
+      <property name="description" value="Build a Brew Station." />
+      <property name="icon" value="ui_game_symbol_beer" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="challenge" />
+      <property name="offer" value="Learn how to make a Brew Station, a necessary component for beer brewing, wine making, and distilling spirits." />
+      <property name="difficulty" value="easy" />
+      <property name="category" value="quest" />
+      <property name="statement_key" value="Build a Brew Station." />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Brew Station" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Carboy" value="1" phase="2" />
+      <objective type="FetchKeep" id="Wine Tank" value="1" phase="2" />
+      <objective type="FetchKeep" id="Spirits Vat" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="brewing_brew_tools">
+      <property name="name" value="Brew Tools" />
+      <property name="subtitle" value="Craft some Brew Tools" />
+      <property name="description" value="Build a Brew Tools." />
+      <property name="icon" value="ui_game_symbol_beer" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="challenge" />
+      <property name="offer" value="Learn how to make a Brew Tools, a necessary component for beer brewing, wine making, and distilling spirits." />
+      <property name="difficulty" value="easy" />
+      <property name="category" value="quest" />
+      <property name="statement_key" value="Build a Brew Station." />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Wine Filter" value="1" phase="1" />
+      <objective type="FetchKeep" id="Oak Barrel" value="1" phase="1" />
+      <objective type="FetchKeep" id="Aged Oak Barrel" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Floor Corker" value="1" phase="2" />
+      <objective type="FetchKeep" id="Bottle Capper" value="1" phase="2" />
+      <objective type="FetchKeep" id="Mixing Cask" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="smoker_station">
+      <property name="name_key" value="Smoker" />
+      <property name="subtitle" value="Craft a Smoker" />
+      <property name="subtitle_key" value="Craft a Smoker" />
+      <property name="description_key" value="Build a Smoker." />
+      <property name="icon" value="ui_game_symbol_spatula" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer_key" value="Learn how to make a Smoker, a necessary component for drying and curing meats." />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Smoker" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Smoker Mat" value="1" phase="2" />
+      <objective type="FetchKeep" id="Meat Hanger" value="1" phase="2" />
+      <objective type="FetchKeep" id="Turkey Rack" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="gas_oven_station">
+      <property name="name_key" value="Gas Oven" />
+      <property name="subtitle" value="Craft a Gas Oven" />
+      <property name="subtitle_key" value="Craft a Gas Oven" />
+      <property name="description_key" value="Build a Gas Oven." />
+      <property name="icon" value="ui_game_symbol_spatula" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer_key" value="Learn how to make a Gas Oven, a necessary component for baking your food." />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Gas Oven" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Baking Sheet" value="1" phase="2" />
+      <objective type="FetchKeep" id="Pizza Stone" value="1" phase="2" />
+      <objective type="FetchKeep" id="PyreX Bakeware" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="gas_cooktop_station">
+      <property name="name_key" value="Gas Cooktop" />
+      <property name="subtitle" value="Craft a Gas Cooktop" />
+      <property name="subtitle_key" value="Craft a Gas Cooktop" />
+      <property name="description_key" value="Build a Gas Cooktop." />
+      <property name="icon" value="ui_game_symbol_spatula" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer_key" value="Learn how to make a Gas Cooktop, a necessary component for boiling, and frying your food." />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Gas Cooktop" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="toolCookingPot" value="1" phase="2" />
+      <objective type="FetchKeep" id="Frying Pan" value="1" phase="2" />
+      <objective type="FetchKeep" id="Wok" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="kitchenaid_station">
+      <property name="name_key" value="KitchNaid" />
+      <property name="subtitle" value="Craft a KitchNaid" />
+      <property name="subtitle_key" value="Craft a KitchNaid" />
+      <property name="description_key" value="Build a KitchNaid." />
+      <property name="icon" value="ui_game_symbol_spatula" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer_key" value="Learn how to make a KitchNaid, a necessary component for preparing food." />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="KitchNaid" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Dough Hook" value="1" phase="2" />
+      <objective type="FetchKeep" id="Veggie Attachment" value="1" phase="2" />
+      <objective type="FetchKeep" id="Ice Cream Bowl" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="kitchenaid_tools">
+      <property name="name_key" value="KitchNaid Tools" />
+      <property name="subtitle" value="Craft KitchNaid Tools" />
+      <property name="subtitle_key" value="Craft KitchNaid Tools" />
+      <property name="description_key" value="Build KitchNaid Tools." />
+      <property name="icon" value="ui_game_symbol_spatula" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer_key" value="Learn how to make additional tools for your KitchNaid, a necessary component for preparing food." />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Meat Grinder" value="1" phase="1" />
+      <objective type="FetchKeep" id="Grain Miller" value="1" phase="1" />
+      <objective type="FetchKeep" id="Pasta Helper" value="1" phase="1" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+    <quest id="woodgrill_station">
+      <property name="name_key" value="Wood Grill" />
+      <property name="subtitle" value="Craft Wood Grill" />
+      <property name="subtitle_key" value="Craft Wood Grill" />
+      <property name="description_key" value="Build Wood Grill." />
+      <property name="icon" value="ui_game_symbol_spatula" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer_key" value="Learn how to make a Wood Grill, a necessary component for grilling meats." />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Wood Grill" value="1" phase="1" />
+
+      <objective type="FetchKeep" id="Tongs" value="1" phase="2" />
+      <objective type="FetchKeep" id="Spatula" value="1" phase="2" />
+      <objective type="FetchKeep" id="Ceramic Dutch Oven" value="1" phase="2" />
+
+      <reward type="Exp" value="10" />
+    </quest>
+
+
+
+  </append>
+</configs>

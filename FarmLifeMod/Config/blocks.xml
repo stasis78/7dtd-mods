@@ -13,6 +13,84 @@ Blocks use modTag attributes to help with boiler plate child nodes.
   <append xpath="/blocks">
 
     <!-- Craft stations  -->
+    <block name="Brew Cooker" modTag="craftingStation,noicon">
+      <property name="CustomIcon" value="cntStoveOldVer1Closed" />
+      <property name="CustomIconTint" value="888888" />
+
+      <property name="Class" value="Campfire" />
+      <property name="Material" value="MmetalNoGlue" />
+      <property name="MaxDamage" value="800" />
+      <property name="StabilitySupport" value="false"/>
+
+      <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+    	<property name="Mesh" value="models"/>
+    	<property name="Path" value="solid"/>
+    	<property name="Model" value="Appliances/stove_old" param1="main_mesh"/>
+
+      <property name="ParticleName" value="campfire" />
+      <property name="ParticleOffset" value="0.5,0.5,0.5" />
+      <property name="Stacknumber" value="1" />
+      <property name="HeatMapStrength" value="1.5" />
+      <property name="HeatMapTime" value="1200" />
+      <property name="HeatMapFrequency" value="25" />
+
+      <property class="Workstation">
+        <property name="Modules" value="tools,output,fuel,input" />
+        <property name="Collide" value="melee,bullet,arrow,rocket" />
+      </property>
+
+      <property name="WorkstationIcon" value="ui_game_symbol_spatula" />
+      <property name="CraftActionName" value="BURN" />
+      <property name="CraftIcon" value="ui_game_symbol_spatula" />
+      <property name="OpenSound" value="campfire_open" />
+      <property name="CloseSound" value="campfire_close" />
+      <property name="CraftSound" value="campfire_cook_click" />
+      <property name="CraftCompleteSound" value="campfire_complete_item" />
+
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="25" />
+      </property>
+      <property name="EconomicValue" value="1544" />
+    </block>
+
+    <block name="Brew Station" modTag="craftingStation,noicon">
+      <property name="CustomIcon" value="chemistryStation" />
+      <property name="CustomIconTint" value="444444" />
+
+      <property name="Class" value="Campfire" />
+    	<property name="Material" value="Miron_scrap" />
+    	<property name="MaxDamage" value="800" />
+    	<property name="StabilitySupport" value="true" />
+
+      <property name="Shape" value="ModelEntity"/>
+      <property name="ParticleName" value="chemistryStation"/>
+      <property name="ParticleOffset" value="0,0,0"/>
+      <property name="Path" value="solid"/>
+      <property name="Model" value="Entities/Crafting/chemistry_stationPrefab"/>
+      <property name="MultiBlockDim" value="3,2,1"/>
+
+    	<property name="Stacknumber" value="1" />
+      <property name="HeatMapStrength" value="1.5" />
+    	<property name="HeatMapTime" value="1200" />
+    	<property name="HeatMapFrequency" value="25" />
+
+    	<property class="Workstation">
+        <property name="Modules" value="tools,output,fuel,input" />
+    		<property name="Collide" value="melee,bullet,arrow,rocket" />
+    	</property>
+
+      <property name="WorkstationIcon" value="ui_game_symbol_chemistry" />
+    	<property name="CraftActionName" value="lblContextActionMix" />
+    	<property name="CraftIcon" value="ui_game_symbol_chemistry" />
+    	<property name="OpenSound" value="chem_station_open" />
+    	<property name="CloseSound" value="chem_station_close" />
+    	<property name="CraftSound" value="chem_station_mix_click" />
+    	<property name="CraftCompleteSound" value="chem_station_complete_item" />
+
+    	<property class="RepairItems">
+    		<property name="resourceForgedIron" value="25" />
+    	</property>
+    </block>
 
     <block name="Smoker" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntGasGrillClosed" />
@@ -46,7 +124,6 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
@@ -83,7 +160,6 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
@@ -123,7 +199,6 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
@@ -161,7 +236,6 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
@@ -199,14 +273,12 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	<property name="CloseSound" value="campfire_close" />
     	<property name="CraftSound" value="campfire_cook_click" />
     	<property name="CraftCompleteSound" value="campfire_complete_item" />
-    	<property name="WorkstationJournalTip" value="campfireTip" />
 
     	<property class="RepairItems">
     		<property name="resourceForgedIron" value="25" />
     	</property>
     	<property name="EconomicValue" value="1544" />
     </block>
-
     <!-- Craft stations  -->
 
     <!-- Meat Blocks -->

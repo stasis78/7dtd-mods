@@ -14,6 +14,63 @@ preparedPlant
 
   <append xpath="/items">
 
+    <!-- Recipes -->
+    <item name="Brew Cooker Recipe" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Brewing!"/>
+    	<property class="Action0">
+    		<property name="QuestGiven" value="brewing_brew_cooker"/>
+    	</property>
+    </item>
+    <item name="Brew Station Volume 1" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Brewing!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="brewing_brew_station"/>
+      </property>
+    </item>
+    <item name="Brew Station Volume 2" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Brewing!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="brewing_brew_tools"/>
+      </property>
+    </item>
+    <item name="Smoker Recipe" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Smoking!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="smoker_station"/>
+      </property>
+    </item>
+    <item name="Gas Oven Recipe" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Cooking!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="gas_oven_station"/>
+      </property>
+    </item>
+    <item name="Gas Cooktop Recipe" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Cooking!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="gas_cooktop_station"/>
+      </property>
+    </item>
+    <item name="KitchNaid Volume 1" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Cooking!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="kitchenaid_station"/>
+      </property>
+    </item>
+    <item name="KitchNaid Volume 2" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Cooking!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="kitchenaid_tools"/>
+      </property>
+    </item>
+    <item name="Wood Grill Recipe" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Cooking!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="woodgrill_station"/>
+      </property>
+    </item>
+    <!-- Recipes -->
+
     <!-- Meat -->
     <item name="Delmontico" modTag="meat,hasicon"> <!-- Rib -->
       <property name="CustomIcon" value="foodRawMeat"/>
@@ -816,6 +873,70 @@ preparedPlant
       <property name="CustomIconTint" value="000000" />
     </item>
 
+    <item name="Masher" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="meleeToolHoeIron"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Boiler" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="toolCookingPot"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Still" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="resourceMetalPipe"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Carboy" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="cntWaterCoolerBottle"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Wine Tank" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="cntWaterCoolerFull"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Spirits Vat" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="burningBarrelPlayer"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Wine Filter" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="resourceAirFilter"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Oak Barrel" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="wineBarrel"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Aged Oak Barrel" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="oilBarrel"/>
+      <property name="CustomIconTint" value="000000" />
+    </item>
+
+    <item name="Floor Corker" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="workbench"/>
+      <property name="CustomIconTint" value="000000" />
+      <property name="Tags" value="brewing"/>
+      <property name="Group" value="Brewing"/>
+    </item>
+
+    <item name="Bottle Capper" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="chemistryStation"/>
+      <property name="CustomIconTint" value="000000" />
+      <property name="Tags" value="brewing"/>
+    </item>
+
+    <item name="Mixing Cask" modTag="cookingTool,noicon">
+      <property name="CustomIcon" value="bucketEmpty"/>
+      <property name="CustomIconTint" value="000000" />
+      <property name="Tags" value="brewing"/>
+    </item>
+
     <item name="Pitch Fork" modTag="hasicon">
       <property name="CustomIcon" value="meleeToolHoeIron" />
       <property name="CustomIconTint" value="888888" />
@@ -1204,5 +1325,11 @@ preparedPlant
   <set xpath="/items/item[@name='bucketEmpty']/property[@name='Stacknumber']/@value">
     50
   </set>
+
+  <!-- recipes -->
+  <append xpath="/items/item[contains(@modTag,'recipeQuest')]">
+    <property name="Extends" value="challengeQuestMaster"/>
+    <property name="Stacknumber" value="1" />
+  </append>
 
 </configs>

@@ -600,6 +600,16 @@ tags="learnable">
       <ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
     </recipe>
+    <recipe name="Brew Cooker" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
+    <recipe name="Brew Station" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+      <ingredient name="resourceMechanicalParts" count="10" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+    </recipe>
 
     <recipe name="Tongs" count="1" modTag="toolAnvil">
     	<ingredient name="unit_iron" count="25" />
@@ -678,6 +688,58 @@ tags="learnable">
       <ingredient name="unit_clay" count="100" />
     </recipe>
 
+    <recipe name="Masher" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Boiler" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    </recipe>
+    <recipe name="Still" count="1" modTag="toolAndDieSet">
+    	<ingredient name="unit_brass" count="500"/>
+    	<ingredient name="unit_clay" count="100"/>
+    </recipe>
+
+    <recipe name="Carboy" count="1" modTag="toolAndDieSet">
+      <ingredient name="unit_glass" count="500"/>
+      <ingredient name="unit_clay" count="100"/>
+    </recipe>
+    <recipe name="Wine Tank" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    </recipe>
+    <recipe name="Spirits Vat" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+
+    <recipe name="Wine Filter" count="1">
+      <ingredient name="resourceScrapPolymers" count="100" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Oak Barrel" count="1">
+      <ingredient name="resourceWood" count="100" />
+      <ingredient name="resourceForgedIron" count="10" />
+    </recipe>
+    <recipe name="Aged Oak Barrel" count="1">
+      <ingredient name="resourceWood" count="100" />
+      <ingredient name="resourceForgedIron" count="10" />
+      <ingredient name="drinkJarGrainAlcohol" count="10" />
+    </recipe>
+
+    <recipe name="Floor Corker" count="1">
+      <ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Bottle Capper" count="1">
+    	<ingredient name="resourceForgedIron" count="20" />
+    	<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+    <recipe name="Mixing Cask" count="1">
+    	<ingredient name="resourceForgedIron" count="4" />
+    	<ingredient name="resourceWood" count="20" />
+    </recipe>
+
+
     <!-- Pens -->
     <recipe name="Empty Holstein Pen" modTag="emptyPen">
     </recipe>
@@ -691,6 +753,27 @@ tags="learnable">
     </recipe>
     <recipe name="Empty Chicken Coop" modTag="emptyPen">
     </recipe>
+
+    <!-- Recipe Quests -->
+    <recipe name="Brew Cooker Recipe" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Brew Station Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Brew Station Volume 2" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Smoker Recipe" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Gas Oven Recipe" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Gas Cooktop Recipe" modTag="recipeQuest">
+    </recipe>
+    <recipe name="KitchNaid Volume 1" modTag="recipeQuest">
+    </recipe>
+    <recipe name="KitchNaid Volume 2" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Wood Grill Recipe" modTag="recipeQuest">
+    </recipe>
+    <!-- Recipe Quests -->
 
   </append>
 
@@ -824,6 +907,11 @@ tags="learnable">
     <ingredient name="hayBaleBlock" count="4" />
     <ingredient name="Feeding Trough" count="1" />
     <ingredient name="bucketEmpty" count="1" />
+  </append>
+
+  <append xpath="/recipes/recipe[contains(@modTag,'recipeQuest')]">
+    <ingredient name="resourceCoal" count="1" />
+    <ingredient name="resourcePaper" count="1" />
   </append>
 
 </configs>

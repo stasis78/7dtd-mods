@@ -1,2 +1,19 @@
 <configs>
+  <!-- <setattribute xpath="/blocks/block[@name='KitchNaid']/property[@name='Meshfile']" name="value">
+    #@modfolder:Resources/blocks.unity3d?KitchNaidPrefab
+  </setattribute> -->
+  <!-- <setattribute xpath="/blocks/block[@name='KitchNaid']/property[@name='Model']" name="value">
+    #@modfolder:Resources/blocks.unity3d?KitchNaidPrefab
+  </setattribute> -->
+
+  <setattribute xpath="/blocks/block[@name='KitchNaid']/property[@name='Shape']" name="value">
+    ModelEntity
+  </setattribute>
+  <remove xpath="/blocks/block[@name='KitchNaid']/property[@name='Texture']" />
+  <remove xpath="/blocks/block[@name='KitchNaid']/property[@name='Model']" />
+  <append xpath="/blocks/block[@name='KitchNaid']">
+    <property name="Model" value="#@modfolder:Resources/blocks.unity3d?KitchNaidPrefab" />
+  </append>
+
+
 </configs>
