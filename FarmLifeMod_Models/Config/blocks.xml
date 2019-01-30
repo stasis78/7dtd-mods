@@ -12,7 +12,7 @@
   <remove xpath="/blocks/block[@name='KitchNaid']/property[@name='Texture']" />
   <remove xpath="/blocks/block[@name='KitchNaid']/property[@name='Model']" />
   <append xpath="/blocks/block[@name='KitchNaid']">
-    <property name="Model" value="#@modfolder:Resources/blocks.unity3d?KitchNaidPrefab" />
+    <property name="Model" value="#@modfolder:Resources/objects.unity3d?KitchNaidPrefab" />
   </append>
 
 
