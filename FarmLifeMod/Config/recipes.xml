@@ -561,7 +561,7 @@ tags="learnable">
       <ingredient name="bucketRiverWater" count="2" />
     </recipe>
 
-    <!-- Tools and Items -->
+    <!-- Toolsss and Items -->
     <recipe name="Feeding Trough" count="1">
     	<ingredient name="resourceForgedIron" count="14" />
     </recipe>
@@ -896,6 +896,44 @@ tags="learnable">
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolRack')]" name="craft_tool">
     Turkey Rack
+  </setattribute>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMasher')]" name="craft_tool">
+    Masher
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolBoiler')]" name="craft_tool">
+    Boiler
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolStill')]" name="craft_tool">
+    Still
+  </setattribute>
+
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCarboy')]" name="craft_tool">
+    Carboy
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWineTank')]" name="craft_tool">
+    Wine Tank
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolSpiritsVat')]" name="craft_tool">
+    Spirits Vat
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWineFilter')]" name="craft_tool">
+    Wine Filter
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolOakBarrel')]" name="craft_tool">
+    Oak Barrel
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolAgedOakBarrel')]" name="craft_tool">
+    Aged Oak Barrel
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCorker')]" name="craft_tool">
+    Floor Corker
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCapper')]" name="craft_tool">
+    Bottle Capper
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMixingCask')]" name="craft_tool">
+    Mixing Cask
   </setattribute>
 
   <!-- Update Pens -->
