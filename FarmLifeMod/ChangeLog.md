@@ -18,7 +18,6 @@ Beer and wine is done. You can now do quests to get seeds and learn how to do li
 - Tree Seeds Crate (quest reward)
 - Raising Livestock (Pens) - (quest item)
 - Growing Trees (Seeds) - (quest item)
-- Growing Trees (Seeds) - (quest item)
 - Farming Crops (Seeds) - (quest item)
 - Liquor Master (buff)
 - Raw Merlot
