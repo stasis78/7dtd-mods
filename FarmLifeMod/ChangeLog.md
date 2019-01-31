@@ -1,3 +1,54 @@
+# FarmLifeMod 1.7.5
+
+Beer and wine is done. You can now do quests to get seeds and learn how to do livestock. Don't drink too much :)
+
+## Changed
+
+- Removed vanilla meat from pens
+- Pens now have 100% chance to give their meat products (see notes)
+- All Farm Life quests will now give 1000 xp
+- Drinking too much KILLS YOU DEAD
+- Mixed Drinks now give only perception buffs, no strength
+- Wine now requires the Brew Station and KitchNaid (well latter was in but...)
+- Beer requires the Brew Cooker and Brew Station!
+
+## New Stuff
+
+- Crop Seeds Crate (quest reward)
+- Tree Seeds Crate (quest reward)
+- Raising Livestock (Pens) - (quest item)
+- Growing Trees (Seeds) - (quest item)
+- Growing Trees (Seeds) - (quest item)
+- Farming Crops (Seeds) - (quest item)
+- Liquor Master (buff)
+- Raw Merlot
+- Raw White Zin
+- Raw Pink Rose
+- Filtered Merlot
+- Filtered White Zin
+- Filtered Pink Rose
+- Aged Port Wine
+- Beer Cheap Mash
+- Beer IPA Mash
+- Beer Stout Mash
+- Beer Lager Mash
+- Beer Cheap Wort
+- Beer IPA Wort
+- Beer Stout Wort
+- Beer Lager Wort
+- Beer Cheap Raw
+- Beer IPA Raw
+- Beer Stout Raw
+- Beer Lager Raw
+
+## Notes
+
+Pens are affected by huntsman perk. This means that if you have a higher skill, you will get more meat when harvesting pens. If you have no perk skill, or a low perk skill, you may not receive as much meat. At level 5 you will recieve A LOT of meat from pens now.
+
+Speaking of Pens... there is now a quest to teach you how to use them :) New quests are here to unlock seeds. Totally optional, feel free to skip. Will be removing the "Variety Seed Crate" on final release, leaving it in for now as to not break anything.
+
+Brew for wine and beer is now more complex. Quests coming soon :)
+
 # FarmLifeMod 1.7.4
 
 Smoked meats are on the menu. Brew stations are here (but don't help you, yet). You can quest your way to a better crafting station setup.

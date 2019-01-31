@@ -354,6 +354,7 @@ Stat / cvar comparison operators:
         <requirement name="NotHasBuff" buff="Redneck" />
         <requirement name="NotHasBuff" buff="Wine Connoisseur" />
         <requirement name="NotHasBuff" buff="Mixed Drink" />
+        <requirement name="NotHasBuff" buff="Liquor Master" />
         <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="I love tasty craft beer"/>
         <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="beerBuffCount" operation="set" value="0"/>
         <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="beerBuffCount" operation="add" value="1"/>
@@ -406,6 +407,9 @@ Stat / cvar comparison operators:
       <effect_group modTag="drunkDebuff3">
         <requirement name="CVarCompare" cvar="beerBuffCount"/>
       </effect_group>
+      <effect_group modTag="drunkDebuff4">
+        <requirement name="CVarCompare" cvar="beerBuffCount"/>
+      </effect_group>
     </buff>
 
     <!-- Cheap Beer -->
@@ -415,6 +419,7 @@ Stat / cvar comparison operators:
         <requirement name="NotHasBuff" buff="Beer Lover" />
         <requirement name="NotHasBuff" buff="Wine Connoisseur" />
         <requirement name="NotHasBuff" buff="Mixed Drink" />
+        <requirement name="NotHasBuff" buff="Liquor Master" />
         <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="We about to have some fun here boys!"/>
         <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cheapBeerBuffCount" operation="set" value="0"/>
         <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="cheapBeerBuffCount" operation="add" value="1"/>
@@ -467,6 +472,9 @@ Stat / cvar comparison operators:
       <effect_group modTag="drunkDebuff3">
         <requirement name="CVarCompare" cvar="cheapBeerBuffCount"/>
       </effect_group>
+      <effect_group modTag="drunkDebuff4">
+        <requirement name="CVarCompare" cvar="cheapBeerBuffCount"/>
+      </effect_group>
     </buff>
 
     <!-- Wine -->
@@ -476,6 +484,7 @@ Stat / cvar comparison operators:
         <requirement name="NotHasBuff" buff="Beer Lover" />
         <requirement name="NotHasBuff" buff="Redneck" />
         <requirement name="NotHasBuff" buff="Mixed Drink" />
+        <requirement name="NotHasBuff" buff="Liquor Master" />
         <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="I thought this wine was dark, dusky, and supple"/>
         <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="wineBuffCount" operation="set" value="0"/>
         <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="wineBuffCount" operation="add" value="1"/>
@@ -524,15 +533,19 @@ Stat / cvar comparison operators:
       <effect_group modTag="drunkDebuff3">
         <requirement name="CVarCompare" cvar="wineBuffCount"/>
       </effect_group>
+      <effect_group modTag="drunkDebuff4">
+        <requirement name="CVarCompare" cvar="wineBuffCount"/>
+      </effect_group>
     </buff>
 
     <!-- Mixed Drink -->
-    <buff modTag="isDrunkBuff" name="Mixed Drink" description_key="I've been exploring some mixology. Bonus Strength and Perception." icon="ui_game_symbol_beer">
+    <buff modTag="isDrunkBuff" name="Mixed Drink" description_key="I've been exploring some mixology. Bonus Perception." icon="ui_game_symbol_beer">
       <!-- Screen effect and messages  -->
       <effect_group modTag="drunkEffect0">
         <requirement name="NotHasBuff" buff="Beer Lover" />
         <requirement name="NotHasBuff" buff="Redneck" />
         <requirement name="NotHasBuff" buff="Wine Connoisseur" />
+        <requirement name="NotHasBuff" buff="Liquor Master" />
         <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Is this a well pour?"/>
         <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="mixedDrinkBuffCount" operation="set" value="0"/>
         <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="mixedDrinkBuffCount" operation="add" value="1"/>
@@ -569,7 +582,7 @@ Stat / cvar comparison operators:
       <!-- Buffs -->
       <effect_group modTag="drunkBuff">
         <requirement name="CVarCompare" cvar="mixedDrinkBuffCount" />
-        <passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength,attPerception" />
+        <passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attPerception" />
       </effect_group>
       <!-- Debuff  -->
       <effect_group modTag="drunkDebuff1">
@@ -580,6 +593,71 @@ Stat / cvar comparison operators:
       </effect_group>
       <effect_group modTag="drunkDebuff3">
         <requirement name="CVarCompare" cvar="mixedDrinkBuffCount"/>
+      </effect_group>
+      <effect_group modTag="drunkDebuff4">
+        <requirement name="CVarCompare" cvar="mixedDrinkBuffCount"/>
+      </effect_group>
+
+    </buff>
+
+    <!-- Spirits -->
+    <buff modTag="isDrunkBuff" name="Liquor Master" description_key="I've been sipping some very fine spirits. Bonus Strength." icon="ui_game_symbol_beer">
+      <!-- Screen effect and messages  -->
+      <effect_group modTag="drunkEffect0">
+        <requirement name="NotHasBuff" buff="Beer Lover" />
+        <requirement name="NotHasBuff" buff="Redneck" />
+        <requirement name="NotHasBuff" buff="Wine Connoisseur" />
+        <requirement name="NotHasBuff" buff="Mixed Drink" />
+        <triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="This vintage is very refined."/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="liquorBuffCount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="liquorBuffCount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="liquorBuffCount" operation="set" value="0"/>
+      </effect_group>
+      <effect_group modTag="drunkEffect1">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I hope that my friends enjoy this as much as I do."/>
+      </effect_group>
+      <effect_group modTag="drunkEffect2">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="The oak must have been very fresh indeed."/>
+      </effect_group>
+      <effect_group modTag="drunkEffect3">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Why didn't I have more of this earlier?"/>
+      </effect_group>
+      <effect_group modTag="drunkEffect4">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I shoud probably have a water chaser..."/>
+      </effect_group>
+      <effect_group  modTag="drunkEffect5">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect modTag="messageStack" trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="This is going to be excellent when aged another few years..."/>
+      </effect_group>
+      <effect_group modTag="drunkEffect6">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="I should check for a Japanese version of this..."/>
+      </effect_group>
+      <effect_group modTag="drunkEffect7">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <triggered_effect trigger="onSelfBuffStack" action="ShowToolbeltMessage" message="Where am I at!"/>
+      </effect_group>
+      <!-- Buffs -->
+      <effect_group modTag="drunkBuff">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+        <passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength" />
+      </effect_group>
+      <!-- Debuff  -->
+      <effect_group modTag="drunkDebuff1">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+      </effect_group>
+      <effect_group modTag="drunkDebuff2">
+        <requirement name="CVarCompare" cvar="liquorBuffCount" />
+      </effect_group>
+      <effect_group modTag="drunkDebuff3">
+        <requirement name="CVarCompare" cvar="liquorBuffCount"/>
+      </effect_group>
+      <effect_group modTag="drunkDebuff4">
+        <requirement name="CVarCompare" cvar="liquorBuffCount"/>
       </effect_group>
     </buff>
 
@@ -682,6 +760,15 @@ Stat / cvar comparison operators:
     <passive_effect name="AttributeLevel" operation="base_subtract" value="3" tags="attFortitude" />
     <passive_effect name="BuffResistance" operation="base_subtract" value="10" tags="buffArmBroken,buffInjuryStunned1,buffInjuryStunned2,buffInjuryCrippled1,buffInjuryKnockdown1,buffInjuryKnockdown1,buffInjuryUnconscious,buffStayDownKO" />
   </append>
+
+  <!-- Drunk Debuff Level 4 - DEATH -->
+  <setattribute xpath="/buffs/buff/effect_group[contains(@modTag,'drunkDebuff4')]/requirement[@name='CVarCompare']" name="operation">GTE</setattribute>
+  <setattribute xpath="/buffs/buff/effect_group[contains(@modTag,'drunkDebuff4')]/requirement[@name='CVarCompare']" name="value">12</setattribute>
+  <append xpath="/buffs/buff/effect_group[contains(@modTag,'drunkDebuff4')]">
+    <passive_effect name="HealthChangeOT" operation="base_subtract" value="10.0" />
+    <triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="I AM GOING TO DIE!!!!!!"/>
+  </append>
+
 
   <!-- *********************** Drunk Buffs *********************** -->
 

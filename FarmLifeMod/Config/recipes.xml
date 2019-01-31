@@ -184,30 +184,134 @@ tags="learnable">
       <ingredient name="drinkJarBoiledWater" count="1" />
     </recipe>
 
-    <!--   Wine -->
-    <recipe name="Port Wine" count="15" modTag="chemistryStation">
-      <ingredient name="Merlot" count="5" />
-      <ingredient name="White Zin" count="5" />
-      <ingredient name="Pink Rose" count="5" />
-      <ingredient name="drinkJarGrainAlcohol" count="5" />
-    </recipe>
-
-    <recipe name="Merlot" count="15" modTag="chemistryStation">
+    <!-- Wine -->
+    <recipe name="Raw Merlot" count="1" modTag="toolWineTank">
       <ingredient name="drinkJarBoiledWater" count="15" />
       <ingredient name="Grape Pulp" count="15" />
       <ingredient name="Grape Extract" count="5" />
     </recipe>
 
-    <recipe name="White Zin" count="15" modTag="chemistryStation">
+    <recipe name="Raw White Zin" count="1" modTag="toolWineTank">
       <ingredient name="drinkJarBoiledWater" count="15" />
       <ingredient name="Grape Extract" count="20" />
     </recipe>
 
-    <recipe name="Pink Rose" count="15" modTag="chemistryStation">
+    <recipe name="Raw Pink Rose" count="1" modTag="toolWineTank">
       <ingredient name="drinkJarBoiledWater" count="15" />
       <ingredient name="Grape Pulp" count="5" />
       <ingredient name="Grape Extract" count="15" />
     </recipe>
+
+    <recipe name="Filtered Merlot" count="1" modTag="toolWineFilter">
+      <ingredient name="Raw Merlot" count="1" />
+    </recipe>
+
+    <recipe name="Filtered White Zin" count="1" modTag="toolWineFilter">
+      <ingredient name="Raw White Zin" count="1" />
+    </recipe>
+
+    <recipe name="Filtered Pink Rose" count="1" modTag="toolWineFilter">
+      <ingredient name="Raw Pink Rose" count="1" />
+    </recipe>
+
+    <recipe name="Aged Port Wine" count="1" modTag="toolOakBarrel">
+      <ingredient name="Filtered Merlot" count="1" />
+    </recipe>
+
+    <recipe name="Merlot" count="15" modTag="toolCorker">
+      <ingredient name="Filtered Merlot" count="1" />
+    </recipe>
+
+    <recipe name="White Zin" count="15" modTag="toolCorker">
+      <ingredient name="Filtered White Zin" count="1" />
+    </recipe>
+
+    <recipe name="Pink Rose" count="15" modTag="toolCorker">
+      <ingredient name="Filtered Pink Rose" count="1" />
+    </recipe>
+
+    <recipe name="Port Wine" count="15" modTag="toolCorker">
+      <ingredient name="Aged Port Wine" count="1" />
+      <ingredient name="drinkJarGrainAlcohol" count="5" />
+    </recipe>
+    <!-- Wine -->
+
+    <!--   Beer -->
+    <recipe name="Beer Cheap Mash" count="1" modTag="toolMasher">
+      <ingredient name="Light Malt" count="40" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer IPA Mash" count="1" modTag="toolMasher">
+      <ingredient name="Golden Malt" count="15" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Lager Mash" count="1" modTag="toolMasher">
+      <ingredient name="Light Malt" count="30" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Stout Mash" count="1" modTag="toolMasher">
+      <ingredient name="Dark Malt" count="30" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Beer Cheap Wort" count="1" modTag="toolBoiler">
+      <ingredient name="Beer Cheap Mash" count="1" />
+    </recipe>
+
+    <recipe name="Beer IPA Wort" count="1" modTag="toolBoiler">
+      <ingredient name="Beer IPA Mash" count="1" />
+      <ingredient name="Bitter Hops" count="15" />
+      <ingredient name="resourceCropHopsFlower" count="5" />
+      <ingredient name="Floral Hops" count="15" />
+    </recipe>
+
+    <recipe name="Beer Lager Wort" count="1" modTag="toolBoiler">
+      <ingredient name="Beer Lager Mash" count="1" />
+      <ingredient name="resourceCropHopsFlower" count="15" />
+      <ingredient name="Floral Hops" count="5" />
+    </recipe>
+
+    <recipe name="Beer Stout Wort" count="1" modTag="toolBoiler">
+      <ingredient name="Beer Stout Mash" count="1" />
+      <ingredient name="resourceCropHopsFlower" count="10" />
+      <ingredient name="Floral Hops" count="10" />
+    </recipe>
+
+    <recipe name="Beer Cheap Raw" count="1" modTag="toolCarboy">
+      <ingredient name="Beer Cheap Wort" count="1" />
+    </recipe>
+
+    <recipe name="Beer IPA Raw" count="1" modTag="toolCarboy">
+      <ingredient name="Beer IPA Wort" count="1" />
+    </recipe>
+
+    <recipe name="Beer Lager Raw" count="1" modTag="toolCarboy">
+      <ingredient name="Beer Lager Wort" count="1" />
+    </recipe>
+
+    <recipe name="Beer Stout Raw" count="1" modTag="toolCarboy">
+      <ingredient name="Beer Stout Wort" count="1" />
+    </recipe>
+
+    <recipe name="Beer Cheap" count="15" modTag="toolCapper">
+      <ingredient name="Beer Cheap Raw" count="1" />
+    </recipe>
+
+    <recipe name="Beer IPA" count="15" modTag="toolCapper">
+      <ingredient name="Beer IPA Raw" count="1" />
+    </recipe>
+
+    <recipe name="Beer Lager" count="15" modTag="toolCapper">
+      <ingredient name="Beer Lager Raw" count="1" />
+    </recipe>
+
+    <recipe name="Beer Stout" count="15" modTag="toolCapper">
+      <ingredient name="Beer Stout Raw" count="1" />
+    </recipe>
+    <!--  Beer -->
 
     <!--   Ingredients -->
     <recipe name="Light Malt" count="1" modTag="toolCookingPot">
@@ -258,36 +362,6 @@ tags="learnable">
     <recipe name="Ground Cinnamon" count="1" modTag="toolGrainMiller">
       <ingredient name="Cinnamon Bark" count="1" />
     </recipe>
-
-    <!--   Beer -->
-    <recipe name="Beer Cheap" count="15" modTag="chemistryStation">
-      <ingredient name="Light Malt" count="40" />
-      <ingredient name="resourceCropHopsFlower" count="10" />
-      <ingredient name="drinkJarBoiledWater" count="15" />
-    </recipe>
-
-    <recipe name="Beer IPA" count="15" modTag="chemistryStation">
-      <ingredient name="Golden Malt" count="15" />
-      <ingredient name="Bitter Hops" count="15" />
-      <ingredient name="resourceCropHopsFlower" count="5" />
-      <ingredient name="Floral Hops" count="15" />
-      <ingredient name="drinkJarBoiledWater" count="15" />
-    </recipe>
-
-    <recipe name="Beer Lager" count="15" modTag="chemistryStation">
-      <ingredient name="Light Malt" count="30" />
-      <ingredient name="resourceCropHopsFlower" count="15" />
-      <ingredient name="Floral Hops" count="5" />
-      <ingredient name="drinkJarBoiledWater" count="15" />
-    </recipe>
-
-    <recipe name="Beer Stout" count="15" modTag="chemistryStation">
-      <ingredient name="Dark Malt" count="30" />
-      <ingredient name="resourceCropHopsFlower" count="10" />
-      <ingredient name="Floral Hops" count="10" />
-      <ingredient name="drinkJarBoiledWater" count="15" />
-    </recipe>
-    <!--  Beer -->
 
     <!--  Veggies -->
     <recipe name="Hashbrowns" count="1" modTag="toolFrying,NaCl">
@@ -755,6 +829,12 @@ tags="learnable">
     </recipe>
 
     <!-- Recipe Quests -->
+    <recipe name="Raising Livestock (Pens)" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Growing Trees (Seeds)" modTag="recipeQuest">
+    </recipe>
+    <recipe name="Farming Crops (Seeds)" modTag="recipeQuest">
+    </recipe>
     <recipe name="Brew Cooker Volume 1" modTag="recipeQuest">
     </recipe>
     <recipe name="Brew Station Volume 1" modTag="recipeQuest">
@@ -825,6 +905,12 @@ tags="learnable">
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat') or contains(@modTag,'toolHanger') or contains(@modTag,'toolRack')]" name="craft_area">
     Smoker
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMasher') or contains(@modTag,'toolBoiler') or contains(@modTag,'toolStill')]" name="craft_area">
+    Brew Cooker
+  </setattribute>
+  <setattribute xpath="/recipes/recipe[contains(@modTag,'toolCarboy') or contains(@modTag,'toolWineTank') or contains(@modTag,'toolSpiritsVat') or contains(@modTag,'toolWineFilter') or contains(@modTag,'toolOakBarrel') or contains(@modTag,'toolAgedOakBarrel') or contains(@modTag,'toolCorker') or contains(@modTag,'toolCapper') or contains(@modTag,'toolMixingCask')]" name="craft_area">
+    Brew Station
   </setattribute>
 
   <!-- Vanilla craft_tool -->
