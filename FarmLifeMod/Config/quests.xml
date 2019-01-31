@@ -1,6 +1,186 @@
 <configs>
   <append xpath="/quests">
 
+    <quest id="livestock_pens_1" modTag="farmlife">
+      <property name="group_name" value="Raising Livestock" />
+  		<property name="name" value="Livestock Tools" />
+  		<property name="subtitle" value="Livestock Tools" />
+      <property name="description" value="Learn how to raise livestock for food. Get a Pitch fork and some Cattle Feed." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to raise livestock for food. Get a Pitch fork and some Cattle Feed." />
+
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Pitch Fork" value="1" phase="1" />
+      <objective type="FetchKeep" id="Cattle Feed" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Quest" id="livestock_pens_2" />
+  	</quest>
+
+    <quest id="livestock_pens_2" modTag="farmlife">
+      <property name="group_name" value="Raising Livestock" />
+      <property name="name" value="Livestock Make and Place a Pen" />
+      <property name="subtitle" value="Make and Place a Pen" />
+      <property name="description" value="Learn how to raise livestock for food. Get an Empty Angus Pen and place it." />
+      <property name="icon" value="ui_game_symbol_quest" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to raise livestock for food. Get an Empty Angus Pen and place it." />
+
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Empty Angus Pen" value="1" phase="1" />
+      <objective type="BlockPlace" id="Empty Angus Pen" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Quest" id="livestock_pens_3" />
+    </quest>
+
+    <quest id="livestock_pens_3" modTag="farmlife">
+      <property name="group_name" value="Raising Livestock" />
+      <property name="name" value="Livestock Pitch Fork and Feed" />
+      <property name="subtitle" value="Pitch Fork and Feed" />
+      <property name="description" value="Learn how to raise livestock for food. Feed your Angus using the Pitch Fork and Cattle Feed." />
+      <property name="icon" value="ui_game_symbol_quest" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to raise livestock for food. Feed your Angus using the Pitch Fork and Cattle Feed." />
+
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="BlockUpgrade" id="Empty Angus Pen" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Quest" id="livestock_pens_4" />
+    </quest>
+
+    <quest id="livestock_pens_4" modTag="farmlife">
+      <property name="group_name" value="Raising Livestock" />
+      <property name="name" value="Livestock Havesting Full Pens" />
+      <property name="subtitle" value="Havesting Full Pens" />
+      <property name="description" value="Learn how to raise livestock for food. Wait for your Angus to grow into a Full Angus Pen. Then harvest the pen with a butch weapon for best results." />
+      <property name="icon" value="ui_game_symbol_quest" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to raise livestock for food. Wait for your Angus to grow into a Full Angus Pen. Then harvest the pen with a butch weapon for best results." />
+
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Delmontico" value="1" phase="1" />
+      <objective type="FetchKeep" id="Rump Roast" value="1" phase="1" />
+      <objective type="FetchKeep" id="Porterhouse" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" chainreward="true" />
+    </quest>
+
+    <quest id="seeds_tree_seeds_1" modTag="farmlife">
+      <property name="group_name" value="Growing Trees" />
+  		<property name="name" value="Trees Harvesting Seeds" />
+  		<property name="subtitle" value="Harvesting Seeds" />
+      <property name="description" value="Learn how to grow trees and then receive Farm Life trees seeds (Note: Must be in a forest biome). Once you recieve the Tree Seeds Crate, place it on the ground and destroy with an axe." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to grow trees and then receive Farm Life trees seeds (Note: Must be in a forest biome). Once you recieve the Tree Seeds Crate, place it on the ground and destroy with an axe." />
+
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="resourceWood" value="100" phase="1" />
+      <objective type="FetchKeep" id="treePlantedOak1m" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Quest" id="seeds_tree_seeds_2" />
+  	</quest>
+
+    <quest id="seeds_tree_seeds_2" modTag="farmlife">
+      <property name="group_name" value="Growing Trees" />
+  		<property name="name" value="Trees Planting Seeds" />
+  		<property name="subtitle" value="Planting Seeds" />
+      <property name="description" value="Learn how to grow trees and then receive Farm Life trees seeds. Once you recieve the Tree Seeds Crate, place it on the ground and destroy with an axe." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to grow trees and then receive Farm Life trees seeds. Once you recieve the Tree Seeds Crate, place it on the ground and destroy with an axe." />
+
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="BlockPlace" id="treePlantedOak1m" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Item" id="Tree Seeds Crate" value="1" chainreward="true" />
+  	</quest>
+
+    <quest id="seeds_plant_seeds_1" modTag="farmlife">
+      <property name="group_name" value="Farming Crops" />
+  		<property name="name" value="Farming Tools" />
+  		<property name="subtitle" value="Tools" />
+      <property name="description" value="Learn how to plant crops and then receive Farm Life crop seeds (Note: Must be in a forest biome). Once you recieve the Crop Seeds Crate, place it on the ground and destroy with an axe." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to plant crops and then receive Farm Life crop seeds (Note: Must be in a forest biome). Once you recieve the Crop Seeds Crate, place it on the ground and destroy with an axe." />
+
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="meleeToolHoeIron" value="1" phase="1" />
+      <objective type="BlockUpgrade" id="terrForestGround" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Quest" id="seeds_plant_seeds_2" />
+  	</quest>
+
+    <quest id="seeds_plant_seeds_2" modTag="farmlife">
+      <property name="group_name" value="Farming Crops" />
+  		<property name="name" value="Farming Making Seeds" />
+  		<property name="subtitle" value="Making Seeds" />
+      <property name="description" value="Learn how to plant crops and then receive Farm Life crop seeds." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to plant crops and then receive Farm Life crop seeds." />
+
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="foodCropCorn" value="4" phase="1" />
+      <objective type="Craft">
+  			<property name="phase" value="2" />
+  			<property name="item" value="plantedCorn1" />
+  			<property name="count" value="1" />
+  		</objective>
+
+      <reward type="Exp" value="1000" />
+      <reward type="Quest" id="seeds_plant_seeds_3" />
+  	</quest>
+
+    <quest id="seeds_plant_seeds_3" modTag="farmlife">
+      <property name="group_name" value="Farming Crops" />
+  		<property name="name" value="Farming Planting" />
+  		<property name="subtitle" value="Planting" />
+      <property name="description" value="Learn how to plant crops and then receive Farm Life crop seeds. Once you recieve the Crop Seeds Crate, place it on the ground and destroy with an axe." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to plant crops and then receive Farm Life crop seeds. Once you recieve the Crop Seeds Crate, place it on the ground and destroy with an axe." />
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="BlockPlace" id="plantedCorn1" value="1" phase="1" />
+
+      <reward type="Exp" value="1000" />
+      <reward type="Item" id="Crop Seeds Crate" value="1" chainreward="true" />
+  	</quest>
+
     <quest id="brewing_brew_cooker_tools_1" modTag="farmlife">
   		<property name="name" value="Brew Cooker Tools" />
   		<property name="subtitle" value="Brew Cooker Tools" />
@@ -16,7 +196,7 @@
       <objective type="FetchKeep" id="Boiler" value="1" phase="1" />
       <objective type="FetchKeep" id="Still" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
   	</quest>
 
     <quest id="brewing_brew_station_tools_1" modTag="farmlife">
@@ -36,7 +216,7 @@
       <objective type="FetchKeep" id="Wine Tank" value="1" phase="1" />
       <objective type="FetchKeep" id="Spirits Vat" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="brewing_brew_station_tools_2" modTag="farmlife">
@@ -60,7 +240,7 @@
       <objective type="FetchKeep" id="Bottle Capper" value="1" phase="2" />
       <objective type="FetchKeep" id="Mixing Cask" value="1" phase="2" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="smoker_station_tools_1" modTag="farmlife">
@@ -78,7 +258,7 @@
       <objective type="FetchKeep" id="Meat Hanger" value="1" phase="1" />
       <objective type="FetchKeep" id="Turkey Rack" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="gas_oven_station_tools_1" modTag="farmlife">
@@ -96,7 +276,7 @@
       <objective type="FetchKeep" id="Pizza Stone" value="1" phase="1" />
       <objective type="FetchKeep" id="PyreX Bakeware" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="gas_cooktop_station_tools_1" modTag="farmlife">
@@ -114,7 +294,7 @@
       <objective type="FetchKeep" id="Frying Pan" value="1" phase="1" />
       <objective type="FetchKeep" id="Wok" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="kitchenaid_station_tools_1" modTag="farmlife">
@@ -132,7 +312,7 @@
       <objective type="FetchKeep" id="Veggie Attachment" value="1" phase="1" />
       <objective type="FetchKeep" id="Ice Cream Bowl" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="kitchenaid_station_tools_2" modTag="farmlife">
@@ -150,7 +330,7 @@
       <objective type="FetchKeep" id="Grain Miller" value="1" phase="1" />
       <objective type="FetchKeep" id="Pasta Helper" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
     <quest id="woodgrill_station_tools_1" modTag="farmlife">
@@ -168,7 +348,7 @@
       <objective type="FetchKeep" id="Spatula" value="1" phase="1" />
       <objective type="FetchKeep" id="Ceramic Dutch Oven" value="1" phase="1" />
 
-      <reward type="Exp" value="10" />
+      <reward type="Exp" value="1000" />
     </quest>
 
   </append>

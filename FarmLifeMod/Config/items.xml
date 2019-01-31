@@ -15,6 +15,24 @@ preparedPlant
   <append xpath="/items">
 
     <!-- Recipes -->
+    <item name="Raising Livestock (Pens)" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Farming!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="livestock_pens_1"/>
+      </property>
+    </item>
+    <item name="Growing Trees (Seeds)" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Farming!"/>
+    	<property class="Action0">
+    		<property name="QuestGiven" value="seeds_tree_seeds_1"/>
+    	</property>
+    </item>
+    <item name="Farming Crops (Seeds)" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Farming!"/>
+    	<property class="Action0">
+    		<property name="QuestGiven" value="seeds_plant_seeds_1"/>
+    	</property>
+    </item>
     <item name="Brew Cooker Volume 1" modTag="recipeQuest">
       <property name="DescriptionKey" value="Brewing!"/>
     	<property class="Action0">
@@ -382,7 +400,7 @@ preparedPlant
       <property name="CustomIconTint" value="3AFF00" />
     </item>
 
-    <!--   Wine -->
+    <!-- Wine -->
     <item name="Port Wine" modTag="wine,jar,noicon">
       <property name="CustomIcon" value="drinkJarBoiledWater" />
       <property name="CustomIconTint" value="490059" />
@@ -403,7 +421,125 @@ preparedPlant
       <property name="CustomIconTint" value="C469D8" />
     </item>
 
-    <!--   Ingredients -->
+    <item name="Raw Merlot" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+
+    <item name="Raw White Zin" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="D5BADB" />
+    </item>
+
+    <item name="Raw Pink Rose" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="C469D8" />
+    </item>
+
+    <item name="Filtered Merlot" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+
+    <item name="Filtered White Zin" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="D5BADB" />
+    </item>
+
+    <item name="Filtered Pink Rose" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="C469D8" />
+    </item>
+
+    <item name="Aged Port Wine" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="76098E" />
+    </item>
+    <!-- Wine -->
+
+    <!--  Beer -->
+    <item name="Beer Cheap Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="F7FF00" />
+    </item>
+
+    <item name="Beer IPA Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="957D1A" />
+    </item>
+
+    <item name="Beer Stout Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="4B3C00" />
+    </item>
+
+    <item name="Beer Lager Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="83E135" />
+    </item>
+
+    <item name="Beer Cheap Wort" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="F7FF00" />
+    </item>
+
+    <item name="Beer IPA Wort" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="957D1A" />
+    </item>
+
+    <item name="Beer Stout Wort" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="4B3C00" />
+    </item>
+
+    <item name="Beer Lager Wort" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="83E135" />
+    </item>
+
+    <item name="Beer Cheap Raw" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="F7FF00" />
+    </item>
+
+    <item name="Beer IPA Raw" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="957D1A" />
+    </item>
+
+    <item name="Beer Stout Raw" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="4B3C00" />
+    </item>
+
+    <item name="Beer Lager Raw" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="83E135" />
+    </item>
+
+    <item name="Beer Cheap" modTag="beer,jar,hasicon">
+      <property name="CustomIcon" value="drinkJarBeer" />
+      <property name="CustomIconTint" value="F7FF00" />
+    </item>
+
+    <item name="Beer IPA" modTag="beer,jar,hasicon">
+      <property name="CustomIcon" value="drinkJarBeer" />
+      <property name="CustomIconTint" value="957D1A" />
+    </item>
+
+    <item name="Beer Stout" modTag="beer,jar,hasicon">
+      <property name="CustomIcon" value="drinkJarBeer" />
+      <property name="CustomIconTint" value="4B3C00" />
+    </item>
+
+    <item name="Beer Lager" modTag="beer,jar,hasicon">
+      <property name="CustomIcon" value="drinkJarBeer" />
+      <property name="CustomIconTint" value="83E135" />
+    </item>
+    <!-- Beer -->
+
+    <!-- Ingredients -->
 
     <item name="Light Malt" modTag="ingredient,noicon">
       <property name="CustomIcon" value="foodCornMeal" />
@@ -474,27 +610,6 @@ preparedPlant
       <property name="CustomIcon" value="resourceTallow"/>
       <property name="CustomIconTint" value="FFFFFF" />
     </item> -->
-
-    <!--  Beer -->
-    <item name="Beer IPA" modTag="beer,jar,hasicon">
-      <property name="CustomIcon" value="drinkJarBeer" />
-      <property name="CustomIconTint" value="957D1A" />
-    </item>
-
-    <item name="Beer Stout" modTag="beer,jar,hasicon">
-      <property name="CustomIcon" value="drinkJarBeer" />
-      <property name="CustomIconTint" value="4B3C00" />
-    </item>
-
-    <item name="Beer Lager" modTag="beer,jar,hasicon">
-      <property name="CustomIcon" value="drinkJarBeer" />
-      <property name="CustomIconTint" value="83E135" />
-    </item>
-
-    <item name="Beer Cheap" modTag="beer,jar,hasicon">
-      <property name="CustomIcon" value="drinkJarBeer" />
-      <property name="CustomIconTint" value="F7FF00" />
-    </item>
 
     <!--  Peppers -->
     <item name="Ghost Pepper" modTag="plant,spicy,hasicon">
