@@ -626,8 +626,82 @@ tierFiveFood
     </item>
     <!-- Beer -->
 
-    <!-- Ingredients -->
+    <!--  Spirits -->
+    <item name="Vodka Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Whiskey Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="White Rum Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Scotch Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
 
+    <item name="Raw Vodka" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Raw Whiskey" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="Raw White Rum" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Raw Scotch" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Distilled Vodka" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Distilled Whiskey" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="Distilled White Rum" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Distilled Scotch" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Aged Scotch" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Vodka" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasMoonshine" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Whiskey" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasMoonshine" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="White Rum" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasMoonshine" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Scotch" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasAwesomeSauce" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+    <!--  Spirits -->
+
+    <!-- Ingredients -->
     <item name="Light Malt" modTag="ingredient,noicon">
       <property name="CustomIcon" value="foodCornMeal" />
       <property name="CustomIconTint" value="DDEE0B" />
@@ -1322,6 +1396,16 @@ tierFiveFood
     Redneck
   </setattribute>
 
+  <!-- spirits -->
+  <append xpath="/items/item[contains(@modTag,'spirits')]">
+    <property name="Extends" value="base_water" />
+    <property name="Stacknumber" value="15" />
+    <effect_group tiered="false">
+      <requirement name="NotHasBuff" buff="buffIsOnFire" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Mixed Drink" />
+    </effect_group>
+  </append>
+
   <!-- wine -->
   <append xpath="/items/item[contains(@modTag,'wine')]">
     <property name="Extends" value="base_water" />
@@ -1413,9 +1497,9 @@ tierFiveFood
     <property name="CraftingIngredientTime" value="5" />
   </append>
 
-  <append xpath="/items/item[contains(@modTag,'can')]/property[@class='Action0']">
+  <!-- <append xpath="/items/item[contains(@modTag,'can')]/property[@class='Action0']">
     <property name="Create_item" value="drinkCanEmpty"/>
-  </append>
+  </append> -->
 
   <append xpath="/items/item[contains(@modTag,'dry')]/effect_group">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="subtract" value="10" />

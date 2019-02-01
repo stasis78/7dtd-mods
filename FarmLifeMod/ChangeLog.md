@@ -1,21 +1,42 @@
 # FarmLifeMod 1.7.6
 
-Brewing guide is here.
+Brewing guide is here. Spirits are here and ready for you to get your drink on.
 
 ## Changed
 
 - All quests now give 500 xp instead of 1000 xp
--
+- Items that require cans no longer give them back on use (see notes)
+- Fixed block placement for stations. They now face you when placing, except for Cooktop...
+- Mojito now use White Rum instead of grain drinkJarGrainAlcohol like it should ;p
 
 ## New Stuff
 
 Home Brewer's Guide (quest item)
+Vodka Mash (ingredient)
+Whiskey Mash (ingredient)
+White Rum Mash (ingredient)
+Scotch Mash (ingredient)
+Raw Vodka (ingredient)
+Raw Whiskey (ingredient)
+Raw White Rum (ingredient)
+Raw Scotch (ingredient)
+Distilled Vodka (ingredient)
+Distilled Whiskey (ingredient)
+Distilled White Rum (ingredient)
+Distilled Scotch (ingredient)
+Aged Scotch (ingredient)
+Vodka (spirits!)
+Whiskey (spirits!)
+White Rum (spirits!)
+Scotch (spirits!)
 
 ## Notes
 
 There is now a quest chain to craft IPA. It walks through the steps and then gives you some free beer (and xp).
 
+There are a couple items that require cans to make which would return the can on use. Due to some changes in my modlet, I'm not longer going to support giving back the can on use. I will fix this in v2 when I have better control over generating XML. Right now the level of effort to fix this far out weighs an empty can. Sorry!
 
+Spirits are here. You can now craft Vodka, Whiskey, Rum, and Scotch. Now before anyone get up in a bunch about the ingredients, these are ligit ways to make all of these. You can **absolutely** argue it is not "the best way" to make each item. It works and its in. I may change it in the future but not today :) Spirits will reuse the mixology buff for now.
 
 # FarmLifeMod 1.7.6
 

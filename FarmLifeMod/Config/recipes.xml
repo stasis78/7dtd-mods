@@ -207,7 +207,7 @@ tags="learnable">
 
     <recipe name="Mojito" count="1" modTag="">
       <ingredient name="Lime" count="4" />
-      <ingredient name="drinkJarGrainAlcohol" count="1" />
+      <ingredient name="White Rum" count="1" />
     </recipe>
 
     <recipe name="Canned Olives" count="1" modTag="toolCookingPot">
@@ -246,7 +246,7 @@ tags="learnable">
       <ingredient name="Raw Pink Rose" count="1" />
     </recipe>
 
-    <recipe name="Aged Port Wine" count="1" modTag="toolOakBarrel">
+    <recipe name="Aged Port Wine" count="1" modTag="toolAgedOakBarrel">
       <ingredient name="Filtered Merlot" count="1" />
     </recipe>
 
@@ -344,6 +344,87 @@ tags="learnable">
       <ingredient name="Beer Stout Raw" count="1" />
     </recipe>
     <!--  Beer -->
+
+    <!--  Spirits -->
+    <recipe name="Vodka Mash" count="1" modTag="toolMasher">
+      <ingredient name="Light Malt" count="5" />
+      <ingredient name="foodCropPotato" count="25" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Whiskey Mash" count="1" modTag="toolMasher">
+      <ingredient name="Golden Malt" count="8" />
+      <ingredient name="foodCropCorn" count="22" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="White Rum Mash" count="1" modTag="toolMasher">
+      <ingredient name="Maple Syrup" count="30" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Scotch Mash" count="1" modTag="toolMasher">
+      <ingredient name="Dark Malt" count="20" />
+      <ingredient name="foodCropCorn" count="10" />
+      <ingredient name="drinkJarBoiledWater" count="15" />
+    </recipe>
+
+    <recipe name="Raw Vodka" count="1" modTag="toolSpiritsVat">
+      <ingredient name="Vodka Mash" count="1" />
+    </recipe>
+
+    <recipe name="Raw Whiskey" count="1" modTag="toolSpiritsVat">
+      <ingredient name="Whiskey Mash" count="1" />
+    </recipe>
+
+    <recipe name="Raw White Rum" count="1" modTag="toolSpiritsVat">
+      <ingredient name="White Rum Mash" count="1" />
+    </recipe>
+
+    <recipe name="Raw Scotch" count="1" modTag="toolSpiritsVat">
+      <ingredient name="Scotch Mash" count="1" />
+    </recipe>
+
+    <recipe name="Distilled Vodka" count="1" modTag="toolStill">
+      <ingredient name="Raw Vodka" count="1" />
+    </recipe>
+
+    <recipe name="Distilled Whiskey" count="1" modTag="toolStill">
+      <ingredient name="Raw Whiskey" count="1" />
+    </recipe>
+
+    <recipe name="Distilled White Rum" count="1" modTag="toolStill">
+      <ingredient name="Raw White Rum" count="1" />
+    </recipe>
+
+    <recipe name="Distilled Scotch" count="1" modTag="toolStill">
+      <ingredient name="Raw Scotch" count="1" />
+    </recipe>
+
+    <recipe name="Aged Scotch" count="1" modTag="toolOakBarrel">
+      <ingredient name="Distilled Scotch" count="1" />
+    </recipe>
+
+    <recipe name="Vodka" count="15" modTag="toolMixingCask">
+      <ingredient name="Distilled Vodka" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="5" />
+    </recipe>
+
+    <recipe name="Whiskey" count="15" modTag="toolMixingCask">
+      <ingredient name="Distilled Whiskey" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="5" />
+    </recipe>
+
+    <recipe name="White Rum" count="15" modTag="toolMixingCask">
+      <ingredient name="Distilled White Rum" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="5" />
+    </recipe>
+
+    <recipe name="Scotch" count="15" modTag="toolMixingCask">
+      <ingredient name="Aged Scotch" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="5" />
+    </recipe>
+    <!--  Spirits -->
 
     <!--   Ingredients -->
     <recipe name="Light Malt" count="1" modTag="toolCookingPot">

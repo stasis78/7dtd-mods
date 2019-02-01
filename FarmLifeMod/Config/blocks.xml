@@ -16,6 +16,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Brew Cooker" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntStoveOldVer1Closed" />
       <property name="CustomIconTint" value="888888" />
+      <property name="Place" value="TowardsPlacerInverted"/>
 
       <property name="Class" value="Campfire" />
       <property name="Material" value="MmetalNoGlue" />
@@ -56,6 +57,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Brew Station" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="chemistryStation" />
       <property name="CustomIconTint" value="444444" />
+      <property name="Place" value="TowardsPlacerInverted"/>
 
       <property name="Class" value="Campfire" />
     	<property name="Material" value="Miron_scrap" />
@@ -95,6 +97,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Smoker" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntGasGrillClosed" />
       <property name="CustomIconTint" value="444444" />
+      <property name="Place" value="TowardsPlacerInverted"/>
 
       <property name="Class" value="Workstation" />
     	<property name="Material" value="MmetalNoGlue" />
@@ -133,6 +136,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Gas Oven" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntWallOven" />
       <property name="CustomIconTint" value="444444" />
+      <property name="Place" value="TowardsPlacerInverted"/>
 
       <property name="Class" value="Campfire" />
     	<property name="Material" value="Miron_scrap" />
@@ -168,6 +172,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Gas Cooktop" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="airConditionVentFan" />
       <property name="CustomIconTint" value="444444" />
+      <property name="Place" value="Spotlight" />
 
       <property name="Class" value="Campfire" />
     	<property name="Material" value="MmetalNoGlue" />
@@ -208,6 +213,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="KitchNaid" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
       <property name="CustomIconTint" value="888888" />
+      <property name="Place" value="TowardsPlacerInverted"/>
 
       <property name="Class" value="Workstation" />
     	<property name="Material" value="MmetalNoGlue" />
@@ -245,6 +251,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Wood Grill" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntCharcoalGrillClosed" />
       <property name="CustomIconTint" value="888888" />
+      <property name="Place" value="TowardsPlacerInverted"/>
 
       <property name="Class" value="Campfire" />
     	<property name="Material" value="MmetalNoGlue" />
@@ -1298,7 +1305,6 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
     <property name="ImposterDontBlock" value="true" />
     <property name="IsTerrainDecoration" value="true" />
-    <property name="Place" value="Spotlight" />
     <property name="Group" value="Building,Food/Cooking" />
     <property name="FilterTags" value="fdecor,fother,ffurniture" />
     <property name="SortOrder1" value="70i0" />
