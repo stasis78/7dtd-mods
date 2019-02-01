@@ -32,6 +32,38 @@ tags="learnable">
     <recipe name="Elk Jerky" count="1" modTag="toolMat,saltPepper">
       <ingredient name="Elk Scraps" count="10" />
     </recipe>
+    <recipe name="Brined Spicy Elk" count="1" modTag="toolIcecream">
+      <ingredient name="Elk Scraps" count="10" />
+      <ingredient name="Salt and Pepper" count="5" />
+      <ingredient name="Ground Hot Pepper" count="20" />
+      <ingredient name="Cooking Vinegar" count="1" />
+      <ingredient name="drinkJarBoiledWater" count="1" />
+    </recipe>
+    <recipe name="Spicy Elk Jerky" count="1" modTag="toolMat">
+      <ingredient name="Brined Spicy Elk" count="1" />
+      <ingredient name="Apple Woodchips" count="5" />
+    </recipe>
+    <recipe name="Brined Coffee Elk" count="1" modTag="toolIcecream">
+      <ingredient name="Elk Scraps" count="10" />
+      <ingredient name="Salt and Pepper" count="5" />
+      <ingredient name="resourceCropCoffeeBeans" count="5" />
+      <ingredient name="Cooking Vinegar" count="1" />
+      <ingredient name="drinkJarCoffee" count="1" />
+    </recipe>
+    <recipe name="Coffee Elk Jerky" count="1" modTag="toolMat">
+      <ingredient name="Brined Coffee Elk" count="1" />
+      <ingredient name="Maple Woodchips" count="5" />
+    </recipe>
+    <recipe name="Marinated BBQ Elk" count="1" modTag="toolIcecream">
+      <ingredient name="Elk Scraps" count="10" />
+      <ingredient name="Salt and Pepper" count="5" />
+      <ingredient name="Spicy BBQ Sauce" count="10" />
+      <ingredient name="Cooking Vinegar" count="1" />
+    </recipe>
+    <recipe name="BBQ Elk Jerky" count="1" modTag="toolMat">
+      <ingredient name="Marinated BBQ Elk" count="1" />
+      <ingredient name="Walnut Woodchips" count="5" />
+    </recipe>
     <recipe name="Smoked Bacon" count="10" modTag="toolMat">
       <ingredient name="Pork Belly" count="1" />
       <ingredient name="Apple Woodchips" count="4" />

@@ -1,3 +1,36 @@
+# FarmLifeMod 1.7.6
+
+New Jerky is here and it will help you with looting trips.
+
+## Changed
+
+- Removed a few items from creative menu. They aren't craftable and don't belong there.
+- Adjusted carry capacity bonus from Coolaid
+- Food tiers have changed, see Notes
+- Created base items for food and water that make things more tidy
+- Clean up mod tag helpers
+- Started adjusting stack sizes and economic values
+
+## New Stuff
+
+Brined Spicy Elk
+Spicy Elk Jerky
+Heat Wave (buff) - Spicy Elk Jerky gives you a spicy burn and a boost to your Fortitude. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
+Brined Coffee Elk
+Coffee Elk Jerky
+Caffeinated (buff) - Coffee Elk Jerky gives you a warm feeling and increases your resistance to the cold. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
+Marinated BBQ Elk
+BBQ Elk Jerky
+Traveling BBQ (buff) - BBQ Elk Jerky has a kick and increased your Agility. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
+
+## Notes
+
+Jerky is finished. Requires both KitchNaid and Smoker, as well as woodchips, to craft. Jerky is geared towards looting runs and expedition trips. It has large stack sizes and its buffs last as long as magazines.
+
+I have started rebalancing food tiers and sell values. More to come before final release :)
+
+I have a few recipes to finish adjusting, add in Spirits, do a quest to explain brewing, and then I'm gonna stick a fork in v1. Should be done Saturday or Sunday at the latest. 
+
 # FarmLifeMod 1.7.5
 
 Beer and wine is done. You can now do quests to get seeds and learn how to do livestock. Don't drink too much :)

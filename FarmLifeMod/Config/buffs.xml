@@ -24,6 +24,42 @@ Stat / cvar comparison operators:
 
   <append xpath="/buffs">
 
+    <buff name="Heat Wave" name_key="Heat Wave" description_key="Spicy Elk Jerky gives you a spicy burn and a boost to your Fortitude. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer" icon="ui_game_symbol_medical">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="1800"/>
+      <effect_group>
+  			<passive_effect name="CarryCapacity" operation="base_add" value="5" />
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkLuckyLooter"/>
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkDaringAdventurer"/>
+        <passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1" />
+      </effect_group>
+    </buff>
+
+    <buff name="Caffeinated" name_key="Caffeinated" description_key="Coffee Elk Jerky gives you a warm feeling and increases your resistance to the cold. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer" icon="ui_game_symbol_coffee">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="1800"/>
+      <effect_group>
+  			<passive_effect name="CarryCapacity" operation="base_add" value="5" />
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkLuckyLooter"/>
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkDaringAdventurer"/>
+        <passive_effect name="HypothermalResist" operation="base_add" value="52"/>
+      </effect_group>
+    </buff>
+
+    <buff name="Traveling BBQ" name_key="Traveling BBQ" description_key="BBQ Elk Jerky has a kick and increased your Agility. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer" icon="ui_game_symbol_agility">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="1800"/>
+      <effect_group>
+        <passive_effect name="CarryCapacity" operation="base_add" value="5" />
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkLuckyLooter"/>
+        <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkDaringAdventurer"/>
+        <passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1" />
+      </effect_group>
+    </buff>
+
     <buff name="Forum Guy" name_key="Forum Guy" description_key="I just had a filling breakfast, now its time to police the forums for proper spelling and grammar." icon="ui_game_symbol_talk" icon_color="200,125,125">
       <duration value="240"/>
       <stack_type value="duration" />
@@ -319,7 +355,7 @@ Stat / cvar comparison operators:
       <stack_type value="replace"/>
       <duration value="120"/>
       <effect_group>
-  			<passive_effect name="CarryCapacity" operation="base_add" value="4" />
+  			<passive_effect name="CarryCapacity" operation="base_add" value="5" />
       </effect_group>
     </buff>
 
