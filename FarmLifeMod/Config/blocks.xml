@@ -299,6 +299,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     </block>
 
     <block name="growingAnimalPenMaster" modTag="noicon">
+      <property name="CreativeMode" value="None"/>
       <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Path" value="solid"/>
@@ -309,6 +310,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     </block>
 
     <block name="fullAnimalPenMaster" modTag="noicon">
+      <property name="CreativeMode" value="None"/>
       <property name="Extends" value="emptyAnimalPenMaster" param1=""/>
       <property name="Shape" value="ModelEntity"/>
       <property name="Path" value="solid"/>
@@ -484,6 +486,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
       <property name="PlantGrowing.GrowthRate" value="63" />  <!-- matches-ish Vanilla a7.1 -->
     </block>
     <block name="fruitTreeMaster" modTag="noicon">
+      <property name="CreativeMode" value="None"/>
       <property name="Extends" value="treeMaster"/>
       <property name="Material" value="Mplants"/>
       <property name="Model" value="Entities/Trees/Maple20Prefab"/>
