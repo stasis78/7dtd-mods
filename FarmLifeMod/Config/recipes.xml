@@ -861,6 +861,9 @@ tags="learnable">
     </recipe>
 
     <!-- Recipe Quests -->
+
+    <recipe name="Home Brewer's Guide" modTag="recipeQuest">
+    </recipe>
     <recipe name="Raising Livestock (Pens)" modTag="recipeQuest">
     </recipe>
     <recipe name="Growing Trees (Seeds)" modTag="recipeQuest">

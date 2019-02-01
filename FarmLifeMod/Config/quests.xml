@@ -1,6 +1,86 @@
 <configs>
   <append xpath="/quests">
 
+    <quest id="brewing_guide_1" modTag="farmlife">
+      <property name="group_name" value="Brewing" />
+  		<property name="name" value="Mashing Time" />
+  		<property name="subtitle" value="Mashing Time" />
+      <property name="description" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+  		<property name="icon" value="ui_game_symbol_quest" />
+  		<property name="repeatable" value="false" />
+  		<property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+
+  		<property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Golden Malt" value="15" phase="1" />
+      <objective type="FetchKeep" id="drinkJarBoiledWater" value="15" phase="1" />
+
+      <reward type="Exp" value="500" />
+      <reward type="Quest" id="brewing_guide_2" />
+  	</quest>
+
+    <quest id="brewing_guide_2" modTag="farmlife">
+      <property name="group_name" value="Brewing" />
+      <property name="name" value="All about Wort" />
+      <property name="subtitle" value="All about Wort" />
+      <property name="description" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+      <property name="icon" value="ui_game_symbol_quest" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Beer IPA Mash" value="1" phase="1" />
+      <objective type="FetchKeep" id="Bitter Hops" value="15" phase="1" />
+      <objective type="FetchKeep" id="resourceCropHopsFlower" value="5" phase="1" />
+      <objective type="FetchKeep" id="Floral Hops" value="15" phase="1" />
+
+      <reward type="Exp" value="500" />
+      <reward type="Quest" id="brewing_guide_3" />
+    </quest>
+
+    <quest id="brewing_guide_3" modTag="farmlife">
+      <property name="group_name" value="Brewing" />
+      <property name="name" value="Primary Fermentation" />
+      <property name="subtitle" value="Primary Fermentation" />
+      <property name="description" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+      <property name="icon" value="ui_game_symbol_quest" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Beer IPA Raw" value="1" phase="1" />
+
+      <reward type="Exp" value="500" />
+      <reward type="Quest" id="brewing_guide_4" />
+    </quest>
+
+    <quest id="brewing_guide_4" modTag="farmlife">
+      <property name="group_name" value="Brewing" />
+      <property name="name" value="Bottle Time" />
+      <property name="subtitle" value="Bottle Time" />
+      <property name="description" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+      <property name="icon" value="ui_game_symbol_quest" />
+      <property name="repeatable" value="false" />
+      <property name="category_key" value="quest" />
+      <property name="offer" value="Learn how to brew some craft quality beer. You must have a Brew Cooker and a Brew Station. Required tools are Masher, Boiler, Carboy, and Bottle Capper." />
+
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="Beer IPA" value="15" phase="1" />
+
+      <reward type="Exp" value="500" />
+      <reward type="Item" id="Beer IPA" value="15" chainreward="true" />
+    </quest>
+
     <quest id="livestock_pens_1" modTag="farmlife">
       <property name="group_name" value="Raising Livestock" />
   		<property name="name" value="Livestock Tools" />
@@ -17,7 +97,7 @@
       <objective type="FetchKeep" id="Pitch Fork" value="1" phase="1" />
       <objective type="FetchKeep" id="Cattle Feed" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Quest" id="livestock_pens_2" />
   	</quest>
 
@@ -37,7 +117,7 @@
       <objective type="FetchKeep" id="Empty Angus Pen" value="1" phase="1" />
       <objective type="BlockPlace" id="Empty Angus Pen" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Quest" id="livestock_pens_3" />
     </quest>
 
@@ -56,7 +136,7 @@
 
       <objective type="BlockUpgrade" id="Empty Angus Pen" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Quest" id="livestock_pens_4" />
     </quest>
 
@@ -77,7 +157,8 @@
       <objective type="FetchKeep" id="Rump Roast" value="1" phase="1" />
       <objective type="FetchKeep" id="Porterhouse" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" chainreward="true" />
+      <reward type="Exp" value="500" />
+      <reward type="Item" id="Buttery Delmontico" value="1" chainreward="true" />
     </quest>
 
     <quest id="seeds_tree_seeds_1" modTag="farmlife">
@@ -96,7 +177,7 @@
       <objective type="FetchKeep" id="resourceWood" value="100" phase="1" />
       <objective type="FetchKeep" id="treePlantedOak1m" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Quest" id="seeds_tree_seeds_2" />
   	</quest>
 
@@ -115,7 +196,7 @@
 
       <objective type="BlockPlace" id="treePlantedOak1m" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Item" id="Tree Seeds Crate" value="1" chainreward="true" />
   	</quest>
 
@@ -135,7 +216,7 @@
       <objective type="FetchKeep" id="meleeToolHoeIron" value="1" phase="1" />
       <objective type="BlockUpgrade" id="terrForestGround" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Quest" id="seeds_plant_seeds_2" />
   	</quest>
 
@@ -159,7 +240,7 @@
   			<property name="count" value="1" />
   		</objective>
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Quest" id="seeds_plant_seeds_3" />
   	</quest>
 
@@ -177,7 +258,7 @@
 
       <objective type="BlockPlace" id="plantedCorn1" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
       <reward type="Item" id="Crop Seeds Crate" value="1" chainreward="true" />
   	</quest>
 
@@ -196,7 +277,7 @@
       <objective type="FetchKeep" id="Boiler" value="1" phase="1" />
       <objective type="FetchKeep" id="Still" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
   	</quest>
 
     <quest id="brewing_brew_station_tools_1" modTag="farmlife">
@@ -216,7 +297,7 @@
       <objective type="FetchKeep" id="Wine Tank" value="1" phase="1" />
       <objective type="FetchKeep" id="Spirits Vat" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="brewing_brew_station_tools_2" modTag="farmlife">
@@ -240,7 +321,7 @@
       <objective type="FetchKeep" id="Bottle Capper" value="1" phase="2" />
       <objective type="FetchKeep" id="Mixing Cask" value="1" phase="2" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="smoker_station_tools_1" modTag="farmlife">
@@ -258,7 +339,7 @@
       <objective type="FetchKeep" id="Meat Hanger" value="1" phase="1" />
       <objective type="FetchKeep" id="Turkey Rack" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="gas_oven_station_tools_1" modTag="farmlife">
@@ -276,7 +357,7 @@
       <objective type="FetchKeep" id="Pizza Stone" value="1" phase="1" />
       <objective type="FetchKeep" id="PyreX Bakeware" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="gas_cooktop_station_tools_1" modTag="farmlife">
@@ -294,7 +375,7 @@
       <objective type="FetchKeep" id="Frying Pan" value="1" phase="1" />
       <objective type="FetchKeep" id="Wok" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="kitchenaid_station_tools_1" modTag="farmlife">
@@ -312,7 +393,7 @@
       <objective type="FetchKeep" id="Veggie Attachment" value="1" phase="1" />
       <objective type="FetchKeep" id="Ice Cream Bowl" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="kitchenaid_station_tools_2" modTag="farmlife">
@@ -330,7 +411,7 @@
       <objective type="FetchKeep" id="Grain Miller" value="1" phase="1" />
       <objective type="FetchKeep" id="Pasta Helper" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
     <quest id="woodgrill_station_tools_1" modTag="farmlife">
@@ -348,7 +429,7 @@
       <objective type="FetchKeep" id="Spatula" value="1" phase="1" />
       <objective type="FetchKeep" id="Ceramic Dutch Oven" value="1" phase="1" />
 
-      <reward type="Exp" value="1000" />
+      <reward type="Exp" value="500" />
     </quest>
 
   </append>

@@ -1,5 +1,24 @@
 # FarmLifeMod 1.7.6
 
+Brewing guide is here.
+
+## Changed
+
+- All quests now give 500 xp instead of 1000 xp
+-
+
+## New Stuff
+
+Home Brewer's Guide (quest item)
+
+## Notes
+
+There is now a quest chain to craft IPA. It walks through the steps and then gives you some free beer (and xp).
+
+
+
+# FarmLifeMod 1.7.6
+
 New Jerky is here and it will help you with looting trips.
 
 ## Changed
@@ -29,7 +48,7 @@ Jerky is finished. Requires both KitchNaid and Smoker, as well as woodchips, to 
 
 I have started rebalancing food tiers and sell values. More to come before final release :)
 
-I have a few recipes to finish adjusting, add in Spirits, do a quest to explain brewing, and then I'm gonna stick a fork in v1. Should be done Saturday or Sunday at the latest. 
+I have a few recipes to finish adjusting, add in Spirits, do a quest to explain brewing, and then I'm gonna stick a fork in v1. Should be done Saturday or Sunday at the latest.
 
 # FarmLifeMod 1.7.5
 

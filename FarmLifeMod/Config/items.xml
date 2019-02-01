@@ -66,6 +66,12 @@ tierFiveFood
   <append xpath="/items">
 
     <!-- Recipes -->
+    <item name="Home Brewer's Guide" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Brewing!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="brewing_guide_1"/>
+      </property>
+    </item>
     <item name="Raising Livestock (Pens)" modTag="recipeQuest">
       <property name="DescriptionKey" value="Farming!"/>
       <property class="Action0">
