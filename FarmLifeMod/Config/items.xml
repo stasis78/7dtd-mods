@@ -1429,10 +1429,10 @@ tierFiveFood
   <!-- Stack Sizes -->
   <append xpath="/items/item[contains(@modTag,'oneStack')]">
   </append>
-  <setattribute xpath="/items/item[contains(@modTag,'oneStack')]/property[@name='name']" name="value">
+  <setattribute xpath="/items/item[contains(@modTag,'oneStack')]/property[@name='Stacknumber']" name="value">
     1
   </setattribute>
-  <setattribute xpath="/items/item[contains(@modTag,'100Stack')]/property[@name='name']" name="value">
+  <setattribute xpath="/items/item[contains(@modTag,'100Stack')]/property[@name='Stacknumber']" name="value">
     100
   </setattribute>
 
