@@ -1,5 +1,11 @@
 # FarmLifeMod 1.7.6
 
+Icon Update Available
+
+[Source](https://github.com/stasis78/7dtd-mods/tree/master/FarmLifeMod_Icons)
+
+[Zip file](https://github.com/stasis78/7dtd-mods/blob/master/FarmLifeMod_Icons.zip)
+
 Brewing guide is here. Spirits are here and ready for you to get your drink on.
 
 ## Changed
@@ -11,6 +17,7 @@ Brewing guide is here. Spirits are here and ready for you to get your drink on.
 
 ## New Stuff
 
+11 new icons
 Home Brewer's Guide (quest item)
 Vodka Mash (ingredient)
 Whiskey Mash (ingredient)
