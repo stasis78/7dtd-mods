@@ -66,6 +66,12 @@ tierFiveFood
   <append xpath="/items">
 
     <!-- Recipes -->
+    <item name="Home Brewer's Guide" modTag="recipeQuest">
+      <property name="DescriptionKey" value="Brewing!"/>
+      <property class="Action0">
+        <property name="QuestGiven" value="brewing_guide_1"/>
+      </property>
+    </item>
     <item name="Raising Livestock (Pens)" modTag="recipeQuest">
       <property name="DescriptionKey" value="Farming!"/>
       <property class="Action0">
@@ -176,7 +182,7 @@ tierFiveFood
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Pork Belly" modTag="meat,noicon">
+    <item name="Pork Belly" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
@@ -255,17 +261,17 @@ tierFiveFood
       <property name="CustomIconTint" value="F0FF00" />
     </item>
 
-    <item name="Buttery Delmontico" modTag="tierThreeFood,hasicon">
+    <item name="Buttery Delmontico" modTag="tierFourFood,hasicon">
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CFB300" />
     </item>
 
-    <item name="Rump Roast Stew" modTag="tierThreeFood,hasicon">
+    <item name="Rump Roast Stew" modTag="tierFourFood,hasicon">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Red Wine and Peppercorn Porterhouse" modTag="tierThreeFood,hasicon">
+    <item name="Red Wine and Peppercorn Porterhouse" modTag="tierFourFood,hasicon">
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CF6B00" />
     </item>
@@ -290,7 +296,7 @@ tierFiveFood
       <property name="CustomIconTint" value="FF4D00" />
     </item>
 
-    <item name="Bolognese Dish" modTag="tierFiveFood,oneStack,hasicon">
+    <item name="Bolognese Dish" modTag="tierFiveFood,oneStack,sicilian,hasicon">
       <property name="CustomIcon" value="foodMeatStew" />
       <property name="CustomIconTint" value="FF4D00" />
     </item>
@@ -620,8 +626,82 @@ tierFiveFood
     </item>
     <!-- Beer -->
 
-    <!-- Ingredients -->
+    <!--  Spirits -->
+    <item name="Vodka Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Whiskey Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="White Rum Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Scotch Mash" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
 
+    <item name="Raw Vodka" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Raw Whiskey" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="Raw White Rum" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Raw Scotch" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Distilled Vodka" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Distilled Whiskey" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="Distilled White Rum" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Distilled Scotch" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Aged Scotch" modTag="ingredient,noicon">
+      <property name="CustomIcon" value="bucketRiverWater" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+
+    <item name="Vodka" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasMoonshine" />
+      <property name="CustomIconTint" value="999999" />
+    </item>
+    <item name="Whiskey" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasMoonshine" />
+      <property name="CustomIconTint" value="777777" />
+    </item>
+    <item name="White Rum" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasMoonshine" />
+      <property name="CustomIconTint" value="555555" />
+    </item>
+    <item name="Scotch" modTag="spirits,noicon">
+      <property name="CustomIcon" value="drinkJarGrandpasAwesomeSauce" />
+      <property name="CustomIconTint" value="888888" />
+    </item>
+    <!--  Spirits -->
+
+    <!-- Ingredients -->
     <item name="Light Malt" modTag="ingredient,noicon">
       <property name="CustomIcon" value="foodCornMeal" />
       <property name="CustomIconTint" value="DDEE0B" />
@@ -885,7 +965,7 @@ tierFiveFood
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Bread Dough" modTag="plant,noicon">
+    <item name="Bread Dough" modTag="plant,hasicon">
       <property name="CustomIcon" value="resourceTallow" />
       <property name="CustomIconTint" value="888888" />
     </item>
@@ -895,7 +975,7 @@ tierFiveFood
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Hamburger Bun" modTag="tierThreeFood,noicon">
+    <item name="Hamburger Bun" modTag="tierThreeFood,hasicon">
       <property name="CustomIcon" value="foodCornBread" />
       <property name="CustomIconTint" value="888888" />
     </item>
@@ -989,22 +1069,22 @@ tierFiveFood
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Spatula" modTag="cookingTool,noicon">
+    <item name="Spatula" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="meleeToolShovelIron"/>
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Ceramic Dutch Oven" modTag="cookingTool,noicon">
+    <item name="Ceramic Dutch Oven" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Dough Hook" modTag="cookingTool,noicon">
+    <item name="Dough Hook" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="meleeCandyCaneClub"/>
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Veggie Attachment" modTag="cookingTool,noicon">
+    <item name="Veggie Attachment" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="medicalSplint"/>
       <property name="CustomIconTint" value="000000" />
     </item>
@@ -1014,12 +1094,12 @@ tierFiveFood
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Meat Grinder" modTag="cookingTool,noicon">
+    <item name="Meat Grinder" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="resourceTrophy3"/>
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Grain Miller" modTag="cookingTool,noicon">
+    <item name="Grain Miller" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="resourceTrophy1"/>
       <property name="CustomIconTint" value="000000" />
     </item>
@@ -1231,7 +1311,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierTwoFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="25" />
+    <property name="EconomicValue" value="35" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
@@ -1243,7 +1323,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierThreeFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="35" />
+    <property name="EconomicValue" value="55" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
@@ -1255,7 +1335,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierFourFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="50" />
+    <property name="EconomicValue" value="90" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
@@ -1267,7 +1347,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierFiveFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="100" />
+    <property name="EconomicValue" value="200" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="100" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="100"/>
@@ -1307,6 +1387,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'beer')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
   		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Beer Lover" />
@@ -1316,10 +1397,22 @@ tierFiveFood
     Redneck
   </setattribute>
 
+  <!-- spirits -->
+  <append xpath="/items/item[contains(@modTag,'spirits')]">
+    <property name="Extends" value="base_water" />
+    <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
+    <effect_group tiered="false">
+      <requirement name="NotHasBuff" buff="buffIsOnFire" />
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Mixed Drink" />
+    </effect_group>
+  </append>
+
   <!-- wine -->
   <append xpath="/items/item[contains(@modTag,'wine')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
   		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Wine Connoisseur" />
@@ -1330,6 +1423,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'mixedDrink')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
   		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Mixed Drink" />
@@ -1383,6 +1477,11 @@ tierFiveFood
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Traveling BBQ" />
   </append>
 
+  <!-- sicilian -->
+  <append xpath="/items/item[contains(@modTag,'sicilian')]/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Sicilian" />
+  </append>
+
   <!-- Non edible ingredient -->
   <append xpath="/items/item[contains(@modTag,'ingredient')]">
     <property name="DisplayType" value="food" />
@@ -1407,9 +1506,9 @@ tierFiveFood
     <property name="CraftingIngredientTime" value="5" />
   </append>
 
-  <append xpath="/items/item[contains(@modTag,'can')]/property[@class='Action0']">
+  <!-- <append xpath="/items/item[contains(@modTag,'can')]/property[@class='Action0']">
     <property name="Create_item" value="drinkCanEmpty"/>
-  </append>
+  </append> -->
 
   <append xpath="/items/item[contains(@modTag,'dry')]/effect_group">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="subtract" value="10" />

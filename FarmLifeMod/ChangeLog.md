@@ -1,3 +1,83 @@
+# FarmLifeMod 1.8.0 (STABLE)
+
+Icon Update Available
+
+[Source](https://github.com/stasis78/7dtd-mods/tree/master/FarmLifeMod_Icons)
+
+[Zip file](https://github.com/stasis78/7dtd-mods/blob/master/FarmLifeMod_Icons.zip)
+
+Brewing guide is here. Spirits are here and ready for you to get your drink on. You can get your mafia style on with some Bolognese.
+
+Also... Stable is here!
+
+## Changed
+
+- All quests now give 500 xp instead of 1000 xp
+- Items that require cans no longer give them back on use (see notes)
+- Fixed block placement for stations. They now face you when placing, except for Cooktop...
+- Mojito now use White Rum instead of grain drinkJarGrainAlcohol like it should ;p
+- Eating Bolognese Dish now imparts the Sicilian buff (see notes)
+- Increased all meat, egg, milk harvest values. You should get some good stuff now if you have any type of huntsman bonus.
+- Added economic values to drinks. Bumped up all economic values on food to a point where selling could be profitable. Needs more testing, but its better :)
+- Removed Variety Seed Crate, there are quests that replace this item (it was a quick hack)
+
+## New Stuff
+
+11 new icons
+Home Brewer's Guide (quest item)
+Vodka Mash (ingredient)
+Whiskey Mash (ingredient)
+White Rum Mash (ingredient)
+Scotch Mash (ingredient)
+Raw Vodka (ingredient)
+Raw Whiskey (ingredient)
+Raw White Rum (ingredient)
+Raw Scotch (ingredient)
+Distilled Vodka (ingredient)
+Distilled Whiskey (ingredient)
+Distilled White Rum (ingredient)
+Distilled Scotch (ingredient)
+Aged Scotch (ingredient)
+Vodka (spirits!)
+Whiskey (spirits!)
+White Rum (spirits!)
+Scotch (spirits!)
+Sicilian (buff) - I feel like a Made Man. I have a boost to Fortitude, Heal Over Time, and Stamina Regen.
+
+## Notes
+
+There is now a quest chain to craft IPA. It walks through the steps and then gives you some free beer (and xp).
+
+There are a couple items that require cans to make which would return the can on use. Due to some changes in my modlet, I'm not longer going to support giving back the can on use. I will fix this in v2 when I have better control over generating XML. Right now the level of effort to fix this far out weighs an empty can. Sorry!
+
+Spirits are here. You can now craft Vodka, Whiskey, Rum, and Scotch. Now before anyone get up in a bunch about the ingredients, these are ligit ways to make all of these. You can **absolutely** argue it is not "the best way" to make each item. It works and its in. I will change it in the future but not today :) Spirits will reuse the mixology buff for now.
+
+Making the Bolognese Dish is extremely time consuming and requires a lot of work. Well now it is worth it for the Sicilian. This buff lasts half again as long as a magazine buff, gives 1 Fortitude, an aggressive heal over time buff, and some regen stamina bonuses. This buff is ideal for taking on a horde night. Often times those bleed effects are nasty and take some time to heal. This buff will help mitigate some of the bleed damage and allow even regular bandages to be viable again a horde. With more Fortitude and Stamina regeneration, you can get an edge over those green bastards.
+
+I took a final pass and meat and economic values. They should be much better based on feedback I've received.
+
+## What does 'stable' mean exactly?
+
+These developery terms are absolutely confusing, and also ambiguous, so I will try to explain.
+
+For Farm Life, stable means that I will no longer be adding or removing any items, blocks, recipes, buffs, loot tables, or quests. I may modify existing things as bug reports come in or when Syn adds new assets.
+
+What this means to *you* is that item tables will not change if you update to any version of 1.8.x. This means that you won't suffer from any unintended item shifting.
+
+## What are you going to do now? Whats going to happen to Farm Life
+
+Well FIRST I'm going to go play the game for a while. I've been focused on this mod for some time and need to take a break ;p
+
+Seriously though. If bugs come up or Syn adds new assets, I'll post an update.
+
+I have huge plans for the future and Farm Life v2 is going to be absolutely massive, easier to maintain, MUCH faster to add new items and recipes and growing things. It is not out of the question that I will add over 1000 items in total for version 2. Right now I need to build some tools to help me manage something on that scale. Manually editing xml files is not sustainable anymore :)
+
+Till next time, enjoy!!!!!
+
+:)
+
+
+
 # FarmLifeMod 1.7.6
 
 New Jerky is here and it will help you with looting trips.
@@ -29,7 +109,7 @@ Jerky is finished. Requires both KitchNaid and Smoker, as well as woodchips, to 
 
 I have started rebalancing food tiers and sell values. More to come before final release :)
 
-I have a few recipes to finish adjusting, add in Spirits, do a quest to explain brewing, and then I'm gonna stick a fork in v1. Should be done Saturday or Sunday at the latest. 
+I have a few recipes to finish adjusting, add in Spirits, do a quest to explain brewing, and then I'm gonna stick a fork in v1. Should be done Saturday or Sunday at the latest.
 
 # FarmLifeMod 1.7.5
 
