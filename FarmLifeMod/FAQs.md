@@ -59,7 +59,7 @@ I'm sorry that the models are "stupid". If you have any suggestions for a better
 
 I'm glad that you have the same interests that I do when it comes to libations! I have a treat for you :)
 
-Brewing, wine making, and distillation are a big part of Farm Life. Below is a very crude sketch of the ideas involved. But first, there are a couple of things to understand. There are two stations and nine tools involved with crafting, as follows.
+Brewing, wine making, and distillation are a big part of Farm Life. Below is a very crude sketch of the ideas involved. But first, there are a couple of things to understand. There are two stations and 12 tools involved with crafting, as follows.
 
 ### Brew Cooker (hot, requires fuel)
 
