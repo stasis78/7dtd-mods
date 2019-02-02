@@ -73,39 +73,49 @@ Brewing, wine making, and distillation are a big part of Farm Life. Below is a v
 
 ### Brew notes:
 
+
 Beer:
 
 Mix grains -> Masher -> Mash
+
 Mash -> Boiler + hops -> Wort
+
 boiled wort -> carboy ->  raw beer
 
 (Optional) raw beer -> Oak Barrel -> Aged beer
 
 raw beer -> Floor Corker -> white wine
+
 Aged beer -> Floor Corker -> port
 
 
 Spirts:
 
 Mix -> Masher -> Mash
+
 Mash -> Spirits Vat -> Raw Spirits
+
 Raw Spirits -> Still -> Distilled Spirits
 
 (Optional) Distilled Spirits -> Oak Barrel -> Aged Spirits
 
 Distilled Spirits + water -> Mixing Cask -> vodka
+
 Aged Spirits + water -> Mixing Cask -> whiskey
 
 
 Wine:
 
 Grapes -> KitchNaid -> Extract/Pulp
+
 Extract/pulp -> Wine Tank -> Raw Wine
+
 Raw Wine -> Wine Filter -> Filtered Wine
 
 (Optional) Filtered Wine -> Oak Barrel -> Aged Wine
 
 Filtered Wine  -> Floor Corker -> white wine
+
 Aged Wine -> Floor Corker -> port
 
 ^^ Will refine into better notes soon ;)
