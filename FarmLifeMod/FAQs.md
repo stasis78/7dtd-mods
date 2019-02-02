@@ -2,6 +2,14 @@
 
 These are frequently asked questions.
 
+## What does 'stable' mean exactly?
+
+These developery terms are absolutely confusing, and also ambiguous, so I will try to explain.
+
+For Farm Life, stable means that I will no longer be adding or removing any items, blocks, recipes, buffs, loot tables, or quests. I may modify existing things as bug reports come in or when Syn adds new assets.
+
+What this means to *you* is that item tables will not change if you update to any version of 1.8.x. This means that you won't suffer from any unintended item shifting.
+
 ## Where do I get seeds?
 
 Thats a wonderful question and appreciate that you asked.
