@@ -182,7 +182,7 @@ tierFiveFood
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Pork Belly" modTag="meat,noicon">
+    <item name="Pork Belly" modTag="meat,hasicon">
       <property name="CustomIcon" value="foodRottingFlesh"/>
       <property name="CustomIconTint" value="500000" />
     </item>
@@ -965,7 +965,7 @@ tierFiveFood
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Bread Dough" modTag="plant,noicon">
+    <item name="Bread Dough" modTag="plant,hasicon">
       <property name="CustomIcon" value="resourceTallow" />
       <property name="CustomIconTint" value="888888" />
     </item>
@@ -975,7 +975,7 @@ tierFiveFood
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Hamburger Bun" modTag="tierThreeFood,noicon">
+    <item name="Hamburger Bun" modTag="tierThreeFood,hasicon">
       <property name="CustomIcon" value="foodCornBread" />
       <property name="CustomIconTint" value="888888" />
     </item>
@@ -1069,22 +1069,22 @@ tierFiveFood
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Spatula" modTag="cookingTool,noicon">
+    <item name="Spatula" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="meleeToolShovelIron"/>
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Ceramic Dutch Oven" modTag="cookingTool,noicon">
+    <item name="Ceramic Dutch Oven" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="888888" />
     </item>
 
-    <item name="Dough Hook" modTag="cookingTool,noicon">
+    <item name="Dough Hook" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="meleeCandyCaneClub"/>
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Veggie Attachment" modTag="cookingTool,noicon">
+    <item name="Veggie Attachment" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="medicalSplint"/>
       <property name="CustomIconTint" value="000000" />
     </item>
@@ -1094,12 +1094,12 @@ tierFiveFood
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Meat Grinder" modTag="cookingTool,noicon">
+    <item name="Meat Grinder" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="resourceTrophy3"/>
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Grain Miller" modTag="cookingTool,noicon">
+    <item name="Grain Miller" modTag="cookingTool,hasicon">
       <property name="CustomIcon" value="resourceTrophy1"/>
       <property name="CustomIconTint" value="000000" />
     </item>

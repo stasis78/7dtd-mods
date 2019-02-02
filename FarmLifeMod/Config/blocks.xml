@@ -210,7 +210,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	</property>
     </block>
 
-    <block name="KitchNaid" modTag="craftingStation,noicon">
+    <block name="KitchNaid" modTag="craftingStation,hasicon">
       <property name="CustomIcon" value="cntMicrowaveOvenVer1Closed" />
       <property name="CustomIconTint" value="888888" />
       <property name="Place" value="TowardsPlacerInverted"/>
