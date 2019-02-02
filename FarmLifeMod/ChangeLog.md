@@ -14,6 +14,9 @@ Brewing guide is here. Spirits are here and ready for you to get your drink on.
 - Items that require cans no longer give them back on use (see notes)
 - Fixed block placement for stations. They now face you when placing, except for Cooktop...
 - Mojito now use White Rum instead of grain drinkJarGrainAlcohol like it should ;p
+- Eating Bolognese Dish now imparts the Sicilian buff (see notes)
+- Increased all meat, egg, milk harvest values. You should get some good stuff now if you have any type of huntsman bonus.
+- Added economic values to drinks. Bumped up all economic values on food to a point where selling could be profitable. Needs more testing, but its better :)
 
 ## New Stuff
 
@@ -36,6 +39,7 @@ Vodka (spirits!)
 Whiskey (spirits!)
 White Rum (spirits!)
 Scotch (spirits!)
+Sicilian (buff) - I feel like a Made Man. I have a boost to Fortitude, Heal Over Time, and Stamina Regen.
 
 ## Notes
 
@@ -44,6 +48,12 @@ There is now a quest chain to craft IPA. It walks through the steps and then giv
 There are a couple items that require cans to make which would return the can on use. Due to some changes in my modlet, I'm not longer going to support giving back the can on use. I will fix this in v2 when I have better control over generating XML. Right now the level of effort to fix this far out weighs an empty can. Sorry!
 
 Spirits are here. You can now craft Vodka, Whiskey, Rum, and Scotch. Now before anyone get up in a bunch about the ingredients, these are ligit ways to make all of these. You can **absolutely** argue it is not "the best way" to make each item. It works and its in. I may change it in the future but not today :) Spirits will reuse the mixology buff for now.
+
+Making the Bolognese Dish is extremely time consuming and requires a lot of work. Well now it is worth it for the Sicilian. This buff lasts half again as long as a magazine buff, gives 1 Fortitude, an aggressive heal over time buff, and some regen stamina bonuses. This buff is ideal for taking on a horde night. Often times those bleed effects are nasty and take some time to heal. This buff will help mitigate some of the bleed damage and allow even regular bandages to be viable again a horde. With more Fortitude and Stamina regeneration, you can get an edge over those green bastards.
+
+I took a final pass and meat and economic values. They should be much better based on feedback I've received.
+
+
 
 # FarmLifeMod 1.7.6
 

@@ -261,17 +261,17 @@ tierFiveFood
       <property name="CustomIconTint" value="F0FF00" />
     </item>
 
-    <item name="Buttery Delmontico" modTag="tierThreeFood,hasicon">
+    <item name="Buttery Delmontico" modTag="tierFourFood,hasicon">
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CFB300" />
     </item>
 
-    <item name="Rump Roast Stew" modTag="tierThreeFood,hasicon">
+    <item name="Rump Roast Stew" modTag="tierFourFood,hasicon">
       <property name="CustomIcon" value="foodSteakAndPotato" />
       <property name="CustomIconTint" value="FFFFFF" />
     </item>
 
-    <item name="Red Wine and Peppercorn Porterhouse" modTag="tierThreeFood,hasicon">
+    <item name="Red Wine and Peppercorn Porterhouse" modTag="tierFourFood,hasicon">
       <property name="CustomIcon" value="foodGrilledMeat" />
       <property name="CustomIconTint" value="CF6B00" />
     </item>
@@ -1311,7 +1311,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierTwoFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="25" />
+    <property name="EconomicValue" value="35" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
@@ -1323,7 +1323,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierThreeFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="35" />
+    <property name="EconomicValue" value="55" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
@@ -1335,7 +1335,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierFourFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="50" />
+    <property name="EconomicValue" value="90" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
@@ -1347,7 +1347,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'tierFiveFood')]">
     <property name="Extends" value="base_food" />
     <property name="Stacknumber" value="50" />
-    <property name="EconomicValue" value="100" />
+    <property name="EconomicValue" value="200" />
     <effect_group tiered="false">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="100" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="100"/>
@@ -1387,6 +1387,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'beer')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
   		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Beer Lover" />
@@ -1400,6 +1401,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'spirits')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
     <effect_group tiered="false">
       <requirement name="NotHasBuff" buff="buffIsOnFire" />
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Mixed Drink" />
@@ -1410,6 +1412,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'wine')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
   		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Wine Connoisseur" />
@@ -1420,6 +1423,7 @@ tierFiveFood
   <append xpath="/items/item[contains(@modTag,'mixedDrink')]">
     <property name="Extends" value="base_water" />
     <property name="Stacknumber" value="15" />
+    <property name="EconomicValue" value="55" />
   	<effect_group tiered="false">
   		<requirement name="NotHasBuff" buff="buffIsOnFire" />
   		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Mixed Drink" />

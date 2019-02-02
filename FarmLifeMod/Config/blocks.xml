@@ -343,7 +343,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
       <property name="UpgradeRated.ToBlock" value="Full Holstein Pen" />
     </block>
     <block name="Full Holstein Pen" modTag="fullPen,noicon">
-      <drop event="Harvest" name="Raw Milk" count="2" tag="butcherHarvest" />
+      <drop event="Harvest" name="Raw Milk" count="4" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Holstein Pen"/>
     </block>
     <!-- Dairy Blocks -->
@@ -366,9 +366,9 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Full Angus Pen"  modTag="fullPen,noicon">
       <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
       <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
-      <drop event="Harvest" name="Delmontico" count="1,2" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Rump Roast" count="1,2" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Porterhouse" count="1,2" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Delmontico" count="2,4" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Rump Roast" count="2,4" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Porterhouse" count="2,4" prob="1.0" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Angus Pen"/>
     </block>
     <!-- Angus Blocks -->
@@ -391,7 +391,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Full Veal Pen"  modTag="fullPen,noicon">
       <drop event="Harvest" name="resourceAnimalFat" count="1,2" prob="0.2" tag="butcherHarvest" />
       <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
-      <drop event="Harvest" name="Veal" count="2,4" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Veal" count="4,6" prob="1.0" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Veal Pen"/>
     </block>
     <!-- Veal Blocks -->
@@ -414,7 +414,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <block name="Full Elk Pen"  modTag="fullPen,noicon">
       <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2" />
       <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.2" tag="butcherHarvest" />
-      <drop event="Harvest" name="Elk Scraps" count="10,20" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Elk Scraps" count="15,30" prob="1.0" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Elk Pen"/>
     </block>
     <!-- Elk Blocks -->
@@ -436,10 +436,10 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     </block>
     <block name="Full Pig Pen"  modTag="fullPen,noicon">
       <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="1" />
-      <drop event="Harvest" name="resourceFemur" count="1,2" prob="0.5" tag="butcherHarvest" />
-      <drop event="Harvest" name="Pork Belly" count="1,2" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Ham" count="1,2" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Pork Ribs" count="1,2" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="resourceFemur" count="2,4" prob="0.5" tag="butcherHarvest" />
+      <drop event="Harvest" name="Pork Belly" count="2,4" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Ham" count="2,4" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Pork Ribs" count="2,4" prob="1.0" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Pig Pen"/>
     </block>
     <!-- Pig Blocks -->
@@ -460,11 +460,11 @@ Blocks use modTag attributes to help with boiler plate child nodes.
       <property name="UpgradeRated.ToBlock" value="Full Chicken Coop" />
     </block>
     <block name="Full Chicken Coop"  modTag="fullPen,noicon">
-      <drop event="Harvest" name="foodEgg" count="10" tag="butcherHarvest" />
-      <drop event="Harvest" name="resourceFeather" count="4,8" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Chicken Breast" count="2,4" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Chicken Wing" count="2,6" prob="1.0" tag="butcherHarvest" />
-      <drop event="Harvest" name="Whole Chicken" count="1,2" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="foodEgg" count="15" tag="butcherHarvest" />
+      <drop event="Harvest" name="resourceFeather" count="8,16" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Chicken Breast" count="4,8" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Chicken Wing" count="4,8" prob="1.0" tag="butcherHarvest" />
+      <drop event="Harvest" name="Whole Chicken" count="2,4" prob="1.0" tag="butcherHarvest" />
       <property name="DowngradeBlock" value="Empty Chicken Coop"/>
     </block>
     <!-- Chicken Blocks -->
