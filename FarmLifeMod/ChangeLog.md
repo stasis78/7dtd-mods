@@ -23,26 +23,26 @@ Also... Stable is here!
 
 ## New Stuff
 
-11 new icons
-Home Brewer's Guide (quest item)
-Vodka Mash (ingredient)
-Whiskey Mash (ingredient)
-White Rum Mash (ingredient)
-Scotch Mash (ingredient)
-Raw Vodka (ingredient)
-Raw Whiskey (ingredient)
-Raw White Rum (ingredient)
-Raw Scotch (ingredient)
-Distilled Vodka (ingredient)
-Distilled Whiskey (ingredient)
-Distilled White Rum (ingredient)
-Distilled Scotch (ingredient)
-Aged Scotch (ingredient)
-Vodka (spirits!)
-Whiskey (spirits!)
-White Rum (spirits!)
-Scotch (spirits!)
-Sicilian (buff) - I feel like a Made Man. I have a boost to Fortitude, Heal Over Time, and Stamina Regen.
+- 11 new icons
+- Home Brewer's Guide (quest item)
+- Vodka Mash (ingredient)
+- Whiskey Mash (ingredient)
+- White Rum Mash (ingredient)
+- Scotch Mash (ingredient)
+- Raw Vodka (ingredient)
+- Raw Whiskey (ingredient)
+- Raw White Rum (ingredient)
+- Raw Scotch (ingredient)
+- Distilled Vodka (ingredient)
+- Distilled Whiskey (ingredient)
+- Distilled White Rum (ingredient)
+- Distilled Scotch (ingredient)
+- Aged Scotch (ingredient)
+- Vodka (spirits!)
+- Whiskey (spirits!)
+- White Rum (spirits!)
+- Scotch (spirits!)
+- Sicilian (buff) - I feel like a Made Man. I have a boost to Fortitude, Heal Over Time, and Stamina Regen.
 
 ## Notes
 
@@ -76,8 +76,6 @@ Till next time, enjoy!!!!!
 
 :)
 
-
-
 # FarmLifeMod 1.7.6
 
 New Jerky is here and it will help you with looting trips.
@@ -93,14 +91,14 @@ New Jerky is here and it will help you with looting trips.
 
 ## New Stuff
 
-Brined Spicy Elk
-Spicy Elk Jerky
-Heat Wave (buff) - Spicy Elk Jerky gives you a spicy burn and a boost to your Fortitude. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
-Brined Coffee Elk
-Coffee Elk Jerky
-Caffeinated (buff) - Coffee Elk Jerky gives you a warm feeling and increases your resistance to the cold. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
-Marinated BBQ Elk
-BBQ Elk Jerky
+- Brined Spicy Elk
+- Spicy Elk Jerky
+- Heat Wave (buff) - Spicy Elk Jerky gives you a spicy burn and a boost to your Fortitude. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
+- Brined Coffee Elk
+- Coffee Elk Jerky
+- Caffeinated (buff) - Coffee Elk Jerky gives you a warm feeling and increases your resistance to the cold. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
+- Marinated BBQ Elk
+- BBQ Elk Jerky
 Traveling BBQ (buff) - BBQ Elk Jerky has a kick and increased your Agility. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer
 
 ## Notes
