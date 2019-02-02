@@ -24,6 +24,17 @@ Stat / cvar comparison operators:
 
   <append xpath="/buffs">
 
+    <buff name="Sicilian" name_key="Sicilian" description_key="I feel like a Made Man. I have a boost to Fortitude, Heal Over Time, and Stamina Regen." icon="ui_game_symbol_add" icon_color="10,157,0">
+      <damage_type value="Disease"/>
+      <stack_type value="replace"/>
+      <duration value="2700"/>
+      <effect_group>
+        <passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1" />
+        <passive_effect name="HealthMaxModifierOT" operation="base_add" value="2" />
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.2" />
+      </effect_group>
+    </buff>
+
     <buff name="Heat Wave" name_key="Heat Wave" description_key="Spicy Elk Jerky gives you a spicy burn and a boost to your Fortitude. Jerky also gives Carry Capacity, Lucky Looter, and Daring Adventurer" icon="ui_game_symbol_medical">
       <damage_type value="Disease"/>
       <stack_type value="replace"/>

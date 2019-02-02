@@ -1,12 +1,3 @@
-<!-- TODO add gates
-tags="learnable">
-
-<recipe name="drinkJarBeer" count="1" craft_area="chemistryStation" tags="learnable">
-	<ingredient name="resourceCropHopsFlower" count="4" />
-	<ingredient name="drinkJarRiverWater" count="1" />
-</recipe>
-
--->
 <configs>
   <remove xpath="/recipes/recipe[@name='drinkJarBeer']" />
 

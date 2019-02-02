@@ -296,7 +296,7 @@ tierFiveFood
       <property name="CustomIconTint" value="FF4D00" />
     </item>
 
-    <item name="Bolognese Dish" modTag="tierFiveFood,oneStack,hasicon">
+    <item name="Bolognese Dish" modTag="tierFiveFood,oneStack,sicilian,hasicon">
       <property name="CustomIcon" value="foodMeatStew" />
       <property name="CustomIconTint" value="FF4D00" />
     </item>
@@ -1471,6 +1471,11 @@ tierFiveFood
   <!-- bbqJerky -->
   <append xpath="/items/item[contains(@modTag,'bbqJerky')]/effect_group">
     <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Traveling BBQ" />
+  </append>
+
+  <!-- sicilian -->
+  <append xpath="/items/item[contains(@modTag,'sicilian')]/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="Sicilian" />
   </append>
 
   <!-- Non edible ingredient -->
