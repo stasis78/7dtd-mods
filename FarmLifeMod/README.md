@@ -28,23 +28,3 @@ FarmLifeMod is a community project and anyone is free to offer suggestions on th
 ## syn7572's work on FarmLifeMod_Icons and FarmLifeMod_Models
 
 These mod additions are only made possible by **syn7572**'s very hard work! They have full credit for all their work on assets. I'm very grateful for their willingness to contribute to this mod.
-
-## What does 'stable' mean exactly?
-
-These developery terms are absolutely confusing, and also ambiguous, so I will try to explain.
-
-For Farm Life, stable means that I will no longer be adding or removing any items, blocks, recipes, buffs, loot tables, or quests. I may modify existing things as bug reports come in or when Syn adds new assets.
-
-What this means to *you* is that item tables will not change if you update to any version of 1.8.x. This means that you won't suffer from any unintended item shifting.
-
-## What are you going to do now? Whats going to happen to Farm Life
-
-Well FIRST I'm going to go play the game for a while. I've been focused on this mod for some time and need to take a break ;p
-
-Seriously though. If bugs come up or Syn adds new assets, I'll post an update.
-
-I have huge plans for the future and Farm Life v2 is going to be absolutely massive, easier to maintain, MUCH faster to add new items and recipes and growing things. It is not out of the question that I will add over 1000 items in total for version 2. Right now I need to build some tools to help me manage something on that scale. Manually editing xml files is not sustainable anymore :)
-
-Till next time, enjoy!!!!!
-
-:)
