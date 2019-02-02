@@ -2,8 +2,8 @@
 <xml>
 	<ModInfo>
 		<Name value="FarmLifeMod" />
-		<Description value="Stasis' FarmLifeMod - more things to farm and cook" />
+		<Description value="Stasis' FarmLifeMod - livin' the, Farm Life :)" />
 		<Author value="stasis" />
-		<Version value="1.7.7" />
+		<Version value="1.8.0" />
 	</ModInfo>
 </xml>
