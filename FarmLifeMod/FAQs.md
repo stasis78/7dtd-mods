@@ -127,3 +127,7 @@ Filtered Wine  -> Floor Corker -> white wine
 Aged Wine -> Floor Corker -> port
 
 ^^ Will refine into better notes soon ;)
+
+## Modlet to help FarmLifeMod and Farming work together.
+
+https://drive.google.com/file/d/1_0VY5pDj6JAhAf6jcvkA4uTXYnD1CEc0/view?usp=sharing
