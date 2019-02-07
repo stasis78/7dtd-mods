@@ -1109,7 +1109,7 @@ tierFiveFood
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Frying Pan" modTag="cookingTool,noicon">
+    <item name="Caste Iron Skillet" modTag="cookingTool,noicon">
       <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="000000" />
     </item>

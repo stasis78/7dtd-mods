@@ -372,7 +372,7 @@
       <property name="shareable" value="false" />
 
       <objective type="FetchKeep" id="toolCookingPot" value="1" phase="1" />
-      <objective type="FetchKeep" id="Frying Pan" value="1" phase="1" />
+      <objective type="FetchKeep" id="Caste Iron Skillet" value="1" phase="1" />
       <objective type="FetchKeep" id="Wok" value="1" phase="1" />
 
       <reward type="Exp" value="500" />

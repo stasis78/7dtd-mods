@@ -773,7 +773,7 @@
     	<ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
     </recipe>
-    <recipe name="Smoker" count="1">
+    <recipe name="Cold Smoker" count="1">
       <ingredient name="resourceForgedIron" count="20" />
       <ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
@@ -831,7 +831,7 @@
       <ingredient name="resourceScrapPolymers" count="4" />
     </recipe>
 
-    <recipe name="Frying Pan" count="1" modTag="toolForgeCrucible">
+    <recipe name="Caste Iron Skillet" count="1" modTag="toolForgeCrucible">
     	<ingredient name="unit_iron" count="100" />
     	<ingredient name="unit_clay" count="10" />
     </recipe>
@@ -1011,7 +1011,7 @@
     Gas Oven
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat') or contains(@modTag,'toolHanger') or contains(@modTag,'toolRack')]" name="craft_area">
-    Smoker
+    Cold Smoker
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMasher') or contains(@modTag,'toolBoiler') or contains(@modTag,'toolStill')]" name="craft_area">
     Brew Cooker
@@ -1065,7 +1065,7 @@
     toolCookingPot
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolFrying')]" name="craft_tool">
-    Frying Pan
+    Caste Iron Skillet
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWok')]" name="craft_tool">
     Wok
