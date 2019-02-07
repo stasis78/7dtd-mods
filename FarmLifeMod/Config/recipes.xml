@@ -1,7 +1,7 @@
 <configs>
   <remove xpath="/recipes/recipe[@name='drinkJarBeer']" />
 
-  <append xpath="/recipes">
+  <append xpath="/recipes" modTag="masterList">
 
     <!--   MEAT YUMMY -->
     <recipe name="Buttery Delmontico" count="1" modTag="toolTongs,saltPepper">
