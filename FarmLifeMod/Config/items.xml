@@ -212,7 +212,7 @@ tierFiveFood
       <property name="CustomIconTint" value="500000" />
     </item>
 
-    <item name="Raw Milk" modTag="noicon">
+    <item name="Raw Milk" modTag="ingredient,noicon">
       <property name="CustomIcon" value="bucketRiverWater"/>
       <property name="CustomIconTint" value="AAAAAA" />
       <property name="HoldType" value="31" />
@@ -1109,7 +1109,7 @@ tierFiveFood
       <property name="CustomIconTint" value="000000" />
     </item>
 
-    <item name="Frying Pan" modTag="cookingTool,noicon">
+    <item name="Caste Iron Skillet" modTag="cookingTool,noicon">
       <property name="CustomIcon" value="toolCookingPot"/>
       <property name="CustomIconTint" value="000000" />
     </item>

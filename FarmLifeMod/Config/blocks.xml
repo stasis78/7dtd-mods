@@ -94,7 +94,7 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	</property>
     </block>
 
-    <block name="Smoker" modTag="craftingStation,noicon">
+    <block name="Cold Smoker" modTag="craftingStation,noicon">
       <property name="CustomIcon" value="cntGasGrillClosed" />
       <property name="CustomIconTint" value="444444" />
       <property name="Place" value="TowardsPlacerInverted"/>
