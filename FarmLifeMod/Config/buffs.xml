@@ -75,7 +75,7 @@ Stat / cvar comparison operators:
       <duration value="240"/>
       <stack_type value="duration" />
       <update_rate value="10"/>
-      <effect_group>
+      <effect_group farmLifeName="buff">
         <passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkCharismaticNature"/>
         <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />
         <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate" />

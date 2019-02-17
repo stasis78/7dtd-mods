@@ -678,10 +678,10 @@
     <recipe name="Sorghum Seed" modTag="seed">
     	<ingredient name="Sorghum" />
     </recipe>
-    <recipe name="Bitter Hop Seed" modTag="seed">
+    <recipe name="Bitter Hops Seed" modTag="seed">
     	<ingredient name="Bitter Hops" />
     </recipe>
-    <recipe name="Floral Hop Seed" modTag="seed">
+    <recipe name="Floral Hops Seed" modTag="seed">
     	<ingredient name="Floral Hops" />
     </recipe>
     <recipe name="Grape Seed" modTag="seed">

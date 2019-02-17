@@ -1,5 +1,5 @@
 <configs>
     <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">2</set>
-    <set xpath="/blocks/block[@name='fruitTreeGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">2</set>
-    <set xpath="/blocks/block[contains(@modTag,'growingPen')]/property[@name='UpgradeRated.Rate']/@value">2</set>
+    <set xpath="/blocks/block[@farmLifeGrowing='true']/property[@name='PlantGrowing.GrowthRate']/@value">2</set>
+    <set xpath="/blocks/block[@farmLifeGrowing='true']/property[@name='UpgradeRated.Rate']/@value">2</set>
 </configs>
