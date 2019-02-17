@@ -1,0 +1,56 @@
+<configs>
+
+  <!-- This is to get a random number seed at any time #GameTime doesn't work right now. -->
+  <append xpath="/buffs/buff[@name='buffStatusCheck']">
+      <effect_group>
+          <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="random_ticker" operation="set" target="self" value="1597"/>
+          <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="random_ticker" operation="set" target="self" value="1597">
+              <requirement name="CVarCompare" cvar="random_ticker" operation="GTE" value="1234567"/>
+              <requirement name="CVarCompare" cvar="random_ticker" operation="LTE" value="1597"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="random_ticker" operation="add" target="self" value="3">
+              <requirement name="CVarCompare" cvar="random_ticker" operation="LT" value="1234567"/>
+          </triggered_effect>
+      </effect_group>
+  </append>
+
+  <buff name="example">
+    <!-- This is a magic number for flooring -->
+    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="floor_c" operation="set" value="16777216"/>
+
+    <!-- Init our seed and reset it if we get too big -->
+    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="rnd_seed" operation="set" value="@random_ticker"/>
+    <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" target="self" cvar="rnd_seed" operation="set" value="0"/>
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="rnd_seed" operation="set" value="@random_ticker">
+        <requirement name="CVarCompare" cvar="rnd_seed" operation="LTE" value="1"/>
+        <requirement name="CVarCompare" cvar="rnd_seed" operation="GTE" value="@floor_c"/>
+    </triggered_effect>
+
+    <!-- Setup the result, which will be 'work_cvar' / count  -->
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="result_cvar" operation="set" value="@rnd_seed"/>
+
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="set" value="@result_cvar"/>
+
+    <!-- This is the modulus operation. So basically its 'rnd_seed' % YOUR_NUMBER -->
+    <!--  YOUR_NUMBER is whatever you want the count to be, rng range 0 to YOUR_NUMBER -->
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="divide" value="YOUR_NUMBER"/>
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="before_floor" operation="set" value="@work_cvar"/>
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="add" value="@floor_c"/>
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="subtract" value="@floor_c"/>
+    <!-- The rounding function is super hacky but we have a whole number atleast. Make sure we rounded correctly. -->
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="subtract" value="1.0">
+        <requirement name="CVarCompare" cvar="work_cvar" operation="GTE" value="@before_floor"/>
+    </triggered_effect>
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="multiply" value="YOUR_NUMBER"/>
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="result_cvar" operation="subtract" value="@work_cvar"/>
+    <!-- This adds the results back into the seed for the next round -->
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="rnd_seed" operation="add" value="@result_cvar"/>
+
+    <!-- Now you can use the result like this -->
+    <triggered_effect name="onSelfBuffUpdate" action="ShowToolbeltMessage" message="I'm a random number 0">
+        <requirement name="CVarCompare" cvar="result_cvar" operation="GTE" value="0.000"/>
+        <requirement name="CVarCompare" cvar="result_cvar" operation="LTE" value="0.999"/>
+    </triggered_effect>
+
+  </buff>
+</configs>

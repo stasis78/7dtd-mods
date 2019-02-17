@@ -64,12 +64,17 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     	<property name="MaxDamage" value="800" />
     	<property name="StabilitySupport" value="true" />
 
+      <property name="Collide" value="melee,bullet,arrow,rocket" />
+
       <property name="Shape" value="ModelEntity"/>
-      <property name="ParticleName" value="chemistryStation"/>
-      <property name="ParticleOffset" value="0,0,0"/>
-      <property name="Path" value="solid"/>
-      <property name="Model" value="Entities/Crafting/chemistry_stationPrefab"/>
-      <property name="MultiBlockDim" value="3,2,1"/>
+      <property name="DisplayType" value="blockMulti" />
+
+      <!-- <property name="ParticleName" value="chemistryStation"/>
+      <property name="ParticleOffset" value="0,0,0"/> -->
+      <!-- <property name="Path" value="solid"/> -->
+      <!-- <property name="Model" value="Entities/Crafting/chemistry_stationPrefab"/> -->
+      <property name="MultiBlockDim" value="2,2,2"/>
+      <property name="Model" value="#@modfolder:Resources/BrewStation.unity3d?BrewStationPrefab" />
 
     	<property name="Stacknumber" value="1" />
       <property name="HeatMapStrength" value="1.5" />
@@ -999,69 +1004,69 @@ Blocks use modTag attributes to help with boiler plate child nodes.
     <!--  Sorghum -->
 
     <!--  Bitter Hop -->
-    <block name="Bitter Hop Seed" modTag="seed,hasicon">
+    <block name="Bitter Hops Seed" modTag="seed,hasicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
       <property name="Texture" value="447" />
-      <property name="PlantGrowing.Next" value="Bitter Hop Growing" />
-      <drop event="Destroy" name="Bitter Hop Seed" count="1" />
+      <property name="PlantGrowing.Next" value="Bitter Hops Growing" />
+      <drop event="Destroy" name="Bitter Hops Seed" count="1" />
     </block>
 
-    <block name="Bitter Hop Growing" modTag="growing,noicon">
+    <block name="Bitter Hops Growing" modTag="growing,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
       <property name="Texture" value="448" />
-      <property name="PlantGrowing.Next" value="Bitter Hop Plant" />
-      <drop event="Destroy" name="Bitter Hop Seed" count="1" />
+      <property name="PlantGrowing.Next" value="Bitter Hops Plant" />
+      <drop event="Destroy" name="Bitter Hops Seed" count="1" />
     </block>
 
-    <block name="plantedBitterHop3Harvest" modTag="harvest,noicon">
+    <block name="plantedBitterHops3Harvest" modTag="harvest,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
       <property name="Texture" value="449" />
       <drop event="Harvest" name="Bitter Hops" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Bitter Hop Plant" modTag="plant,noicon">
+    <block name="Bitter Hops Plant" modTag="plant,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="6D3C11" />
-      <property name="Extends" value="plantedBitterHop3Harvest" />
+      <property name="Extends" value="plantedBitterHops3Harvest" />
       <property name="CustomIcon" value="plantedHop1" />
       <drop event="Harvest" name="Bitter Hops" count="1" tag="cropHarvest" />
-      <property name="DowngradeBlock" value="Bitter Hop Seed" />
+      <property name="DowngradeBlock" value="Bitter Hops Seed" />
     </block>
     <!--  Bitter Hop -->
 
     <!--  Floral Hop -->
-    <block name="Floral Hop Seed" modTag="seed,hasicon">
+    <block name="Floral Hops Seed" modTag="seed,hasicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
       <property name="Texture" value="447" />
-      <property name="PlantGrowing.Next" value="Floral Hop Growing" />
-      <drop event="Destroy" name="Floral Hop Seed" count="1" />
+      <property name="PlantGrowing.Next" value="Floral Hops Growing" />
+      <drop event="Destroy" name="Floral Hops Seed" count="1" />
     </block>
 
-    <block name="Floral Hop Growing" modTag="growing,noicon">
+    <block name="Floral Hops Growing" modTag="growing,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
       <property name="Texture" value="448" />
-      <property name="PlantGrowing.Next" value="Floral Hop Plant" />
-      <drop event="Destroy" name="Floral Hop Seed" count="1" />
+      <property name="PlantGrowing.Next" value="Floral Hops Plant" />
+      <drop event="Destroy" name="Floral Hops Seed" count="1" />
     </block>
 
-    <block name="plantedFloralHop3Harvest" modTag="harvest,noicon">
+    <block name="plantedFloralHops3Harvest" modTag="harvest,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
       <property name="Texture" value="449" />
       <drop event="Harvest" name="Floral Hops" count="1" tag="wildCropsHarvest" />
     </block>
 
-    <block name="Floral Hop Plant" modTag="plant,noicon">
+    <block name="Floral Hops Plant" modTag="plant,noicon">
       <property name="CustomIcon" value="plantedHop1" />
       <property name="CustomIconTint" value="D26C11" />
-      <property name="Extends" value="plantedFloralHop3Harvest" />
+      <property name="Extends" value="plantedFloralHops3Harvest" />
       <drop event="Harvest" name="Floral Hops" count="1" tag="cropHarvest" />
-      <property name="DowngradeBlock" value="Floral Hop Seed" />
+      <property name="DowngradeBlock" value="Floral Hops Seed" />
     </block>
     <!--  Floral Hop -->
 
@@ -1140,8 +1145,8 @@ Blocks use modTag attributes to help with boiler plate child nodes.
       <drop event="Harvest" name="Squash Seed" count="2" prob="1" tag="allHarvest" />
       <drop event="Harvest" name="Broccoli Seed" count="2" prob="1" tag="allHarvest" />
       <drop event="Harvest" name="Sorghum Seed" count="2" prob="1" tag="allHarvest" />
-      <drop event="Harvest" name="Floral Hop Seed" count="2" prob="1" tag="allHarvest" />
-      <drop event="Harvest" name="Bitter Hop Seed" count="2" prob="1" tag="allHarvest" />
+      <drop event="Harvest" name="Floral Hops Seed" count="2" prob="1" tag="allHarvest" />
+      <drop event="Harvest" name="Bitter Hops Seed" count="2" prob="1" tag="allHarvest" />
       <drop event="Harvest" name="Black Pepper Seed" count="2" prob="1" tag="allHarvest" />
       <drop event="Harvest" name="Onion Seed" count="2" prob="1" tag="allHarvest" />
       <drop event="Harvest" name="Celery Seed" count="2" prob="1" tag="allHarvest" />
