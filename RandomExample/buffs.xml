@@ -26,13 +26,13 @@
         <requirement name="CVarCompare" cvar="rnd_seed" operation="GTE" value="@floor_c"/>
     </triggered_effect>
 
-    <!-- Setup the result, which will be 'work_cvar' / count  -->
+    <!-- Setup the result, which will be 'result_cvar' - 'work_cvar' in the last step.  -->
     <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="result_cvar" operation="set" value="@rnd_seed"/>
-
+    <!-- Copy the result into our working variable -->
     <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="set" value="@result_cvar"/>
 
-    <!-- This is the modulus operation. So basically its 'rnd_seed' % YOUR_NUMBER -->
-    <!--  YOUR_NUMBER is whatever you want the count to be, rng range 0 to YOUR_NUMBER -->
+    <!-- This is the modulus operation. So basically its 'rnd_seed' % YOUR_NUMBER-1 -->
+    <!--  YOUR_NUMBER is whatever you want the count to be, rng range 0 to YOUR_NUMBER-1 -->
     <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="divide" value="YOUR_NUMBER"/>
     <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="before_floor" operation="set" value="@work_cvar"/>
     <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="work_cvar" operation="add" value="@floor_c"/>
