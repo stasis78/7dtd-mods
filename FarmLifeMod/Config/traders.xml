@@ -8,8 +8,8 @@
     <item name="Squash Seed" />
     <item name="Broccoli Seed" />
     <item name="Sorghum Seed" />
-    <item name="Floral Hops Seed" />
-    <item name="Bitter Hops Seed" />
+    <item name="Floral Hop Seed" />
+    <item name="Bitter Hop Seed" />
     <item name="Grape Seed" />
     <item name="Apple Seed" />
     <item name="Orange Seed" />
@@ -17,6 +17,8 @@
     <item name="Lime Seed" />
     <item name="Cherry Seed" />
     <item name="Black Pepper Seed" />
+    <item name="Salt" />
+    <item name="Black Pepper" />
     <item name="Onion Seed" />
     <item name="Olive Seed" />
     <item name="Celery Seed" />

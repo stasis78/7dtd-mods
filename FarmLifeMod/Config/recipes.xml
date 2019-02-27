@@ -1,7 +1,7 @@
 <configs>
   <remove xpath="/recipes/recipe[@name='drinkJarBeer']" />
 
-  <append xpath="/recipes" modTag="masterList">
+  <append xpath="/recipes">
 
     <!--   MEAT YUMMY -->
     <recipe name="Buttery Delmontico" count="1" modTag="toolTongs,saltPepper">
@@ -678,10 +678,10 @@
     <recipe name="Sorghum Seed" modTag="seed">
     	<ingredient name="Sorghum" />
     </recipe>
-    <recipe name="Bitter Hops Seed" modTag="seed">
+    <recipe name="Bitter Hop Seed" modTag="seed">
     	<ingredient name="Bitter Hops" />
     </recipe>
-    <recipe name="Floral Hops Seed" modTag="seed">
+    <recipe name="Floral Hop Seed" modTag="seed">
     	<ingredient name="Floral Hops" />
     </recipe>
     <recipe name="Grape Seed" modTag="seed">
@@ -773,7 +773,7 @@
     	<ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
     </recipe>
-    <recipe name="Cold Smoker" count="1">
+    <recipe name="Smoker" count="1">
       <ingredient name="resourceForgedIron" count="20" />
       <ingredient name="resourceMechanicalParts" count="10" />
       <ingredient name="resourceScrapPolymers" count="10" />
@@ -831,7 +831,7 @@
       <ingredient name="resourceScrapPolymers" count="4" />
     </recipe>
 
-    <recipe name="Caste Iron Skillet" count="1" modTag="toolForgeCrucible">
+    <recipe name="Frying Pan" count="1" modTag="toolForgeCrucible">
     	<ingredient name="unit_iron" count="100" />
     	<ingredient name="unit_clay" count="10" />
     </recipe>
@@ -1011,7 +1011,7 @@
     Gas Oven
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMat') or contains(@modTag,'toolHanger') or contains(@modTag,'toolRack')]" name="craft_area">
-    Cold Smoker
+    Smoker
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolMasher') or contains(@modTag,'toolBoiler') or contains(@modTag,'toolStill')]" name="craft_area">
     Brew Cooker
@@ -1065,7 +1065,7 @@
     toolCookingPot
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolFrying')]" name="craft_tool">
-    Caste Iron Skillet
+    Frying Pan
   </setattribute>
   <setattribute xpath="/recipes/recipe[contains(@modTag,'toolWok')]" name="craft_tool">
     Wok
