@@ -1,0 +1,58 @@
+<configs>
+
+    <append xpath="/blocks/block[@name='ironBars']">
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="steelBars"/>
+        <property name="Item" value="resourceForgedSteel"/>
+        <property name="ItemCount" value="10"/>
+        <property name="UpgradeHitCount" value="1"/>
+      </property>
+    </append>
+
+    <append xpath="/blocks/block[@name='ironBarsCentered']">
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="steelBarsCentered"/>
+        <property name="Item" value="resourceForgedSteel"/>
+        <property name="ItemCount" value="10"/>
+        <property name="UpgradeHitCount" value="1"/>
+      </property>
+    </append>
+
+    <append xpath="/blocks">
+      <block name="steelBars">
+        <property name="CustomIcon" value="ironBars"/>
+        <property name="DisplayType" value="blockHardened" />
+        <property name="Material" value="Msteel"/>
+        <property name="Shape" value="New"/>
+        <property name="LightOpacity" value="0"/>
+        <property name="Model" value="iron_bars"/>
+        <property name="Texture" value="446"/>
+        <property name="UseGlobalUV" value="Local"/>
+        <property name="ImposterExcludeAndStop" value="true"/>
+        <property name="Place" value="TowardsPlacer"/>
+        <property name="AllowAllRotations" value="true"/>
+        <property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+        <drop event="Harvest" name="resourceScrapIron" count="32" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+        <property name="Group" value="Building"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="DescriptionKey" value="ironBarsDesc"/>
+        <property name="FilterTags" value="fdecor,fother,fwindows,fdoors"/>
+        <property name="SortOrder1" value="7060"/>
+        <property name="SortOrder2" value="0061"/> <!-- SortDoors -->
+
+      	<property class="RepairItems"> <property name="resourceForgedSteel" value="5"/> </property>
+        <property name="DowngradeBlock" value="ironBars"/>
+      	<property name="CustomUpgradeSound" value="place_block_metal"/>
+      </block>
+
+      <block name="steelBarsCentered">
+        <property name="Extends" value="steelBars"/>
+      	<property name="Model" value="iron_bars_centered"/>
+      	<property name="Place" value="TowardsPlacerInverted"/>
+      	<property name="SortOrder2" value="0060"/> <!-- SortDoors -->
+      </block>
+
+    </append>
+</configs>
