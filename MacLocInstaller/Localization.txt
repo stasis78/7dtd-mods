@@ -1,1 +1,1 @@
-myCoolModExampleItem,items,,,Some really awesome English description.,,,,,
+myCoolMod_ExampleItem,items,,,Some really awesome English description.,,,,,
